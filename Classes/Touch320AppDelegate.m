@@ -7,6 +7,7 @@
 //
 
 #import "Touch320AppDelegate.h"
+#import "MainTabBarController.h"
 #import "NewsViewController.h"
 
 #import "ImageGalleryViewController.h"
@@ -32,7 +33,7 @@
     [[TTURLCache sharedCache] setMaxPixelCount:10*320*480];
 	
 	//set up the tabBarController and a local array of controllers
-    tabBarController = [[UITabBarController alloc] init];
+    tabBarController = [[MainTabBarController alloc] init];
 	NSMutableArray *localControllersArray = [[NSMutableArray alloc] initWithCapacity:4];
 	UINavigationController *localNavigationController;
 	

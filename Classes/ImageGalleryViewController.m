@@ -8,7 +8,7 @@
 
 #import "ImageGalleryViewController.h"
 #import "ImageGalleryPhotoSource.h"
-#import "MockPhotoSource.h"
+#import "ImageGalleryPhotoViewController.h"
 
 @implementation ImageGalleryViewController
 
@@ -29,6 +29,12 @@
 - (void)updateTableLayout {
 	self.tableView.contentInset = UIEdgeInsetsMake(4, 0, 0, 0);
 	self.tableView.scrollIndicatorInsets = UIEdgeInsetsZero;
+	
+}
+
+- (TTPhotoViewController *)createPhotoViewController
+{
+    return [[[ImageGalleryPhotoViewController alloc] init] autorelease];
 	
 }
 
