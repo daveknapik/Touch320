@@ -1,12 +1,19 @@
 //
 //  FlickrJSONResponse.m
 //
+//  based on http://github.com/klazuka/TTRemoteExamples
 
 #import "FlickrJSONResponse.h"
-#import "SearchResult.h"
 #import "JSON/JSON.h"
+#import "ImageGalleryPhoto.h"
 
 @implementation FlickrJSONResponse
+@synthesize objects, totalObjectsAvailableOnServer;
+
+- (id)init {
+	objects = [[NSMutableArray alloc] init];
+	return self;
+}
 
 - (NSError*)request:(TTURLRequest*)request processResponse:(NSHTTPURLResponse*)response data:(id)data
 {
@@ -20,24 +27,24 @@
     // that we're actually interested in.
     NSDictionary *root = [json objectForKey:@"photos"];
     totalObjectsAvailableOnServer = [[root objectForKey:@"total"] integerValue];
-
-    // Now wrap the results from the server into a domain-specific object.
+	
+    // Create the ImageGalleryPhotos
     NSArray *results = [root objectForKey:@"photo"];
-    for (NSDictionary *rawResult in results) {
-        
-        SearchResult *result = [[[SearchResult alloc] init] autorelease];
-        result.bigImageURL = [rawResult objectForKey:@"url_m"];
-        result.thumbnailURL = [rawResult objectForKey:@"url_t"];
-        result.title = [rawResult objectForKey:@"title"];
-        result.bigImageSize = CGSizeMake([[rawResult objectForKey:@"width_m"] floatValue],
-                                         [[rawResult objectForKey:@"height_m"] floatValue]);
-
-        [self.objects addObject:result];
+    for (NSDictionary *rawResult in results) {        
+		
+		NSString* bigURL = [rawResult objectForKey:@"url_m"];
+		NSString* smallURL = [rawResult objectForKey:@"url_t"];
+		NSString* title = [rawResult objectForKey:@"title"];
+		CGSize bigSize = CGSizeMake([[rawResult objectForKey:@"width_m"] floatValue],
+									[[rawResult objectForKey:@"height_m"] floatValue]);
+		
+		ImageGalleryPhoto* photo = [[[ImageGalleryPhoto alloc] initWithURL:bigURL smallURL:smallURL size:bigSize caption:title] autorelease];
+		
+        [self.objects addObject:photo];
     }
     
     return nil;
 }
 
-- (NSString *)format { return @"json"; }
 
 @end

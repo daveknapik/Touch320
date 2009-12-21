@@ -7,12 +7,9 @@
 //
 
 #import <Three20/Three20.h>
-#import "ImageGalleryPhotoSource.h"
 
 @interface ImageGalleryViewController : TTThumbsViewController {
-	ImageGalleryPhotoSource *photoSource;
+	
 }
-
--(id)initWithTabBar;
 
 @end

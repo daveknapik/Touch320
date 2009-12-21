@@ -13,16 +13,14 @@
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
 		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
-		DE3E4CCF10D91F4900571DC6 /* FlickrSearchResultsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DE3E4CCE10D91F4900571DC6 /* FlickrSearchResultsModel.m */; };
-		DE3E4CD210D91F7D00571DC6 /* URLModelResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = DE3E4CD110D91F7D00571DC6 /* URLModelResponse.m */; };
 		DE3E4CE910D9285000571DC6 /* FlickrJSONResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = DE3E4CE810D9285000571DC6 /* FlickrJSONResponse.m */; };
 		DE3E4CF310D9292D00571DC6 /* GTMNSString+URLArguments.m in Sources */ = {isa = PBXBuildFile; fileRef = DE3E4CF010D9292D00571DC6 /* GTMNSString+URLArguments.m */; };
 		DE3E4CF410D9292D00571DC6 /* GTMNSDictionary+URLArguments.m in Sources */ = {isa = PBXBuildFile; fileRef = DE3E4CF210D9292D00571DC6 /* GTMNSDictionary+URLArguments.m */; };
-		DE3E4D0A10D92ADB00571DC6 /* SearchResult.m in Sources */ = {isa = PBXBuildFile; fileRef = DE3E4D0910D92ADB00571DC6 /* SearchResult.m */; };
 		DE4F175F10D82535005E2446 /* libThree20.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DE4F175E10D8252D005E2446 /* libThree20.a */; };
 		DE4F176510D825AD005E2446 /* Three20.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DE4F176410D825AD005E2446 /* Three20.bundle */; };
 		DE4F178E10D825CE005E2446 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE4F178D10D825CE005E2446 /* QuartzCore.framework */; };
 		DE4F197210D84EC8005E2446 /* ImageGalleryPhotoSource.m in Sources */ = {isa = PBXBuildFile; fileRef = DE4F197110D84EC8005E2446 /* ImageGalleryPhotoSource.m */; };
+		DE7455A310DE66DE00332FD6 /* ImageGalleryPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = DE7455A210DE66DE00332FD6 /* ImageGalleryPhoto.m */; };
 		DEFEE5E410D80AA3001213CE /* CXMLDocument_CreationExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = DEFEE5CD10D80AA3001213CE /* CXMLDocument_CreationExtensions.m */; };
 		DEFEE5E510D80AA3001213CE /* CXMLNode_CreationExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = DEFEE5CF10D80AA3001213CE /* CXMLNode_CreationExtensions.m */; };
 		DEFEE5E610D80AA3001213CE /* CXMLDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = DEFEE5D110D80AA3001213CE /* CXMLDocument.m */; };
@@ -77,10 +75,6 @@
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* Touch320_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Touch320_Prefix.pch; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Touch320-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Touch320-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
-		DE3E4CCD10D91F4900571DC6 /* FlickrSearchResultsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickrSearchResultsModel.h; sourceTree = "<group>"; };
-		DE3E4CCE10D91F4900571DC6 /* FlickrSearchResultsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlickrSearchResultsModel.m; sourceTree = "<group>"; };
-		DE3E4CD010D91F7D00571DC6 /* URLModelResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = URLModelResponse.h; sourceTree = "<group>"; };
-		DE3E4CD110D91F7D00571DC6 /* URLModelResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = URLModelResponse.m; sourceTree = "<group>"; };
 		DE3E4CE710D9285000571DC6 /* FlickrJSONResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickrJSONResponse.h; sourceTree = "<group>"; };
 		DE3E4CE810D9285000571DC6 /* FlickrJSONResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlickrJSONResponse.m; sourceTree = "<group>"; };
 		DE3E4CEE10D9292D00571DC6 /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
@@ -88,13 +82,13 @@
 		DE3E4CF010D9292D00571DC6 /* GTMNSString+URLArguments.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GTMNSString+URLArguments.m"; sourceTree = "<group>"; };
 		DE3E4CF110D9292D00571DC6 /* GTMNSDictionary+URLArguments.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GTMNSDictionary+URLArguments.h"; sourceTree = "<group>"; };
 		DE3E4CF210D9292D00571DC6 /* GTMNSDictionary+URLArguments.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GTMNSDictionary+URLArguments.m"; sourceTree = "<group>"; };
-		DE3E4D0810D92ADB00571DC6 /* SearchResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchResult.h; sourceTree = "<group>"; };
-		DE3E4D0910D92ADB00571DC6 /* SearchResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchResult.m; sourceTree = "<group>"; };
 		DE4F175610D8252D005E2446 /* Three20.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Three20.xcodeproj; path = ../../Three20/src/Three20.xcodeproj; sourceTree = SOURCE_ROOT; };
 		DE4F176410D825AD005E2446 /* Three20.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = Three20.bundle; path = ../../Three20/src/Three20.bundle; sourceTree = SOURCE_ROOT; };
 		DE4F178D10D825CE005E2446 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = ../../../../../../Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.1.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = SOURCE_ROOT; };
 		DE4F197010D84EC8005E2446 /* ImageGalleryPhotoSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageGalleryPhotoSource.h; sourceTree = "<group>"; };
 		DE4F197110D84EC8005E2446 /* ImageGalleryPhotoSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageGalleryPhotoSource.m; sourceTree = "<group>"; };
+		DE7455A110DE66DE00332FD6 /* ImageGalleryPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageGalleryPhoto.h; sourceTree = "<group>"; };
+		DE7455A210DE66DE00332FD6 /* ImageGalleryPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageGalleryPhoto.m; sourceTree = "<group>"; };
 		DEFEE5CC10D80AA3001213CE /* CXMLDocument_CreationExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLDocument_CreationExtensions.h; sourceTree = "<group>"; };
 		DEFEE5CD10D80AA3001213CE /* CXMLDocument_CreationExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLDocument_CreationExtensions.m; sourceTree = "<group>"; };
 		DEFEE5CE10D80AA3001213CE /* CXMLNode_CreationExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLNode_CreationExtensions.h; sourceTree = "<group>"; };
@@ -187,14 +181,10 @@
 				1D3623250D0F684500981E51 /* Touch320AppDelegate.m */,
 				DE4F197010D84EC8005E2446 /* ImageGalleryPhotoSource.h */,
 				DE4F197110D84EC8005E2446 /* ImageGalleryPhotoSource.m */,
-				DE3E4CCD10D91F4900571DC6 /* FlickrSearchResultsModel.h */,
-				DE3E4CCE10D91F4900571DC6 /* FlickrSearchResultsModel.m */,
 				DE3E4CE710D9285000571DC6 /* FlickrJSONResponse.h */,
 				DE3E4CE810D9285000571DC6 /* FlickrJSONResponse.m */,
-				DE3E4D0810D92ADB00571DC6 /* SearchResult.h */,
-				DE3E4D0910D92ADB00571DC6 /* SearchResult.m */,
-				DE3E4CD010D91F7D00571DC6 /* URLModelResponse.h */,
-				DE3E4CD110D91F7D00571DC6 /* URLModelResponse.m */,
+				DE7455A110DE66DE00332FD6 /* ImageGalleryPhoto.h */,
+				DE7455A210DE66DE00332FD6 /* ImageGalleryPhoto.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -436,12 +426,10 @@
 				DEFEE67310D80BC4001213CE /* NewsItem.m in Sources */,
 				DEFEE67410D80BC4001213CE /* NewsItemViewController.m in Sources */,
 				DE4F197210D84EC8005E2446 /* ImageGalleryPhotoSource.m in Sources */,
-				DE3E4CCF10D91F4900571DC6 /* FlickrSearchResultsModel.m in Sources */,
-				DE3E4CD210D91F7D00571DC6 /* URLModelResponse.m in Sources */,
 				DE3E4CE910D9285000571DC6 /* FlickrJSONResponse.m in Sources */,
 				DE3E4CF310D9292D00571DC6 /* GTMNSString+URLArguments.m in Sources */,
 				DE3E4CF410D9292D00571DC6 /* GTMNSDictionary+URLArguments.m in Sources */,
-				DE3E4D0A10D92ADB00571DC6 /* SearchResult.m in Sources */,
+				DE7455A310DE66DE00332FD6 /* ImageGalleryPhoto.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

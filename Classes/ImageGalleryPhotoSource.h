@@ -6,19 +6,14 @@
 //  Copyright 2009 __MyCompanyName__. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
 #import <Three20/Three20.h>
-#import "FlickrSearchResultsModel.h"
+#import "FlickrJSONResponse.h"
 
-@interface ImageGalleryPhotoSource : NSObject <TTPhotoSource>
-{
-    FlickrSearchResultsModel *model;
-    
-    // Backing storage for TTPhotoSource properties.
-    NSString *albumTitle;
-    int totalNumberOfPhotos;    
+@interface ImageGalleryPhotoSource : TTURLRequestModel <TTPhotoSource> {
+    NSString* _title;
+	NSArray* _photos;
+	FlickrJSONResponse* responseProcessor;
+	NSUInteger page;
 }
-
-- (id)initWithModel:(FlickrSearchResultsModel *)theModel;    // Designated initializer.
 
 @end
