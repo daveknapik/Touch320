@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 
 
-@interface ImageGalleryPhotoViewController : TTPhotoViewController {
+@interface ImageGalleryPhotoViewController : TTPhotoViewController <UIActionSheetDelegate> {
 
 }
 

@@ -34,7 +34,11 @@
 
 - (TTPhotoViewController *)createPhotoViewController
 {
-    return [[[ImageGalleryPhotoViewController alloc] init] autorelease];
+	ImageGalleryPhotoViewController *imageGalleryPhotoViewController = [[[ImageGalleryPhotoViewController alloc] init] autorelease];
+	
+	[imageGalleryPhotoViewController.navigationItem.rightBarButtonItem setTitle:@"Save"]; 
+	
+    return imageGalleryPhotoViewController;
 	
 }
 

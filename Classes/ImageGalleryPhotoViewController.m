@@ -11,6 +11,41 @@
 
 @implementation ImageGalleryPhotoViewController
 
+- (id)initWithPhoto:(id<TTPhoto>)photo {
+	return self;
+}
+
+- (void)updateChrome { 
+	[super updateChrome];
+	self.navigationItem.rightBarButtonItem = [[[UIBarButtonItem alloc] initWithTitle:@"Save" style:UIBarButtonItemStylePlain target:self action:@selector(savePhoto)] autorelease]; 
+}
+
+- (void)savePhoto {
+	UIActionSheet *actionSheet = [[UIActionSheet alloc] 
+                                  initWithTitle:nil
+                                  delegate:self 
+                                  cancelButtonTitle:@"Cancel" 
+                                  destructiveButtonTitle:@"Save to Camera Roll" 
+                                  otherButtonTitles:nil]; 
+    [actionSheet showInView:self.view]; 
+    [actionSheet release]; 
+	
+	
+}
+
+- (void)actionSheet:(UIActionSheet *)actionSheet didDismissWithButtonIndex:(NSInteger)buttonIndex {
+	if (buttonIndex != [actionSheet cancelButtonIndex]) { 
+		TTURLRequest *request = [TTURLRequest request];
+		request.URL = [self.centerPhoto URLForVersion:TTPhotoVersionLarge];
+		TTURLImageResponse *response = [[[TTURLImageResponse alloc] init] autorelease];
+		request.response = response;
+		if ([request send]) {
+			UIImage *image = response.image;
+			UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil);
+		} 
+	}
+}
+
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
 	return (interfaceOrientation !=
