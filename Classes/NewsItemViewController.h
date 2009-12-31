@@ -9,11 +9,15 @@
 #import <UIKit/UIKit.h>
 #import <Three20/Three20.h>
 
-@interface NewsItemViewController : TTViewController {
+@interface NewsItemViewController : TTViewController <UIWebViewDelegate> {
 	NSString* _newsItemLink;
+	UIActivityIndicatorView* _myIndicator;
+	UILabel* _loadingText;
 }
 
 @property (nonatomic, copy) NSString* newsItemLink;
+@property (nonatomic, retain) UIActivityIndicatorView* myIndicator;
+@property (nonatomic, retain) UILabel* loadingText;
 
 - (id)initWithNavigatorURL:(NSString *)placeholder query:(NSDictionary*)query;
 

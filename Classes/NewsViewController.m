@@ -52,6 +52,11 @@
 	[[TTNavigator navigator] openURL:@"tt://newsItem/1" query:query animated:YES]; 
 }
 
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
+{
+	return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
+}
+
 - (void)didReceiveMemoryWarning {
 	// Releases the view if it doesn't have a superview.
     [super didReceiveMemoryWarning];

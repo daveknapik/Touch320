@@ -11,7 +11,9 @@
 
 @implementation NewsItemViewController
 
-@synthesize newsItemLink = _newsItemLink;
+@synthesize newsItemLink = _newsItemLink, 
+			myIndicator = _myIndicator,
+			loadingText = _loadingText;
 
 - (id)initWithNavigatorURL:(NSString *)placeholder query:(NSDictionary*)query
 {
@@ -24,6 +26,20 @@
 		self.statusBarStyle = UIStatusBarStyleBlackOpaque;
 		
 		self.newsItemLink = [query objectForKey:@"link"];
+		
+		self.loadingText = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 320, 50)];
+		self.loadingText.text = @"Loading...";
+		self.loadingText.textColor = [UIColor grayColor];
+		self.loadingText.textAlignment = UITextAlignmentCenter;
+		self.loadingText.center = CGPointMake(160, 165);
+		
+		self.myIndicator = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
+		self.myIndicator.center = CGPointMake(160, 195);
+		self.myIndicator.hidesWhenStopped = YES;
+		
+		//NSURL *url = [NSURL URLWithString:self.newsItemLink];
+		//NSURLRequest *request = [NSURLRequest requestWithURL:url];
+		//[self openRequest:request];
 	}
 	
 	return self;
@@ -47,14 +63,14 @@
 */
 - (void)viewDidLoad {
 	UIWebView *webView;
-	webView = [[UIWebView alloc] initWithFrame:CGRectMake(0, 0, 320, 480)];
+	webView = [[UIWebView alloc] initWithFrame:CGRectMake(0, 0, 320, 366)];
+	webView.delegate = self;
 	
 	NSURL *url = [NSURL URLWithString:self.newsItemLink];
 	NSURLRequest *request = [NSURLRequest requestWithURL:url];
 	
 	[webView loadRequest:request];
 	
-	webView.hidden = NO;
 	webView.scalesPageToFit = YES;
 	
 	[self.view addSubview:webView];
@@ -63,14 +79,11 @@
     [super viewDidLoad];
 }
 
-/*
-// Override to allow orientations other than the default portrait orientation.
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
-    // Return YES for supported orientations
-    return (interfaceOrientation == UIInterfaceOrientationPortrait);
-}
-*/
-
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
+{
+	return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
+} 
+ 
 - (void)didReceiveMemoryWarning {
 	// Releases the view if it doesn't have a superview.
     [super didReceiveMemoryWarning];
@@ -81,11 +94,34 @@
 - (void)viewDidUnload {
 	// Release any retained subviews of the main view.
 	// e.g. self.myOutlet = nil;
+	self.myIndicator = nil;
+	self.newsItemLink = nil;
+	self.loadingText = nil;
+	[super viewDidUnload];
 }
 
 
 - (void)dealloc {
+	TT_RELEASE_SAFELY(_myIndicator); 
+	TT_RELEASE_SAFELY(_newsItemLink);
+	TT_RELEASE_SAFELY(_loadingText);
     [super dealloc];
+}
+
+#pragma mark UIWebViewDelegate Methods
+
+- (void)webViewDidStartLoad:(UIWebView*)webView {
+	NSLog(@"loading");
+	
+	[self.myIndicator startAnimating];
+	[self.view addSubview:self.loadingText];
+	[self.view addSubview:self.myIndicator];
+}
+
+- (void)webViewDidFinishLoad:(UIWebView *)webView {
+	NSLog(@"finished loading");
+	[self.loadingText removeFromSuperview];
+	[self.myIndicator stopAnimating];
 }
 
 
