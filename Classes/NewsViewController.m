@@ -24,6 +24,7 @@
 		
 		self.navigationBarStyle = UIBarStyleDefault; 
 		self.navigationBarTintColor	= [UIColor blackColor];
+		self.statusBarStyle = UIStatusBarStyleBlackOpaque;
 	}
 	
 	return self;

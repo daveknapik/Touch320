@@ -228,6 +228,8 @@
 			<key>Layout</key>
 			<array>
 				<dict>
+					<key>BecomeActive</key>
+					<true/>
 					<key>ContentConfiguration</key>
 					<dict>
 						<key>PBXBottomSmartGroupGIDs</key>
@@ -274,13 +276,13 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>18</integer>
+									<integer>22</integer>
 									<integer>5</integer>
 									<integer>0</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 21}, {318, 539}}</string>
+							<string>{{0, 0}, {318, 539}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -310,14 +312,12 @@
 					<key>Dock</key>
 					<array>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>NewsItemViewController.m</string>
+								<string>NewsTableItemCell.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -325,11 +325,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>NewsItemViewController.m</string>
+										<string>NewsTableItemCell.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>DEA2711B10ECB89A004C3452</string>
+										<string>DE30FD0910ECC8BB00FE1D8C</string>
 										<key>history</key>
 										<array>
 											<string>DEFEE63810D80B79001213CE</string>
@@ -372,10 +372,10 @@
 											<string>DEA270FF10ECB75B004C3452</string>
 											<string>DEA2710010ECB75B004C3452</string>
 											<string>DEA2710B10ECB7B7004C3452</string>
-											<string>DEA2710C10ECB7B7004C3452</string>
 											<string>DEA2710D10ECB7B7004C3452</string>
 											<string>DEA2711310ECB7F8004C3452</string>
-											<string>DEA2710A10ECB7B7004C3452</string>
+											<string>DEA2712510ECB9C2004C3452</string>
+											<string>DE30FD0810ECC8BB00FE1D8C</string>
 										</array>
 										<key>prevStack</key>
 										<array>
@@ -427,169 +427,6 @@
 											<string>DEE1DB2410EC2F0D00980A5E</string>
 											<string>DEA26ED510EC3779004C3452</string>
 											<string>DEA26F8910EC9F8D004C3452</string>
-											<string>DEA26F8A10EC9F8D004C3452</string>
-											<string>DEA26F8B10EC9F8D004C3452</string>
-											<string>DEA26F8C10EC9F8D004C3452</string>
-											<string>DEA26F8D10EC9F8D004C3452</string>
-											<string>DEA26F8E10EC9F8D004C3452</string>
-											<string>DEA26F8F10EC9F8D004C3452</string>
-											<string>DEA26F9010EC9F8D004C3452</string>
-											<string>DEA26F9110EC9F8D004C3452</string>
-											<string>DEA26F9210EC9F8D004C3452</string>
-											<string>DEA26F9310EC9F8D004C3452</string>
-											<string>DEA26F9410EC9F8D004C3452</string>
-											<string>DEA26F9510EC9F8D004C3452</string>
-											<string>DEA26F9610EC9F8D004C3452</string>
-											<string>DEA26F9710EC9F8D004C3452</string>
-											<string>DEA26F9810EC9F8D004C3452</string>
-											<string>DEA26F9910EC9F8D004C3452</string>
-											<string>DEA26F9A10EC9F8D004C3452</string>
-											<string>DEA26F9B10EC9F8D004C3452</string>
-											<string>DEA26F9C10EC9F8D004C3452</string>
-											<string>DEA26F9D10EC9F8D004C3452</string>
-											<string>DEA26F9E10EC9F8D004C3452</string>
-											<string>DEA26F9F10EC9F8D004C3452</string>
-											<string>DEA26FA010EC9F8D004C3452</string>
-											<string>DEA26FA110EC9F8D004C3452</string>
-											<string>DEA26FA210EC9F8D004C3452</string>
-											<string>DEA26FA310EC9F8D004C3452</string>
-											<string>DEA26FA410EC9F8D004C3452</string>
-											<string>DEA26FA510EC9F8D004C3452</string>
-											<string>DEA26FA610EC9F8D004C3452</string>
-											<string>DEA26FA710EC9F8D004C3452</string>
-											<string>DEA26FA810EC9F8D004C3452</string>
-											<string>DEA26FA910EC9F8D004C3452</string>
-											<string>DEA26FAA10EC9F8D004C3452</string>
-											<string>DEA26FAB10EC9F8D004C3452</string>
-											<string>DEA26FAC10EC9F8D004C3452</string>
-											<string>DEA26FAD10EC9F8D004C3452</string>
-											<string>DEA26FAE10EC9F8D004C3452</string>
-											<string>DEA26FAF10EC9F8D004C3452</string>
-											<string>DEA26FB010EC9F8D004C3452</string>
-											<string>DEA26FB110EC9F8D004C3452</string>
-											<string>DEA26FB210EC9F8D004C3452</string>
-											<string>DEA26FBB10ECA03A004C3452</string>
-											<string>DEA26FBC10ECA03A004C3452</string>
-											<string>DEA26FBD10ECA03A004C3452</string>
-											<string>DEA26FBE10ECA03A004C3452</string>
-											<string>DEA26FD310ECA193004C3452</string>
-											<string>DEA26FD410ECA193004C3452</string>
-											<string>DEA26FD510ECA193004C3452</string>
-											<string>DEA26FD610ECA193004C3452</string>
-											<string>DEA26FD710ECA193004C3452</string>
-											<string>DEA26FD810ECA193004C3452</string>
-											<string>DEA26FD910ECA193004C3452</string>
-											<string>DEA26FE010ECA1F8004C3452</string>
-											<string>DEA26FE110ECA1F8004C3452</string>
-											<string>DEA26FE210ECA1F8004C3452</string>
-											<string>DEA26FE310ECA1F8004C3452</string>
-											<string>DEA26FE410ECA1F8004C3452</string>
-											<string>DEA26FE810ECA226004C3452</string>
-											<string>DEA26FF010ECA287004C3452</string>
-											<string>DEA26FF110ECA287004C3452</string>
-											<string>DEA26FF210ECA287004C3452</string>
-											<string>DEA26FF310ECA287004C3452</string>
-											<string>DEA26FFD10ECAAE0004C3452</string>
-											<string>DEA26FFE10ECAAE0004C3452</string>
-											<string>DEA26FFF10ECAAE0004C3452</string>
-											<string>DEA2700010ECAAE0004C3452</string>
-											<string>DEA2700110ECAAE0004C3452</string>
-											<string>DEA2700210ECAAE0004C3452</string>
-											<string>DEA2700310ECAAE0004C3452</string>
-											<string>DEA2700410ECAAE0004C3452</string>
-											<string>DEA2700A10ECAB00004C3452</string>
-											<string>DEA2700B10ECAB00004C3452</string>
-											<string>DEA2701010ECAB44004C3452</string>
-											<string>DEA2701110ECAB44004C3452</string>
-											<string>DEA2701610ECAE12004C3452</string>
-											<string>DEA2701710ECAE12004C3452</string>
-											<string>DEA2702F10ECAE7E004C3452</string>
-											<string>DEA2703710ECAEB6004C3452</string>
-											<string>DEA2703810ECAEB6004C3452</string>
-											<string>DEA2703910ECAEB6004C3452</string>
-											<string>DEA2703A10ECAEB6004C3452</string>
-											<string>DEA2703E10ECAEED004C3452</string>
-											<string>DEA2703F10ECAEED004C3452</string>
-											<string>DEA2704410ECAF3D004C3452</string>
-											<string>DEA2704510ECAF3D004C3452</string>
-											<string>DEA2704610ECAF3D004C3452</string>
-											<string>DEA2705010ECAFCD004C3452</string>
-											<string>DEA2705110ECAFCD004C3452</string>
-											<string>DEA2705A10ECB02F004C3452</string>
-											<string>DEA2705B10ECB02F004C3452</string>
-											<string>DEA2705C10ECB02F004C3452</string>
-											<string>DEA2705D10ECB02F004C3452</string>
-											<string>DEA2705E10ECB02F004C3452</string>
-											<string>DEA2705F10ECB02F004C3452</string>
-											<string>DEA2706010ECB02F004C3452</string>
-											<string>DEA2706E10ECB124004C3452</string>
-											<string>DEA2706F10ECB124004C3452</string>
-											<string>DEA2707010ECB124004C3452</string>
-											<string>DEA2707110ECB124004C3452</string>
-											<string>DEA2707210ECB124004C3452</string>
-											<string>DEA2707A10ECB192004C3452</string>
-											<string>DEA2707B10ECB192004C3452</string>
-											<string>DEA2707C10ECB192004C3452</string>
-											<string>DEA2707D10ECB192004C3452</string>
-											<string>DEA2708310ECB1DB004C3452</string>
-											<string>DEA2708410ECB1DB004C3452</string>
-											<string>DEA2708B10ECB21A004C3452</string>
-											<string>DEA2708C10ECB21A004C3452</string>
-											<string>DEA2709610ECB297004C3452</string>
-											<string>DEA2709710ECB297004C3452</string>
-											<string>DEA2709810ECB297004C3452</string>
-											<string>DEA2709910ECB297004C3452</string>
-											<string>DEA270A110ECB301004C3452</string>
-											<string>DEA270A210ECB301004C3452</string>
-											<string>DEA270A310ECB301004C3452</string>
-											<string>DEA270A410ECB301004C3452</string>
-											<string>DEA270A510ECB301004C3452</string>
-											<string>DEA270A610ECB301004C3452</string>
-											<string>DEA270A710ECB301004C3452</string>
-											<string>DEA270A810ECB301004C3452</string>
-											<string>DEA270A910ECB301004C3452</string>
-											<string>DEA270AA10ECB301004C3452</string>
-											<string>DEA270AB10ECB301004C3452</string>
-											<string>DEA270AC10ECB301004C3452</string>
-											<string>DEA270B310ECB390004C3452</string>
-											<string>DEA270B410ECB390004C3452</string>
-											<string>DEA270B510ECB390004C3452</string>
-											<string>DEA270B610ECB390004C3452</string>
-											<string>DEA270B710ECB390004C3452</string>
-											<string>DEA270B810ECB390004C3452</string>
-											<string>DEA270B910ECB390004C3452</string>
-											<string>DEA270BA10ECB390004C3452</string>
-											<string>DEA270C310ECB4B3004C3452</string>
-											<string>DEA270C410ECB4B3004C3452</string>
-											<string>DEA270C510ECB4B3004C3452</string>
-											<string>DEA270C610ECB4B3004C3452</string>
-											<string>DEA270C710ECB4B3004C3452</string>
-											<string>DEA270CC10ECB4C9004C3452</string>
-											<string>DEA270D410ECB510004C3452</string>
-											<string>DEA270D510ECB510004C3452</string>
-											<string>DEA270D610ECB510004C3452</string>
-											<string>DEA270DE10ECB5A1004C3452</string>
-											<string>DEA270DF10ECB5A1004C3452</string>
-											<string>DEA270E010ECB5A1004C3452</string>
-											<string>DEA270E510ECB5D4004C3452</string>
-											<string>DEA270EA10ECB5F4004C3452</string>
-											<string>DEA270F110ECB643004C3452</string>
-											<string>DEA270F210ECB643004C3452</string>
-											<string>DEA270F310ECB643004C3452</string>
-											<string>DEA270F410ECB643004C3452</string>
-											<string>DEA270F510ECB643004C3452</string>
-											<string>DEA270FA10ECB664004C3452</string>
-											<string>DEA2710210ECB75B004C3452</string>
-											<string>DEA2710310ECB75B004C3452</string>
-											<string>DEA2710410ECB75B004C3452</string>
-											<string>DEA2710510ECB75B004C3452</string>
-											<string>DEA2710610ECB75B004C3452</string>
-											<string>DEA2710710ECB75B004C3452</string>
-											<string>DEA2710E10ECB7B7004C3452</string>
-											<string>DEA2710F10ECB7B7004C3452</string>
-											<string>DEA2711010ECB7B7004C3452</string>
-											<string>DEA2711110ECB7B7004C3452</string>
-											<string>DEA2711410ECB7F8004C3452</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -647,9 +484,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>DEA26FB410EC9F8D004C3452</string>
+				<string>DE30FD0A10ECC8BB00FE1D8C</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>DEA26FB510EC9F8D004C3452</string>
+				<string>DE30FD0B10ECC8BB00FE1D8C</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
 			</array>
@@ -783,13 +620,6 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>DE160F5410EC0FB0005A2F1E</string>
-		<string>DEA26FC310ECA059004C3452</string>
-		<string>DEA26FC410ECA059004C3452</string>
-		<string>1C530D57069F1CE1000CFCEE</string>
-		<string>1CD10A99069EF8BA00B06720</string>
-		<string>DEFEE5F710D80AD2001213CE</string>
-		<string>1C78EAAD065D492600B07095</string>
 		<string>/Users/daveknapik/Documents/iPhone Development/Touch app/Touch320/Touch320.xcodeproj</string>
 	</array>
 	<key>WindowString</key>

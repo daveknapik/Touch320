@@ -21,6 +21,7 @@
 		
 		self.navigationBarStyle = UIBarStyleDefault; 
 		self.navigationBarTintColor	= [UIColor blackColor];
+		self.statusBarStyle = UIStatusBarStyleBlackOpaque;
 		
 		self.newsItemLink = [query objectForKey:@"link"];
 	}
