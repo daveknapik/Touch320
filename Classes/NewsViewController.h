@@ -9,12 +9,10 @@
 #import <UIKit/UIKit.h>
 #import <Three20/Three20.h>
 
-@interface NewsViewController : UITableViewController {
-	NSMutableArray *newsItems;
+@interface NewsViewController : TTTableViewController {
 }
 
-@property (nonatomic, retain) NSMutableArray *newsItems;
 
--(id)initWithTabBar;
+-(id)initWithTabBar:(NSString *)placeholder;
 
 @end

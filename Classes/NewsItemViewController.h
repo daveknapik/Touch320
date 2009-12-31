@@ -7,13 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Three20/Three20.h>
 
-@class NewsItem;
-
-@interface NewsItemViewController : UIViewController {
-	NewsItem *newsItem;
+@interface NewsItemViewController : TTViewController {
+	NSString* _newsItemLink;
 }
 
-@property (nonatomic, retain) NewsItem *newsItem;
+@property (nonatomic, copy) NSString* newsItemLink;
+
+- (id)initWithNavigatorURL:(NSString *)placeholder query:(NSDictionary*)query;
 
 @end

@@ -8,8 +8,16 @@
 
 #import "MainTabBarController.h"
 
-
 @implementation MainTabBarController
+
+- (void)viewDidLoad {
+	[self setTabURLs:[NSArray arrayWithObjects:
+					  @"tt://news/1",
+					  @"tt://images/1",
+					  @"tt://catalogSampler/1",
+					  @"tt://radio/1",
+					  nil]];
+}
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {

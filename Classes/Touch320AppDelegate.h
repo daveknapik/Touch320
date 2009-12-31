@@ -7,16 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "ImageGalleryPhotoSource.h"
+#import <Three20/Three20.h>
 
 @interface Touch320AppDelegate : NSObject <UIApplicationDelegate> {
-	UIWindow *window;
-	UITabBarController *tabBarController;
-	ImageGalleryPhotoSource *photoSource;
+	
 }
 
-@property (nonatomic, retain) UITabBarController *tabBarController;
-@property (nonatomic, retain) UIWindow *window;
 
 @end
 

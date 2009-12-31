@@ -11,7 +11,7 @@
 
 @implementation RadioViewController
 
--(id) initWithTabBar {
+-(id) initWithTabBar:(NSString *)placeholder {
 	if ([self init]) {
 		//this is the label on the tab button itself
 		self.title = @"Radio";

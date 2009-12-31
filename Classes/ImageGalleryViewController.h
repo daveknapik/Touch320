@@ -12,4 +12,6 @@
 	
 }
 
+-(id)initWithTabBar:(NSString *)placeholder;
+
 @end

@@ -13,6 +13,6 @@
 
 }
 
--(id)initWithTabBar;
+-(id)initWithTabBar:(NSString *)placeholder;
 
 @end

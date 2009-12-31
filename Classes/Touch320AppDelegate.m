@@ -9,7 +9,7 @@
 #import "Touch320AppDelegate.h"
 #import "MainTabBarController.h"
 #import "NewsViewController.h"
-
+#import "NewsItemViewController.h"
 #import "ImageGalleryViewController.h"
 
 #import "CatalogSamplerViewController.h"
@@ -17,9 +17,6 @@
 #import "Three20/Three20.h"
 
 @implementation Touch320AppDelegate
-
-@synthesize window;
-@synthesize tabBarController;
 
 - (void)applicationDidFinishLaunching:(UIApplication *)application {    
 	// Allow HTTP response size to be unlimited.
@@ -32,65 +29,42 @@
     // since the default is unlimited.
     [[TTURLCache sharedCache] setMaxPixelCount:10*320*480];
 	
-	//set up the tabBarController and a local array of controllers
-    tabBarController = [[MainTabBarController alloc] init];
-	NSMutableArray *localControllersArray = [[NSMutableArray alloc] initWithCapacity:4];
-	UINavigationController *localNavigationController;
+	TTNavigator* navigator = [TTNavigator navigator];
+	navigator.persistenceMode = TTNavigatorPersistenceModeNone;
+	navigator.window = [[[UIWindow alloc] initWithFrame:TTScreenBounds()] autorelease];
 	
-	//set up the NewsViewController
-	NewsViewController *newsViewController;
-	newsViewController = [[NewsViewController alloc] initWithTabBar];
-	localNavigationController = [[UINavigationController alloc] initWithRootViewController:newsViewController];
-	[localControllersArray addObject:localNavigationController];
-	[localNavigationController release];
-	[newsViewController release];
+	TTURLMap* map = navigator.URLMap;
 	
-	// setup the ImageGalleryViewController
-	ImageGalleryViewController *imageGalleryViewController;
-	imageGalleryViewController = [[ImageGalleryViewController alloc] initWithTabBar];
-	localNavigationController = [[UINavigationController alloc] initWithRootViewController:imageGalleryViewController];
-	[localControllersArray addObject:localNavigationController];
-	[localNavigationController release];
-	[imageGalleryViewController release];
+	// Any URL that doesn't match will fall back on this one, and open in the web browser
+	[map from:@"*" toViewController:[TTWebController class]];
 	
-	// setup the CatalogSamplerViewController
-	CatalogSamplerViewController *catalogSamplerViewController;
-	catalogSamplerViewController = [[CatalogSamplerViewController alloc] initWithTabBar];
-	localNavigationController = [[UINavigationController alloc] initWithRootViewController:catalogSamplerViewController];
-	[localControllersArray addObject:localNavigationController];
-	[localNavigationController release];
-	[catalogSamplerViewController release];
+	[map from:@"tt://tabBar" toSharedViewController:[MainTabBarController class]];
+	[map from:@"tt://news/(initWithTabBar:)" toSharedViewController:[NewsViewController class]];
+	[map from:@"tt://newsItem/(initWithNavigatorURL:)" toViewController:[NewsItemViewController class]];
+	[map from:@"tt://images/(initWithTabBar:)" toSharedViewController:[ImageGalleryViewController class]];
+	[map from:@"tt://catalogSampler/(initWithTabBar:)" toSharedViewController:[CatalogSamplerViewController class]];
+	[map from:@"tt://radio/(initWithTabBar:)" toSharedViewController:[RadioViewController class]];
+		
+	NSLog(@"controllers created");
 	
-	// setup the RadioViewController
-	RadioViewController *radioViewController;
-	radioViewController = [[RadioViewController alloc] initWithTabBar];
-	localNavigationController = [[UINavigationController alloc] initWithRootViewController:radioViewController];
-	[localControllersArray addObject:localNavigationController];
-	[localNavigationController release];
-	[radioViewController release];
-	
-	// load up our tab bar controller with the view controllers
-	tabBarController.viewControllers = localControllersArray;
-	
-	// release the array because the tab bar controller now has it
-	[localControllersArray release];
-	
-    /* [tabBarController setViewControllers:
-     [NSArray arrayWithObjects:
-      [[[UINavigationController alloc] initWithRootViewController:[[[NewsViewController alloc] init] autorelease]] autorelease],
-      [[[UINavigationController alloc] initWithRootViewController:[[[ImageGalleryViewController alloc] init] autorelease]] autorelease],
-      nil]]; */
-	
-    // Override point for customization after application launch
-	[window addSubview:tabBarController.view];
-    [window makeKeyAndVisible];
+	// Before opening the tab bar, we see if the controller history was persisted the last time
+	if (![navigator restoreViewControllers]) {
+		//This is the first launch, so we just start with the tab bar
+		[navigator openURL:@"tt://tabBar" animated:NO];
+	}	
 }
 
+- (BOOL)navigator:(TTNavigator*)navigator shouldOpenURL:(NSURL*)URL {
+	return YES;
+}
+
+- (BOOL)application:(UIApplication*)application handleOpenURL:(NSURL*)URL {
+	[[TTNavigator navigator] openURL:URL.absoluteString animated:NO];
+	return YES;
+}
 
 - (void)dealloc {
-	[tabBarController release];
-    [window release];
-    [super dealloc];
+	[super dealloc];
 }
 
 @end
