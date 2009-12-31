@@ -13,11 +13,13 @@
 	NSString* _newsItemLink;
 	UIActivityIndicatorView* _myIndicator;
 	UILabel* _loadingText;
+	UIWebView* _webView;
 }
 
 @property (nonatomic, copy) NSString* newsItemLink;
 @property (nonatomic, retain) UIActivityIndicatorView* myIndicator;
 @property (nonatomic, retain) UILabel* loadingText;
+@property (nonatomic, retain) UIWebView* webView;
 
 - (id)initWithNavigatorURL:(NSString *)placeholder query:(NSDictionary*)query;
 

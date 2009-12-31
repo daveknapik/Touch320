@@ -275,6 +275,19 @@
 			DE30FDF310ECE36600FE1D8C /* PBXTextBookmark */ = DE30FDF310ECE36600FE1D8C /* PBXTextBookmark */;
 			DE30FDF510ECE37900FE1D8C /* PBXTextBookmark */ = DE30FDF510ECE37900FE1D8C /* PBXTextBookmark */;
 			DE30FDF710ECE3EE00FE1D8C /* PBXTextBookmark */ = DE30FDF710ECE3EE00FE1D8C /* PBXTextBookmark */;
+			DE30FDF910ECE60500FE1D8C /* PBXTextBookmark */ = DE30FDF910ECE60500FE1D8C /* PBXTextBookmark */;
+			DE30FDFA10ECE6A700FE1D8C /* PBXTextBookmark */ = DE30FDFA10ECE6A700FE1D8C /* PBXTextBookmark */;
+			DE30FDFF10ECE72E00FE1D8C /* PBXTextBookmark */ = DE30FDFF10ECE72E00FE1D8C /* PBXTextBookmark */;
+			DE30FE0010ECE72E00FE1D8C /* PBXTextBookmark */ = DE30FE0010ECE72E00FE1D8C /* PBXTextBookmark */;
+			DE30FE0110ECE72E00FE1D8C /* PBXTextBookmark */ = DE30FE0110ECE72E00FE1D8C /* PBXTextBookmark */;
+			DE30FE0210ECE72E00FE1D8C /* PBXTextBookmark */ = DE30FE0210ECE72E00FE1D8C /* PBXTextBookmark */;
+			DE30FE0310ECE72E00FE1D8C /* PBXTextBookmark */ = DE30FE0310ECE72E00FE1D8C /* PBXTextBookmark */;
+			DE30FE0410ECE72E00FE1D8C /* PBXTextBookmark */ = DE30FE0410ECE72E00FE1D8C /* PBXTextBookmark */;
+			DE30FE0510ECE72E00FE1D8C /* PBXTextBookmark */ = DE30FE0510ECE72E00FE1D8C /* PBXTextBookmark */;
+			DE30FE0610ECE72E00FE1D8C /* PBXTextBookmark */ = DE30FE0610ECE72E00FE1D8C /* PBXTextBookmark */;
+			DE30FE0710ECE72E00FE1D8C /* PBXTextBookmark */ = DE30FE0710ECE72E00FE1D8C /* PBXTextBookmark */;
+			DE30FE0910ECE88800FE1D8C /* PBXTextBookmark */ = DE30FE0910ECE88800FE1D8C /* PBXTextBookmark */;
+			DE30FE0B10ECE8AC00FE1D8C /* PBXTextBookmark */ = DE30FE0B10ECE8AC00FE1D8C /* PBXTextBookmark */;
 			DE3E4BB610D907FF00571DC6 = DE3E4BB610D907FF00571DC6 /* PBXTextBookmark */;
 			DE3E4D0F10D92B1A00571DC6 = DE3E4D0F10D92B1A00571DC6 /* PBXTextBookmark */;
 			DE3E4D1710D92B1A00571DC6 = DE3E4D1710D92B1A00571DC6 /* PBXTextBookmark */;
@@ -844,7 +857,7 @@
 		comments = "error: 'openRequest' undeclared (first use in this function)";
 		fRef = DEFEE66D10D80BC4001213CE /* NewsItemViewController.m */;
 		rLen = 0;
-		rLoc = 27;
+		rLoc = 28;
 		rType = 1;
 	};
 	DE30FD3A10ECD03A00FE1D8C /* PBXTextBookmark */ = {
@@ -852,7 +865,7 @@
 		fRef = DEFEE66D10D80BC4001213CE /* NewsItemViewController.m */;
 		name = "NewsItemViewController.m: 31";
 		rLen = 0;
-		rLoc = 1455;
+		rLoc = 1478;
 		rType = 0;
 		vrLen = 167;
 		vrLoc = 738;
@@ -872,7 +885,7 @@
 		comments = "error: 'openRequest' undeclared (first use in this function)";
 		fRef = DEFEE66D10D80BC4001213CE /* NewsItemViewController.m */;
 		rLen = 0;
-		rLoc = 27;
+		rLoc = 28;
 		rType = 1;
 	};
 	DE30FD3F10ECD06000FE1D8C /* PBXTextBookmark */ = {
@@ -880,7 +893,7 @@
 		fRef = DEFEE66D10D80BC4001213CE /* NewsItemViewController.m */;
 		name = "NewsItemViewController.m: 31";
 		rLen = 0;
-		rLoc = 1455;
+		rLoc = 1478;
 		rType = 0;
 		vrLen = 167;
 		vrLoc = 738;
@@ -900,7 +913,7 @@
 		comments = "error: 'openRequest' undeclared (first use in this function)";
 		fRef = DEFEE66D10D80BC4001213CE /* NewsItemViewController.m */;
 		rLen = 0;
-		rLoc = 27;
+		rLoc = 28;
 		rType = 1;
 	};
 	DE30FD4510ECD0B400FE1D8C /* PBXTextBookmark */ = {
@@ -908,7 +921,7 @@
 		fRef = DEFEE66D10D80BC4001213CE /* NewsItemViewController.m */;
 		name = "NewsItemViewController.m: 31";
 		rLen = 0;
-		rLoc = 1455;
+		rLoc = 1478;
 		rType = 0;
 		vrLen = 177;
 		vrLoc = 738;
@@ -988,7 +1001,7 @@
 		fRef = DEFEE66C10D80BC4001213CE /* NewsItemViewController.h */;
 		name = "NewsItemViewController.h: 20";
 		rLen = 0;
-		rLoc = 622;
+		rLoc = 694;
 		rType = 0;
 		vrLen = 499;
 		vrLoc = 0;
@@ -1008,7 +1021,7 @@
 		fRef = DEFEE66D10D80BC4001213CE /* NewsItemViewController.m */;
 		name = "NewsItemViewController.m: 28";
 		rLen = 0;
-		rLoc = 1455;
+		rLoc = 1478;
 		rType = 0;
 		vrLen = 561;
 		vrLoc = 399;
@@ -1058,7 +1071,7 @@
 		fRef = DEFEE66D10D80BC4001213CE /* NewsItemViewController.m */;
 		name = "NewsItemViewController.m: 25";
 		rLen = 0;
-		rLoc = 745;
+		rLoc = 768;
 		rType = 0;
 		vrLen = 685;
 		vrLoc = 368;
@@ -1108,7 +1121,7 @@
 		fRef = DEFEE66D10D80BC4001213CE /* NewsItemViewController.m */;
 		name = "NewsItemViewController.m: 68";
 		rLen = 0;
-		rLoc = 2452;
+		rLoc = 2500;
 		rType = 0;
 		vrLen = 561;
 		vrLoc = 1515;
@@ -1128,7 +1141,7 @@
 		fRef = DEFEE66D10D80BC4001213CE /* NewsItemViewController.m */;
 		name = "NewsItemViewController.m: 68";
 		rLen = 0;
-		rLoc = 2494;
+		rLoc = 2542;
 		rType = 0;
 		vrLen = 560;
 		vrLoc = 1515;
@@ -1178,7 +1191,7 @@
 		fRef = DEFEE66D10D80BC4001213CE /* NewsItemViewController.m */;
 		name = "NewsItemViewController.m: 68";
 		rLen = 0;
-		rLoc = 2494;
+		rLoc = 2542;
 		rType = 0;
 		vrLen = 584;
 		vrLoc = 1186;
@@ -1198,7 +1211,7 @@
 		fRef = DEFEE66D10D80BC4001213CE /* NewsItemViewController.m */;
 		name = "NewsItemViewController.m: 72";
 		rLen = 0;
-		rLoc = 2324;
+		rLoc = 2372;
 		rType = 0;
 		vrLen = 548;
 		vrLoc = 1532;
@@ -1208,7 +1221,7 @@
 		fRef = DEFEE66C10D80BC4001213CE /* NewsItemViewController.h */;
 		name = "NewsItemViewController.h: 20";
 		rLen = 0;
-		rLoc = 622;
+		rLoc = 694;
 		rType = 0;
 		vrLen = 470;
 		vrLoc = 0;
@@ -1218,7 +1231,7 @@
 		fRef = DEFEE66D10D80BC4001213CE /* NewsItemViewController.m */;
 		name = "NewsItemViewController.m: 76";
 		rLen = 0;
-		rLoc = 2324;
+		rLoc = 2372;
 		rType = 0;
 		vrLen = 488;
 		vrLoc = 1592;
@@ -1228,7 +1241,7 @@
 		fRef = DEFEE66C10D80BC4001213CE /* NewsItemViewController.h */;
 		name = "NewsItemViewController.h: 20";
 		rLen = 0;
-		rLoc = 622;
+		rLoc = 694;
 		rType = 0;
 		vrLen = 499;
 		vrLoc = 0;
@@ -1238,7 +1251,7 @@
 		fRef = DEFEE66D10D80BC4001213CE /* NewsItemViewController.m */;
 		name = "NewsItemViewController.m: 31";
 		rLen = 0;
-		rLoc = 1455;
+		rLoc = 1478;
 		rType = 0;
 		vrLen = 551;
 		vrLoc = 399;
@@ -1248,7 +1261,7 @@
 		fRef = DEFEE66C10D80BC4001213CE /* NewsItemViewController.h */;
 		name = "NewsItemViewController.h: 20";
 		rLen = 0;
-		rLoc = 622;
+		rLoc = 694;
 		rType = 0;
 		vrLen = 499;
 		vrLoc = 0;
@@ -1258,7 +1271,7 @@
 		fRef = DEFEE66D10D80BC4001213CE /* NewsItemViewController.m */;
 		name = "NewsItemViewController.m: 28";
 		rLen = 0;
-		rLoc = 1455;
+		rLoc = 1478;
 		rType = 0;
 		vrLen = 561;
 		vrLoc = 399;
@@ -1278,7 +1291,7 @@
 		fRef = DEFEE66D10D80BC4001213CE /* NewsItemViewController.m */;
 		name = "NewsItemViewController.m: 28";
 		rLen = 0;
-		rLoc = 1455;
+		rLoc = 1478;
 		rType = 0;
 		vrLen = 561;
 		vrLoc = 399;
@@ -1288,7 +1301,7 @@
 		fRef = DEFEE66C10D80BC4001213CE /* NewsItemViewController.h */;
 		name = "NewsItemViewController.h: 20";
 		rLen = 0;
-		rLoc = 622;
+		rLoc = 694;
 		rType = 0;
 		vrLen = 499;
 		vrLoc = 0;
@@ -1298,7 +1311,7 @@
 		fRef = DEFEE66D10D80BC4001213CE /* NewsItemViewController.m */;
 		name = "NewsItemViewController.m: 28";
 		rLen = 0;
-		rLoc = 1455;
+		rLoc = 1478;
 		rType = 0;
 		vrLen = 561;
 		vrLoc = 399;
@@ -1308,7 +1321,7 @@
 		fRef = DEFEE66D10D80BC4001213CE /* NewsItemViewController.m */;
 		name = "NewsItemViewController.m: 28";
 		rLen = 0;
-		rLoc = 1455;
+		rLoc = 1478;
 		rType = 0;
 		vrLen = 561;
 		vrLoc = 399;
@@ -1318,7 +1331,7 @@
 		fRef = DEFEE66C10D80BC4001213CE /* NewsItemViewController.h */;
 		name = "NewsItemViewController.h: 20";
 		rLen = 0;
-		rLoc = 622;
+		rLoc = 694;
 		rType = 0;
 		vrLen = 499;
 		vrLoc = 0;
@@ -1328,7 +1341,7 @@
 		fRef = DEFEE66D10D80BC4001213CE /* NewsItemViewController.m */;
 		name = "NewsItemViewController.m: 68";
 		rLen = 0;
-		rLoc = 2324;
+		rLoc = 2372;
 		rType = 0;
 		vrLen = 541;
 		vrLoc = 1552;
@@ -1338,7 +1351,7 @@
 		fRef = DEFEE66D10D80BC4001213CE /* NewsItemViewController.m */;
 		name = "NewsItemViewController.m: 69";
 		rLen = 0;
-		rLoc = 2324;
+		rLoc = 2372;
 		rType = 0;
 		vrLen = 555;
 		vrLoc = 1552;
@@ -1348,7 +1361,7 @@
 		fRef = DEFEE66D10D80BC4001213CE /* NewsItemViewController.m */;
 		name = "NewsItemViewController.m: 71";
 		rLen = 0;
-		rLoc = 2324;
+		rLoc = 2372;
 		rType = 0;
 		vrLen = 614;
 		vrLoc = 1552;
@@ -1358,7 +1371,7 @@
 		fRef = DEFEE66C10D80BC4001213CE /* NewsItemViewController.h */;
 		name = "NewsItemViewController.h: 19";
 		rLen = 0;
-		rLoc = 623;
+		rLoc = 695;
 		rType = 0;
 		vrLen = 424;
 		vrLoc = 0;
@@ -1368,7 +1381,7 @@
 		fRef = DEFEE66D10D80BC4001213CE /* NewsItemViewController.m */;
 		name = "NewsItemViewController.m: 65";
 		rLen = 0;
-		rLoc = 2324;
+		rLoc = 2372;
 		rType = 0;
 		vrLen = 614;
 		vrLoc = 1463;
@@ -1378,7 +1391,7 @@
 		fRef = DEFEE66D10D80BC4001213CE /* NewsItemViewController.m */;
 		name = "NewsItemViewController.m: 65";
 		rLen = 0;
-		rLoc = 2324;
+		rLoc = 2372;
 		rType = 0;
 		vrLen = 614;
 		vrLoc = 1463;
@@ -1388,7 +1401,7 @@
 		fRef = DEFEE66C10D80BC4001213CE /* NewsItemViewController.h */;
 		name = "NewsItemViewController.h: 19";
 		rLen = 0;
-		rLoc = 623;
+		rLoc = 695;
 		rType = 0;
 		vrLen = 424;
 		vrLoc = 0;
@@ -1398,7 +1411,7 @@
 		fRef = DEFEE66D10D80BC4001213CE /* NewsItemViewController.m */;
 		name = "NewsItemViewController.m: 31";
 		rLen = 0;
-		rLoc = 1455;
+		rLoc = 1478;
 		rType = 0;
 		vrLen = 586;
 		vrLoc = 368;
@@ -1408,7 +1421,7 @@
 		fRef = DEFEE66D10D80BC4001213CE /* NewsItemViewController.m */;
 		name = "NewsItemViewController.m: 29";
 		rLen = 0;
-		rLoc = 1455;
+		rLoc = 1478;
 		rType = 0;
 		vrLen = 675;
 		vrLoc = 289;
@@ -1418,7 +1431,7 @@
 		fRef = DEFEE66D10D80BC4001213CE /* NewsItemViewController.m */;
 		name = "NewsItemViewController.m: 26";
 		rLen = 0;
-		rLoc = 1455;
+		rLoc = 1478;
 		rType = 0;
 		vrLen = 649;
 		vrLoc = 289;
@@ -1428,7 +1441,7 @@
 		fRef = DEFEE66D10D80BC4001213CE /* NewsItemViewController.m */;
 		name = "NewsItemViewController.m: 26";
 		rLen = 0;
-		rLoc = 1205;
+		rLoc = 1228;
 		rType = 0;
 		vrLen = 651;
 		vrLoc = 289;
@@ -1438,7 +1451,7 @@
 		fRef = DEFEE66D10D80BC4001213CE /* NewsItemViewController.m */;
 		name = "NewsItemViewController.m: 68";
 		rLen = 0;
-		rLoc = 2323;
+		rLoc = 2371;
 		rType = 0;
 		vrLen = 586;
 		vrLoc = 1345;
@@ -1448,7 +1461,7 @@
 		fRef = DEFEE66D10D80BC4001213CE /* NewsItemViewController.m */;
 		name = "NewsItemViewController.m: 62";
 		rLen = 0;
-		rLoc = 2209;
+		rLoc = 2231;
 		rType = 0;
 		vrLen = 590;
 		vrLoc = 1345;
@@ -1458,7 +1471,7 @@
 		fRef = DEFEE66D10D80BC4001213CE /* NewsItemViewController.m */;
 		name = "NewsItemViewController.m: 61";
 		rLen = 0;
-		rLoc = 2209;
+		rLoc = 2231;
 		rType = 0;
 		vrLen = 598;
 		vrLoc = 1345;
@@ -1468,7 +1481,7 @@
 		fRef = DEFEE66D10D80BC4001213CE /* NewsItemViewController.m */;
 		name = "NewsItemViewController.m: 61";
 		rLen = 0;
-		rLoc = 2209;
+		rLoc = 2231;
 		rType = 0;
 		vrLen = 598;
 		vrLoc = 1345;
@@ -1478,7 +1491,7 @@
 		fRef = DEFEE66D10D80BC4001213CE /* NewsItemViewController.m */;
 		name = "NewsItemViewController.m: 66";
 		rLen = 0;
-		rLoc = 2276;
+		rLoc = 2344;
 		rType = 0;
 		vrLen = 533;
 		vrLoc = 1345;
@@ -1488,7 +1501,7 @@
 		fRef = DEFEE66D10D80BC4001213CE /* NewsItemViewController.m */;
 		name = "NewsItemViewController.m: 91";
 		rLen = 0;
-		rLoc = 3089;
+		rLoc = 3465;
 		rType = 0;
 		vrLen = 435;
 		vrLoc = 1826;
@@ -1508,7 +1521,7 @@
 		fRef = DEFEE66D10D80BC4001213CE /* NewsItemViewController.m */;
 		name = "NewsItemViewController.m: 91";
 		rLen = 0;
-		rLoc = 3114;
+		rLoc = 3490;
 		rType = 0;
 		vrLen = 460;
 		vrLoc = 1826;
@@ -1518,7 +1531,7 @@
 		fRef = DEFEE66D10D80BC4001213CE /* NewsItemViewController.m */;
 		name = "NewsItemViewController.m: 91";
 		rLen = 0;
-		rLoc = 3114;
+		rLoc = 3490;
 		rType = 0;
 		vrLen = 460;
 		vrLoc = 1826;
@@ -1538,7 +1551,7 @@
 		fRef = DEFEE66D10D80BC4001213CE /* NewsItemViewController.m */;
 		name = "NewsItemViewController.m: 91";
 		rLen = 0;
-		rLoc = 3114;
+		rLoc = 3490;
 		rType = 0;
 		vrLen = 460;
 		vrLoc = 1826;
@@ -1548,7 +1561,7 @@
 		fRef = DEFEE66D10D80BC4001213CE /* NewsItemViewController.m */;
 		name = "NewsItemViewController.m: 97";
 		rLen = 0;
-		rLoc = 3441;
+		rLoc = 3817;
 		rType = 0;
 		vrLen = 368;
 		vrLoc = 1997;
@@ -1558,7 +1571,7 @@
 		fRef = DEFEE66D10D80BC4001213CE /* NewsItemViewController.m */;
 		name = "NewsItemViewController.m: 55";
 		rLen = 0;
-		rLoc = 2054;
+		rLoc = 2066;
 		rType = 0;
 		vrLen = 474;
 		vrLoc = 1286;
@@ -1568,7 +1581,7 @@
 		fRef = DEFEE66D10D80BC4001213CE /* NewsItemViewController.m */;
 		name = "NewsItemViewController.m: 55";
 		rLen = 0;
-		rLoc = 2054;
+		rLoc = 2066;
 		rType = 0;
 		vrLen = 471;
 		vrLoc = 1286;
@@ -1588,7 +1601,7 @@
 		fRef = DEFEE66D10D80BC4001213CE /* NewsItemViewController.m */;
 		name = "NewsItemViewController.m: 55";
 		rLen = 0;
-		rLoc = 2054;
+		rLoc = 2066;
 		rType = 0;
 		vrLen = 471;
 		vrLoc = 1286;
@@ -1648,7 +1661,7 @@
 		fRef = DEFEE66D10D80BC4001213CE /* NewsItemViewController.m */;
 		name = "NewsItemViewController.m: 93";
 		rLen = 0;
-		rLoc = 3138;
+		rLoc = 3514;
 		rType = 0;
 		vrLen = 422;
 		vrLoc = 1935;
@@ -1658,7 +1671,7 @@
 		fRef = DEFEE66D10D80BC4001213CE /* NewsItemViewController.m */;
 		name = "NewsItemViewController.m: 97";
 		rLen = 0;
-		rLoc = 3359;
+		rLoc = 3735;
 		rType = 0;
 		vrLen = 499;
 		vrLoc = 1935;
@@ -1668,7 +1681,7 @@
 		fRef = DEFEE66D10D80BC4001213CE /* NewsItemViewController.m */;
 		name = "NewsItemViewController.m: 94";
 		rLen = 0;
-		rLoc = 3236;
+		rLoc = 3612;
 		rType = 0;
 		vrLen = 595;
 		vrLoc = 2060;
@@ -1678,7 +1691,7 @@
 		fRef = DEFEE66D10D80BC4001213CE /* NewsItemViewController.m */;
 		name = "NewsItemViewController.m: 94";
 		rLen = 0;
-		rLoc = 3236;
+		rLoc = 3612;
 		rType = 0;
 		vrLen = 589;
 		vrLoc = 2126;
@@ -1688,7 +1701,7 @@
 		fRef = DEFEE66D10D80BC4001213CE /* NewsItemViewController.m */;
 		name = "NewsItemViewController.m: 98";
 		rLen = 0;
-		rLoc = 3278;
+		rLoc = 3654;
 		rType = 0;
 		vrLen = 621;
 		vrLoc = 2123;
@@ -1698,7 +1711,7 @@
 		comments = "error: object cannot be set - either readonly property or no setter found";
 		fRef = DEFEE66D10D80BC4001213CE /* NewsItemViewController.m */;
 		rLen = 1;
-		rLoc = 96;
+		rLoc = 104;
 		rType = 1;
 	};
 	DE30FDA910ECDBE700FE1D8C /* PBXTextBookmark */ = {
@@ -1706,7 +1719,7 @@
 		fRef = DEFEE66D10D80BC4001213CE /* NewsItemViewController.m */;
 		name = "NewsItemViewController.m: 89";
 		rLen = 25;
-		rLoc = 2797;
+		rLoc = 3122;
 		rType = 0;
 		vrLen = 110;
 		vrLoc = 2476;
@@ -1736,7 +1749,7 @@
 		fRef = DEFEE66C10D80BC4001213CE /* NewsItemViewController.h */;
 		name = "NewsItemViewController.h: 18";
 		rLen = 11;
-		rLoc = 478;
+		rLoc = 500;
 		rType = 0;
 		vrLen = 553;
 		vrLoc = 0;
@@ -1746,7 +1759,7 @@
 		fRef = DEFEE66D10D80BC4001213CE /* NewsItemViewController.m */;
 		name = "NewsItemViewController.m: 92";
 		rLen = 0;
-		rLoc = 2986;
+		rLoc = 3332;
 		rType = 0;
 		vrLen = 521;
 		vrLoc = 1958;
@@ -1756,7 +1769,7 @@
 		fRef = DEFEE66D10D80BC4001213CE /* NewsItemViewController.m */;
 		name = "NewsItemViewController.m: 94";
 		rLen = 0;
-		rLoc = 3236;
+		rLoc = 3612;
 		rType = 0;
 		vrLen = 621;
 		vrLoc = 2123;
@@ -1766,7 +1779,7 @@
 		fRef = DEFEE66C10D80BC4001213CE /* NewsItemViewController.h */;
 		name = "NewsItemViewController.h: 18";
 		rLen = 11;
-		rLoc = 478;
+		rLoc = 500;
 		rType = 0;
 		vrLen = 553;
 		vrLoc = 0;
@@ -1776,7 +1789,7 @@
 		fRef = DEFEE66D10D80BC4001213CE /* NewsItemViewController.m */;
 		name = "NewsItemViewController.m: 85";
 		rLen = 0;
-		rLoc = 2803;
+		rLoc = 3128;
 		rType = 0;
 		vrLen = 562;
 		vrLoc = 1760;
@@ -1796,7 +1809,7 @@
 		fRef = DEFEE66D10D80BC4001213CE /* NewsItemViewController.m */;
 		name = "NewsItemViewController.m: 92";
 		rLen = 0;
-		rLoc = 2986;
+		rLoc = 3332;
 		rType = 0;
 		vrLen = 521;
 		vrLoc = 1958;
@@ -1806,7 +1819,7 @@
 		fRef = DEFEE66C10D80BC4001213CE /* NewsItemViewController.h */;
 		name = "NewsItemViewController.h: 18";
 		rLen = 11;
-		rLoc = 478;
+		rLoc = 500;
 		rType = 0;
 		vrLen = 553;
 		vrLoc = 0;
@@ -1816,7 +1829,7 @@
 		fRef = DEFEE66D10D80BC4001213CE /* NewsItemViewController.m */;
 		name = "NewsItemViewController.m: 104";
 		rLen = 0;
-		rLoc = 3278;
+		rLoc = 3654;
 		rType = 0;
 		vrLen = 410;
 		vrLoc = 2476;
@@ -1826,7 +1839,7 @@
 		fRef = DEFEE66D10D80BC4001213CE /* NewsItemViewController.m */;
 		name = "NewsItemViewController.m: 109";
 		rLen = 0;
-		rLoc = 3436;
+		rLoc = 3812;
 		rType = 0;
 		vrLen = 469;
 		vrLoc = 2446;
@@ -1836,7 +1849,7 @@
 		fRef = DEFEE66D10D80BC4001213CE /* NewsItemViewController.m */;
 		name = "NewsItemViewController.m: 30";
 		rLen = 0;
-		rLoc = 1298;
+		rLoc = 1321;
 		rType = 0;
 		vrLen = 761;
 		vrLoc = 427;
@@ -1846,7 +1859,7 @@
 		fRef = DEFEE66D10D80BC4001213CE /* NewsItemViewController.m */;
 		name = "NewsItemViewController.m: 104";
 		rLen = 0;
-		rLoc = 3278;
+		rLoc = 3654;
 		rType = 0;
 		vrLen = 420;
 		vrLoc = 2502;
@@ -1856,7 +1869,7 @@
 		fRef = DEFEE66C10D80BC4001213CE /* NewsItemViewController.h */;
 		name = "NewsItemViewController.h: 20";
 		rLen = 11;
-		rLoc = 530;
+		rLoc = 552;
 		rType = 0;
 		vrLen = 629;
 		vrLoc = 0;
@@ -1866,7 +1879,7 @@
 		fRef = DEFEE66D10D80BC4001213CE /* NewsItemViewController.m */;
 		name = "NewsItemViewController.m: 104";
 		rLen = 0;
-		rLoc = 3278;
+		rLoc = 3654;
 		rType = 0;
 		vrLen = 520;
 		vrLoc = 2395;
@@ -1876,7 +1889,7 @@
 		fRef = DEFEE66D10D80BC4001213CE /* NewsItemViewController.m */;
 		name = "NewsItemViewController.m: 104";
 		rLen = 0;
-		rLoc = 3278;
+		rLoc = 3654;
 		rType = 0;
 		vrLen = 520;
 		vrLoc = 2395;
@@ -1886,7 +1899,7 @@
 		fRef = DEFEE66C10D80BC4001213CE /* NewsItemViewController.h */;
 		name = "NewsItemViewController.h: 20";
 		rLen = 11;
-		rLoc = 530;
+		rLoc = 552;
 		rType = 0;
 		vrLen = 629;
 		vrLoc = 0;
@@ -1896,7 +1909,7 @@
 		fRef = DEFEE66D10D80BC4001213CE /* NewsItemViewController.m */;
 		name = "NewsItemViewController.m: 93";
 		rLen = 0;
-		rLoc = 2896;
+		rLoc = 3242;
 		rType = 0;
 		vrLen = 869;
 		vrLoc = 321;
@@ -1906,7 +1919,7 @@
 		fRef = DEFEE66D10D80BC4001213CE /* NewsItemViewController.m */;
 		name = "NewsItemViewController.m: 31";
 		rLen = 0;
-		rLoc = 973;
+		rLoc = 996;
 		rType = 0;
 		vrLen = 978;
 		vrLoc = 321;
@@ -1916,7 +1929,7 @@
 		fRef = DEFEE66D10D80BC4001213CE /* NewsItemViewController.m */;
 		name = "NewsItemViewController.m: 117";
 		rLen = 0;
-		rLoc = 3438;
+		rLoc = 3814;
 		rType = 0;
 		vrLen = 465;
 		vrLoc = 2716;
@@ -1926,7 +1939,7 @@
 		fRef = DEFEE66D10D80BC4001213CE /* NewsItemViewController.m */;
 		name = "NewsItemViewController.m: 32";
 		rLen = 0;
-		rLoc = 973;
+		rLoc = 996;
 		rType = 0;
 		vrLen = 862;
 		vrLoc = 524;
@@ -1936,7 +1949,7 @@
 		fRef = DEFEE66D10D80BC4001213CE /* NewsItemViewController.m */;
 		name = "NewsItemViewController.m: 30";
 		rLen = 0;
-		rLoc = 873;
+		rLoc = 896;
 		rType = 0;
 		vrLen = 861;
 		vrLoc = 524;
@@ -1946,7 +1959,7 @@
 		fRef = DEFEE66D10D80BC4001213CE /* NewsItemViewController.m */;
 		name = "NewsItemViewController.m: 33";
 		rLen = 0;
-		rLoc = 1082;
+		rLoc = 1105;
 		rType = 0;
 		vrLen = 1005;
 		vrLoc = 247;
@@ -1956,7 +1969,7 @@
 		fRef = DEFEE66D10D80BC4001213CE /* NewsItemViewController.m */;
 		name = "NewsItemViewController.m: 30";
 		rLen = 0;
-		rLoc = 877;
+		rLoc = 900;
 		rType = 0;
 		vrLen = 1003;
 		vrLoc = 247;
@@ -1966,7 +1979,7 @@
 		fRef = DEFEE66D10D80BC4001213CE /* NewsItemViewController.m */;
 		name = "NewsItemViewController.m: 30";
 		rLen = 0;
-		rLoc = 877;
+		rLoc = 900;
 		rType = 0;
 		vrLen = 1005;
 		vrLoc = 247;
@@ -1976,7 +1989,7 @@
 		fRef = DEFEE66D10D80BC4001213CE /* NewsItemViewController.m */;
 		name = "NewsItemViewController.m: 119";
 		rLen = 0;
-		rLoc = 3403;
+		rLoc = 3779;
 		rType = 0;
 		vrLen = 504;
 		vrLoc = 2827;
@@ -1986,7 +1999,7 @@
 		fRef = DEFEE66D10D80BC4001213CE /* NewsItemViewController.m */;
 		name = "NewsItemViewController.m: 34";
 		rLen = 0;
-		rLoc = 1082;
+		rLoc = 1105;
 		rType = 0;
 		vrLen = 1072;
 		vrLoc = 353;
@@ -1996,7 +2009,7 @@
 		fRef = DEFEE66D10D80BC4001213CE /* NewsItemViewController.m */;
 		name = "NewsItemViewController.m: 34";
 		rLen = 0;
-		rLoc = 1080;
+		rLoc = 1103;
 		rType = 0;
 		vrLen = 1072;
 		vrLoc = 353;
@@ -2006,7 +2019,7 @@
 		fRef = DEFEE66D10D80BC4001213CE /* NewsItemViewController.m */;
 		name = "NewsItemViewController.m: 30";
 		rLen = 0;
-		rLoc = 877;
+		rLoc = 900;
 		rType = 0;
 		vrLen = 1071;
 		vrLoc = 353;
@@ -2036,7 +2049,7 @@
 		fRef = DEFEE66D10D80BC4001213CE /* NewsItemViewController.m */;
 		name = "NewsItemViewController.m: 30";
 		rLen = 0;
-		rLoc = 877;
+		rLoc = 900;
 		rType = 0;
 		vrLen = 525;
 		vrLoc = 2498;
@@ -2046,7 +2059,7 @@
 		fRef = DEFEE66D10D80BC4001213CE /* NewsItemViewController.m */;
 		name = "NewsItemViewController.m: 30";
 		rLen = 0;
-		rLoc = 877;
+		rLoc = 900;
 		rType = 0;
 		vrLen = 525;
 		vrLoc = 2498;
@@ -2076,7 +2089,7 @@
 		fRef = DEFEE66D10D80BC4001213CE /* NewsItemViewController.m */;
 		name = "NewsItemViewController.m: 99";
 		rLen = 0;
-		rLoc = 2896;
+		rLoc = 3242;
 		rType = 0;
 		vrLen = 525;
 		vrLoc = 2498;
@@ -2126,7 +2139,7 @@
 		fRef = DEFEE66D10D80BC4001213CE /* NewsItemViewController.m */;
 		name = "NewsItemViewController.m: 100";
 		rLen = 0;
-		rLoc = 2896;
+		rLoc = 3242;
 		rType = 0;
 		vrLen = 529;
 		vrLoc = 2588;
@@ -2136,7 +2149,7 @@
 		fRef = DEFEE66D10D80BC4001213CE /* NewsItemViewController.m */;
 		name = "NewsItemViewController.m: 100";
 		rLen = 0;
-		rLoc = 2896;
+		rLoc = 3242;
 		rType = 0;
 		vrLen = 529;
 		vrLoc = 2588;
@@ -2186,7 +2199,7 @@
 		fRef = DEFEE66D10D80BC4001213CE /* NewsItemViewController.m */;
 		name = "NewsItemViewController.m: 66";
 		rLen = 0;
-		rLoc = 2025;
+		rLoc = 2032;
 		rType = 0;
 		vrLen = 474;
 		vrLoc = 1851;
@@ -2196,7 +2209,7 @@
 		fRef = DEFEE66D10D80BC4001213CE /* NewsItemViewController.m */;
 		name = "NewsItemViewController.m: 66";
 		rLen = 0;
-		rLoc = 2025;
+		rLoc = 2032;
 		rType = 0;
 		vrLen = 474;
 		vrLoc = 1851;
@@ -2206,7 +2219,7 @@
 		fRef = DEFEE66D10D80BC4001213CE /* NewsItemViewController.m */;
 		name = "NewsItemViewController.m: 66";
 		rLen = 0;
-		rLoc = 2025;
+		rLoc = 2032;
 		rType = 0;
 		vrLen = 474;
 		vrLoc = 1851;
@@ -2216,7 +2229,7 @@
 		fRef = DEFEE66D10D80BC4001213CE /* NewsItemViewController.m */;
 		name = "NewsItemViewController.m: 34";
 		rLen = 3;
-		rLoc = 1077;
+		rLoc = 1100;
 		rType = 0;
 		vrLen = 855;
 		vrLoc = 636;
@@ -2226,7 +2239,7 @@
 		fRef = DEFEE66D10D80BC4001213CE /* NewsItemViewController.m */;
 		name = "NewsItemViewController.m: 34";
 		rLen = 0;
-		rLoc = 1080;
+		rLoc = 1103;
 		rType = 0;
 		vrLen = 855;
 		vrLoc = 636;
@@ -2236,7 +2249,7 @@
 		fRef = DEFEE66D10D80BC4001213CE /* NewsItemViewController.m */;
 		name = "NewsItemViewController.m: 37";
 		rLen = 0;
-		rLoc = 1254;
+		rLoc = 1277;
 		rType = 0;
 		vrLen = 855;
 		vrLoc = 636;
@@ -2246,10 +2259,140 @@
 		fRef = DEFEE66D10D80BC4001213CE /* NewsItemViewController.m */;
 		name = "NewsItemViewController.m: 111";
 		rLen = 0;
-		rLoc = 3085;
+		rLoc = 3461;
 		rType = 0;
 		vrLen = 531;
 		vrLoc = 2873;
+	};
+	DE30FDF910ECE60500FE1D8C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = DEFEE66D10D80BC4001213CE /* NewsItemViewController.m */;
+		name = "NewsItemViewController.m: 75";
+		rLen = 0;
+		rLoc = 2302;
+		rType = 0;
+		vrLen = 477;
+		vrLoc = 1884;
+	};
+	DE30FDFA10ECE6A700FE1D8C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = DEFEE66D10D80BC4001213CE /* NewsItemViewController.m */;
+		name = "NewsItemViewController.m: 108";
+		rLen = 0;
+		rLoc = 3396;
+		rType = 0;
+		vrLen = 519;
+		vrLoc = 2686;
+	};
+	DE30FDFF10ECE72E00FE1D8C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = DEFEE66C10D80BC4001213CE /* NewsItemViewController.h */;
+		name = "NewsItemViewController.h: 22";
+		rLen = 0;
+		rLoc = 606;
+		rType = 0;
+		vrLen = 698;
+		vrLoc = 3;
+	};
+	DE30FE0010ECE72E00FE1D8C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = DEFEE66D10D80BC4001213CE /* NewsItemViewController.m */;
+		name = "NewsItemViewController.m: 75";
+		rLen = 0;
+		rLoc = 2268;
+		rType = 0;
+		vrLen = 711;
+		vrLoc = 1551;
+	};
+	DE30FE0110ECE72E00FE1D8C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = DEFEE66D10D80BC4001213CE /* NewsItemViewController.m */;
+		name = "NewsItemViewController.m: 108";
+		rLen = 0;
+		rLoc = 3396;
+		rType = 0;
+		vrLen = 519;
+		vrLoc = 2686;
+	};
+	DE30FE0210ECE72E00FE1D8C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = DEFEE66C10D80BC4001213CE /* NewsItemViewController.h */;
+		name = "NewsItemViewController.h: 20";
+		rLen = 11;
+		rLoc = 552;
+		rType = 0;
+		vrLen = 629;
+		vrLoc = 0;
+	};
+	DE30FE0310ECE72E00FE1D8C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = DEFEE66D10D80BC4001213CE /* NewsItemViewController.m */;
+		name = "NewsItemViewController.m: 108";
+		rLen = 0;
+		rLoc = 3396;
+		rType = 0;
+		vrLen = 519;
+		vrLoc = 2686;
+	};
+	DE30FE0410ECE72E00FE1D8C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = DEFEE66C10D80BC4001213CE /* NewsItemViewController.h */;
+		name = "NewsItemViewController.h: 22";
+		rLen = 0;
+		rLoc = 614;
+		rType = 0;
+		vrLen = 696;
+		vrLoc = 0;
+	};
+	DE30FE0510ECE72E00FE1D8C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = DEFEE66D10D80BC4001213CE /* NewsItemViewController.m */;
+		name = "NewsItemViewController.m: 75";
+		rLen = 0;
+		rLoc = 2268;
+		rType = 0;
+		vrLen = 711;
+		vrLoc = 1551;
+	};
+	DE30FE0610ECE72E00FE1D8C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = DEFEE66C10D80BC4001213CE /* NewsItemViewController.h */;
+		name = "NewsItemViewController.h: 22";
+		rLen = 0;
+		rLoc = 606;
+		rType = 0;
+		vrLen = 698;
+		vrLoc = 3;
+	};
+	DE30FE0710ECE72E00FE1D8C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = DEFEE66D10D80BC4001213CE /* NewsItemViewController.m */;
+		name = "NewsItemViewController.m: 77";
+		rLen = 0;
+		rLoc = 2333;
+		rType = 0;
+		vrLen = 639;
+		vrLoc = 2036;
+	};
+	DE30FE0910ECE88800FE1D8C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = DEFEE66D10D80BC4001213CE /* NewsItemViewController.m */;
+		name = "NewsItemViewController.m: 91";
+		rLen = 0;
+		rLoc = 2814;
+		rType = 0;
+		vrLen = 706;
+		vrLoc = 2305;
+	};
+	DE30FE0B10ECE8AC00FE1D8C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = DEFEE66D10D80BC4001213CE /* NewsItemViewController.m */;
+		name = "NewsItemViewController.m: 93";
+		rLen = 0;
+		rLoc = 2823;
+		rType = 0;
+		vrLen = 710;
+		vrLoc = 2305;
 	};
 	DE3E4BB610D907FF00571DC6 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
@@ -3183,7 +3326,7 @@
 		fRef = DEFEE66D10D80BC4001213CE /* NewsItemViewController.m */;
 		name = "NewsItemViewController.m: 58";
 		rLen = 0;
-		rLoc = 2897;
+		rLoc = 3243;
 		rType = 0;
 		vrLen = 821;
 		vrLoc = 185;
@@ -3213,7 +3356,7 @@
 		fRef = DEFEE66D10D80BC4001213CE /* NewsItemViewController.m */;
 		name = "NewsItemViewController.m: 46";
 		rLen = 0;
-		rLoc = 2497;
+		rLoc = 2545;
 		rType = 0;
 		vrLen = 625;
 		vrLoc = 1061;
@@ -3303,7 +3446,7 @@
 		fRef = DEFEE66D10D80BC4001213CE /* NewsItemViewController.m */;
 		name = "NewsItemViewController.m: 31";
 		rLen = 0;
-		rLoc = 2184;
+		rLoc = 2201;
 		rType = 0;
 		vrLen = 657;
 		vrLoc = 0;
@@ -3353,7 +3496,7 @@
 		fRef = DEFEE66D10D80BC4001213CE /* NewsItemViewController.m */;
 		name = "NewsItemViewController.m: 18";
 		rLen = 0;
-		rLoc = 432;
+		rLoc = 455;
 		rType = 0;
 		vrLen = 606;
 		vrLoc = 206;
@@ -3383,7 +3526,7 @@
 		fRef = DEFEE66D10D80BC4001213CE /* NewsItemViewController.m */;
 		name = "NewsItemViewController.m: 18";
 		rLen = 0;
-		rLoc = 432;
+		rLoc = 455;
 		rType = 0;
 		vrLen = 573;
 		vrLoc = 206;
@@ -3413,7 +3556,7 @@
 		fRef = DEFEE66D10D80BC4001213CE /* NewsItemViewController.m */;
 		name = "NewsItemViewController.m: 16";
 		rLen = 20;
-		rLoc = 359;
+		rLoc = 382;
 		rType = 0;
 		vrLen = 389;
 		vrLoc = 269;
@@ -3433,7 +3576,7 @@
 		fRef = DEFEE66D10D80BC4001213CE /* NewsItemViewController.m */;
 		name = "NewsItemViewController.m: 16";
 		rLen = 20;
-		rLoc = 359;
+		rLoc = 382;
 		rType = 0;
 		vrLen = 389;
 		vrLoc = 269;
@@ -3473,7 +3616,7 @@
 		fRef = DEFEE66D10D80BC4001213CE /* NewsItemViewController.m */;
 		name = "NewsItemViewController.m: 13";
 		rLen = 0;
-		rLoc = 352;
+		rLoc = 375;
 		rType = 0;
 		vrLen = 436;
 		vrLoc = 206;
@@ -3493,7 +3636,7 @@
 		fRef = DEFEE66D10D80BC4001213CE /* NewsItemViewController.m */;
 		name = "NewsItemViewController.m: 13";
 		rLen = 0;
-		rLoc = 352;
+		rLoc = 375;
 		rType = 0;
 		vrLen = 523;
 		vrLoc = 0;
@@ -3543,7 +3686,7 @@
 		fRef = DEFEE66D10D80BC4001213CE /* NewsItemViewController.m */;
 		name = "NewsItemViewController.m: 15";
 		rLen = 0;
-		rLoc = 432;
+		rLoc = 455;
 		rType = 0;
 		vrLen = 488;
 		vrLoc = 149;
@@ -3563,7 +3706,7 @@
 		fRef = DEFEE66D10D80BC4001213CE /* NewsItemViewController.m */;
 		name = "NewsItemViewController.m: 15";
 		rLen = 0;
-		rLoc = 432;
+		rLoc = 455;
 		rType = 0;
 		vrLen = 488;
 		vrLoc = 149;
@@ -3613,7 +3756,7 @@
 		fRef = DEFEE66D10D80BC4001213CE /* NewsItemViewController.m */;
 		name = "NewsItemViewController.m: 15";
 		rLen = 0;
-		rLoc = 432;
+		rLoc = 455;
 		rType = 0;
 		vrLen = 488;
 		vrLoc = 149;
@@ -3643,7 +3786,7 @@
 		fRef = DEFEE66D10D80BC4001213CE /* NewsItemViewController.m */;
 		name = "NewsItemViewController.m: 24";
 		rLen = 0;
-		rLoc = 1455;
+		rLoc = 1478;
 		rType = 0;
 		vrLen = 501;
 		vrLoc = 247;
@@ -3703,7 +3846,7 @@
 		fRef = DEFEE66D10D80BC4001213CE /* NewsItemViewController.m */;
 		name = "NewsItemViewController.m: 24";
 		rLen = 0;
-		rLoc = 1455;
+		rLoc = 1478;
 		rType = 0;
 		vrLen = 610;
 		vrLoc = 87;
@@ -3723,7 +3866,7 @@
 		fRef = DEFEE66D10D80BC4001213CE /* NewsItemViewController.m */;
 		name = "NewsItemViewController.m: 14";
 		rLen = 50;
-		rLoc = 353;
+		rLoc = 376;
 		rType = 0;
 		vrLen = 610;
 		vrLoc = 87;
@@ -3743,7 +3886,7 @@
 		fRef = DEFEE66C10D80BC4001213CE /* NewsItemViewController.h */;
 		name = "NewsItemViewController.h: 15";
 		rLen = 0;
-		rLoc = 622;
+		rLoc = 694;
 		rType = 0;
 		vrLen = 334;
 		vrLoc = 0;
@@ -3773,7 +3916,7 @@
 		fRef = DEFEE66D10D80BC4001213CE /* NewsItemViewController.m */;
 		name = "NewsItemViewController.m: 14";
 		rLen = 50;
-		rLoc = 353;
+		rLoc = 376;
 		rType = 0;
 		vrLen = 554;
 		vrLoc = 622;
@@ -3823,7 +3966,7 @@
 		fRef = DEFEE66D10D80BC4001213CE /* NewsItemViewController.m */;
 		name = "NewsItemViewController.m: 26";
 		rLen = 0;
-		rLoc = 1458;
+		rLoc = 1481;
 		rType = 0;
 		vrLen = 545;
 		vrLoc = 146;
@@ -3963,7 +4106,7 @@
 		fRef = DEFEE66D10D80BC4001213CE /* NewsItemViewController.m */;
 		name = "NewsItemViewController.m: 26";
 		rLen = 0;
-		rLoc = 1458;
+		rLoc = 1481;
 		rType = 0;
 		vrLen = 536;
 		vrLoc = 185;
@@ -4023,7 +4166,7 @@
 		fRef = DEFEE66D10D80BC4001213CE /* NewsItemViewController.m */;
 		name = "NewsItemViewController.m: 26";
 		rLen = 0;
-		rLoc = 1458;
+		rLoc = 1481;
 		rType = 0;
 		vrLen = 669;
 		vrLoc = 688;
@@ -4093,7 +4236,7 @@
 		fRef = DEFEE66D10D80BC4001213CE /* NewsItemViewController.m */;
 		name = "NewsItemViewController.m: 26";
 		rLen = 0;
-		rLoc = 1458;
+		rLoc = 1481;
 		rType = 0;
 		vrLen = 669;
 		vrLoc = 688;
@@ -4103,7 +4246,7 @@
 		fRef = DEFEE66C10D80BC4001213CE /* NewsItemViewController.h */;
 		name = "NewsItemViewController.h: 15";
 		rLen = 0;
-		rLoc = 622;
+		rLoc = 694;
 		rType = 0;
 		vrLen = 334;
 		vrLoc = 0;
@@ -4113,7 +4256,7 @@
 		fRef = DEFEE66D10D80BC4001213CE /* NewsItemViewController.m */;
 		name = "NewsItemViewController.m: 26";
 		rLen = 0;
-		rLoc = 1458;
+		rLoc = 1481;
 		rType = 0;
 		vrLen = 643;
 		vrLoc = 45;
@@ -4123,7 +4266,7 @@
 		fRef = DEFEE66C10D80BC4001213CE /* NewsItemViewController.h */;
 		name = "NewsItemViewController.h: 15";
 		rLen = 0;
-		rLoc = 622;
+		rLoc = 694;
 		rType = 0;
 		vrLen = 334;
 		vrLoc = 0;
@@ -4133,7 +4276,7 @@
 		fRef = DEFEE66D10D80BC4001213CE /* NewsItemViewController.m */;
 		name = "NewsItemViewController.m: 26";
 		rLen = 0;
-		rLoc = 1458;
+		rLoc = 1481;
 		rType = 0;
 		vrLen = 643;
 		vrLoc = 45;
@@ -4153,7 +4296,7 @@
 		fRef = DEFEE66D10D80BC4001213CE /* NewsItemViewController.m */;
 		name = "NewsItemViewController.m: 26";
 		rLen = 0;
-		rLoc = 1458;
+		rLoc = 1481;
 		rType = 0;
 		vrLen = 643;
 		vrLoc = 45;
@@ -4193,7 +4336,7 @@
 		fRef = DEFEE66D10D80BC4001213CE /* NewsItemViewController.m */;
 		name = "NewsItemViewController.m: 14";
 		rLen = 0;
-		rLoc = 430;
+		rLoc = 453;
 		rType = 0;
 		vrLen = 655;
 		vrLoc = 45;
@@ -4203,7 +4346,7 @@
 		fRef = DEFEE66C10D80BC4001213CE /* NewsItemViewController.h */;
 		name = "NewsItemViewController.h: 15";
 		rLen = 0;
-		rLoc = 621;
+		rLoc = 693;
 		rType = 0;
 		vrLen = 346;
 		vrLoc = 0;
@@ -4213,7 +4356,7 @@
 		fRef = DEFEE66D10D80BC4001213CE /* NewsItemViewController.m */;
 		name = "NewsItemViewController.m: 14";
 		rLen = 0;
-		rLoc = 430;
+		rLoc = 453;
 		rType = 0;
 		vrLen = 567;
 		vrLoc = 149;
@@ -4233,7 +4376,7 @@
 		fRef = DEFEE66C10D80BC4001213CE /* NewsItemViewController.h */;
 		name = "NewsItemViewController.h: 15";
 		rLen = 0;
-		rLoc = 621;
+		rLoc = 693;
 		rType = 0;
 		vrLen = 346;
 		vrLoc = 0;
@@ -4243,7 +4386,7 @@
 		fRef = DEFEE66D10D80BC4001213CE /* NewsItemViewController.m */;
 		name = "NewsItemViewController.m: 14";
 		rLen = 0;
-		rLoc = 430;
+		rLoc = 453;
 		rType = 0;
 		vrLen = 617;
 		vrLoc = 42;
@@ -4253,7 +4396,7 @@
 		fRef = DEFEE66C10D80BC4001213CE /* NewsItemViewController.h */;
 		name = "NewsItemViewController.h: 15";
 		rLen = 0;
-		rLoc = 621;
+		rLoc = 693;
 		rType = 0;
 		vrLen = 319;
 		vrLoc = 0;
@@ -4263,7 +4406,7 @@
 		fRef = DEFEE66D10D80BC4001213CE /* NewsItemViewController.m */;
 		name = "NewsItemViewController.m: 26";
 		rLen = 0;
-		rLoc = 1458;
+		rLoc = 1481;
 		rType = 0;
 		vrLen = 617;
 		vrLoc = 42;
@@ -4343,7 +4486,7 @@
 		fRef = DEFEE66D10D80BC4001213CE /* NewsItemViewController.m */;
 		name = "NewsItemViewController.m: 35";
 		rLen = 0;
-		rLoc = 1505;
+		rLoc = 1528;
 		rType = 0;
 		vrLen = 756;
 		vrLoc = 778;
@@ -4373,7 +4516,7 @@
 		fRef = DEFEE66D10D80BC4001213CE /* NewsItemViewController.m */;
 		name = "NewsItemViewController.m: 35";
 		rLen = 0;
-		rLoc = 1505;
+		rLoc = 1528;
 		rType = 0;
 		vrLen = 628;
 		vrLoc = 45;
@@ -4483,7 +4626,7 @@
 		fRef = DEFEE66D10D80BC4001213CE /* NewsItemViewController.m */;
 		name = "NewsItemViewController.m: 14";
 		rLen = 26;
-		rLoc = 404;
+		rLoc = 427;
 		rType = 0;
 		vrLen = 548;
 		vrLoc = 185;
@@ -4493,7 +4636,7 @@
 		fRef = DEFEE66C10D80BC4001213CE /* NewsItemViewController.h */;
 		name = "NewsItemViewController.h: 15";
 		rLen = 0;
-		rLoc = 621;
+		rLoc = 693;
 		rType = 0;
 		vrLen = 346;
 		vrLoc = 0;
@@ -4503,7 +4646,7 @@
 		fRef = DEFEE66D10D80BC4001213CE /* NewsItemViewController.m */;
 		name = "NewsItemViewController.m: 14";
 		rLen = 26;
-		rLoc = 404;
+		rLoc = 427;
 		rType = 0;
 		vrLen = 548;
 		vrLoc = 185;
@@ -4533,7 +4676,7 @@
 		fRef = DEFEE66C10D80BC4001213CE /* NewsItemViewController.h */;
 		name = "NewsItemViewController.h: 16";
 		rLen = 0;
-		rLoc = 399;
+		rLoc = 421;
 		rType = 0;
 		vrLen = 425;
 		vrLoc = 0;
@@ -4543,7 +4686,7 @@
 		fRef = DEFEE66D10D80BC4001213CE /* NewsItemViewController.m */;
 		name = "NewsItemViewController.m: 46";
 		rLen = 0;
-		rLoc = 1912;
+		rLoc = 1935;
 		rType = 0;
 		vrLen = 571;
 		vrLoc = 185;
@@ -4553,7 +4696,7 @@
 		fRef = DEFEE66C10D80BC4001213CE /* NewsItemViewController.h */;
 		name = "NewsItemViewController.h: 16";
 		rLen = 0;
-		rLoc = 490;
+		rLoc = 512;
 		rType = 0;
 		vrLen = 425;
 		vrLoc = 0;
@@ -4573,7 +4716,7 @@
 		fRef = DEFEE66C10D80BC4001213CE /* NewsItemViewController.h */;
 		name = "NewsItemViewController.h: 16";
 		rLen = 0;
-		rLoc = 490;
+		rLoc = 512;
 		rType = 0;
 		vrLen = 425;
 		vrLoc = 0;
@@ -4593,7 +4736,7 @@
 		fRef = DEFEE66C10D80BC4001213CE /* NewsItemViewController.h */;
 		name = "NewsItemViewController.h: 16";
 		rLen = 0;
-		rLoc = 399;
+		rLoc = 421;
 		rType = 0;
 		vrLen = 425;
 		vrLoc = 0;
@@ -4623,7 +4766,7 @@
 		fRef = DEFEE66D10D80BC4001213CE /* NewsItemViewController.m */;
 		name = "NewsItemViewController.m: 20";
 		rLen = 0;
-		rLoc = 581;
+		rLoc = 604;
 		rType = 0;
 		vrLen = 606;
 		vrLoc = 185;
@@ -4683,7 +4826,7 @@
 		fRef = DEFEE66D10D80BC4001213CE /* NewsItemViewController.m */;
 		name = "NewsItemViewController.m: 55";
 		rLen = 0;
-		rLoc = 2207;
+		rLoc = 2224;
 		rType = 0;
 		vrLen = 513;
 		vrLoc = 1116;
@@ -4703,7 +4846,7 @@
 		fRef = DEFEE66D10D80BC4001213CE /* NewsItemViewController.m */;
 		name = "NewsItemViewController.m: 55";
 		rLen = 0;
-		rLoc = 2207;
+		rLoc = 2224;
 		rType = 0;
 		vrLen = 513;
 		vrLoc = 1116;
@@ -4946,16 +5089,16 @@
 	};
 	DEFEE66C10D80BC4001213CE /* NewsItemViewController.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {770, 350}}";
-			sepNavSelRange = "{530, 11}";
-			sepNavVisRange = "{0, 629}";
+			sepNavIntBoundsRect = "{{0, 0}, {770, 378}}";
+			sepNavSelRange = "{606, 0}";
+			sepNavVisRange = "{3, 698}";
 		};
 	};
 	DEFEE66D10D80BC4001213CE /* NewsItemViewController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {984, 1806}}";
-			sepNavSelRange = "{3085, 0}";
-			sepNavVisRange = "{2873, 531}";
+			sepNavIntBoundsRect = "{{0, 0}, {984, 1848}}";
+			sepNavSelRange = "{2823, 0}";
+			sepNavVisRange = "{2305, 710}";
 		};
 	};
 }

@@ -13,7 +13,8 @@
 
 @synthesize newsItemLink = _newsItemLink, 
 			myIndicator = _myIndicator,
-			loadingText = _loadingText;
+			loadingText = _loadingText,
+			webView = _webView;
 
 - (id)initWithNavigatorURL:(NSString *)placeholder query:(NSDictionary*)query
 {
@@ -62,28 +63,35 @@
 
 */
 - (void)viewDidLoad {
-	UIWebView *webView;
-	webView = [[UIWebView alloc] initWithFrame:CGRectMake(0, 0, 320, 366)];
-	webView.delegate = self;
+	self.webView = [[UIWebView alloc] initWithFrame:CGRectMake(0, 0, 320, 366)];
+	self.webView.delegate = self;
 	
 	NSURL *url = [NSURL URLWithString:self.newsItemLink];
 	NSURLRequest *request = [NSURLRequest requestWithURL:url];
 	
-	[webView loadRequest:request];
+	[self.webView loadRequest:request];
 	
-	webView.scalesPageToFit = YES;
+	self.webView.scalesPageToFit = YES;
+	self.webView.autoresizesSubviews = YES;
 	
-	[self.view addSubview:webView];
+	[self.view addSubview:self.webView];
 	
-	[webView release];
     [super viewDidLoad];
 }
 
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
-{
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
 	return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
 } 
  
+/*- (void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation {
+	if (fromInterfaceOrientation == UIInterfaceOrientationPortrait) {
+		self.webView.frame = CGRectMake(0,0,366,320);
+	}
+	else {
+		self.webView.frame = CGRectMake(0,0,320,366);
+	}
+}*/
+
 - (void)didReceiveMemoryWarning {
 	// Releases the view if it doesn't have a superview.
     [super didReceiveMemoryWarning];
@@ -97,6 +105,7 @@
 	self.myIndicator = nil;
 	self.newsItemLink = nil;
 	self.loadingText = nil;
+	self.webView = nil;
 	[super viewDidUnload];
 }
 
@@ -105,6 +114,7 @@
 	TT_RELEASE_SAFELY(_myIndicator); 
 	TT_RELEASE_SAFELY(_newsItemLink);
 	TT_RELEASE_SAFELY(_loadingText);
+	TT_RELEASE_SAFELY(_webView);
     [super dealloc];
 }
 
