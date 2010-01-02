@@ -32,7 +32,7 @@
     NSArray *results = [root objectForKey:@"photo"];
     for (NSDictionary *rawResult in results) {        
 		
-		NSString* bigURL = [rawResult objectForKey:@"url_m"];
+		NSString* bigURL = [rawResult objectForKey:@"url_o"];
 		NSString* smallURL = [rawResult objectForKey:@"url_t"];
 		NSString* title = [rawResult objectForKey:@"title"];
 		CGSize bigSize = CGSizeMake([[rawResult objectForKey:@"width_m"] floatValue],

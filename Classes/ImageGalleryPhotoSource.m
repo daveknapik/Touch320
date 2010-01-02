@@ -55,7 +55,7 @@
 	NSDictionary *parameters = [NSDictionary dictionaryWithObjectsAndKeys:
                                 @"flickr.photos.search", @"method",
                                 @"Philip Jeck", @"text",
-                                @"url_m,url_t", @"extras",
+                                @"url_o,url_m,url_t", @"extras",
                                 @"dcb74491ec5cbe64deb98b18df1125a9", @"api_key",
                                 @"json", @"format",
                                 [NSString stringWithFormat:@"%lu", (unsigned long)page], @"page",
