@@ -52,9 +52,20 @@
 	if (more) {
 		page++;
 	}
-	NSDictionary *parameters = [NSDictionary dictionaryWithObjectsAndKeys:
+	/*NSDictionary *parameters = [NSDictionary dictionaryWithObjectsAndKeys:
                                 @"flickr.photos.search", @"method",
                                 @"Philip Jeck", @"text",
+                                @"url_o,url_m,url_t", @"extras",
+                                @"dcb74491ec5cbe64deb98b18df1125a9", @"api_key",
+                                @"json", @"format",
+                                [NSString stringWithFormat:@"%lu", (unsigned long)page], @"page",
+                                @"40", @"per_page",
+                                @"1", @"nojsoncallback",
+                                nil];*/
+	
+	NSDictionary *parameters = [NSDictionary dictionaryWithObjectsAndKeys:
+                                @"flickr.photosets.getPhotos", @"method",
+                                @"72157622976490867", @"photoset_id",
                                 @"url_o,url_m,url_t", @"extras",
                                 @"dcb74491ec5cbe64deb98b18df1125a9", @"api_key",
                                 @"json", @"format",
@@ -64,13 +75,13 @@
                                 nil];
 	
     NSString *url = [@"http://api.flickr.com/services/rest/" stringByAppendingFormat:@"?%@", [parameters gtm_httpArgumentsString]];
-	NSLog(@"url: %@", url);
+	
 	TTURLRequest* request = [TTURLRequest requestWithURL:url delegate:self];
 	request.cachePolicy = cachePolicy;
 	// sets the response
 	request.response = responseProcessor;
     request.httpMethod = @"GET";
-    
+    NSLog(@"%@",url);
     // Dispatch the request.
     [request send];
 }

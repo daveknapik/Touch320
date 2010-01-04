@@ -25,7 +25,7 @@
     
     // Drill down into the JSON object to get the parts
     // that we're actually interested in.
-    NSDictionary *root = [json objectForKey:@"photos"];
+    NSDictionary *root = [json objectForKey:@"photoset"];
     totalObjectsAvailableOnServer = [[root objectForKey:@"total"] integerValue];
 	
     // Create the ImageGalleryPhotos
