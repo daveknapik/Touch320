@@ -15,10 +15,10 @@
 -(id) initWithTabBar:(NSString *)placeholder {
 	if ([self init]) {
 		//this is the label on the tab button itself
-		self.title = @"Listening Eye";
+		self.title = @"Images";
 		
 		// set the long name shown in the navigation bar at the top
-		self.navigationItem.title=@"Listening Eye";
+		self.navigationItem.title=@"Images";
 		
 		self.hidesBottomBarWhenPushed = NO;
 	}

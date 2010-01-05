@@ -29,6 +29,11 @@
 		DE6C163D10DFFB8A0071A824 /* ImageGalleryPhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE6C163C10DFFB8A0071A824 /* ImageGalleryPhotoViewController.m */; };
 		DE7455A310DE66DE00332FD6 /* ImageGalleryPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = DE7455A210DE66DE00332FD6 /* ImageGalleryPhoto.m */; };
 		DE8B82C410E0007200AB1281 /* MainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE8B82C310E0007200AB1281 /* MainTabBarController.m */; };
+		DE93D90010F38D6E005B6255 /* RecipeBookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE93D8FF10F38D6E005B6255 /* RecipeBookViewController.m */; };
+		DE93D90310F38DAC005B6255 /* RecipeBookTableItem.m in Sources */ = {isa = PBXBuildFile; fileRef = DE93D90210F38DAC005B6255 /* RecipeBookTableItem.m */; };
+		DE93D90610F38DBA005B6255 /* RecipeBookTableItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DE93D90510F38DBA005B6255 /* RecipeBookTableItemCell.m */; };
+		DE93D90910F38DC3005B6255 /* RecipeBookDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = DE93D90810F38DC3005B6255 /* RecipeBookDataSource.m */; };
+		DE93D90C10F38DD3005B6255 /* RecipeBookModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DE93D90B10F38DD3005B6255 /* RecipeBookModel.m */; };
 		DEFEE5E410D80AA3001213CE /* CXMLDocument_CreationExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = DEFEE5CD10D80AA3001213CE /* CXMLDocument_CreationExtensions.m */; };
 		DEFEE5E510D80AA3001213CE /* CXMLNode_CreationExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = DEFEE5CF10D80AA3001213CE /* CXMLNode_CreationExtensions.m */; };
 		DEFEE5E610D80AA3001213CE /* CXMLDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = DEFEE5D110D80AA3001213CE /* CXMLDocument.m */; };
@@ -112,6 +117,16 @@
 		DE7455A210DE66DE00332FD6 /* ImageGalleryPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageGalleryPhoto.m; sourceTree = "<group>"; };
 		DE8B82C210E0007200AB1281 /* MainTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTabBarController.h; sourceTree = "<group>"; };
 		DE8B82C310E0007200AB1281 /* MainTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTabBarController.m; sourceTree = "<group>"; };
+		DE93D8FE10F38D6E005B6255 /* RecipeBookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecipeBookViewController.h; sourceTree = "<group>"; };
+		DE93D8FF10F38D6E005B6255 /* RecipeBookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecipeBookViewController.m; sourceTree = "<group>"; };
+		DE93D90110F38DAC005B6255 /* RecipeBookTableItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecipeBookTableItem.h; sourceTree = "<group>"; };
+		DE93D90210F38DAC005B6255 /* RecipeBookTableItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecipeBookTableItem.m; sourceTree = "<group>"; };
+		DE93D90410F38DBA005B6255 /* RecipeBookTableItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecipeBookTableItemCell.h; sourceTree = "<group>"; };
+		DE93D90510F38DBA005B6255 /* RecipeBookTableItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecipeBookTableItemCell.m; sourceTree = "<group>"; };
+		DE93D90710F38DC3005B6255 /* RecipeBookDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecipeBookDataSource.h; sourceTree = "<group>"; };
+		DE93D90810F38DC3005B6255 /* RecipeBookDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecipeBookDataSource.m; sourceTree = "<group>"; };
+		DE93D90A10F38DD3005B6255 /* RecipeBookModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecipeBookModel.h; sourceTree = "<group>"; };
+		DE93D90B10F38DD3005B6255 /* RecipeBookModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecipeBookModel.m; sourceTree = "<group>"; };
 		DEFEE5CC10D80AA3001213CE /* CXMLDocument_CreationExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLDocument_CreationExtensions.h; sourceTree = "<group>"; };
 		DEFEE5CD10D80AA3001213CE /* CXMLDocument_CreationExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLDocument_CreationExtensions.m; sourceTree = "<group>"; };
 		DEFEE5CE10D80AA3001213CE /* CXMLNode_CreationExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLNode_CreationExtensions.h; sourceTree = "<group>"; };
@@ -218,6 +233,16 @@
 				DE160F4810EC0976005A2F1E /* CatalogSamplerDataSource.m */,
 				DEFEE66810D80BC3001213CE /* RadioViewController.h */,
 				DEFEE66910D80BC3001213CE /* RadioViewController.m */,
+				DE93D8FE10F38D6E005B6255 /* RecipeBookViewController.h */,
+				DE93D8FF10F38D6E005B6255 /* RecipeBookViewController.m */,
+				DE93D90110F38DAC005B6255 /* RecipeBookTableItem.h */,
+				DE93D90210F38DAC005B6255 /* RecipeBookTableItem.m */,
+				DE93D90410F38DBA005B6255 /* RecipeBookTableItemCell.h */,
+				DE93D90510F38DBA005B6255 /* RecipeBookTableItemCell.m */,
+				DE93D90710F38DC3005B6255 /* RecipeBookDataSource.h */,
+				DE93D90810F38DC3005B6255 /* RecipeBookDataSource.m */,
+				DE93D90A10F38DD3005B6255 /* RecipeBookModel.h */,
+				DE93D90B10F38DD3005B6255 /* RecipeBookModel.m */,
 				DE3E4CE710D9285000571DC6 /* FlickrJSONResponse.h */,
 				DE3E4CE810D9285000571DC6 /* FlickrJSONResponse.m */,
 			);
@@ -472,6 +497,11 @@
 				DE160F4410EC091B005A2F1E /* NewsModel.m in Sources */,
 				DE160F4910EC0976005A2F1E /* CatalogSamplerModel.m in Sources */,
 				DE160F4A10EC0976005A2F1E /* CatalogSamplerDataSource.m in Sources */,
+				DE93D90010F38D6E005B6255 /* RecipeBookViewController.m in Sources */,
+				DE93D90310F38DAC005B6255 /* RecipeBookTableItem.m in Sources */,
+				DE93D90610F38DBA005B6255 /* RecipeBookTableItemCell.m in Sources */,
+				DE93D90910F38DC3005B6255 /* RecipeBookDataSource.m in Sources */,
+				DE93D90C10F38DD3005B6255 /* RecipeBookModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

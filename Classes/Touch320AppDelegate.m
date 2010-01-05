@@ -11,6 +11,7 @@
 #import "NewsViewController.h"
 #import "NewsItemViewController.h"
 #import "ImageGalleryViewController.h"
+#import "RecipeBookViewController.h"
 
 #import "CatalogSamplerViewController.h"
 #import "RadioViewController.h"
@@ -44,6 +45,7 @@
 	[map from:@"tt://images/(initWithTabBar:)" toSharedViewController:[ImageGalleryViewController class]];
 	[map from:@"tt://catalogSampler/(initWithTabBar:)" toSharedViewController:[CatalogSamplerViewController class]];
 	[map from:@"tt://radio/(initWithTabBar:)" toSharedViewController:[RadioViewController class]];
+	[map from:@"tt://recipeBook/(initWithTabBar:)" toSharedViewController:[RecipeBookViewController class]];
 		
 	NSLog(@"controllers created");
 	

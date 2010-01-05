@@ -16,6 +16,7 @@
 					  @"tt://images/1",
 					  @"tt://catalogSampler/1",
 					  @"tt://radio/1",
+					  @"tt://recipeBook/1",
 					  nil]];
 }
 

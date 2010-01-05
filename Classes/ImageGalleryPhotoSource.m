@@ -10,7 +10,7 @@
 @synthesize title = _title;
 
 - (id)init {
-	_title = @"Listening Eye";
+	_title = @"Images";
 	
 	page = 1;
     responseProcessor = [[FlickrJSONResponse alloc] init];
