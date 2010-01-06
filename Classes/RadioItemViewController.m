@@ -16,7 +16,20 @@
 			subtitle = _subtitle,
 			pubDate = _pubDate,
 			link = _link,
-			duration = _duration;
+			duration = _duration,
+			radioItemView = _radioItemView,
+			titleLabel = _titleLabel,
+			authorLabel = _authorLabel,
+			summaryLabel = _summaryLabel,
+			subtitleLabel = _subtitleLabel,
+			pubDateLabel = _pubDateLabel,
+			durationLabel = _durationLabel,
+			titleValue = _titleValue,
+			authorValue = _authorValue,
+			summaryValue = _summaryValue,
+			subtitleValue = _subtitleValue,
+			pubDateValue = _pubDateValue,
+			durationValue = _durationValue;
 
 - (id)initWithRadioItem:(NSString *)placeholder query:(NSDictionary*)query
 {
@@ -50,13 +63,86 @@
 }
 
 - (id)init {
-	[super init];
-	
+	if (self = [super init]) {
+	}
 	return self;
 }
 
 - (void)viewDidLoad {
-		
+	self.view = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, 320, 2300)];
+	[self.view setContentSize:CGSizeMake(320,2300)];
+	
+	self.radioItemView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, 320, 2300)];
+	self.radioItemView.backgroundColor = [UIColor whiteColor];
+	
+	[self.radioItemView setContentSize:CGSizeMake(320, 2300)];
+	
+	[self.view addSubview:self.radioItemView];
+	
+	//subtitle value
+	UILabel *subtitleValue = [[UILabel alloc] initWithFrame:CGRectMake(5, 0, 300, 20)];
+	subtitleValue.text = self.subtitle;
+	subtitleValue.textAlignment = UITextAlignmentLeft;
+	subtitleValue.textColor = [UIColor blackColor];
+	subtitleValue.font = [UIFont boldSystemFontOfSize:12];
+	subtitleValue.backgroundColor = [UIColor whiteColor];
+	subtitleValue.lineBreakMode = UILineBreakModeWordWrap;
+	subtitleValue.adjustsFontSizeToFitWidth = YES;
+	subtitleValue.numberOfLines = 0;
+	
+	//Calculate the expected size based on the font and linebreak mode of your label
+	CGSize maximumSubtitleValueSize = CGSizeMake(296,9999);
+	
+	CGSize expectedSubtitleValueSize = [self.subtitle sizeWithFont:subtitleValue.font 
+										constrainedToSize:maximumSubtitleValueSize 
+										lineBreakMode:subtitleValue.lineBreakMode]; 
+	
+	//adjust the label the the new height.
+	CGRect newSubtitleValueFrame = subtitleValue.frame;
+	newSubtitleValueFrame.size.height = expectedSubtitleValueSize.height;
+	subtitleValue.frame = newSubtitleValueFrame;
+	
+	[self.view addSubview:subtitleValue];
+	[subtitleValue release];
+	
+	//title value
+	UILabel *titleValue = [[UILabel alloc] initWithFrame:CGRectMake(5, subtitleValue.frame.size.height + 5, 300, 40)];
+	titleValue.text = self.navigationItem.title;
+	titleValue.textAlignment = UITextAlignmentLeft;
+	titleValue.textColor = [UIColor blackColor];
+	titleValue.font = [UIFont systemFontOfSize:12];
+	titleValue.backgroundColor = [UIColor whiteColor];
+	titleValue.lineBreakMode = UILineBreakModeWordWrap;
+	titleValue.numberOfLines = 0;
+	
+	[self.view addSubview:titleValue];
+	[titleValue release];
+	
+	//summary value
+	UILabel *summaryValue = [[UILabel alloc] initWithFrame:CGRectMake(5, subtitleValue.frame.size.height + 45, 300, 100)];
+	summaryValue.text = self.summary;
+	summaryValue.textAlignment = UITextAlignmentLeft;
+	summaryValue.textColor = [UIColor blackColor];
+	summaryValue.font = [UIFont systemFontOfSize:12];
+	summaryValue.backgroundColor = [UIColor whiteColor];
+	summaryValue.lineBreakMode = UILineBreakModeWordWrap;
+	summaryValue.numberOfLines = 0;
+	
+	//Calculate the expected size based on the font and linebreak mode of your label
+	CGSize maximumLabelSize = CGSizeMake(296,9999);
+	
+	CGSize expectedLabelSize = [self.summary sizeWithFont:summaryValue.font 
+										constrainedToSize:maximumLabelSize 
+											lineBreakMode:summaryValue.lineBreakMode]; 
+	
+	//adjust the label the the new height.
+	CGRect newFrame = summaryValue.frame;
+	newFrame.size.height = expectedLabelSize.height;
+	summaryValue.frame = newFrame;
+	
+	[self.view addSubview:summaryValue];
+	[summaryValue release];
+	
     [super viewDidLoad];
 }
 
@@ -68,6 +154,23 @@
 	self.pubDate = nil;
 	self.link = nil;
 	self.duration = nil;
+	
+	self.radioItemView = nil;
+	
+	self.titleLabel = nil;
+	self.authorLabel = nil;
+	self.subtitleLabel = nil;
+	self.summaryLabel = nil;
+	self.pubDateLabel = nil;
+	self.durationLabel = nil;
+	
+	self.titleValue = nil;
+	self.authorValue = nil;
+	self.subtitleValue = nil;
+	self.summaryValue = nil;
+	self.pubDateValue = nil;
+	self.durationValue = nil;
+	
 	[super viewDidUnload];
 }
 
@@ -78,6 +181,23 @@
 	TT_RELEASE_SAFELY(_pubDate);
 	TT_RELEASE_SAFELY(_link);
 	TT_RELEASE_SAFELY(_duration);
+	
+	TT_RELEASE_SAFELY(_radioItemView);
+	
+	TT_RELEASE_SAFELY(_titleLabel);
+	TT_RELEASE_SAFELY(_authorLabel);
+	TT_RELEASE_SAFELY(_subtitleLabel);
+	TT_RELEASE_SAFELY(_summaryLabel);
+	TT_RELEASE_SAFELY(_pubDateLabel);
+	TT_RELEASE_SAFELY(_durationLabel);
+	
+	TT_RELEASE_SAFELY(_titleValue);
+	TT_RELEASE_SAFELY(_authorValue);
+	TT_RELEASE_SAFELY(_subtitleValue);
+	TT_RELEASE_SAFELY(_summaryValue);
+	TT_RELEASE_SAFELY(_pubDateValue);
+	TT_RELEASE_SAFELY(_durationValue);
+	
 	[super dealloc];
 }
 

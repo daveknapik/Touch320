@@ -274,7 +274,7 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>34</integer>
+									<integer>35</integer>
 									<integer>23</integer>
 									<integer>5</integer>
 									<integer>0</integer>
@@ -318,7 +318,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>RadioItemViewController.h</string>
+								<string>RadioItemViewController.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -326,11 +326,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>RadioItemViewController.h</string>
+										<string>RadioItemViewController.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>DE10439E10F4E4DD0058DDB8</string>
+										<string>DE1044AF10F50D7B0058DDB8</string>
 										<key>history</key>
 										<array>
 											<string>DEFEE63810D80B79001213CE</string>
@@ -390,17 +390,17 @@
 											<string>DE10425910F4CD860058DDB8</string>
 											<string>DE10426310F4CDF00058DDB8</string>
 											<string>DE1042F610F4D9DC0058DDB8</string>
-											<string>DE10431D10F4E0DC0058DDB8</string>
-											<string>DE10433510F4E2AE0058DDB8</string>
-											<string>DE10433610F4E2AE0058DDB8</string>
 											<string>DE10433710F4E2AE0058DDB8</string>
-											<string>DE10433810F4E2AE0058DDB8</string>
 											<string>DE10433910F4E2AE0058DDB8</string>
-											<string>DE10433B10F4E2AE0058DDB8</string>
-											<string>DE10439710F4E4DD0058DDB8</string>
-											<string>DE10439810F4E4DD0058DDB8</string>
-											<string>DE10439910F4E4DD0058DDB8</string>
-											<string>DE10439A10F4E4DD0058DDB8</string>
+											<string>DE1043E010F4F0860058DDB8</string>
+											<string>DE1043E210F4F0860058DDB8</string>
+											<string>DE1043FB10F4F26D0058DDB8</string>
+											<string>DE1043FC10F4F26D0058DDB8</string>
+											<string>DE1043FD10F4F26D0058DDB8</string>
+											<string>DE10442D10F4F96B0058DDB8</string>
+											<string>DE10442E10F4F96B0058DDB8</string>
+											<string>DE10447810F505530058DDB8</string>
+											<string>DE1044A810F50CA20058DDB8</string>
 										</array>
 										<key>prevStack</key>
 										<array>
@@ -764,6 +764,49 @@
 											<string>DE10439B10F4E4DD0058DDB8</string>
 											<string>DE10439C10F4E4DD0058DDB8</string>
 											<string>DE10439D10F4E4DD0058DDB8</string>
+											<string>DE1043E610F4F0860058DDB8</string>
+											<string>DE1043E710F4F0860058DDB8</string>
+											<string>DE1043E810F4F0860058DDB8</string>
+											<string>DE1043E910F4F0860058DDB8</string>
+											<string>DE1043EA10F4F0860058DDB8</string>
+											<string>DE1043EB10F4F0860058DDB8</string>
+											<string>DE1043EC10F4F0860058DDB8</string>
+											<string>DE1043ED10F4F0860058DDB8</string>
+											<string>DE1043FF10F4F26D0058DDB8</string>
+											<string>DE10440010F4F26D0058DDB8</string>
+											<string>DE10440110F4F26D0058DDB8</string>
+											<string>DE10440210F4F26D0058DDB8</string>
+											<string>DE10440310F4F26D0058DDB8</string>
+											<string>DE10440410F4F26D0058DDB8</string>
+											<string>DE10440510F4F26D0058DDB8</string>
+											<string>DE10440610F4F26D0058DDB8</string>
+											<string>DE10440710F4F26D0058DDB8</string>
+											<string>DE10440810F4F26D0058DDB8</string>
+											<string>DE10440910F4F26D0058DDB8</string>
+											<string>DE10440A10F4F26D0058DDB8</string>
+											<string>DE10440B10F4F26D0058DDB8</string>
+											<string>DE10440C10F4F26D0058DDB8</string>
+											<string>DE10441110F4F2900058DDB8</string>
+											<string>DE10441810F4F2D10058DDB8</string>
+											<string>DE10442310F4F4CC0058DDB8</string>
+											<string>DE10442810F4F86A0058DDB8</string>
+											<string>DE10442910F4F86A0058DDB8</string>
+											<string>DE10442A10F4F86A0058DDB8</string>
+											<string>DE10443010F4F96B0058DDB8</string>
+											<string>DE10443110F4F96B0058DDB8</string>
+											<string>DE10443210F4F96B0058DDB8</string>
+											<string>DE10444C10F4FE640058DDB8</string>
+											<string>DE10445110F4FEA50058DDB8</string>
+											<string>DE10445510F4FF310058DDB8</string>
+											<string>DE10445A10F4FFC00058DDB8</string>
+											<string>DE10445F10F4FFFD0058DDB8</string>
+											<string>DE10446310F5003C0058DDB8</string>
+											<string>DE10446C10F5012A0058DDB8</string>
+											<string>DE10446D10F5012A0058DDB8</string>
+											<string>DE10447410F501C60058DDB8</string>
+											<string>DE10447510F501C60058DDB8</string>
+											<string>DE10447A10F505530058DDB8</string>
+											<string>DE10447B10F505530058DDB8</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -960,9 +1003,9 @@
 		<string>1C530D57069F1CE1000CFCEE</string>
 		<string>DE103FB810F3B0330058DDB8</string>
 		<string>DE103FB910F3B0330058DDB8</string>
-		<string>1C78EAAD065D492600B07095</string>
 		<string>1CD10A99069EF8BA00B06720</string>
 		<string>DEFEE5F710D80AD2001213CE</string>
+		<string>1C78EAAD065D492600B07095</string>
 		<string>/Users/daveknapik/Documents/iPhone Development/Touch app/Touch320/Touch320.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
@@ -982,12 +1025,14 @@
 					<key>Dock</key>
 					<array>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
 								<string>1CD0528F0623707200166675</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>RadioItemViewController.h</string>
+								<string>RadioItemViewController.m</string>
 								<key>StatusBarVisibility</key>
 								<true/>
 							</dict>
@@ -1004,8 +1049,6 @@
 							<string>173pt</string>
 						</dict>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -1337,7 +1380,7 @@
 			<key>WindowToolGUID</key>
 			<string>1C78EAAD065D492600B07095</string>
 			<key>WindowToolIsVisible</key>
-			<false/>
+			<true/>
 		</dict>
 		<dict>
 			<key>FirstTimeWindowDisplayed</key>
