@@ -7,9 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Three20/Three20.h>
 
-
-@interface RadioViewController : UIViewController {
+@interface RadioViewController : TTTableViewController {
 
 }
 

@@ -7,10 +7,7 @@
 //
 
 #import "NewsViewController.h"
-#import "NewsItemViewController.h"
 #import "NewsDataSource.h"
-#import "NewsItem.h"
-#import "TouchXML.h"
 
 @implementation NewsViewController
 
