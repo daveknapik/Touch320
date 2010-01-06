@@ -16,6 +16,7 @@
 		DE10401C10F3EFEC0058DDB8 /* RadioTableItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DE10401B10F3EFEC0058DDB8 /* RadioTableItemCell.m */; };
 		DE10401F10F3EFFF0058DDB8 /* RadioDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = DE10401E10F3EFFF0058DDB8 /* RadioDataSource.m */; };
 		DE10402210F3F0050058DDB8 /* RadioModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DE10402110F3F0050058DDB8 /* RadioModel.m */; };
+		DE1041E810F4C8780058DDB8 /* RadioItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE1041E710F4C8780058DDB8 /* RadioItemViewController.m */; };
 		DE160F3910EC0888005A2F1E /* NewsTableItem.m in Sources */ = {isa = PBXBuildFile; fileRef = DE160F3610EC0888005A2F1E /* NewsTableItem.m */; };
 		DE160F3A10EC0888005A2F1E /* NewsTableItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DE160F3810EC0888005A2F1E /* NewsTableItemCell.m */; };
 		DE160F4110EC090F005A2F1E /* NewsDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = DE160F4010EC090F005A2F1E /* NewsDataSource.m */; };
@@ -98,6 +99,8 @@
 		DE10401E10F3EFFF0058DDB8 /* RadioDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RadioDataSource.m; sourceTree = "<group>"; };
 		DE10402010F3F0050058DDB8 /* RadioModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RadioModel.h; sourceTree = "<group>"; };
 		DE10402110F3F0050058DDB8 /* RadioModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RadioModel.m; sourceTree = "<group>"; };
+		DE1041E610F4C8780058DDB8 /* RadioItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RadioItemViewController.h; sourceTree = "<group>"; };
+		DE1041E710F4C8780058DDB8 /* RadioItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RadioItemViewController.m; sourceTree = "<group>"; };
 		DE160F3510EC0888005A2F1E /* NewsTableItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsTableItemCell.h; sourceTree = "<group>"; };
 		DE160F3610EC0888005A2F1E /* NewsTableItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsTableItem.m; sourceTree = "<group>"; };
 		DE160F3710EC0888005A2F1E /* NewsTableItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsTableItem.h; sourceTree = "<group>"; };
@@ -339,6 +342,8 @@
 				DE10401E10F3EFFF0058DDB8 /* RadioDataSource.m */,
 				DE10402010F3F0050058DDB8 /* RadioModel.h */,
 				DE10402110F3F0050058DDB8 /* RadioModel.m */,
+				DE1041E610F4C8780058DDB8 /* RadioItemViewController.h */,
+				DE1041E710F4C8780058DDB8 /* RadioItemViewController.m */,
 			);
 			name = Radio;
 			sourceTree = "<group>";
@@ -566,6 +571,7 @@
 				DE10401C10F3EFEC0058DDB8 /* RadioTableItemCell.m in Sources */,
 				DE10401F10F3EFFF0058DDB8 /* RadioDataSource.m in Sources */,
 				DE10402210F3F0050058DDB8 /* RadioModel.m in Sources */,
+				DE1041E810F4C8780058DDB8 /* RadioItemViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

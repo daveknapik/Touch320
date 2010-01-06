@@ -46,6 +46,10 @@
 						   [object author], @"author",
 						   [object title], @"title",
 						   [object subtitle], @"subtitle",
+						   [object summary], @"summary",
+						   [object pubDate], @"pubDate",
+						   [object link], @"link",
+						   [object duration], @"duration",
 						   nil];
 	[[TTNavigator navigator] openURL:@"tt://radioItem/1" query:query animated:YES]; 
 }

@@ -33,7 +33,7 @@
 }
 
 - (void)tableViewDidLoadModel:(UITableView*)tableView {
-	NSLog(@"Radio Items: %@", _radioModel.radioItems);
+	//NSLog(@"Radio Items: %@", _radioModel.radioItems);
 	
 	NSMutableArray* items = [[NSMutableArray alloc] init];
 	
@@ -45,16 +45,23 @@
 		NSMutableDictionary* theItem = [_radioModel.radioItems objectForKey:key];
 		
 		NSString* title = [theItem objectForKey:@"title"];
-		NSString* author = [theItem objectForKey:@"itunes:author"];
+		NSString* author = [theItem objectForKey:@"author"];
 		NSString* subtitle = [theItem objectForKey:@"subtitle"];
+		NSString* summary = [theItem objectForKey:@"summary"];
+		NSString* pubDate = [theItem objectForKey:@"pubDate"];
+		NSString* link = [theItem objectForKey:@"link"];
+		NSString* duration = [theItem objectForKey:@"duration"];
 		
 		if( !TTIsEmptyString(title) ) {
-			
 			[items addObject:[RadioTableItem
 							  itemWithText: title
 							  title: title
 							  author: author
-							  subtitle: subtitle]];
+							  subtitle: subtitle
+							  summary: summary
+							  pubDate: pubDate
+							  link: link
+							  duration: duration]];
 		}
 	} 
 	
