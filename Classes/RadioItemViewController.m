@@ -90,17 +90,8 @@
 	subtitleValue.adjustsFontSizeToFitWidth = YES;
 	subtitleValue.numberOfLines = 0;
 	
-	//Calculate the expected size based on the font and linebreak mode of your label
-	CGSize maximumSubtitleValueSize = CGSizeMake(296,9999);
-	
-	CGSize expectedSubtitleValueSize = [self.subtitle sizeWithFont:subtitleValue.font 
-										constrainedToSize:maximumSubtitleValueSize 
-										lineBreakMode:subtitleValue.lineBreakMode]; 
-	
-	//adjust the label the the new height.
-	CGRect newSubtitleValueFrame = subtitleValue.frame;
-	newSubtitleValueFrame.size.height = expectedSubtitleValueSize.height;
-	subtitleValue.frame = newSubtitleValueFrame;
+	subtitleValue.frame = [self resizeLabelFrame:subtitleValue
+										 forText:self.subtitle];
 	
 	[self.view addSubview:subtitleValue];
 	[subtitleValue release];
@@ -115,11 +106,14 @@
 	titleValue.lineBreakMode = UILineBreakModeWordWrap;
 	titleValue.numberOfLines = 0;
 	
+	titleValue.frame = [self resizeLabelFrame:titleValue 
+									  forText:self.navigationItem.title];
+	
 	[self.view addSubview:titleValue];
 	[titleValue release];
 	
 	//summary value
-	UILabel *summaryValue = [[UILabel alloc] initWithFrame:CGRectMake(5, subtitleValue.frame.size.height + 45, 300, 100)];
+	UILabel *summaryValue = [[UILabel alloc] initWithFrame:CGRectMake(5, subtitleValue.frame.size.height + titleValue.frame.size.height + 10, 300, 100)];
 	summaryValue.text = self.summary;
 	summaryValue.textAlignment = UITextAlignmentLeft;
 	summaryValue.textColor = [UIColor blackColor];
@@ -128,22 +122,29 @@
 	summaryValue.lineBreakMode = UILineBreakModeWordWrap;
 	summaryValue.numberOfLines = 0;
 	
-	//Calculate the expected size based on the font and linebreak mode of your label
-	CGSize maximumLabelSize = CGSizeMake(296,9999);
-	
-	CGSize expectedLabelSize = [self.summary sizeWithFont:summaryValue.font 
-										constrainedToSize:maximumLabelSize 
-											lineBreakMode:summaryValue.lineBreakMode]; 
-	
-	//adjust the label the the new height.
-	CGRect newFrame = summaryValue.frame;
-	newFrame.size.height = expectedLabelSize.height;
-	summaryValue.frame = newFrame;
+	summaryValue.frame = [self resizeLabelFrame:summaryValue 
+										forText:self.summary];
 	
 	[self.view addSubview:summaryValue];
 	[summaryValue release];
 	
     [super viewDidLoad];
+}
+
+- (CGRect)resizeLabelFrame:(UILabel*)label forText:(NSString*)text {
+	//Calculate the expected size based on the font and linebreak mode of your label
+	CGSize maximumSize = CGSizeMake(300,9999);
+	
+	CGSize expectedSize = [text sizeWithFont:label.font 
+						   constrainedToSize:maximumSize 
+							   lineBreakMode:label.lineBreakMode]; 
+	
+	//adjust the label the the new height.
+	CGRect newFrame = label.frame;
+	newFrame.size.height = expectedSize.height;
+	label.frame = newFrame;
+	
+	return label.frame;
 }
 
 - (void)viewDidUnload {

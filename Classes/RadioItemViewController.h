@@ -58,5 +58,6 @@
 @property (nonatomic, retain) UILabel* durationValue;
 
 - (id)initWithRadioItem:(NSString *)placeholder query:(NSDictionary*)query;
+- (CGRect)resizeLabelFrame:(UILabel*)label forText:(NSString*)text;
 
 @end
