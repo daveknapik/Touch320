@@ -39,6 +39,12 @@
 		DE93D90610F38DBA005B6255 /* RecipeBookTableItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DE93D90510F38DBA005B6255 /* RecipeBookTableItemCell.m */; };
 		DE93D90910F38DC3005B6255 /* RecipeBookDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = DE93D90810F38DC3005B6255 /* RecipeBookDataSource.m */; };
 		DE93D90C10F38DD3005B6255 /* RecipeBookModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DE93D90B10F38DD3005B6255 /* RecipeBookModel.m */; };
+		DEF0C33A10F6394300E74685 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEF0C33910F6394300E74685 /* AudioToolbox.framework */; };
+		DEF0C35A10F66DF900E74685 /* AudioPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = DEF0C35110F66DF900E74685 /* AudioPlayer.m */; };
+		DEF0C35B10F66DF900E74685 /* AudioRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = DEF0C35310F66DF900E74685 /* AudioRequest.m */; };
+		DEF0C35C10F66DF900E74685 /* AudioFileStream.m in Sources */ = {isa = PBXBuildFile; fileRef = DEF0C35510F66DF900E74685 /* AudioFileStream.m */; };
+		DEF0C35D10F66DF900E74685 /* AudioQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = DEF0C35710F66DF900E74685 /* AudioQueue.m */; };
+		DEF0C35E10F66DF900E74685 /* AudioPlayerUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = DEF0C35910F66DF900E74685 /* AudioPlayerUtil.m */; };
 		DEFEE5E410D80AA3001213CE /* CXMLDocument_CreationExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = DEFEE5CD10D80AA3001213CE /* CXMLDocument_CreationExtensions.m */; };
 		DEFEE5E510D80AA3001213CE /* CXMLNode_CreationExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = DEFEE5CF10D80AA3001213CE /* CXMLNode_CreationExtensions.m */; };
 		DEFEE5E610D80AA3001213CE /* CXMLDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = DEFEE5D110D80AA3001213CE /* CXMLDocument.m */; };
@@ -142,6 +148,17 @@
 		DE93D90810F38DC3005B6255 /* RecipeBookDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecipeBookDataSource.m; sourceTree = "<group>"; };
 		DE93D90A10F38DD3005B6255 /* RecipeBookModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecipeBookModel.h; sourceTree = "<group>"; };
 		DE93D90B10F38DD3005B6255 /* RecipeBookModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecipeBookModel.m; sourceTree = "<group>"; };
+		DEF0C33910F6394300E74685 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		DEF0C35010F66DF900E74685 /* AudioPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioPlayer.h; sourceTree = "<group>"; };
+		DEF0C35110F66DF900E74685 /* AudioPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioPlayer.m; sourceTree = "<group>"; };
+		DEF0C35210F66DF900E74685 /* AudioRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioRequest.h; sourceTree = "<group>"; };
+		DEF0C35310F66DF900E74685 /* AudioRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioRequest.m; sourceTree = "<group>"; };
+		DEF0C35410F66DF900E74685 /* AudioFileStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioFileStream.h; sourceTree = "<group>"; };
+		DEF0C35510F66DF900E74685 /* AudioFileStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioFileStream.m; sourceTree = "<group>"; };
+		DEF0C35610F66DF900E74685 /* AudioQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioQueue.h; sourceTree = "<group>"; };
+		DEF0C35710F66DF900E74685 /* AudioQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioQueue.m; sourceTree = "<group>"; };
+		DEF0C35810F66DF900E74685 /* AudioPlayerUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioPlayerUtil.h; sourceTree = "<group>"; };
+		DEF0C35910F66DF900E74685 /* AudioPlayerUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioPlayerUtil.m; sourceTree = "<group>"; };
 		DEFEE5CC10D80AA3001213CE /* CXMLDocument_CreationExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLDocument_CreationExtensions.h; sourceTree = "<group>"; };
 		DEFEE5CD10D80AA3001213CE /* CXMLDocument_CreationExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLDocument_CreationExtensions.m; sourceTree = "<group>"; };
 		DEFEE5CE10D80AA3001213CE /* CXMLNode_CreationExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLNode_CreationExtensions.h; sourceTree = "<group>"; };
@@ -202,6 +219,7 @@
 				288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */,
 				DE4F175F10D82535005E2446 /* libThree20.a in Frameworks */,
 				DE4F178E10D825CE005E2446 /* QuartzCore.framework in Frameworks */,
+				DEF0C33A10F6394300E74685 /* AudioToolbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -211,6 +229,7 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				DEF0C34F10F66DD000E74685 /* AudioUtil */,
 				DE10402310F3F01D0058DDB8 /* News */,
 				DE10402410F3F0240058DDB8 /* Images */,
 				DE10402710F3F0360058DDB8 /* CatalogSampler */,
@@ -270,6 +289,7 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DEF0C33910F6394300E74685 /* AudioToolbox.framework */,
 				DE4F178D10D825CE005E2446 /* QuartzCore.framework */,
 				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
 				1D30AB110D05D00D00671497 /* Foundation.framework */,
@@ -383,6 +403,23 @@
 				DE4F175E10D8252D005E2446 /* libThree20.a */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		DEF0C34F10F66DD000E74685 /* AudioUtil */ = {
+			isa = PBXGroup;
+			children = (
+				DEF0C35010F66DF900E74685 /* AudioPlayer.h */,
+				DEF0C35110F66DF900E74685 /* AudioPlayer.m */,
+				DEF0C35210F66DF900E74685 /* AudioRequest.h */,
+				DEF0C35310F66DF900E74685 /* AudioRequest.m */,
+				DEF0C35410F66DF900E74685 /* AudioFileStream.h */,
+				DEF0C35510F66DF900E74685 /* AudioFileStream.m */,
+				DEF0C35610F66DF900E74685 /* AudioQueue.h */,
+				DEF0C35710F66DF900E74685 /* AudioQueue.m */,
+				DEF0C35810F66DF900E74685 /* AudioPlayerUtil.h */,
+				DEF0C35910F66DF900E74685 /* AudioPlayerUtil.m */,
+			);
+			name = AudioUtil;
 			sourceTree = "<group>";
 		};
 		DEFEE5CB10D80AA3001213CE /* Creation */ = {
@@ -572,6 +609,11 @@
 				DE10401F10F3EFFF0058DDB8 /* RadioDataSource.m in Sources */,
 				DE10402210F3F0050058DDB8 /* RadioModel.m in Sources */,
 				DE1041E810F4C8780058DDB8 /* RadioItemViewController.m in Sources */,
+				DEF0C35A10F66DF900E74685 /* AudioPlayer.m in Sources */,
+				DEF0C35B10F66DF900E74685 /* AudioRequest.m in Sources */,
+				DEF0C35C10F66DF900E74685 /* AudioFileStream.m in Sources */,
+				DEF0C35D10F66DF900E74685 /* AudioQueue.m in Sources */,
+				DEF0C35E10F66DF900E74685 /* AudioPlayerUtil.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,7 +8,6 @@
 
 #import "RadioItemViewController.h"
 
-
 @implementation RadioItemViewController
 
 @synthesize author = _author,
@@ -31,6 +30,8 @@
 			pubDateValue = _pubDateValue,
 			durationValue = _durationValue;
 
+void interruptionListener (void *inClientData, UInt32 inInterruptionState);
+
 - (id)initWithRadioItem:(NSString *)placeholder query:(NSDictionary*)query
 {
 	if (self = [self init]) {		
@@ -47,6 +48,16 @@
 		self.pubDate = [query objectForKey:@"pubDate"];
 		self.link = [query objectForKey:@"link"];
 		self.duration = [query objectForKey:@"duration"];
+		
+		AudioSessionInitialize (
+								NULL,                  // use the default (main) run loop
+								NULL,                  // use the default run loop mode
+								interruptionListener,  // a reference to your interruption callback
+								self                   // userData
+								);
+		
+		UInt32 sessionCategory = kAudioSessionCategory_MediaPlayback;
+		AudioSessionSetProperty (kAudioSessionProperty_AudioCategory, sizeof (sessionCategory), &sessionCategory);
 		
 		/*
 		NSLog(@"radio item title: %@",self.navigationItem.title);
@@ -128,6 +139,35 @@
 	[self.view addSubview:summaryValue];
 	[summaryValue release];
 	
+	//play button
+	playButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+	playButton.frame = CGRectMake(50, subtitleValue.frame.size.height + titleValue.frame.size.height + summaryValue.frame.size.height + 10, 200, 80);
+	[playButton setTitle:@"Play" forState:UIControlStateNormal];
+	[playButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+	playButton.titleLabel.font = [UIFont boldSystemFontOfSize:12];
+	playButton.backgroundColor = [UIColor clearColor];
+	playButton.alpha = 1;
+	[playButton addTarget:self action:@selector(play) forControlEvents:UIControlEventTouchUpInside];
+	[self.view addSubview:playButton];
+	
+	//pause button
+	pauseButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+	pauseButton.frame = CGRectMake(50, subtitleValue.frame.size.height + titleValue.frame.size.height + summaryValue.frame.size.height + 10, 200, 80);
+	[pauseButton setTitle:@"Pause" forState:UIControlStateNormal];
+	[pauseButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+	pauseButton.titleLabel.font = [UIFont boldSystemFontOfSize:12];
+	pauseButton.backgroundColor = [UIColor clearColor];
+	pauseButton.alpha = 0;
+	[pauseButton addTarget:self action:@selector(pause) forControlEvents:UIControlEventTouchUpInside];
+	[self.view addSubview:pauseButton];
+	
+	//activityIndicatorView
+	activityIndicatorView = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
+	activityIndicatorView.center = CGPointMake(150, subtitleValue.frame.size.height + titleValue.frame.size.height + summaryValue.frame.size.height + 40);
+	[self.view addSubview:activityIndicatorView];
+	
+	[self load];
+	
     [super viewDidLoad];
 }
 
@@ -172,8 +212,13 @@
 	self.pubDateValue = nil;
 	self.durationValue = nil;
 	
+	playButton = nil;
+	pauseButton = nil;
+	activityIndicatorView = nil;
+	
 	[super viewDidUnload];
 }
+
 
 - (void)dealloc {
 	TT_RELEASE_SAFELY(_author);
@@ -199,9 +244,91 @@
 	TT_RELEASE_SAFELY(_pubDateValue);
 	TT_RELEASE_SAFELY(_durationValue);
 	
+	TT_RELEASE_SAFELY(playButton);
+	TT_RELEASE_SAFELY(pauseButton);
+	TT_RELEASE_SAFELY(activityIndicatorView);
+	
 	[super dealloc];
 }
 
+- (void)showStopped {
+	pauseButton.alpha = 0;
+	playButton.alpha = 0;
+}
+
+- (void)showLoading {
+	[UIView beginAnimations:nil context:nil];
+	[activityIndicatorView startAnimating];
+	pauseButton.alpha = 0;
+	playButton.alpha = 0;
+	[UIView commitAnimations];
+}
+
+- (void)showPlaying {
+	if ([activityIndicatorView isAnimating]) {
+		[self pause];
+	}
+	else {
+		[UIView beginAnimations:nil context:nil];
+		[activityIndicatorView stopAnimating];
+		pauseButton.alpha = 1;
+		playButton.alpha = 0;
+		[UIView commitAnimations];
+	}
+}
+
+- (void)showPaused {
+	[UIView beginAnimations:nil context:nil];
+	[activityIndicatorView stopAnimating];
+	pauseButton.alpha = 0;
+	playButton.alpha = 1;
+	[UIView commitAnimations];
+}
+
+- (void)load {
+	AudioSessionSetActive(YES);
+	[audioPlayer cancel];
+	[audioPlayer release];
+	audioPlayer = [[AudioPlayer alloc] initPlayerWithURL:[NSURL URLWithString:self.link] delegate:self];
+	[self showLoading];
+}
+
+- (void)pause {
+	audioPlayer.paused = YES;
+	[self showPaused];
+}
+
+- (void)play {
+	audioPlayer.paused = NO;
+	[self showPlaying];
+}
+
+- (void)audioPlayerDownloadFailed:(AudioPlayer *)audioPlayer {
+	UIAlertView *alert = [[UIAlertView alloc] initWithTitle:nil message:@"Audio download failed" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+	[alert show];
+	[alert autorelease];
+	[self showStopped];
+}
+
+- (void)audioPlayerPlaybackStarted:(AudioPlayer *)audioPlayer {
+	[self showPlaying];
+}
+
+- (void)audioPlayerPlaybackFinished:(AudioPlayer *)audioPlayer {
+	AudioSessionSetActive(NO);
+	[self showStopped];
+}
+
+void interruptionListener(void *userData, UInt32  interruptionState) {
+	RadioItemViewController *self = userData;
+	
+	if (interruptionState == kAudioSessionBeginInterruption) {
+		[self pause];
+		AudioSessionSetActive(NO);
+	} else if (interruptionState == kAudioSessionEndInterruption) {
+		AudioSessionSetActive(YES);
+	}
+}
 
 
 @end

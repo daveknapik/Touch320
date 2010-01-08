@@ -8,8 +8,9 @@
 
 #import <Foundation/Foundation.h>
 #import <Three20/Three20.h>
+#import "AudioPlayer.h"
 
-@interface RadioItemViewController : TTViewController {
+@interface RadioItemViewController : TTViewController <AudioPlayerDelegate> {
 	NSString* _author;
 	NSString* _subtitle;
 	NSString* _summary;
@@ -32,6 +33,12 @@
 	UILabel* _subtitleValue;
 	UILabel* _pubDateValue;
 	UILabel* _durationValue;
+	
+	UIActivityIndicatorView* activityIndicatorView;
+	UIButton* pauseButton;
+	UIButton* playButton;
+	
+	AudioPlayer *audioPlayer;
 }
 
 @property (nonatomic, copy) NSString* author;
@@ -59,5 +66,13 @@
 
 - (id)initWithRadioItem:(NSString *)placeholder query:(NSDictionary*)query;
 - (CGRect)resizeLabelFrame:(UILabel*)label forText:(NSString*)text;
+
+- (void)load;
+- (void)pause;
+- (void)play;
+- (void)showPlaying;
+- (void)showPaused;
+- (void)showLoading;
+- (void)showStopped;
 
 @end
