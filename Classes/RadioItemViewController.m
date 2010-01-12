@@ -245,8 +245,6 @@
 	TT_RELEASE_SAFELY(pauseButton);
 	TT_RELEASE_SAFELY(activityIndicatorView);
 	
-	[audioPlayer release];
-	
 	[super dealloc];
 }
 
@@ -288,10 +286,22 @@
 }
 
 - (void)load {
+	Touch320AppDelegate *appDelegate;
+	appDelegate = (Touch320AppDelegate*)[UIApplication sharedApplication].delegate;
+	
 	AudioSessionSetActive(YES);
-	[audioPlayer cancel];
-	[audioPlayer release];
+	
+	NSLog(@"active audio player: %@",[appDelegate activeAudioPlayer]);
+	
+	[[appDelegate activeAudioPlayer] cancel];
+	[[appDelegate activeAudioPlayer] release];
+	
 	audioPlayer = [[AudioPlayer alloc] initPlayerWithURL:[NSURL URLWithString:self.link] delegate:self];
+	
+	appDelegate.activeAudioPlayer = audioPlayer;
+	
+	NSLog(@"active audio player: %@",[appDelegate activeAudioPlayer]);
+	
 	//audioPlayer = [[AudioPlayer alloc] initPlayerWithURL:[NSURL URLWithString:@"http://www.daveknapik.com/audio/theVillageGreenDecimationSociety.mp3"] delegate:self];
 	[self showLoading];
 }

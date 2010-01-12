@@ -100,6 +100,7 @@ void propertyChangeIsRunning(void *data, AudioQueueRef inAQ, AudioQueuePropertyI
 - (void)dealloc {
 	if (audioQueue != NULL) {
 		VERIFY_STATUS(AudioQueueDispose(audioQueue, true));
+		NSLog(@"Disposed of queue");
 	}
 	[delegate release];
 	[super dealloc];

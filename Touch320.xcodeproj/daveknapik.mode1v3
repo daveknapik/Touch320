@@ -267,7 +267,6 @@
 								<string>DE4F175610D8252D005E2446</string>
 								<string>080E96DDFE201D6D7F000001</string>
 								<string>DEF0C34F10F66DD000E74685</string>
-								<string>DE10402310F3F01D0058DDB8</string>
 								<string>DE10402810F3F0400058DDB8</string>
 								<string>29B97323FDCFA39411CA2CEA</string>
 								<string>1C37FBAC04509CD000000102</string>
@@ -276,14 +275,14 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>46</integer>
-									<integer>34</integer>
+									<integer>12</integer>
+									<integer>6</integer>
 									<integer>5</integer>
 									<integer>0</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 260}, {318, 539}}</string>
+							<string>{{0, 94}, {318, 539}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -320,7 +319,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>RadioItemViewController.m</string>
+								<string>AudioFileStream.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -328,11 +327,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>RadioItemViewController.m</string>
+										<string>AudioFileStream.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>DEAA250210FC83BD0059D87F</string>
+										<string>DEAA254210FC97880059D87F</string>
 										<key>history</key>
 										<array>
 											<string>DEFEE63810D80B79001213CE</string>
@@ -396,22 +395,22 @@
 											<string>DEAA229010FA0ED80059D87F</string>
 											<string>DEAA22D710FB5BBF0059D87F</string>
 											<string>DEAA22D810FB5BBF0059D87F</string>
-											<string>DEAA22FC10FB5E3B0059D87F</string>
 											<string>DEAA22FD10FB5E3B0059D87F</string>
 											<string>DEAA23AA10FB72D20059D87F</string>
-											<string>DEAA23D810FB7A150059D87F</string>
-											<string>DEAA241110FB90540059D87F</string>
-											<string>DEAA241410FB90540059D87F</string>
-											<string>DEAA242810FB99520059D87F</string>
 											<string>DEAA244610FC6B950059D87F</string>
 											<string>DEAA24C710FC7A660059D87F</string>
-											<string>DEAA24C910FC7A660059D87F</string>
 											<string>DEAA24CB10FC7A660059D87F</string>
 											<string>DEAA24E510FC81EA0059D87F</string>
-											<string>DEAA24F410FC834D0059D87F</string>
 											<string>DEAA24F510FC834D0059D87F</string>
 											<string>DEAA24F610FC834D0059D87F</string>
-											<string>DEAA24F710FC834D0059D87F</string>
+											<string>DEAA250B10FC92EB0059D87F</string>
+											<string>DEAA252010FC94780059D87F</string>
+											<string>DEAA252710FC95C60059D87F</string>
+											<string>DEAA252810FC95C60059D87F</string>
+											<string>DEAA252910FC95C60059D87F</string>
+											<string>DEAA253710FC96900059D87F</string>
+											<string>DEAA253D10FC97050059D87F</string>
+											<string>DEAA253E10FC97050059D87F</string>
 										</array>
 										<key>prevStack</key>
 										<array>
@@ -630,6 +629,24 @@
 											<string>DEAA24FC10FC834D0059D87F</string>
 											<string>DEAA24FD10FC834D0059D87F</string>
 											<string>DEAA24FE10FC834D0059D87F</string>
+											<string>DEAA250E10FC92EB0059D87F</string>
+											<string>DEAA250F10FC92EB0059D87F</string>
+											<string>DEAA251010FC92EB0059D87F</string>
+											<string>DEAA251110FC92EB0059D87F</string>
+											<string>DEAA251210FC92EB0059D87F</string>
+											<string>DEAA251310FC92EB0059D87F</string>
+											<string>DEAA251B10FC942F0059D87F</string>
+											<string>DEAA251C10FC942F0059D87F</string>
+											<string>DEAA252110FC94780059D87F</string>
+											<string>DEAA252210FC94780059D87F</string>
+											<string>DEAA252B10FC95C60059D87F</string>
+											<string>DEAA252C10FC95C60059D87F</string>
+											<string>DEAA252D10FC95C60059D87F</string>
+											<string>DEAA252E10FC95C60059D87F</string>
+											<string>DEAA252F10FC95C60059D87F</string>
+											<string>DEAA253910FC96900059D87F</string>
+											<string>DEAA253A10FC96900059D87F</string>
+											<string>DEAA253F10FC97050059D87F</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -828,8 +845,8 @@
 		<string>DEFEE5F710D80AD2001213CE</string>
 		<string>1CD10A99069EF8BA00B06720</string>
 		<string>1C530D57069F1CE1000CFCEE</string>
-		<string>1C78EAAD065D492600B07095</string>
 		<string>/Users/daveknapik/Documents/iPhone Development/Touch app/Touch320/Touch320.xcodeproj</string>
+		<string>1C78EAAD065D492600B07095</string>
 	</array>
 	<key>WindowString</key>
 	<string>108 262 1171 598 0 0 1440 878 </string>
@@ -1170,7 +1187,7 @@
 								<key>Frame</key>
 								<string>{{0, 0}, {760, 295}}</string>
 								<key>RubberWindowFrame</key>
-								<string>648 512 760 336 0 0 1440 878 </string>
+								<string>69 515 760 336 0 0 1440 878 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXDebugCLIModule</string>
@@ -1199,7 +1216,7 @@
 			<key>ToolbarConfiguration</key>
 			<string>xcode.toolbar.config.consoleV3</string>
 			<key>WindowString</key>
-			<string>648 512 760 336 0 0 1440 878 </string>
+			<string>69 515 760 336 0 0 1440 878 </string>
 			<key>WindowToolGUID</key>
 			<string>1C78EAAD065D492600B07095</string>
 			<key>WindowToolIsVisible</key>

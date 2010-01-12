@@ -20,7 +20,7 @@
 
 @implementation Touch320AppDelegate
 
-@synthesize link = _link, activeViewController = _activeViewController;
+@synthesize link = _link, activeViewController = _activeViewController, activeAudioPlayer = _activeAudioPlayer;
 
 void interruptionListener (void *inClientData, UInt32 inInterruptionState);
 

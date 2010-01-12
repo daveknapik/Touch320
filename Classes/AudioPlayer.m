@@ -108,6 +108,7 @@
 }
 
 - (void)cancel {
+	NSLog(@"cancelling audio player");
 	request.delegate = nil;
 	[request cancel];
 	[request release];
