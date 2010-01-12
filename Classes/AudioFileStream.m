@@ -40,6 +40,12 @@ void packetCallback(void *clientData, UInt32 byteCount, UInt32 packetCount, cons
 	// errors and return as appropriate from this call.
 	callbackStatus = noErr;
 
+	NSLog(@"Received %d length", [data length]);
+	NSLog(@"Received %d bytes", [data bytes]);
+	
+	NSLog(@"Received %d length", data.length);
+	NSLog(@"Received %d bytes", data.bytes);
+	
 	// Our property and packet callbacks will
 	// be called as a result of parsing bytes here.
 	OSStatus status = AudioFileStreamParseBytes(streamID, 

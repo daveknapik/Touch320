@@ -8,6 +8,7 @@
 
 #import "NewsViewController.h"
 #import "NewsDataSource.h"
+#import "Touch320AppDelegate.h"
 
 @implementation NewsViewController
 

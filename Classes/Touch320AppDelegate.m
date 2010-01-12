@@ -20,6 +20,10 @@
 
 @implementation Touch320AppDelegate
 
+@synthesize link = _link, activeViewController = _activeViewController;
+
+void interruptionListener (void *inClientData, UInt32 inInterruptionState);
+
 - (void)applicationDidFinishLaunching:(UIApplication *)application {    
 	// Allow HTTP response size to be unlimited.
     [[TTURLRequestQueue mainQueue] setMaxContentLength:0];
@@ -56,6 +60,16 @@
 		//This is the first launch, so we just start with the tab bar
 		[navigator openURL:@"tt://tabBar" animated:NO];
 	}	
+	
+	AudioSessionInitialize (
+							NULL,                  // use the default (main) run loop
+							NULL,                  // use the default run loop mode
+							interruptionListener,  // a reference to your interruption callback
+							self                   // userData
+							);
+	
+	UInt32 sessionCategory = kAudioSessionCategory_MediaPlayback;
+	AudioSessionSetProperty (kAudioSessionProperty_AudioCategory, sizeof (sessionCategory), &sessionCategory);
 }
 
 - (BOOL)navigator:(TTNavigator*)navigator shouldOpenURL:(NSURL*)URL {
@@ -69,6 +83,23 @@
 
 - (void)dealloc {
 	[super dealloc];
+}
+
+- (void)bollocks {
+	NSLog(@"I am the AppDelegate and I think the Active View Controller is: %@ %@", self.activeViewController,self.link);
+}
+
+void interruptionListener(void *userData, UInt32  interruptionState) {
+	Touch320AppDelegate *appDelegate;
+	appDelegate = (Touch320AppDelegate*)[UIApplication sharedApplication].delegate;
+	
+	if (interruptionState == kAudioSessionBeginInterruption) {
+		[appDelegate.activeViewController pause];
+		AudioSessionSetActive(NO);
+	} else if (interruptionState == kAudioSessionEndInterruption) {
+		AudioSessionSetActive(YES);
+		[appDelegate.activeViewController play];
+	}
 }
 
 @end

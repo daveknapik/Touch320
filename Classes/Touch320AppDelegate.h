@@ -11,9 +11,14 @@
 #import "AudioPlayer.h"
 
 @interface Touch320AppDelegate : NSObject <UIApplicationDelegate> {
-	
+	NSString* _link;
+	UIViewController* _activeViewController;
 }
 
+@property (nonatomic, retain) NSString* link;
+@property (nonatomic, retain) UIViewController* activeViewController;
+
+- (void)bollocks;
 
 @end
 

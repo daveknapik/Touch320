@@ -8,7 +8,7 @@
 @implementation AudioRequest
 @synthesize delegate;
 
-static CFTimeInterval kTimeoutInterval = 15;
+static CFTimeInterval kTimeoutInterval = 30;
 
 - (id)initRequestWithURL:(NSURL *)url delegate:(id<AudioRequestDelegate>)aDelegate {
 	self = [super init];

@@ -29,7 +29,8 @@
 		if (more)
 			page++;
 		
-		NSString* url=@"http://www.touchmusic.org.uk/TouchPod/podcast.xml";
+		//NSString* url=@"http://www.touchmusic.org.uk/TouchPod/podcast.xml";
+		NSString* url=@"http://www.touchmusic.org.uk/TouchiPhoneRadio/podcast.xml";
 		
 		TTURLRequest* request = [TTURLRequest requestWithURL:url delegate:self];
 		request.cachePolicy = cachePolicy;

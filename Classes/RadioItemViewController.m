@@ -7,6 +7,7 @@
 //
 
 #import "RadioItemViewController.h"
+#import "Touch320AppDelegate.h"
 
 @implementation RadioItemViewController
 
@@ -30,8 +31,6 @@
 			pubDateValue = _pubDateValue,
 			durationValue = _durationValue;
 
-void interruptionListener (void *inClientData, UInt32 inInterruptionState);
-
 - (id)initWithRadioItem:(NSString *)placeholder query:(NSDictionary*)query
 {
 	if (self = [self init]) {		
@@ -49,17 +48,15 @@ void interruptionListener (void *inClientData, UInt32 inInterruptionState);
 		self.link = [query objectForKey:@"link"];
 		self.duration = [query objectForKey:@"duration"];
 		
-		AudioSessionInitialize (
-								NULL,                  // use the default (main) run loop
-								NULL,                  // use the default run loop mode
-								interruptionListener,  // a reference to your interruption callback
-								self                   // userData
-								);
+		Touch320AppDelegate *appDelegate;
+		appDelegate = (Touch320AppDelegate*)[UIApplication sharedApplication].delegate;
 		
-		UInt32 sessionCategory = kAudioSessionCategory_MediaPlayback;
-		AudioSessionSetProperty (kAudioSessionProperty_AudioCategory, sizeof (sessionCategory), &sessionCategory);
+		appDelegate.link = self.link;
+		appDelegate.activeViewController = self;
 		
 		/*
+		[appDelegate bollocks]; 
+		 
 		NSLog(@"radio item title: %@",self.navigationItem.title);
 		NSLog(@"radio item subtitle: %@",self.subtitle);
 		NSLog(@"radio item author: %@",self.author);
@@ -248,12 +245,17 @@ void interruptionListener (void *inClientData, UInt32 inInterruptionState);
 	TT_RELEASE_SAFELY(pauseButton);
 	TT_RELEASE_SAFELY(activityIndicatorView);
 	
+	[audioPlayer release];
+	
 	[super dealloc];
 }
 
 - (void)showStopped {
+	[UIView beginAnimations:nil context:nil];
+	[activityIndicatorView stopAnimating];
 	pauseButton.alpha = 0;
 	playButton.alpha = 0;
+	[UIView commitAnimations];
 }
 
 - (void)showLoading {
@@ -290,6 +292,7 @@ void interruptionListener (void *inClientData, UInt32 inInterruptionState);
 	[audioPlayer cancel];
 	[audioPlayer release];
 	audioPlayer = [[AudioPlayer alloc] initPlayerWithURL:[NSURL URLWithString:self.link] delegate:self];
+	//audioPlayer = [[AudioPlayer alloc] initPlayerWithURL:[NSURL URLWithString:@"http://www.daveknapik.com/audio/theVillageGreenDecimationSociety.mp3"] delegate:self];
 	[self showLoading];
 }
 
@@ -317,17 +320,6 @@ void interruptionListener (void *inClientData, UInt32 inInterruptionState);
 - (void)audioPlayerPlaybackFinished:(AudioPlayer *)audioPlayer {
 	AudioSessionSetActive(NO);
 	[self showStopped];
-}
-
-void interruptionListener(void *userData, UInt32  interruptionState) {
-	RadioItemViewController *self = userData;
-	
-	if (interruptionState == kAudioSessionBeginInterruption) {
-		[self pause];
-		AudioSessionSetActive(NO);
-	} else if (interruptionState == kAudioSessionEndInterruption) {
-		AudioSessionSetActive(YES);
-	}
 }
 
 
