@@ -24,7 +24,7 @@
 	29B97313FDCFA39411CA2CEA /* Project object */ = {
 		activeBuildConfigurationName = Debug;
 		activeExecutable = DEFEE5BB10D80A89001213CE /* Touch320 */;
-		activeSDKPreference = iphonesimulator3.1.2;
+		activeSDKPreference = iphoneos3.1.2;
 		activeTarget = 1D6058900D05DD3D006BFB54 /* Touch320 */;
 		addToTargets = (
 			1D6058900D05DD3D006BFB54 /* Touch320 */,
@@ -618,6 +618,39 @@
 			DEAA253F10FC97050059D87F /* PBXTextBookmark */ = DEAA253F10FC97050059D87F /* PBXTextBookmark */;
 			DEAA254010FC97050059D87F /* PBXTextBookmark */ = DEAA254010FC97050059D87F /* PBXTextBookmark */;
 			DEAA254210FC97880059D87F /* PBXTextBookmark */ = DEAA254210FC97880059D87F /* PBXTextBookmark */;
+			DEAA254610FCA38A0059D87F /* PBXTextBookmark */ = DEAA254610FCA38A0059D87F /* PBXTextBookmark */;
+			DEAA254A10FCA6420059D87F /* PBXTextBookmark */ = DEAA254A10FCA6420059D87F /* PBXTextBookmark */;
+			DEAA254B10FCA6420059D87F /* PBXTextBookmark */ = DEAA254B10FCA6420059D87F /* PBXTextBookmark */;
+			DEAA255410FCAB6B0059D87F /* PBXTextBookmark */ = DEAA255410FCAB6B0059D87F /* PBXTextBookmark */;
+			DEAA255510FCAB6B0059D87F /* PBXTextBookmark */ = DEAA255510FCAB6B0059D87F /* PBXTextBookmark */;
+			DEAA255A10FCAB6D0059D87F /* PBXTextBookmark */ = DEAA255A10FCAB6D0059D87F /* PBXTextBookmark */;
+			DEAA255B10FCAB6D0059D87F /* PBXTextBookmark */ = DEAA255B10FCAB6D0059D87F /* PBXTextBookmark */;
+			DEAA255C10FCAB6D0059D87F /* PBXTextBookmark */ = DEAA255C10FCAB6D0059D87F /* PBXTextBookmark */;
+			DEAA255D10FCAB6D0059D87F /* PBXTextBookmark */ = DEAA255D10FCAB6D0059D87F /* PBXTextBookmark */;
+			DEAA255E10FCAB6D0059D87F /* PBXTextBookmark */ = DEAA255E10FCAB6D0059D87F /* PBXTextBookmark */;
+			DEAA255F10FCAB6D0059D87F /* PBXTextBookmark */ = DEAA255F10FCAB6D0059D87F /* PBXTextBookmark */;
+			DEAA256010FCAB6D0059D87F /* PBXTextBookmark */ = DEAA256010FCAB6D0059D87F /* PBXTextBookmark */;
+			DEAA256110FCAB6D0059D87F /* PBXTextBookmark */ = DEAA256110FCAB6D0059D87F /* PBXTextBookmark */;
+			DEAA256210FCAB6D0059D87F /* PBXTextBookmark */ = DEAA256210FCAB6D0059D87F /* PBXTextBookmark */;
+			DEAA256310FCAB6D0059D87F /* PBXTextBookmark */ = DEAA256310FCAB6D0059D87F /* PBXTextBookmark */;
+			DEAA256410FCAB6D0059D87F /* PBXTextBookmark */ = DEAA256410FCAB6D0059D87F /* PBXTextBookmark */;
+			DEAA256510FCAB6D0059D87F /* PBXTextBookmark */ = DEAA256510FCAB6D0059D87F /* PBXTextBookmark */;
+			DEAA256610FCAB6D0059D87F /* PBXTextBookmark */ = DEAA256610FCAB6D0059D87F /* PBXTextBookmark */;
+			DEAA256710FCAB6D0059D87F /* PBXTextBookmark */ = DEAA256710FCAB6D0059D87F /* PBXTextBookmark */;
+			DEAA256810FCAB6D0059D87F /* PBXTextBookmark */ = DEAA256810FCAB6D0059D87F /* PBXTextBookmark */;
+			DEAA256910FCAB6D0059D87F /* PBXTextBookmark */ = DEAA256910FCAB6D0059D87F /* PBXTextBookmark */;
+			DEAA256A10FCAB6D0059D87F /* PBXTextBookmark */ = DEAA256A10FCAB6D0059D87F /* PBXTextBookmark */;
+			DEAA259610FCB1B10059D87F /* PBXBookmark */ = DEAA259610FCB1B10059D87F /* PBXBookmark */;
+			DEAA259710FCB1B10059D87F /* PBXTextBookmark */ = DEAA259710FCB1B10059D87F /* PBXTextBookmark */;
+			DEAA259810FCB1B10059D87F /* PBXTextBookmark */ = DEAA259810FCB1B10059D87F /* PBXTextBookmark */;
+			DEAA259910FCB1B10059D87F /* PBXBookmark */ = DEAA259910FCB1B10059D87F /* PBXBookmark */;
+			DEAA259A10FCB1B10059D87F /* PBXTextBookmark */ = DEAA259A10FCB1B10059D87F /* PBXTextBookmark */;
+			DEAA259D10FCB1D60059D87F /* PBXTextBookmark */ = DEAA259D10FCB1D60059D87F /* PBXTextBookmark */;
+			DEAA25A010FCB2640059D87F /* PBXTextBookmark */ = DEAA25A010FCB2640059D87F /* PBXTextBookmark */;
+			DEAA25A110FCB2760059D87F /* PBXTextBookmark */ = DEAA25A110FCB2760059D87F /* PBXTextBookmark */;
+			DEAA25A210FCB28A0059D87F /* PBXTextBookmark */ = DEAA25A210FCB28A0059D87F /* PBXTextBookmark */;
+			DEAA25A510FCB3990059D87F /* PBXTextBookmark */ = DEAA25A510FCB3990059D87F /* PBXTextBookmark */;
+			DEAA25B110FCB5190059D87F /* PBXTextBookmark */ = DEAA25B110FCB5190059D87F /* PBXTextBookmark */;
 			DEB0560910DBA3AF00C5D7DB = DEB0560910DBA3AF00C5D7DB /* PBXTextBookmark */;
 			DEB7CE1F10F27251006E2DB4 = DEB7CE1F10F27251006E2DB4 /* PBXTextBookmark */;
 			DEC589D110F76833008389E1 = DEC589D110F76833008389E1 /* PBXTextBookmark */;
@@ -733,9 +766,9 @@
 	};
 	DE10401810F3EFE20058DDB8 /* RadioTableItem.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {770, 1680}}";
-			sepNavSelRange = "{205, 137}";
-			sepNavVisRange = "{1664, 606}";
+			sepNavIntBoundsRect = "{{0, 0}, {770, 1638}}";
+			sepNavSelRange = "{451, 12}";
+			sepNavVisRange = "{343, 640}";
 		};
 	};
 	DE10401A10F3EFEC0058DDB8 /* RadioTableItemCell.h */ = {
@@ -762,9 +795,9 @@
 	};
 	DE10401E10F3EFFF0058DDB8 /* RadioDataSource.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {770, 1218}}";
-			sepNavSelRange = "{1373, 238}";
-			sepNavVisRange = "{1223, 708}";
+			sepNavIntBoundsRect = "{{0, 0}, {770, 1232}}";
+			sepNavSelRange = "{1270, 0}";
+			sepNavVisRange = "{831, 812}";
 		};
 	};
 	DE10402010F3F0050058DDB8 /* RadioModel.h */ = {
@@ -776,9 +809,9 @@
 	};
 	DE10402110F3F0050058DDB8 /* RadioModel.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {770, 1554}}";
+			sepNavIntBoundsRect = "{{0, 0}, {770, 1372}}";
 			sepNavSelRange = "{504, 0}";
-			sepNavVisRange = "{266, 629}";
+			sepNavVisRange = "{1384, 1081}";
 		};
 	};
 	DE10403D10F3F0CA0058DDB8 /* PBXTextBookmark */ = {
@@ -1020,9 +1053,9 @@
 	};
 	DE1041E710F4C8780058DDB8 /* RadioItemViewController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1020, 4802}}";
-			sepNavSelRange = "{10109, 7}";
-			sepNavVisRange = "{9749, 599}";
+			sepNavIntBoundsRect = "{{0, 0}, {936, 4368}}";
+			sepNavSelRange = "{4957, 0}";
+			sepNavVisRange = "{4577, 1473}";
 			sepNavWindowFrame = "{{153, 189}, {750, 558}}";
 		};
 	};
@@ -2217,7 +2250,7 @@
 		fRef = DE1041E710F4C8780058DDB8 /* RadioItemViewController.m */;
 		name = "RadioItemViewController.m: 307";
 		rLen = 0;
-		rLoc = 10206;
+		rLoc = 10575;
 		rType = 0;
 		vrLen = 695;
 		vrLoc = 8580;
@@ -2488,7 +2521,7 @@
 		fRef = DE1041E710F4C8780058DDB8 /* RadioItemViewController.m */;
 		name = "RadioItemViewController.m: 286";
 		rLen = 68;
-		rLoc = 9622;
+		rLoc = 9991;
 		rType = 0;
 		vrLen = 675;
 		vrLoc = 8577;
@@ -2585,7 +2618,7 @@
 		fRef = DE1041E710F4C8780058DDB8 /* RadioItemViewController.m */;
 		name = "RadioItemViewController.m: 296";
 		rLen = 6;
-		rLoc = 9827;
+		rLoc = 10196;
 		rType = 0;
 		vrLen = 615;
 		vrLoc = 9142;
@@ -2615,7 +2648,7 @@
 		fRef = DE1041E710F4C8780058DDB8 /* RadioItemViewController.m */;
 		name = "RadioItemViewController.m: 286";
 		rLen = 68;
-		rLoc = 9622;
+		rLoc = 9991;
 		rType = 0;
 		vrLen = 673;
 		vrLoc = 8579;
@@ -2685,7 +2718,7 @@
 		fRef = DE1041E710F4C8780058DDB8 /* RadioItemViewController.m */;
 		name = "RadioItemViewController.m: 286";
 		rLen = 68;
-		rLoc = 9622;
+		rLoc = 9991;
 		rType = 0;
 		vrLen = 790;
 		vrLoc = 8853;
@@ -2705,7 +2738,7 @@
 		fRef = DE1041E710F4C8780058DDB8 /* RadioItemViewController.m */;
 		name = "RadioItemViewController.m: 296";
 		rLen = 6;
-		rLoc = 9827;
+		rLoc = 10196;
 		rType = 0;
 		vrLen = 615;
 		vrLoc = 9142;
@@ -3156,7 +3189,7 @@
 		comments = "warning: 'UIView' may not respond to '-setContentSize:'";
 		fRef = DE1041E710F4C8780058DDB8 /* RadioItemViewController.m */;
 		rLen = 1;
-		rLoc = 80;
+		rLoc = 82;
 		rType = 1;
 	};
 	DEAA239F10FB71890059D87F /* PBXTextBookmark */ = {
@@ -3164,7 +3197,7 @@
 		fRef = DE1041E710F4C8780058DDB8 /* RadioItemViewController.m */;
 		name = "RadioItemViewController.m: 72";
 		rLen = 50;
-		rLoc = 2298;
+		rLoc = 2333;
 		rType = 0;
 		vrLen = 156;
 		vrLoc = 1932;
@@ -3214,7 +3247,7 @@
 		fRef = DE1041E710F4C8780058DDB8 /* RadioItemViewController.m */;
 		name = "RadioItemViewController.m: 72";
 		rLen = 50;
-		rLoc = 2298;
+		rLoc = 2333;
 		rType = 0;
 		vrLen = 568;
 		vrLoc = 1608;
@@ -3264,7 +3297,7 @@
 		fRef = DE1041E710F4C8780058DDB8 /* RadioItemViewController.m */;
 		name = "RadioItemViewController.m: 296";
 		rLen = 6;
-		rLoc = 9827;
+		rLoc = 10196;
 		rType = 0;
 		vrLen = 533;
 		vrLoc = 6799;
@@ -3294,7 +3327,7 @@
 		fRef = DE1041E710F4C8780058DDB8 /* RadioItemViewController.m */;
 		name = "RadioItemViewController.m: 296";
 		rLen = 6;
-		rLoc = 9827;
+		rLoc = 10196;
 		rType = 0;
 		vrLen = 556;
 		vrLoc = 9210;
@@ -3314,7 +3347,7 @@
 		fRef = DE1041E710F4C8780058DDB8 /* RadioItemViewController.m */;
 		name = "RadioItemViewController.m: 296";
 		rLen = 6;
-		rLoc = 9827;
+		rLoc = 10196;
 		rType = 0;
 		vrLen = 625;
 		vrLoc = 5883;
@@ -3334,7 +3367,7 @@
 		fRef = DE1041E710F4C8780058DDB8 /* RadioItemViewController.m */;
 		name = "RadioItemViewController.m: 282";
 		rLen = 6;
-		rLoc = 9147;
+		rLoc = 9516;
 		rType = 0;
 		vrLen = 637;
 		vrLoc = 8574;
@@ -3354,7 +3387,7 @@
 		fRef = DE1041E710F4C8780058DDB8 /* RadioItemViewController.m */;
 		name = "RadioItemViewController.m: 72";
 		rLen = 50;
-		rLoc = 2298;
+		rLoc = 2333;
 		rType = 0;
 		vrLen = 568;
 		vrLoc = 1608;
@@ -3391,7 +3424,7 @@
 		fRef = DE1041E710F4C8780058DDB8 /* RadioItemViewController.m */;
 		name = "RadioItemViewController.m: 72";
 		rLen = 50;
-		rLoc = 2298;
+		rLoc = 2333;
 		rType = 0;
 		vrLen = 156;
 		vrLoc = 1932;
@@ -3471,7 +3504,7 @@
 		comments = "error: 'interruptionListener' undeclared (first use in this function)";
 		fRef = DE1041E710F4C8780058DDB8 /* RadioItemViewController.m */;
 		rLen = 0;
-		rLoc = 163;
+		rLoc = 170;
 		rType = 1;
 	};
 	DEAA23D210FB79F70059D87F /* PBXTextBookmark */ = {
@@ -3479,7 +3512,7 @@
 		fRef = DE1041E710F4C8780058DDB8 /* RadioItemViewController.m */;
 		name = "RadioItemViewController.m: 160";
 		rLen = 0;
-		rLoc = 6191;
+		rLoc = 6560;
 		rType = 0;
 		vrLen = 332;
 		vrLoc = 5883;
@@ -3499,7 +3532,7 @@
 		comments = "warning: 'UIView' may not respond to '-setContentSize:'";
 		fRef = DE1041E710F4C8780058DDB8 /* RadioItemViewController.m */;
 		rLen = 1;
-		rLoc = 80;
+		rLoc = 82;
 		rType = 1;
 	};
 	DEAA23D610FB7A140059D87F /* PBXTextBookmark */ = {
@@ -3507,7 +3540,7 @@
 		fRef = DE1041E710F4C8780058DDB8 /* RadioItemViewController.m */;
 		name = "RadioItemViewController.m: 74";
 		rLen = 50;
-		rLoc = 2298;
+		rLoc = 2333;
 		rType = 0;
 		vrLen = 156;
 		vrLoc = 2009;
@@ -3567,7 +3600,7 @@
 		fRef = DE1041E710F4C8780058DDB8 /* RadioItemViewController.m */;
 		name = "RadioItemViewController.m: 72";
 		rLen = 50;
-		rLoc = 2298;
+		rLoc = 2333;
 		rType = 0;
 		vrLen = 628;
 		vrLoc = 1608;
@@ -3587,7 +3620,7 @@
 		fRef = DE1041E710F4C8780058DDB8 /* RadioItemViewController.m */;
 		name = "RadioItemViewController.m: 165";
 		rLen = 0;
-		rLoc = 6191;
+		rLoc = 6560;
 		rType = 0;
 		vrLen = 1460;
 		vrLoc = 4942;
@@ -3607,7 +3640,7 @@
 		fRef = DE1041E710F4C8780058DDB8 /* RadioItemViewController.m */;
 		name = "RadioItemViewController.m: 264";
 		rLen = 0;
-		rLoc = 8185;
+		rLoc = 8554;
 		rType = 0;
 		vrLen = 679;
 		vrLoc = 8212;
@@ -3637,7 +3670,7 @@
 		fRef = DE1041E710F4C8780058DDB8 /* RadioItemViewController.m */;
 		name = "RadioItemViewController.m: 74";
 		rLen = 50;
-		rLoc = 2298;
+		rLoc = 2333;
 		rType = 0;
 		vrLen = 509;
 		vrLoc = 1932;
@@ -3657,7 +3690,7 @@
 		fRef = DE1041E710F4C8780058DDB8 /* RadioItemViewController.m */;
 		name = "RadioItemViewController.m: 74";
 		rLen = 50;
-		rLoc = 2298;
+		rLoc = 2333;
 		rType = 0;
 		vrLen = 304;
 		vrLoc = 2009;
@@ -3677,7 +3710,7 @@
 		fRef = DE1041E710F4C8780058DDB8 /* RadioItemViewController.m */;
 		name = "RadioItemViewController.m: 74";
 		rLen = 50;
-		rLoc = 2298;
+		rLoc = 2333;
 		rType = 0;
 		vrLen = 556;
 		vrLoc = 10122;
@@ -3717,7 +3750,7 @@
 		fRef = DE1041E710F4C8780058DDB8 /* RadioItemViewController.m */;
 		name = "RadioItemViewController.m: 157";
 		rLen = 0;
-		rLoc = 6191;
+		rLoc = 6560;
 		rType = 0;
 		vrLen = 1306;
 		vrLoc = 5085;
@@ -3737,7 +3770,7 @@
 		fRef = DE1041E710F4C8780058DDB8 /* RadioItemViewController.m */;
 		name = "RadioItemViewController.m: 244";
 		rLen = 0;
-		rLoc = 8185;
+		rLoc = 8554;
 		rType = 0;
 		vrLen = 804;
 		vrLoc = 1160;
@@ -3847,7 +3880,7 @@
 		fRef = DE1041E710F4C8780058DDB8 /* RadioItemViewController.m */;
 		name = "RadioItemViewController.m: 72";
 		rLen = 50;
-		rLoc = 2298;
+		rLoc = 2333;
 		rType = 0;
 		vrLen = 301;
 		vrLoc = 1935;
@@ -4017,7 +4050,7 @@
 		fRef = DE1041E710F4C8780058DDB8 /* RadioItemViewController.m */;
 		name = "RadioItemViewController.m: 72";
 		rLen = 50;
-		rLoc = 2298;
+		rLoc = 2333;
 		rType = 0;
 		vrLen = 303;
 		vrLoc = 1935;
@@ -5127,7 +5160,7 @@
 		fRef = DE1041E710F4C8780058DDB8 /* RadioItemViewController.m */;
 		name = "RadioItemViewController.m: 82";
 		rLen = 50;
-		rLoc = 2298;
+		rLoc = 2333;
 		rType = 0;
 		vrLen = 87;
 		vrLoc = 2212;
@@ -5145,7 +5178,7 @@
 		fRef = DE1041E710F4C8780058DDB8 /* RadioItemViewController.m */;
 		name = "RadioItemViewController.m: 82";
 		rLen = 50;
-		rLoc = 2298;
+		rLoc = 2333;
 		rType = 0;
 		vrLen = 87;
 		vrLoc = 2212;
@@ -5285,7 +5318,7 @@
 		fRef = DE1041E710F4C8780058DDB8 /* RadioItemViewController.m */;
 		name = "RadioItemViewController.m: 57";
 		rLen = 0;
-		rLoc = 1722;
+		rLoc = 1757;
 		rType = 0;
 		vrLen = 954;
 		vrLoc = 1083;
@@ -5645,7 +5678,7 @@
 		fRef = DE1041E710F4C8780058DDB8 /* RadioItemViewController.m */;
 		name = "RadioItemViewController.m: 57";
 		rLen = 0;
-		rLoc = 1727;
+		rLoc = 1762;
 		rType = 0;
 		vrLen = 636;
 		vrLoc = 1560;
@@ -5655,7 +5688,7 @@
 		fRef = DE1041E710F4C8780058DDB8 /* RadioItemViewController.m */;
 		name = "RadioItemViewController.m: 248";
 		rLen = 0;
-		rLoc = 8163;
+		rLoc = 8532;
 		rType = 0;
 		vrLen = 541;
 		vrLoc = 7878;
@@ -5665,7 +5698,7 @@
 		fRef = DE1041E710F4C8780058DDB8 /* RadioItemViewController.m */;
 		name = "RadioItemViewController.m: 215";
 		rLen = 0;
-		rLoc = 7367;
+		rLoc = 7736;
 		rType = 0;
 		vrLen = 451;
 		vrLoc = 6985;
@@ -5675,7 +5708,7 @@
 		fRef = DE1041E710F4C8780058DDB8 /* RadioItemViewController.m */;
 		name = "RadioItemViewController.m: 215";
 		rLen = 0;
-		rLoc = 7367;
+		rLoc = 7736;
 		rType = 0;
 		vrLen = 451;
 		vrLoc = 6985;
@@ -5705,7 +5738,7 @@
 		fRef = DE1041E710F4C8780058DDB8 /* RadioItemViewController.m */;
 		name = "RadioItemViewController.m: 57";
 		rLen = 0;
-		rLoc = 1727;
+		rLoc = 1762;
 		rType = 0;
 		vrLen = 603;
 		vrLoc = 7632;
@@ -5715,7 +5748,7 @@
 		fRef = DE1041E710F4C8780058DDB8 /* RadioItemViewController.m */;
 		name = "RadioItemViewController.m: 57";
 		rLen = 0;
-		rLoc = 1727;
+		rLoc = 1762;
 		rType = 0;
 		vrLen = 639;
 		vrLoc = 7596;
@@ -5775,7 +5808,7 @@
 		fRef = DE1041E710F4C8780058DDB8 /* RadioItemViewController.m */;
 		name = "RadioItemViewController.m: 216";
 		rLen = 0;
-		rLoc = 7367;
+		rLoc = 7736;
 		rType = 0;
 		vrLen = 477;
 		vrLoc = 7142;
@@ -5785,7 +5818,7 @@
 		fRef = DE1041E710F4C8780058DDB8 /* RadioItemViewController.m */;
 		name = "RadioItemViewController.m: 296";
 		rLen = 0;
-		rLoc = 9542;
+		rLoc = 9911;
 		rType = 0;
 		vrLen = 632;
 		vrLoc = 8946;
@@ -5805,7 +5838,7 @@
 		fRef = DE1041E710F4C8780058DDB8 /* RadioItemViewController.m */;
 		name = "RadioItemViewController.m: 296";
 		rLen = 0;
-		rLoc = 9542;
+		rLoc = 9911;
 		rType = 0;
 		vrLen = 635;
 		vrLoc = 8946;
@@ -5815,7 +5848,7 @@
 		fRef = DE1041E710F4C8780058DDB8 /* RadioItemViewController.m */;
 		name = "RadioItemViewController.m: 296";
 		rLen = 0;
-		rLoc = 9542;
+		rLoc = 9911;
 		rType = 0;
 		vrLen = 635;
 		vrLoc = 8946;
@@ -5835,7 +5868,7 @@
 		fRef = DE1041E710F4C8780058DDB8 /* RadioItemViewController.m */;
 		name = "RadioItemViewController.m: 292";
 		rLen = 0;
-		rLoc = 9231;
+		rLoc = 9600;
 		rType = 0;
 		vrLen = 652;
 		vrLoc = 8946;
@@ -5845,7 +5878,7 @@
 		fRef = DE1041E710F4C8780058DDB8 /* RadioItemViewController.m */;
 		name = "RadioItemViewController.m: 292";
 		rLen = 0;
-		rLoc = 9231;
+		rLoc = 9600;
 		rType = 0;
 		vrLen = 673;
 		vrLoc = 8946;
@@ -5865,7 +5898,7 @@
 		fRef = DE1041E710F4C8780058DDB8 /* RadioItemViewController.m */;
 		name = "RadioItemViewController.m: 292";
 		rLen = 0;
-		rLoc = 9231;
+		rLoc = 9600;
 		rType = 0;
 		vrLen = 673;
 		vrLoc = 8946;
@@ -5935,7 +5968,7 @@
 		fRef = DE1041E710F4C8780058DDB8 /* RadioItemViewController.m */;
 		name = "RadioItemViewController.m: 292";
 		rLen = 0;
-		rLoc = 9231;
+		rLoc = 9600;
 		rType = 0;
 		vrLen = 673;
 		vrLoc = 8946;
@@ -5965,7 +5998,7 @@
 		fRef = DE1041E710F4C8780058DDB8 /* RadioItemViewController.m */;
 		name = "RadioItemViewController.m: 292";
 		rLen = 0;
-		rLoc = 9231;
+		rLoc = 9600;
 		rType = 0;
 		vrLen = 673;
 		vrLoc = 8946;
@@ -5995,7 +6028,7 @@
 		fRef = DE1041E710F4C8780058DDB8 /* RadioItemViewController.m */;
 		name = "RadioItemViewController.m: 306";
 		rLen = 0;
-		rLoc = 9542;
+		rLoc = 9911;
 		rType = 0;
 		vrLen = 766;
 		vrLoc = 8993;
@@ -6055,7 +6088,7 @@
 		fRef = DE1041E710F4C8780058DDB8 /* RadioItemViewController.m */;
 		name = "RadioItemViewController.m: 306";
 		rLen = 0;
-		rLoc = 9542;
+		rLoc = 9911;
 		rType = 0;
 		vrLen = 717;
 		vrLoc = 9451;
@@ -6065,7 +6098,7 @@
 		fRef = DE1041E710F4C8780058DDB8 /* RadioItemViewController.m */;
 		name = "RadioItemViewController.m: 306";
 		rLen = 0;
-		rLoc = 9542;
+		rLoc = 9911;
 		rType = 0;
 		vrLen = 718;
 		vrLoc = 9451;
@@ -6085,7 +6118,7 @@
 		fRef = DE1041E710F4C8780058DDB8 /* RadioItemViewController.m */;
 		name = "RadioItemViewController.m: 322";
 		rLen = 7;
-		rLoc = 10109;
+		rLoc = 10478;
 		rType = 0;
 		vrLen = 599;
 		vrLoc = 9749;
@@ -6095,7 +6128,7 @@
 		fRef = DE1041E710F4C8780058DDB8 /* RadioItemViewController.m */;
 		name = "RadioItemViewController.m: 322";
 		rLen = 7;
-		rLoc = 10109;
+		rLoc = 10478;
 		rType = 0;
 		vrLen = 599;
 		vrLoc = 9749;
@@ -6115,7 +6148,7 @@
 		fRef = DE1041E710F4C8780058DDB8 /* RadioItemViewController.m */;
 		name = "RadioItemViewController.m: 322";
 		rLen = 7;
-		rLoc = 10109;
+		rLoc = 10478;
 		rType = 0;
 		vrLen = 599;
 		vrLoc = 9749;
@@ -6139,6 +6172,324 @@
 		rType = 0;
 		vrLen = 688;
 		vrLoc = 1239;
+	};
+	DEAA254610FCA38A0059D87F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = DEF0C35510F66DF900E74685 /* AudioFileStream.m */;
+		name = "AudioFileStream.m: 46";
+		rLen = 0;
+		rLoc = 1569;
+		rType = 0;
+		vrLen = 710;
+		vrLoc = 1215;
+	};
+	DEAA254A10FCA6420059D87F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = DEFEE66910D80BC3001213CE /* RadioViewController.m */;
+		name = "RadioViewController.m: 46";
+		rLen = 37;
+		rLoc = 1058;
+		rType = 0;
+		vrLen = 50;
+		vrLoc = 1784;
+	};
+	DEAA254B10FCA6420059D87F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = DEF0C35510F66DF900E74685 /* AudioFileStream.m */;
+		name = "AudioFileStream.m: 30";
+		rLen = 19;
+		rLoc = 1118;
+		rType = 0;
+		vrLen = 498;
+		vrLoc = 742;
+	};
+	DEAA255410FCAB6B0059D87F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = DEFEE66910D80BC3001213CE /* RadioViewController.m */;
+		name = "RadioViewController.m: 46";
+		rLen = 37;
+		rLoc = 1058;
+		rType = 0;
+		vrLen = 233;
+		vrLoc = 1596;
+	};
+	DEAA255510FCAB6B0059D87F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = DEF0C35510F66DF900E74685 /* AudioFileStream.m */;
+		name = "AudioFileStream.m: 30";
+		rLen = 19;
+		rLoc = 1118;
+		rType = 0;
+		vrLen = 498;
+		vrLoc = 742;
+	};
+	DEAA255A10FCAB6D0059D87F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = DEF0C35510F66DF900E74685 /* AudioFileStream.m */;
+		name = "AudioFileStream.m: 46";
+		rLen = 0;
+		rLoc = 1569;
+		rType = 0;
+		vrLen = 710;
+		vrLoc = 1215;
+	};
+	DEAA255B10FCAB6D0059D87F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = DEFEE66910D80BC3001213CE /* RadioViewController.m */;
+		name = "RadioViewController.m: 43";
+		rLen = 0;
+		rLoc = 981;
+		rType = 0;
+		vrLen = 642;
+		vrLoc = 29;
+	};
+	DEAA255C10FCAB6D0059D87F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = DE10401810F3EFE20058DDB8 /* RadioTableItem.m */;
+		name = "RadioTableItem.m: 22";
+		rLen = 12;
+		rLoc = 451;
+		rType = 0;
+		vrLen = 640;
+		vrLoc = 343;
+	};
+	DEAA255D10FCAB6D0059D87F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = DE10402110F3F0050058DDB8 /* RadioModel.m */;
+		name = "RadioModel.m: 32";
+		rLen = 0;
+		rLoc = 504;
+		rType = 0;
+		vrLen = 1081;
+		vrLoc = 1384;
+	};
+	DEAA255E10FCAB6D0059D87F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = DE10401E10F3EFFF0058DDB8 /* RadioDataSource.m */;
+		name = "RadioDataSource.m: 52";
+		rLen = 0;
+		rLoc = 1270;
+		rType = 0;
+		vrLen = 812;
+		vrLoc = 831;
+	};
+	DEAA255F10FCAB6D0059D87F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = DE1041E710F4C8780058DDB8 /* RadioItemViewController.m */;
+		name = "RadioItemViewController.m: 322";
+		rLen = 7;
+		rLoc = 10478;
+		rType = 0;
+		vrLen = 954;
+		vrLoc = 766;
+	};
+	DEAA256010FCAB6D0059D87F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = DEF0C35510F66DF900E74685 /* AudioFileStream.m */;
+		name = "AudioFileStream.m: 46";
+		rLen = 0;
+		rLoc = 1569;
+		rType = 0;
+		vrLen = 710;
+		vrLoc = 1215;
+	};
+	DEAA256110FCAB6D0059D87F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = DE10402110F3F0050058DDB8 /* RadioModel.m */;
+		name = "RadioModel.m: 32";
+		rLen = 0;
+		rLoc = 504;
+		rType = 0;
+		vrLen = 701;
+		vrLoc = 2112;
+	};
+	DEAA256210FCAB6D0059D87F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = DE1041E710F4C8780058DDB8 /* RadioItemViewController.m */;
+		name = "RadioItemViewController.m: 322";
+		rLen = 7;
+		rLoc = 10478;
+		rType = 0;
+		vrLen = 989;
+		vrLoc = 731;
+	};
+	DEAA256310FCAB6D0059D87F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = DEFEE66910D80BC3001213CE /* RadioViewController.m */;
+		name = "RadioViewController.m: 43";
+		rLen = 0;
+		rLoc = 981;
+		rType = 0;
+		vrLen = 515;
+		vrLoc = 767;
+	};
+	DEAA256410FCAB6D0059D87F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = DE10402110F3F0050058DDB8 /* RadioModel.m */;
+		name = "RadioModel.m: 32";
+		rLen = 0;
+		rLoc = 504;
+		rType = 0;
+		vrLen = 380;
+		vrLoc = 0;
+	};
+	DEAA256510FCAB6D0059D87F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = DE10401810F3EFE20058DDB8 /* RadioTableItem.m */;
+		name = "RadioTableItem.m: 22";
+		rLen = 12;
+		rLoc = 451;
+		rType = 0;
+		vrLen = 639;
+		vrLoc = 141;
+	};
+	DEAA256610FCAB6D0059D87F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = DEFEE66910D80BC3001213CE /* RadioViewController.m */;
+		name = "RadioViewController.m: 43";
+		rLen = 0;
+		rLoc = 981;
+		rType = 0;
+		vrLen = 642;
+		vrLoc = 29;
+	};
+	DEAA256710FCAB6D0059D87F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = DE10401810F3EFE20058DDB8 /* RadioTableItem.m */;
+		name = "RadioTableItem.m: 22";
+		rLen = 12;
+		rLoc = 451;
+		rType = 0;
+		vrLen = 640;
+		vrLoc = 343;
+	};
+	DEAA256810FCAB6D0059D87F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = DE10402110F3F0050058DDB8 /* RadioModel.m */;
+		name = "RadioModel.m: 32";
+		rLen = 0;
+		rLoc = 504;
+		rType = 0;
+		vrLen = 1081;
+		vrLoc = 1384;
+	};
+	DEAA256910FCAB6D0059D87F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = DE10401E10F3EFFF0058DDB8 /* RadioDataSource.m */;
+		name = "RadioDataSource.m: 52";
+		rLen = 0;
+		rLoc = 1270;
+		rType = 0;
+		vrLen = 812;
+		vrLoc = 831;
+	};
+	DEAA256A10FCAB6D0059D87F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = DE1041E710F4C8780058DDB8 /* RadioItemViewController.m */;
+		name = "RadioItemViewController.m: 57";
+		rLen = 0;
+		rLoc = 1754;
+		rType = 0;
+		vrLen = 913;
+		vrLoc = 941;
+	};
+	DEAA259610FCB1B10059D87F /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = DEAA259310FCB13C0059D87F /* blackbutton.png */;
+	};
+	DEAA259710FCB1B10059D87F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = DE1041E710F4C8780058DDB8 /* RadioItemViewController.m */;
+		name = "RadioItemViewController.m: 57";
+		rLen = 0;
+		rLoc = 1754;
+		rType = 0;
+		vrLen = 913;
+		vrLoc = 941;
+	};
+	DEAA259810FCB1B10059D87F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = DE1041E710F4C8780058DDB8 /* RadioItemViewController.m */;
+		name = "RadioItemViewController.m: 57";
+		rLen = 0;
+		rLoc = 1754;
+		rType = 0;
+		vrLen = 913;
+		vrLoc = 941;
+	};
+	DEAA259910FCB1B10059D87F /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = DEAA259310FCB13C0059D87F /* blackbutton.png */;
+	};
+	DEAA259A10FCB1B10059D87F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = DE1041E710F4C8780058DDB8 /* RadioItemViewController.m */;
+		name = "RadioItemViewController.m: 147";
+		rLen = 0;
+		rLoc = 5195;
+		rType = 0;
+		vrLen = 1407;
+		vrLoc = 4577;
+	};
+	DEAA259D10FCB1D60059D87F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = DE1041E710F4C8780058DDB8 /* RadioItemViewController.m */;
+		name = "RadioItemViewController.m: 146";
+		rLen = 0;
+		rLoc = 5143;
+		rType = 0;
+		vrLen = 1406;
+		vrLoc = 4577;
+	};
+	DEAA25A010FCB2640059D87F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = DE1041E710F4C8780058DDB8 /* RadioItemViewController.m */;
+		name = "RadioItemViewController.m: 142";
+		rLen = 0;
+		rLoc = 4739;
+		rType = 0;
+		vrLen = 1342;
+		vrLoc = 4512;
+	};
+	DEAA25A110FCB2760059D87F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = DE1041E710F4C8780058DDB8 /* RadioItemViewController.m */;
+		name = "RadioItemViewController.m: 142";
+		rLen = 0;
+		rLoc = 4641;
+		rType = 0;
+		vrLen = 1401;
+		vrLoc = 4512;
+	};
+	DEAA25A210FCB28A0059D87F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = DE1041E710F4C8780058DDB8 /* RadioItemViewController.m */;
+		name = "RadioItemViewController.m: 142";
+		rLen = 0;
+		rLoc = 4641;
+		rType = 0;
+		vrLen = 1401;
+		vrLoc = 4512;
+	};
+	DEAA25A510FCB3990059D87F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = DE1041E710F4C8780058DDB8 /* RadioItemViewController.m */;
+		name = "RadioItemViewController.m: 148";
+		rLen = 0;
+		rLoc = 4970;
+		rType = 0;
+		vrLen = 1567;
+		vrLoc = 4740;
+	};
+	DEAA25B110FCB5190059D87F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = DE1041E710F4C8780058DDB8 /* RadioItemViewController.m */;
+		name = "RadioItemViewController.m: 146";
+		rLen = 0;
+		rLoc = 4957;
+		rType = 0;
+		vrLen = 1473;
+		vrLoc = 4577;
 	};
 	DEB0560910DBA3AF00C5D7DB /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
@@ -6393,9 +6744,9 @@
 	};
 	DEF0C35510F66DF900E74685 /* AudioFileStream.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {906, 3094}}";
-			sepNavSelRange = "{1569, 0}";
-			sepNavVisRange = "{1239, 688}";
+			sepNavIntBoundsRect = "{{0, 0}, {906, 3080}}";
+			sepNavSelRange = "{1118, 19}";
+			sepNavVisRange = "{742, 497}";
 			sepNavWindowFrame = "{{599, 166}, {750, 558}}";
 		};
 	};
@@ -6574,9 +6925,9 @@
 	};
 	DEFEE66910D80BC3001213CE /* RadioViewController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {969, 1176}}";
+			sepNavIntBoundsRect = "{{0, 0}, {969, 1134}}";
 			sepNavSelRange = "{1058, 37}";
-			sepNavVisRange = "{1515, 269}";
+			sepNavVisRange = "{1596, 230}";
 		};
 	};
 	DEFEE66A10D80BC3001213CE /* NewsItem.h */ = {

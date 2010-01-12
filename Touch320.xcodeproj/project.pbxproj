@@ -39,6 +39,7 @@
 		DE93D90610F38DBA005B6255 /* RecipeBookTableItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DE93D90510F38DBA005B6255 /* RecipeBookTableItemCell.m */; };
 		DE93D90910F38DC3005B6255 /* RecipeBookDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = DE93D90810F38DC3005B6255 /* RecipeBookDataSource.m */; };
 		DE93D90C10F38DD3005B6255 /* RecipeBookModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DE93D90B10F38DD3005B6255 /* RecipeBookModel.m */; };
+		DEAA259410FCB13C0059D87F /* blackbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = DEAA259310FCB13C0059D87F /* blackbutton.png */; };
 		DEF0C33A10F6394300E74685 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEF0C33910F6394300E74685 /* AudioToolbox.framework */; };
 		DEF0C35A10F66DF900E74685 /* AudioPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = DEF0C35110F66DF900E74685 /* AudioPlayer.m */; };
 		DEF0C35B10F66DF900E74685 /* AudioRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = DEF0C35310F66DF900E74685 /* AudioRequest.m */; };
@@ -148,6 +149,7 @@
 		DE93D90810F38DC3005B6255 /* RecipeBookDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecipeBookDataSource.m; sourceTree = "<group>"; };
 		DE93D90A10F38DD3005B6255 /* RecipeBookModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecipeBookModel.h; sourceTree = "<group>"; };
 		DE93D90B10F38DD3005B6255 /* RecipeBookModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecipeBookModel.m; sourceTree = "<group>"; };
+		DEAA259310FCB13C0059D87F /* blackbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blackbutton.png; sourceTree = "<group>"; };
 		DEF0C33910F6394300E74685 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		DEF0C35010F66DF900E74685 /* AudioPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioPlayer.h; sourceTree = "<group>"; };
 		DEF0C35110F66DF900E74685 /* AudioPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioPlayer.m; sourceTree = "<group>"; };
@@ -281,6 +283,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				DEAA259310FCB13C0059D87F /* blackbutton.png */,
 				8D1107310486CEB800E47090 /* Touch320-Info.plist */,
 			);
 			name = Resources;
@@ -551,6 +554,7 @@
 			files = (
 				DE4F176510D825AD005E2446 /* Three20.bundle in Resources */,
 				DE6C15AF10DEFC380071A824 /* Default.png in Resources */,
+				DEAA259410FCB13C0059D87F /* blackbutton.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

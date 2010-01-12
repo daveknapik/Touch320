@@ -54,6 +54,8 @@
 		appDelegate.link = self.link;
 		appDelegate.activeViewController = self;
 		
+		NSLog(@"link: %@",self.link);
+		
 		/*
 		[appDelegate bollocks]; 
 		 
@@ -136,11 +138,15 @@
 	[self.view addSubview:summaryValue];
 	[summaryValue release];
 	
+	//button background images
+	UIImage* blackBackgroundImage = [[UIImage imageNamed:@"blackbutton.png"] stretchableImageWithLeftCapWidth:12.0f topCapHeight:0.0f];
+	
 	//play button
 	playButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-	playButton.frame = CGRectMake(50, subtitleValue.frame.size.height + titleValue.frame.size.height + summaryValue.frame.size.height + 10, 200, 80);
+	playButton.frame = CGRectMake(50, subtitleValue.frame.size.height + titleValue.frame.size.height + summaryValue.frame.size.height + 15, 200, 40);
 	[playButton setTitle:@"Play" forState:UIControlStateNormal];
-	[playButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+	[playButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+	[playButton setBackgroundImage:blackBackgroundImage forState:UIControlStateNormal];
 	playButton.titleLabel.font = [UIFont boldSystemFontOfSize:12];
 	playButton.backgroundColor = [UIColor clearColor];
 	playButton.alpha = 1;
@@ -149,9 +155,10 @@
 	
 	//pause button
 	pauseButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-	pauseButton.frame = CGRectMake(50, subtitleValue.frame.size.height + titleValue.frame.size.height + summaryValue.frame.size.height + 10, 200, 80);
+	pauseButton.frame = CGRectMake(50, subtitleValue.frame.size.height + titleValue.frame.size.height + summaryValue.frame.size.height + 15, 200, 40);
 	[pauseButton setTitle:@"Pause" forState:UIControlStateNormal];
-	[pauseButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+	[pauseButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+	[pauseButton setBackgroundImage:blackBackgroundImage forState:UIControlStateNormal];
 	pauseButton.titleLabel.font = [UIFont boldSystemFontOfSize:12];
 	pauseButton.backgroundColor = [UIColor clearColor];
 	pauseButton.alpha = 0;

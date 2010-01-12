@@ -49,7 +49,7 @@
 		NSString* subtitle = [theItem objectForKey:@"subtitle"];
 		NSString* summary = [theItem objectForKey:@"summary"];
 		NSString* pubDate = [theItem objectForKey:@"pubDate"];
-		NSString* link = [theItem objectForKey:@"link"];
+		NSString* link = [theItem objectForKey:@"guid"];
 		NSString* duration = [theItem objectForKey:@"duration"];
 		
 		if( !TTIsEmptyString(title) ) {

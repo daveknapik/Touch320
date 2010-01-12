@@ -268,6 +268,7 @@
 								<string>080E96DDFE201D6D7F000001</string>
 								<string>DEF0C34F10F66DD000E74685</string>
 								<string>DE10402810F3F0400058DDB8</string>
+								<string>29B97317FDCFA39411CA2CEA</string>
 								<string>29B97323FDCFA39411CA2CEA</string>
 								<string>1C37FBAC04509CD000000102</string>
 								<string>1C37FABC05509CD000000102</string>
@@ -275,14 +276,14 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>12</integer>
-									<integer>6</integer>
+									<integer>32</integer>
+									<integer>20</integer>
 									<integer>5</integer>
 									<integer>0</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 94}, {318, 539}}</string>
+							<string>{{0, 297}, {318, 539}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -301,7 +302,7 @@
 							<real>318</real>
 						</array>
 						<key>RubberWindowFrame</key>
-						<string>108 262 1171 598 0 0 1440 878 </string>
+						<string>256 221 1171 598 0 0 1440 878 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXSmartGroupTreeModule</string>
@@ -319,7 +320,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>AudioFileStream.m</string>
+								<string>RadioItemViewController.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -327,11 +328,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>AudioFileStream.m</string>
+										<string>RadioItemViewController.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>DEAA254210FC97880059D87F</string>
+										<string>DEAA25B110FCB5190059D87F</string>
 										<key>history</key>
 										<array>
 											<string>DEFEE63810D80B79001213CE</string>
@@ -383,8 +384,6 @@
 											<string>DE1040ED10F4AA2A0058DDB8</string>
 											<string>DE1041F210F4C9F60058DDB8</string>
 											<string>DE10422B10F4CB6F0058DDB8</string>
-											<string>DE1042F610F4D9DC0058DDB8</string>
-											<string>DE10433710F4E2AE0058DDB8</string>
 											<string>DE1043E210F4F0860058DDB8</string>
 											<string>DE10442E10F4F96B0058DDB8</string>
 											<string>DEF0C2AE10F5FDC900E74685</string>
@@ -402,15 +401,18 @@
 											<string>DEAA24CB10FC7A660059D87F</string>
 											<string>DEAA24E510FC81EA0059D87F</string>
 											<string>DEAA24F510FC834D0059D87F</string>
-											<string>DEAA24F610FC834D0059D87F</string>
 											<string>DEAA250B10FC92EB0059D87F</string>
 											<string>DEAA252010FC94780059D87F</string>
-											<string>DEAA252710FC95C60059D87F</string>
 											<string>DEAA252810FC95C60059D87F</string>
 											<string>DEAA252910FC95C60059D87F</string>
 											<string>DEAA253710FC96900059D87F</string>
-											<string>DEAA253D10FC97050059D87F</string>
-											<string>DEAA253E10FC97050059D87F</string>
+											<string>DEAA255A10FCAB6D0059D87F</string>
+											<string>DEAA255B10FCAB6D0059D87F</string>
+											<string>DEAA255C10FCAB6D0059D87F</string>
+											<string>DEAA255D10FCAB6D0059D87F</string>
+											<string>DEAA255E10FCAB6D0059D87F</string>
+											<string>DEAA259610FCB1B10059D87F</string>
+											<string>DEAA259710FCB1B10059D87F</string>
 										</array>
 										<key>prevStack</key>
 										<array>
@@ -647,6 +649,18 @@
 											<string>DEAA253910FC96900059D87F</string>
 											<string>DEAA253A10FC96900059D87F</string>
 											<string>DEAA253F10FC97050059D87F</string>
+											<string>DEAA256010FCAB6D0059D87F</string>
+											<string>DEAA256110FCAB6D0059D87F</string>
+											<string>DEAA256210FCAB6D0059D87F</string>
+											<string>DEAA256310FCAB6D0059D87F</string>
+											<string>DEAA256410FCAB6D0059D87F</string>
+											<string>DEAA256510FCAB6D0059D87F</string>
+											<string>DEAA256610FCAB6D0059D87F</string>
+											<string>DEAA256710FCAB6D0059D87F</string>
+											<string>DEAA256810FCAB6D0059D87F</string>
+											<string>DEAA256910FCAB6D0059D87F</string>
+											<string>DEAA259810FCB1B10059D87F</string>
+											<string>DEAA259910FCB1B10059D87F</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -660,7 +674,7 @@
 								<key>Frame</key>
 								<string>{{0, 0}, {831, 379}}</string>
 								<key>RubberWindowFrame</key>
-								<string>108 262 1171 598 0 0 1440 878 </string>
+								<string>256 221 1171 598 0 0 1440 878 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
@@ -680,7 +694,7 @@
 								<key>Frame</key>
 								<string>{{0, 384}, {831, 173}}</string>
 								<key>RubberWindowFrame</key>
-								<string>108 262 1171 598 0 0 1440 878 </string>
+								<string>256 221 1171 598 0 0 1440 878 </string>
 							</dict>
 							<key>Module</key>
 							<string>XCDetailModule</string>
@@ -840,16 +854,17 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
+		<string>DEAA25B210FCB5190059D87F</string>
 		<string>DEAA236810FB64920059D87F</string>
 		<string>DEAA236910FB64920059D87F</string>
+		<string>1C78EAAD065D492600B07095</string>
 		<string>DEFEE5F710D80AD2001213CE</string>
 		<string>1CD10A99069EF8BA00B06720</string>
 		<string>1C530D57069F1CE1000CFCEE</string>
 		<string>/Users/daveknapik/Documents/iPhone Development/Touch app/Touch320/Touch320.xcodeproj</string>
-		<string>1C78EAAD065D492600B07095</string>
 	</array>
 	<key>WindowString</key>
-	<string>108 262 1171 598 0 0 1440 878 </string>
+	<string>256 221 1171 598 0 0 1440 878 </string>
 	<key>WindowToolsV3</key>
 	<array>
 		<dict>
@@ -1220,7 +1235,7 @@
 			<key>WindowToolGUID</key>
 			<string>1C78EAAD065D492600B07095</string>
 			<key>WindowToolIsVisible</key>
-			<true/>
+			<false/>
 		</dict>
 		<dict>
 			<key>FirstTimeWindowDisplayed</key>
