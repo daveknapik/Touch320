@@ -53,9 +53,9 @@ void packetCallback(void *clientData, UInt32 byteCount, UInt32 packetCount, cons
 												data.bytes, 
 												0);
 
-	if (!VERIFY_STATUS(status)) {
+	/*if (!VERIFY_STATUS(status)) {
 		return status;
-	}
+	}*/
 	
 	// Parsing happens synchronously, so any callbacks for this parse have 
 	// already been called.  Rather than call our delegate back 

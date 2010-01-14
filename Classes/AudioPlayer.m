@@ -37,6 +37,9 @@
 	if (!audioIsReadyToPlay) {
 		[self error];
 	}
+	else {
+		[queue endOfStream];
+	}
 }
 
 - (void)audioFileStream:(AudioFileStream *)stream foundMagicCookie:(NSData *)cookie {
@@ -60,11 +63,15 @@
 			  withCount:(UInt32)packetCount 
 		andDescriptions:(AudioStreamPacketDescription *)packetDescriptions
 {
+	
 	AudioQueueBufferRef bufferRef;
 	OSStatus status = [queue allocateBufferWithData:packetData 
 										packetCount:packetCount 
 								 packetDescriptions:packetDescriptions 
 									   outBufferRef:&bufferRef];
+	
+	//NSLog(@"packet count: %d",packetCount);
+	
 	if (status == noErr) {
 		[queue enqueueBuffer:bufferRef];
 	} else {
@@ -74,15 +81,23 @@
 
 - (void)audioQueue:(AudioQueue *)audioQueue 
   isDoneWithBuffer:(AudioQueueBufferRef)bufferRef
-{
+{		
 	// nothing to do
+	/*
+	NSLog(@"mPacketDescriptionCount: %d", bufferRef->mPacketDescriptionCount);
+	NSLog(@"mPacketDescriptionCapacity: %d", bufferRef->mPacketDescriptionCapacity);
+	NSLog(@"mAudioDataBytesCapacity: %d", bufferRef->mAudioDataBytesCapacity);
+	NSLog(@"mAudioDataByteSize: %d", bufferRef->mAudioDataByteSize);
+	 */
 }
 
 - (void)audioQueuePlaybackIsStarting:(AudioQueue *)audioQueue {
+	NSLog(@"AudioPlayer thinks playback has started");
 	[delegate audioPlayerPlaybackStarted:self];
 }
 
 - (void)audioQueuePlaybackIsComplete:(AudioQueue *)audioQueue {
+	NSLog(@"AudioPlayer thinks playback is complete");
 	[delegate audioPlayerPlaybackFinished:self];
 }
 

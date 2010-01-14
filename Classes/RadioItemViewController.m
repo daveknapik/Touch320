@@ -256,6 +256,7 @@
 }
 
 - (void)showStopped {
+	NSLog(@"showing stopped");
 	[UIView beginAnimations:nil context:nil];
 	[activityIndicatorView stopAnimating];
 	pauseButton.alpha = 0;
@@ -304,12 +305,12 @@
 	[[appDelegate activeAudioPlayer] release];
 	
 	audioPlayer = [[AudioPlayer alloc] initPlayerWithURL:[NSURL URLWithString:self.link] delegate:self];
+	//audioPlayer = [[AudioPlayer alloc] initPlayerWithURL:[NSURL URLWithString:@"http://www.daveknapik.com/audio/Silicon_Teens-Just_Like_Eddie.mp3"] delegate:self];
 	
 	appDelegate.activeAudioPlayer = audioPlayer;
 	
 	NSLog(@"active audio player: %@",[appDelegate activeAudioPlayer]);
 	
-	//audioPlayer = [[AudioPlayer alloc] initPlayerWithURL:[NSURL URLWithString:@"http://www.daveknapik.com/audio/theVillageGreenDecimationSociety.mp3"] delegate:self];
 	[self showLoading];
 }
 
@@ -331,10 +332,12 @@
 }
 
 - (void)audioPlayerPlaybackStarted:(AudioPlayer *)audioPlayer {
+	NSLog(@"RadioItemViewController thinks playback has started");
 	[self showPlaying];
 }
 
 - (void)audioPlayerPlaybackFinished:(AudioPlayer *)audioPlayer {
+	NSLog(@"RadioItemViewController thinks playback has completed");
 	AudioSessionSetActive(NO);
 	[self showStopped];
 }

@@ -29,7 +29,10 @@ void propertyChangeIsRunning(void *data, AudioQueueRef inAQ, AudioQueuePropertyI
 	if (!VERIFY_STATUS(status)) {
 		return status;
 	}
-	status = AudioQueueAddPropertyListener (audioQueue, kAudioQueueProperty_IsRunning, propertyChangeIsRunning, self);
+	
+	NSLog(@"kAudioQueueProperty_IsRunning value in AudioQueue.setAudioStreamBasicDescription: %d", kAudioQueueProperty_IsRunning);
+	
+	status = AudioQueueAddPropertyListener(self->audioQueue, kAudioQueueProperty_IsRunning, propertyChangeIsRunning, self);
 	VERIFY_STATUS(status);
 	return status;
 }
@@ -61,6 +64,8 @@ void propertyChangeIsRunning(void *data, AudioQueueRef inAQ, AudioQueuePropertyI
 		outBufferRef->mPacketDescriptionCount = packetCount;
 	}
 
+	//NSLog(@"packet size: %d",sizeof(AudioStreamPacketDescription) * packetCount);
+	
 	return status;
 }
 
@@ -76,6 +81,7 @@ void audioQueueOutputCallback (void *inUserData, AudioQueueRef inAQ, AudioQueueB
 }
 
 - (OSStatus)endOfStream {
+	//NSLog(@"endOfStream called");
 	OSStatus status = AudioQueueFlush(audioQueue);
 	if (VERIFY_STATUS(status)) {
 		status = AudioQueueStop(audioQueue, false);
@@ -89,7 +95,8 @@ void propertyChangeIsRunning(void *data, AudioQueueRef inAQ, AudioQueuePropertyI
 	
 	int result = 0;
 	UInt32 size = sizeof(UInt32);
-	OSStatus status = AudioQueueGetProperty (self->audioQueue, kAudioQueueProperty_IsRunning, &result, &size);
+	OSStatus status = AudioQueueGetProperty(self->audioQueue, kAudioQueueProperty_IsRunning, &result, &size);
+	
 	if (VERIFY_STATUS(status) && result == 0) {
 		[self->delegate audioQueuePlaybackIsComplete:self];
 	} else {
