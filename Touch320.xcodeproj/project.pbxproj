@@ -71,6 +71,7 @@
 		DEDEC5DD10FF8AB100D9EA32 /* ObjectiveResourceConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = DEDEC5BE10FF8AB100D9EA32 /* ObjectiveResourceConfig.m */; };
 		DEDEC5DE10FF8AB100D9EA32 /* Response.m in Sources */ = {isa = PBXBuildFile; fileRef = DEDEC5C010FF8AB100D9EA32 /* Response.m */; };
 		DEDEC5F510FF8B1500D9EA32 /* Book.m in Sources */ = {isa = PBXBuildFile; fileRef = DEDEC5F410FF8B1500D9EA32 /* Book.m */; };
+		DEE2D5661100BE6C004BB6F3 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = DEE2D5651100BE6C004BB6F3 /* icon.png */; };
 		DEEDD7EE110069F40034B464 /* CatalogSamplerTableItem.m in Sources */ = {isa = PBXBuildFile; fileRef = DEEDD7ED110069F40034B464 /* CatalogSamplerTableItem.m */; };
 		DEEDD7F111006A030034B464 /* CatalogSamplerTableItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DEEDD7F011006A030034B464 /* CatalogSamplerTableItemCell.m */; };
 		DEF0C33A10F6394300E74685 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEF0C33910F6394300E74685 /* AudioToolbox.framework */; };
@@ -254,6 +255,7 @@
 		DEDEC5C010FF8AB100D9EA32 /* Response.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Response.m; sourceTree = "<group>"; };
 		DEDEC5F310FF8B1500D9EA32 /* Book.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Book.h; sourceTree = "<group>"; };
 		DEDEC5F410FF8B1500D9EA32 /* Book.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Book.m; sourceTree = "<group>"; };
+		DEE2D5651100BE6C004BB6F3 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		DEEDD7EC110069F40034B464 /* CatalogSamplerTableItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CatalogSamplerTableItem.h; sourceTree = "<group>"; };
 		DEEDD7ED110069F40034B464 /* CatalogSamplerTableItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CatalogSamplerTableItem.m; sourceTree = "<group>"; };
 		DEEDD7EF11006A030034B464 /* CatalogSamplerTableItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CatalogSamplerTableItemCell.h; sourceTree = "<group>"; };
@@ -394,6 +396,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				DEE2D5651100BE6C004BB6F3 /* icon.png */,
 				DEAA259310FCB13C0059D87F /* blackbutton.png */,
 				8D1107310486CEB800E47090 /* Touch320-Info.plist */,
 			);
@@ -802,6 +805,7 @@
 				DE4F176510D825AD005E2446 /* Three20.bundle in Resources */,
 				DE6C15AF10DEFC380071A824 /* Default.png in Resources */,
 				DEAA259410FCB13C0059D87F /* blackbutton.png in Resources */,
+				DEE2D5661100BE6C004BB6F3 /* icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -957,6 +961,7 @@
 					"-lxml2",
 				);
 				PREBINDING = NO;
+				PRODUCT_NAME = Touch;
 				SDKROOT = iphoneos3.1;
 			};
 			name = Debug;
@@ -979,6 +984,7 @@
 					"-lxml2",
 				);
 				PREBINDING = NO;
+				PRODUCT_NAME = Touch;
 				SDKROOT = iphoneos3.1;
 			};
 			name = Release;
