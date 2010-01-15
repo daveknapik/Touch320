@@ -7,10 +7,18 @@
 //
 
 #import <Three20/Three20.h>
+#import "CatalogSamplerModel.h"
 
 
-@interface CatalogSamplerDataSource : TTTableViewDataSource {
-
+@interface CatalogSamplerDataSource : TTListDataSource {
+//	NSMutableArray* _catalogItems;
+	CatalogSamplerModel* _catalogSamplerModel;
 }
+
+//@property (nonatomic, retain) NSMutableArray catalogItems;
+
++ (NSMutableArray*)getAllCatalogItems;
+
+- (id)initWithModel;
 
 @end

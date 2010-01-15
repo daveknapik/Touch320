@@ -17,6 +17,7 @@
 #import "RadioViewController.h"
 #import "RadioItemViewController.h"
 #import "Three20/Three20.h"
+#import "ObjectiveResource.h"
 
 @implementation Touch320AppDelegate
 
@@ -70,6 +71,18 @@ void interruptionListener (void *inClientData, UInt32 inInterruptionState);
 	
 	UInt32 sessionCategory = kAudioSessionCategory_MediaPlayback;
 	AudioSessionSetProperty (kAudioSessionProperty_AudioCategory, sizeof (sessionCategory), &sessionCategory);
+
+	//Set the address of the rails site. The trailing slash is required
+	[ObjectiveResourceConfig setSite:@"http://simple-stone-93.heroku.com/"];
+	//[ObjectiveResourceConfig setSite:@"http://0.0.0.0:3000/"];
+	
+	//Set the username and password to be used for the remote site
+	[ObjectiveResourceConfig setUser:@"daveknapik"];
+	[ObjectiveResourceConfig setPassword:@"awesome"];
+	
+	//Set ObjectiveResource to use either XML or JSON
+	[ObjectiveResourceConfig setResponseType:XmlResponse];//the default
+	//[ObjectiveResourceConfig setResponseType:JSONResponse];
 }
 
 - (BOOL)navigator:(TTNavigator*)navigator shouldOpenURL:(NSURL*)URL {

@@ -37,7 +37,7 @@
 
 - (void)createModel {
 	self.dataSource = [[[RadioDataSource alloc] initWithModel] autorelease];
-	NSLog(@"model created");
+	NSLog(@"radio model created");
 }
 
 - (void)didSelectObject:(id)object atIndexPath:(NSIndexPath*)indexPath {

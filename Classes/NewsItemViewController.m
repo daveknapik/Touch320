@@ -8,6 +8,8 @@
 
 #import "NewsItemViewController.h"
 #import "NewsItem.h"
+#import "Book.h"
+#import "CatalogSamplerDataSource.h"
 
 @implementation NewsItemViewController
 
@@ -65,6 +67,16 @@
 - (void)viewDidLoad {
 	self.webView = [[UIWebView alloc] initWithFrame:CGRectMake(0, 0, 320, 366)];
 	self.webView.delegate = self;
+	
+	NSMutableArray *books = [CatalogSamplerDataSource getAllCatalogItems];
+	NSLog(@"books array: %@",books);
+	
+	Book *currentBook;
+	
+	for (int x = 0; x < [books count]; x++) {
+		currentBook = [books objectAtIndex:x];
+		NSLog(@"current book title: %@", currentBook.title);
+	}	
 	
 	NSURL *url = [NSURL URLWithString:self.newsItemLink];
 	NSURLRequest *request = [NSURLRequest requestWithURL:url];
