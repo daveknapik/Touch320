@@ -9,11 +9,11 @@
 #import <Foundation/Foundation.h>
 #import <Three20/Three20.h>
 
-@interface CatalogSamplerModel : TTModel {
-	NSArray* _catalogItems;
+@interface CatalogSamplerModel : TTURLRequestModel {
+	NSMutableDictionary* _catalogItems;
 	NSUInteger page;
 }
 
-@property (nonatomic, retain) NSArray* catalogItems;
+@property (nonatomic, retain) NSMutableDictionary* catalogItems;
 
 @end

@@ -40,7 +40,7 @@
 	return _catalogSamplerModel;
 }
 
-- (void)tableViewDidLoadModel:(UITableView*)tableView {
+/*- (void)tableViewDidLoadModel:(UITableView*)tableView {
 	NSLog(@"Catalog Items: %@", _catalogSamplerModel.catalogItems);
 	
 	Book *currentBook;
@@ -64,7 +64,38 @@
 	
 	self.items = items;
 	TT_RELEASE_SAFELY(items);
+}*/
+
+- (void)tableViewDidLoadModel:(UITableView*)tableView {
+	//NSLog(@"News Items: %@", _newsModel.newsItems);
+	
+	NSMutableArray* items = [[NSMutableArray alloc] init];
+	
+	NSArray *keys = [_catalogSamplerModel.catalogItems allKeys];
+	
+	NSArray *sortedKeys = [keys sortedArrayUsingSelector:@selector(compare:)];
+	
+	
+	for (id key in sortedKeys) {
+		NSMutableDictionary* theItem = [_catalogSamplerModel.catalogItems objectForKey:key];
+		
+		NSString* title = [theItem objectForKey:@"title"];
+		NSString* thoughts = [theItem objectForKey:@"thoughts"];
+		
+		if( !TTIsEmptyString(title) ) {
+			[items addObject:[CatalogSamplerTableItem
+							  itemWithText: title
+							  title: title
+							  thoughts: thoughts
+							  subtitle: title]];
+		}
+		
+	} 
+	
+	self.items = items;
+	TT_RELEASE_SAFELY(items);
 }
+
 
 	///////////////////////////////////////////////////////////////////////////////////////////////////
 	// TTTableViewDataSource 

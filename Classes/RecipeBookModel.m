@@ -33,6 +33,7 @@
 		
 		TTURLRequest* request = [TTURLRequest requestWithURL:url delegate:self];
 		request.cachePolicy = cachePolicy;
+		request.cacheExpirationAge = 600;
 		
 		id<TTURLResponse> response = [[TTURLDataResponse alloc] init];
 		request.response = response;

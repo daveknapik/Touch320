@@ -77,8 +77,9 @@
     NSString *url = [@"http://api.flickr.com/services/rest/" stringByAppendingFormat:@"?%@", [parameters gtm_httpArgumentsString]];
 	
 	TTURLRequest* request = [TTURLRequest requestWithURL:url delegate:self];
-	//request.cachePolicy = cachePolicy;
-	request.cachePolicy = TTURLRequestCachePolicyNone;
+	request.cachePolicy = cachePolicy;
+	request.cacheExpirationAge = 600;
+	//request.cachePolicy = TTURLRequestCachePolicyNone;
 	// sets the response
 	request.response = responseProcessor;
     request.httpMethod = @"GET";
