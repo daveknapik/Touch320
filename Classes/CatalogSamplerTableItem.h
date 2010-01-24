@@ -12,15 +12,13 @@
 
 @interface CatalogSamplerTableItem : TTTableSubtitleItem {
 	NSString* _title;
-	NSString* _thoughts;
 }
 
 @property (nonatomic, copy) NSString* title;
-@property (nonatomic, copy) NSString* thoughts;
 
 + (id)itemWithText:(NSString*)text 
 			 title:(NSString*)title 
-			thoughts:(NSString*)thoughts;
+		  subtitle:(NSString*)subtitle;
 
 @end
 

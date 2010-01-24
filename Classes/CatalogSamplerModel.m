@@ -50,8 +50,8 @@
 		if (more)
 			page++;
 		
-		NSString* url=@"http://simple-stone-93.heroku.com/books.xml";
-		//NSString* url=@"http://0.0.0.0:3000/books.xml";
+		NSString* url=@"http://electric-mist-70.heroku.com/releases.xml";
+		//NSString* url=@"http://0.0.0.0:3000/releases.xml";
 		
 		TTURLRequest* request = [TTURLRequest requestWithURL:url delegate:self];
 		request.cachePolicy = cachePolicy;
@@ -78,9 +78,10 @@
     NSArray *resultNodes = NULL;
 	
     // Set the resultNodes Array to contain an object for every instance of an  node in our RSS feed
-    resultNodes = [rssParser nodesForXPath:@"//book" error:nil];
+    resultNodes = [rssParser nodesForXPath:@"//release" error:nil];
 	
 	int outerCounter = 0;
+	NSString* emptyString = @"";
 	
 	// Loop through the resultNodes to access each items actual data
     for (CXMLElement *resultElement in resultNodes) {
@@ -94,9 +95,15 @@
         // Loop through the children of the current  node
         for(counter = 0; counter < [resultElement childCount]; counter++) {
 			
-            // Add each field to the blogItem Dictionary with the node name as key and node value as the value
-            [blogItem setObject:[[resultElement childAtIndex:counter] stringValue] 
-						 forKey:[[resultElement childAtIndex:counter] name]];
+			if ([[resultElement childAtIndex:counter] stringValue] == nil) {
+				[blogItem setObject:emptyString 
+							 forKey:[[resultElement childAtIndex:counter] name]];
+			}
+			else {
+				// Add each field to the blogItem Dictionary with the node name as key and node value as the value
+				[blogItem setObject:[[resultElement childAtIndex:counter] stringValue] 
+							 forKey:[[resultElement childAtIndex:counter] name]];			
+			}
 		}
 		
 		

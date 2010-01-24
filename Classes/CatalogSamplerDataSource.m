@@ -79,15 +79,14 @@
 	for (id key in sortedKeys) {
 		NSMutableDictionary* theItem = [_catalogSamplerModel.catalogItems objectForKey:key];
 		
+		NSString* artist = [theItem objectForKey:@"artist"];
 		NSString* title = [theItem objectForKey:@"title"];
-		NSString* thoughts = [theItem objectForKey:@"thoughts"];
 		
 		if( !TTIsEmptyString(title) ) {
 			[items addObject:[CatalogSamplerTableItem
 							  itemWithText: title
 							  title: title
-							  thoughts: thoughts
-							  subtitle: title]];
+							  subtitle: artist]];
 		}
 		
 	} 
