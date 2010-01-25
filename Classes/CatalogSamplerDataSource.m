@@ -9,16 +9,8 @@
 #import "CatalogSamplerDataSource.h"
 #import "CatalogSamplerTableItem.h"
 #import "CatalogSamplerTableItemCell.h"
-#import "Book.h"
 
 @implementation CatalogSamplerDataSource
-
-//@synthesize catalogItems = _catalogItems;
-
-+ (NSMutableArray*)getAllCatalogItems {
-	NSMutableArray *books = [Book findAllRemote];
-	return books;
-}
 
 - (id)initWithModel {
 	if( [self init] ) {
@@ -40,32 +32,6 @@
 	return _catalogSamplerModel;
 }
 
-/*- (void)tableViewDidLoadModel:(UITableView*)tableView {
-	NSLog(@"Catalog Items: %@", _catalogSamplerModel.catalogItems);
-	
-	Book *currentBook;
-	NSMutableArray* items = [[NSMutableArray alloc] init];
-	
-	for (int x = 0; x < [_catalogSamplerModel.catalogItems count]; x++) {
-		currentBook = [_catalogSamplerModel.catalogItems objectAtIndex:x];
-		NSLog(@"current book title: %@", currentBook.title);
-		
-		NSString* title = currentBook.title;
-		NSString* thoughts = currentBook.thoughts;
-		
-		if( !TTIsEmptyString(title) ) {
-			[items addObject:[CatalogSamplerTableItem
-							  itemWithText: title
-							  title: title
-							  thoughts: thoughts
-							  subtitle: title]];
-		}
-	}	
-	
-	self.items = items;
-	TT_RELEASE_SAFELY(items);
-}*/
-
 - (void)tableViewDidLoadModel:(UITableView*)tableView {
 	//NSLog(@"News Items: %@", _newsModel.newsItems);
 	
@@ -81,12 +47,31 @@
 		
 		NSString* artist = [theItem objectForKey:@"artist"];
 		NSString* title = [theItem objectForKey:@"title"];
+		NSString* catalogNumber = [theItem objectForKey:@"catalogue_number"];
+		NSString* description = [theItem objectForKey:@"description"];
+		NSString* cover_art_url = [theItem objectForKey:@"cover_art_url"];
+		NSString* mp3_sample_url = [theItem objectForKey:@"mp3_sample_url"];
+		NSString* release_url = [theItem objectForKey:@"release_url"];
+		NSString* itunes_url = [theItem objectForKey:@"itunes_url"];
+		NSString* duration = [theItem objectForKey:@"duration"];
+		NSString* track_listing = [theItem objectForKey:@"track_listing"];
+		NSString* reviews = [theItem objectForKey:@"reviews"];
 		
 		if( !TTIsEmptyString(title) ) {
 			[items addObject:[CatalogSamplerTableItem
 							  itemWithText: title
 							  title: title
-							  subtitle: artist]];
+							  subtitle: artist
+							  artist: artist
+							  catalogNumber: catalogNumber
+							  description: description
+							  cover_art_url: cover_art_url
+							  mp3_sample_url: mp3_sample_url
+							  release_url: release_url
+							  itunes_url: itunes_url
+							  duration: duration
+							  track_listing: track_listing
+							  reviews: reviews]];
 		}
 		
 	} 

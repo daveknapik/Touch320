@@ -40,19 +40,24 @@
 	NSLog(@"createModel invoked in CatalogSamplerViewController");
 }
 
-/*- (void)didSelectObject:(id)object atIndexPath:(NSIndexPath*)indexPath {
+- (void)didSelectObject:(id)object atIndexPath:(NSIndexPath*)indexPath {
 	NSDictionary *query = [NSDictionary
 						   dictionaryWithObjectsAndKeys:
-						   [object author], @"author",
 						   [object title], @"title",
 						   [object subtitle], @"subtitle",
-						   [object summary], @"summary",
-						   [object pubDate], @"pubDate",
-						   [object link], @"link",
+						   [object artist], @"artist",
+						   [object description], @"description",
+						   [object catalogNumber], @"catalogNumber",
+						   [object release_url], @"release_url",
+						   [object mp3_sample_url], @"mp3_sample_url",
+						   [object cover_art_url], @"cover_art_url",
+						   [object itunes_url], @"itunes_url",
 						   [object duration], @"duration",
+						   [object track_listing], @"track_listing",
+						   [object reviews], @"reviews",
 						   nil];
 	[[TTNavigator navigator] openURL:@"tt://catalogItem/1" query:query animated:YES]; 
-} */
+}
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {

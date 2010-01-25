@@ -14,6 +14,7 @@
 #import "RecipeBookViewController.h"
 
 #import "CatalogSamplerViewController.h"
+#import "CatalogItemViewController.h"
 #import "RadioViewController.h"
 #import "RadioItemViewController.h"
 #import "Three20/Three20.h"
@@ -50,6 +51,7 @@ void interruptionListener (void *inClientData, UInt32 inInterruptionState);
 	[map from:@"tt://newsItem/(initWithNavigatorURL:)" toViewController:[NewsItemViewController class]];
 	[map from:@"tt://images/(initWithTabBar:)" toSharedViewController:[ImageGalleryViewController class]];
 	[map from:@"tt://catalogSampler/(initWithTabBar:)" toSharedViewController:[CatalogSamplerViewController class]];
+	[map from:@"tt://catalogItem/(initWithCatalogItem:)" toViewController:[CatalogItemViewController class]];
 	[map from:@"tt://radio/(initWithTabBar:)" toSharedViewController:[RadioViewController class]];
 	[map from:@"tt://radioItem/(initWithRadioItem:)" toViewController:[RadioItemViewController class]];
 	[map from:@"tt://recipeBook/(initWithTabBar:)" toSharedViewController:[RecipeBookViewController class]];

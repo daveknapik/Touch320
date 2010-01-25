@@ -12,6 +12,7 @@
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
+		DE06A97D110D0DAA00E7F895 /* CatalogItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE06A97C110D0DAA00E7F895 /* CatalogItemViewController.m */; };
 		DE10401910F3EFE20058DDB8 /* RadioTableItem.m in Sources */ = {isa = PBXBuildFile; fileRef = DE10401810F3EFE20058DDB8 /* RadioTableItem.m */; };
 		DE10401C10F3EFEC0058DDB8 /* RadioTableItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DE10401B10F3EFEC0058DDB8 /* RadioTableItemCell.m */; };
 		DE10401F10F3EFFF0058DDB8 /* RadioDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = DE10401E10F3EFFF0058DDB8 /* RadioDataSource.m */; };
@@ -132,6 +133,8 @@
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* Touch320_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Touch320_Prefix.pch; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Touch320-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Touch320-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+		DE06A97B110D0DAA00E7F895 /* CatalogItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CatalogItemViewController.h; sourceTree = "<group>"; };
+		DE06A97C110D0DAA00E7F895 /* CatalogItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CatalogItemViewController.m; sourceTree = "<group>"; };
 		DE10401710F3EFE20058DDB8 /* RadioTableItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RadioTableItem.h; sourceTree = "<group>"; };
 		DE10401810F3EFE20058DDB8 /* RadioTableItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RadioTableItem.m; sourceTree = "<group>"; };
 		DE10401A10F3EFEC0058DDB8 /* RadioTableItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RadioTableItemCell.h; sourceTree = "<group>"; };
@@ -466,6 +469,8 @@
 				DEEDD7ED110069F40034B464 /* CatalogSamplerTableItem.m */,
 				DEEDD7EF11006A030034B464 /* CatalogSamplerTableItemCell.h */,
 				DEEDD7F011006A030034B464 /* CatalogSamplerTableItemCell.m */,
+				DE06A97B110D0DAA00E7F895 /* CatalogItemViewController.h */,
+				DE06A97C110D0DAA00E7F895 /* CatalogItemViewController.m */,
 			);
 			name = CatalogSampler;
 			sourceTree = "<group>";
@@ -902,6 +907,7 @@
 				DE32FBF610FFA29200443070 /* SBJSONRails.m in Sources */,
 				DEEDD7EE110069F40034B464 /* CatalogSamplerTableItem.m in Sources */,
 				DEEDD7F111006A030034B464 /* CatalogSamplerTableItemCell.m in Sources */,
+				DE06A97D110D0DAA00E7F895 /* CatalogItemViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

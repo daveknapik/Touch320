@@ -12,13 +12,43 @@
 
 @interface CatalogSamplerTableItem : TTTableSubtitleItem {
 	NSString* _title;
+	NSString* _artist;
+	NSString* _catalogNumber;
+	NSString* _description;
+	NSString* _cover_art_url;
+	NSString* _mp3_sample_url;
+	NSString* _release_url;
+	NSString* _itunes_url;
+	NSString* _duration;
+	NSString* _track_listing;
+	NSString* _reviews;
 }
 
 @property (nonatomic, copy) NSString* title;
+@property (nonatomic, copy) NSString* artist;
+@property (nonatomic, copy) NSString* catalogNumber;
+@property (nonatomic, copy) NSString* description;
+@property (nonatomic, copy) NSString* cover_art_url;
+@property (nonatomic, copy) NSString* mp3_sample_url;
+@property (nonatomic, copy) NSString* release_url;
+@property (nonatomic, copy) NSString* itunes_url;
+@property (nonatomic, copy) NSString* duration;
+@property (nonatomic, copy) NSString* track_listing;
+@property (nonatomic, copy) NSString* reviews;
 
 + (id)itemWithText:(NSString*)text 
 			 title:(NSString*)title 
-		  subtitle:(NSString*)subtitle;
+		  subtitle:(NSString*)subtitle
+			artist:(NSString*)artist
+	 catalogNumber:(NSString*)catalogNumber
+	   description:(NSString*)description
+	 cover_art_url:(NSString*)cover_art_url
+	mp3_sample_url:(NSString*)mp3_sample_url
+	   release_url:(NSString*)release_url
+		itunes_url:(NSString*)itunes_url
+		  duration:(NSString*)duration
+	 track_listing:(NSString*)track_listing
+		   reviews:(NSString*)reviews;
 
 @end
 

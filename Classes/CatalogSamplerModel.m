@@ -17,25 +17,6 @@
 - (id)init {
 	page = 1;
 	
-	/*
-	NSMutableArray *books = [Book findAllRemote];
-	self.catalogItems = books;
-	
-	while ([self.catalogItems count] == 0) {
-		NSMutableArray *books = [Book findAllRemote];
-		self.catalogItems = books;
-	}
-	
-	NSMutableArray *books = [CatalogSamplerDataSource getAllCatalogItems];
-	NSLog(@"books array: %@",books);
-	
-	Book *currentBook;
-	
-	for (int x = 0; x < [books count]; x++) {
-		currentBook = [books objectAtIndex:x];
-		NSLog(@"current book title: %@", currentBook.title);
-	}	*/
-	
 	[super init];
 	return self;
 }

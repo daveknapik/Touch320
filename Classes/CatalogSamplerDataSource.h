@@ -17,8 +17,6 @@
 
 //@property (nonatomic, retain) NSMutableArray catalogItems;
 
-+ (NSMutableArray*)getAllCatalogItems;
-
 - (id)initWithModel;
 
 @end
