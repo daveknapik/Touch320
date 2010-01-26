@@ -95,6 +95,7 @@
 		[_catalogItems setObject:[blogItem copy] forKey:key];
 		
 		outerCounter++;
+		[blogItem release];
 	}	
 	
 	[super requestDidFinishLoad:request];

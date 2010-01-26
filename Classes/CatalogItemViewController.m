@@ -44,6 +44,15 @@ durationValue = _durationValue;
 		self.duration = [query objectForKey:@"duration"];
 		self.mp3_sample_url = [query objectForKey:@"mp3_sample_url"];
 		
+		NSLog(@"mp3 sample url: %@",self.mp3_sample_url);
+		
+		if ([self.mp3_sample_url length] == 0) {
+			NSLog(@"mp3 sample url is null");
+		}
+		else {
+			NSLog(@"mp3 sample url length: %d", [self.mp3_sample_url length]);
+		}
+		
 		Touch320AppDelegate *appDelegate;
 		appDelegate = (Touch320AppDelegate*)[UIApplication sharedApplication].delegate;
 		
@@ -120,6 +129,8 @@ durationValue = _durationValue;
 	[self.view addSubview:descriptionValue];
 	[descriptionValue release];
 	
+	if ([self.mp3_sample_url length] != 0) {
+	
 	//button background images
 	UIImage* blackBackgroundImage = [[UIImage imageNamed:@"blackbutton.png"] stretchableImageWithLeftCapWidth:12.0f topCapHeight:0.0f];
 	
@@ -153,6 +164,8 @@ durationValue = _durationValue;
 	[self.view addSubview:activityIndicatorView];
 	
 	[self load];
+	
+	}
 	
     [super viewDidLoad];
 }
