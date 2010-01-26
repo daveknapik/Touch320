@@ -42,7 +42,7 @@ durationValue = _durationValue;
 		self.subtitle = [query objectForKey:@"subtitle"];
 		self.description = [query objectForKey:@"description"];
 		self.duration = [query objectForKey:@"duration"];
-		self.mp3_sample_url = [query objectForKey:@"mp3_sample_url"];
+		self.mp3_sample_url = [[query objectForKey:@"mp3_sample_url"] stringByReplacingOccurrencesOfString:@" " withString:@"%20"];
 		
 		NSLog(@"mp3 sample url: %@",self.mp3_sample_url);
 		
@@ -80,8 +80,14 @@ durationValue = _durationValue;
 	
 	[self.view addSubview:self.catalogItemView];
 	
+	//initialize y-axis subview placement variable
+	int yAxisPlacement = 0;
+	int previousSubviewHeight = 0;
+	
 	//subtitle value
-	UILabel *subtitleValue = [[UILabel alloc] initWithFrame:CGRectMake(5, 0, 300, 20)];
+	yAxisPlacement = yAxisPlacement + previousSubviewHeight + 5;
+	
+	UILabel *subtitleValue = [[UILabel alloc] initWithFrame:CGRectMake(5, yAxisPlacement, 300, 20)];
 	subtitleValue.text = self.subtitle;
 	subtitleValue.textAlignment = UITextAlignmentLeft;
 	subtitleValue.textColor = [UIColor blackColor];
@@ -96,9 +102,12 @@ durationValue = _durationValue;
 	
 	[self.view addSubview:subtitleValue];
 	[subtitleValue release];
+	previousSubviewHeight = subtitleValue.frame.size.height;
 	
 	//title value
-	UILabel *titleValue = [[UILabel alloc] initWithFrame:CGRectMake(5, subtitleValue.frame.size.height + 5, 300, 40)];
+	yAxisPlacement = yAxisPlacement + previousSubviewHeight + 5;
+	
+	UILabel *titleValue = [[UILabel alloc] initWithFrame:CGRectMake(5, yAxisPlacement, 300, 40)];
 	titleValue.text = self.navigationItem.title;
 	titleValue.textAlignment = UITextAlignmentLeft;
 	titleValue.textColor = [UIColor blackColor];
@@ -112,9 +121,12 @@ durationValue = _durationValue;
 	
 	[self.view addSubview:titleValue];
 	[titleValue release];
+	previousSubviewHeight = titleValue.frame.size.height;
 	
 	//description value
-	UILabel *descriptionValue = [[UILabel alloc] initWithFrame:CGRectMake(5, subtitleValue.frame.size.height + titleValue.frame.size.height + 10, 300, 100)];
+	yAxisPlacement = yAxisPlacement + previousSubviewHeight + 5;
+	
+	UILabel *descriptionValue = [[UILabel alloc] initWithFrame:CGRectMake(5, yAxisPlacement, 300, 100)];
 	descriptionValue.text = self.description;
 	descriptionValue.textAlignment = UITextAlignmentLeft;
 	descriptionValue.textColor = [UIColor blackColor];
@@ -128,15 +140,19 @@ durationValue = _durationValue;
 	
 	[self.view addSubview:descriptionValue];
 	[descriptionValue release];
+	previousSubviewHeight = descriptionValue.frame.size.height;
 	
 	if ([self.mp3_sample_url length] != 0) {
+		
+	//BUTTONS
+	yAxisPlacement = yAxisPlacement + previousSubviewHeight + 5;
 	
 	//button background images
 	UIImage* blackBackgroundImage = [[UIImage imageNamed:@"blackbutton.png"] stretchableImageWithLeftCapWidth:12.0f topCapHeight:0.0f];
 	
 	//play button
 	playButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-	playButton.frame = CGRectMake(50, subtitleValue.frame.size.height + titleValue.frame.size.height + descriptionValue.frame.size.height + 15, 200, 40);
+	playButton.frame = CGRectMake(50, yAxisPlacement, 200, 40);
 	[playButton setTitle:@"Play" forState:UIControlStateNormal];
 	[playButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
 	[playButton setBackgroundImage:blackBackgroundImage forState:UIControlStateNormal];
@@ -148,7 +164,7 @@ durationValue = _durationValue;
 	
 	//pause button
 	pauseButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-	pauseButton.frame = CGRectMake(50, subtitleValue.frame.size.height + titleValue.frame.size.height + descriptionValue.frame.size.height + 15, 200, 40);
+	pauseButton.frame = CGRectMake(50, yAxisPlacement, 200, 40);
 	[pauseButton setTitle:@"Pause" forState:UIControlStateNormal];
 	[pauseButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
 	[pauseButton setBackgroundImage:blackBackgroundImage forState:UIControlStateNormal];
@@ -160,7 +176,7 @@ durationValue = _durationValue;
 	
 	//activityIndicatorView
 	activityIndicatorView = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
-	activityIndicatorView.center = CGPointMake(150, subtitleValue.frame.size.height + titleValue.frame.size.height + descriptionValue.frame.size.height + 40);
+	activityIndicatorView.center = CGPointMake(150, yAxisPlacement + 35);
 	[self.view addSubview:activityIndicatorView];
 	
 	[self load];

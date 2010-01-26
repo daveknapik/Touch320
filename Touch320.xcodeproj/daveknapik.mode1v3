@@ -252,7 +252,7 @@
 						<dict>
 							<key>PBXSmartGroupTreeModuleColumnWidthsKey</key>
 							<array>
-								<real>318</real>
+								<real>295</real>
 							</array>
 							<key>PBXSmartGroupTreeModuleColumnsKey_v4</key>
 							<array>
@@ -277,14 +277,14 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>22</integer>
-									<integer>8</integer>
+									<integer>46</integer>
+									<integer>34</integer>
 									<integer>5</integer>
 									<integer>0</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 0}, {318, 625}}</string>
+							<string>{{0, 0}, {295, 625}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -296,19 +296,19 @@
 					<key>GeometryConfiguration</key>
 					<dict>
 						<key>Frame</key>
-						<string>{{0, 0}, {335, 643}}</string>
+						<string>{{0, 0}, {312, 643}}</string>
 						<key>GroupTreeTableConfiguration</key>
 						<array>
 							<string>MainColumn</string>
-							<real>318</real>
+							<real>295</real>
 						</array>
 						<key>RubberWindowFrame</key>
-						<string>278 157 1149 684 0 0 1440 878 </string>
+						<string>285 194 1149 684 0 0 1440 878 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXSmartGroupTreeModule</string>
 					<key>Proportion</key>
-					<string>335pt</string>
+					<string>312pt</string>
 				</dict>
 				<dict>
 					<key>Dock</key>
@@ -321,7 +321,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>NewsModel.m</string>
+								<string>CatalogItemViewController.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -329,11 +329,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>NewsModel.m</string>
+										<string>CatalogItemViewController.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>DE680C06110E759E00447216</string>
+										<string>DE680C47110F44A600447216</string>
 										<key>history</key>
 										<array>
 											<string>DEFEE63810D80B79001213CE</string>
@@ -397,7 +397,6 @@
 											<string>DEEDD910110074D30034B464</string>
 											<string>DEEDDAA41100923A0034B464</string>
 											<string>DEEDDAA51100923A0034B464</string>
-											<string>DEE2D54C1100B821004BB6F3</string>
 											<string>DEE2D56D1100C043004BB6F3</string>
 											<string>DEE2D5C91100C854004BB6F3</string>
 											<string>DEEFDC191101408E004E285F</string>
@@ -412,10 +411,6 @@
 											<string>DEE65FD21103313C00D1B7AD</string>
 											<string>DEE65FD31103313C00D1B7AD</string>
 											<string>DE06A920110C8B4F00E7F895</string>
-											<string>DE06A92A110C8B4F00E7F895</string>
-											<string>DE06A92B110C8B4F00E7F895</string>
-											<string>DE06AA7B110D144C00E7F895</string>
-											<string>DE06AA7D110D144C00E7F895</string>
 											<string>DE06AA84110D144C00E7F895</string>
 											<string>DE06AA86110D144C00E7F895</string>
 											<string>DE06AA87110D144C00E7F895</string>
@@ -429,18 +424,23 @@
 											<string>DE06AA92110D144C00E7F895</string>
 											<string>DE06AAD5110DBA4C00E7F895</string>
 											<string>DE06AAF0110DBC6000E7F895</string>
-											<string>DE06AB04110DC19600E7F895</string>
 											<string>DE06AB28110DC4E300E7F895</string>
 											<string>DE06AB29110DC4E300E7F895</string>
 											<string>DE06AB2B110DC4E300E7F895</string>
 											<string>DE06AB37110DC59200E7F895</string>
 											<string>DE06AB47110E0A4E00E7F895</string>
-											<string>DE06AB48110E0A4E00E7F895</string>
-											<string>DE06AB49110E0A4E00E7F895</string>
 											<string>DE06AB66110E11CA00E7F895</string>
-											<string>DE680C00110E750500447216</string>
-											<string>DE680C01110E750500447216</string>
-											<string>DE680C02110E750500447216</string>
+											<string>DE680C0B110EFA5400447216</string>
+											<string>DE680C0C110EFA5400447216</string>
+											<string>DE680C0D110EFA5400447216</string>
+											<string>DE680C0E110EFA5400447216</string>
+											<string>DE680C0F110EFA5400447216</string>
+											<string>DE680C10110EFA5400447216</string>
+											<string>DE680C11110EFA5400447216</string>
+											<string>DE680C12110EFA5400447216</string>
+											<string>DE680C13110EFA5400447216</string>
+											<string>DE680C14110EFA5400447216</string>
+											<string>DE680C31110F030300447216</string>
 										</array>
 										<key>prevStack</key>
 										<array>
@@ -552,6 +552,26 @@
 											<string>DE06AAB6110D144C00E7F895</string>
 											<string>DE680C03110E750500447216</string>
 											<string>DE680C04110E750500447216</string>
+											<string>DE680C16110EFA5400447216</string>
+											<string>DE680C17110EFA5400447216</string>
+											<string>DE680C18110EFA5400447216</string>
+											<string>DE680C19110EFA5400447216</string>
+											<string>DE680C1A110EFA5400447216</string>
+											<string>DE680C1B110EFA5400447216</string>
+											<string>DE680C1C110EFA5400447216</string>
+											<string>DE680C1D110EFA5400447216</string>
+											<string>DE680C1E110EFA5400447216</string>
+											<string>DE680C1F110EFA5400447216</string>
+											<string>DE680C20110EFA5400447216</string>
+											<string>DE680C21110EFA5400447216</string>
+											<string>DE680C22110EFA5400447216</string>
+											<string>DE680C23110EFA5400447216</string>
+											<string>DE680C24110EFA5400447216</string>
+											<string>DE680C25110EFA5400447216</string>
+											<string>DE680C26110EFA5400447216</string>
+											<string>DE680C27110EFA5400447216</string>
+											<string>DE680C28110EFA5400447216</string>
+											<string>DE680C29110EFA5400447216</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -563,9 +583,9 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 0}, {809, 465}}</string>
+								<string>{{0, 0}, {832, 465}}</string>
 								<key>RubberWindowFrame</key>
-								<string>278 157 1149 684 0 0 1440 878 </string>
+								<string>285 194 1149 684 0 0 1440 878 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
@@ -583,9 +603,9 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 470}, {809, 173}}</string>
+								<string>{{0, 470}, {832, 173}}</string>
 								<key>RubberWindowFrame</key>
-								<string>278 157 1149 684 0 0 1440 878 </string>
+								<string>285 194 1149 684 0 0 1440 878 </string>
 							</dict>
 							<key>Module</key>
 							<string>XCDetailModule</string>
@@ -594,7 +614,7 @@
 						</dict>
 					</array>
 					<key>Proportion</key>
-					<string>809pt</string>
+					<string>832pt</string>
 				</dict>
 			</array>
 			<key>Name</key>
@@ -753,7 +773,7 @@
 		<string>/Users/daveknapik/Documents/iPhone Development/Touch app/Touch320/Touch320.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
-	<string>278 157 1149 684 0 0 1440 878 </string>
+	<string>285 194 1149 684 0 0 1440 878 </string>
 	<key>WindowToolsV3</key>
 	<array>
 		<dict>
