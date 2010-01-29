@@ -12,10 +12,11 @@
 @implementation CatalogItemViewController
 
 @synthesize artist = _artist,
-description = _description,
+release_description = _release_description,
 subtitle = _subtitle,
 duration = _duration,
 mp3_sample_url = _mp3_sample_url,
+cover_art_url = _cover_art_url,
 catalogItemView = _catalogItemView,
 titleLabel = _titleLabel,
 artistLabel = _artistLabel,
@@ -26,7 +27,8 @@ titleValue = _titleValue,
 artistValue = _artistValue,
 descriptionValue = _descriptionValue,
 subtitleValue = _subtitleValue,
-durationValue = _durationValue;
+durationValue = _durationValue,
+cover_art = _cover_art;
 
 - (id)initWithCatalogItem:(NSString *)placeholder query:(NSDictionary*)query
 {
@@ -40,18 +42,11 @@ durationValue = _durationValue;
 		
 		self.artist = [query objectForKey:@"artist"];
 		self.subtitle = [query objectForKey:@"subtitle"];
-		self.description = [query objectForKey:@"description"];
+		self.release_description = [query objectForKey:@"release_description"];
 		self.duration = [query objectForKey:@"duration"];
 		self.mp3_sample_url = [[query objectForKey:@"mp3_sample_url"] stringByReplacingOccurrencesOfString:@" " withString:@"%20"];
-		
-		NSLog(@"mp3 sample url: %@",self.mp3_sample_url);
-		
-		if ([self.mp3_sample_url length] == 0) {
-			NSLog(@"mp3 sample url is null");
-		}
-		else {
-			NSLog(@"mp3 sample url length: %d", [self.mp3_sample_url length]);
-		}
+		//self.mp3_sample_url = @"http://www.daveknapik.com/audio/Silicon_Teens-Just_Like_Eddie.mp3";
+		self.cover_art_url = [[query objectForKey:@"cover_art_url"] stringByReplacingOccurrencesOfString:@" " withString:@"%20"];
 		
 		Touch320AppDelegate *appDelegate;
 		appDelegate = (Touch320AppDelegate*)[UIApplication sharedApplication].delegate;
@@ -123,11 +118,30 @@ durationValue = _durationValue;
 	[titleValue release];
 	previousSubviewHeight = titleValue.frame.size.height;
 	
-	//description value
+	//image value
+	
+	//TODO: add check for validity of image at cover_art_url
+	
+	//if ([self.cover_art_url length] != 0) {
+		yAxisPlacement = yAxisPlacement + previousSubviewHeight + 5;
+	
+		TTPhotoView* cover_art = [[TTPhotoView alloc] initWithFrame:CGRectMake(5, yAxisPlacement, 150, 150)];
+		[cover_art setDelegate:self];
+		[cover_art showStatus:nil];
+	cover_art.hidesExtras = YES;
+	cover_art.hidesCaption = YES;
+		cover_art.URL = self.cover_art_url;
+		
+		[self.view addSubview:cover_art];
+		[cover_art release];
+		previousSubviewHeight = cover_art.frame.size.height;
+	//}
+		
+	//release_description value
 	yAxisPlacement = yAxisPlacement + previousSubviewHeight + 5;
 	
 	UILabel *descriptionValue = [[UILabel alloc] initWithFrame:CGRectMake(5, yAxisPlacement, 300, 100)];
-	descriptionValue.text = self.description;
+	descriptionValue.text = self.release_description;
 	descriptionValue.textAlignment = UITextAlignmentLeft;
 	descriptionValue.textColor = [UIColor blackColor];
 	descriptionValue.font = [UIFont systemFontOfSize:12];
@@ -136,14 +150,12 @@ durationValue = _durationValue;
 	descriptionValue.numberOfLines = 0;
 	
 	descriptionValue.frame = [self resizeLabelFrame:descriptionValue 
-										forText:self.description];
+										forText:self.release_description];
 	
 	[self.view addSubview:descriptionValue];
 	[descriptionValue release];
 	previousSubviewHeight = descriptionValue.frame.size.height;
 	
-	if ([self.mp3_sample_url length] != 0) {
-		
 	//BUTTONS
 	yAxisPlacement = yAxisPlacement + previousSubviewHeight + 5;
 	
@@ -160,7 +172,6 @@ durationValue = _durationValue;
 	playButton.backgroundColor = [UIColor clearColor];
 	playButton.alpha = 1;
 	[playButton addTarget:self action:@selector(play) forControlEvents:UIControlEventTouchUpInside];
-	[self.view addSubview:playButton];
 	
 	//pause button
 	pauseButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
@@ -172,16 +183,18 @@ durationValue = _durationValue;
 	pauseButton.backgroundColor = [UIColor clearColor];
 	pauseButton.alpha = 0;
 	[pauseButton addTarget:self action:@selector(pause) forControlEvents:UIControlEventTouchUpInside];
-	[self.view addSubview:pauseButton];
 	
 	//activityIndicatorView
 	activityIndicatorView = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
 	activityIndicatorView.center = CGPointMake(150, yAxisPlacement + 35);
-	[self.view addSubview:activityIndicatorView];
 	
-	[self load];
-	
-	}
+	//if ([self.mp3_sample_url length] != 0) {
+		[self.view addSubview:playButton];
+		[self.view addSubview:pauseButton];
+		[self.view addSubview:activityIndicatorView];
+		
+		[self load];
+	//}
 	
     [super viewDidLoad];
 }
@@ -206,9 +219,10 @@ durationValue = _durationValue;
 	// Release any retained subviews of the main view.
 	// e.g. self.myOutlet = nil;
 	self.artist = nil;
-	self.description = nil;
+	self.release_description = nil;
 	self.duration = nil;
 	self.mp3_sample_url = nil;
+	self.cover_art_url = nil;
 	
 	self.catalogItemView = nil;
 	
@@ -227,6 +241,7 @@ durationValue = _durationValue;
 	playButton = nil;
 	pauseButton = nil;
 	activityIndicatorView = nil;
+	_cover_art = nil;
 	
 	[super viewDidUnload];
 }
@@ -235,9 +250,10 @@ durationValue = _durationValue;
 - (void)dealloc {
 	TT_RELEASE_SAFELY(_artist);
 	TT_RELEASE_SAFELY(_subtitle);
-	TT_RELEASE_SAFELY(_description);
+	TT_RELEASE_SAFELY(_release_description);
 	TT_RELEASE_SAFELY(_duration);
 	TT_RELEASE_SAFELY(_mp3_sample_url);
+	TT_RELEASE_SAFELY(_cover_art_url);
 	
 	TT_RELEASE_SAFELY(_catalogItemView);
 	
@@ -256,6 +272,7 @@ durationValue = _durationValue;
 	TT_RELEASE_SAFELY(playButton);
 	TT_RELEASE_SAFELY(pauseButton);
 	TT_RELEASE_SAFELY(activityIndicatorView);
+	TT_RELEASE_SAFELY(_cover_art);
 	
 	[super dealloc];
 }
@@ -304,17 +321,16 @@ durationValue = _durationValue;
 	
 	AudioSessionSetActive(YES);
 	
-	NSLog(@"active audio player: %@",[appDelegate activeAudioPlayer]);
+	NSLog(@"step 1 - active audio player: %@",[appDelegate activeAudioPlayer]);
 	
 	[[appDelegate activeAudioPlayer] cancel];
 	[[appDelegate activeAudioPlayer] release];
 	
 	audioPlayer = [[AudioPlayer alloc] initPlayerWithURL:[NSURL URLWithString:self.mp3_sample_url] delegate:self];
-	//audioPlayer = [[AudioPlayer alloc] initPlayerWithURL:[NSURL URLWithString:@"http://www.daveknapik.com/audio/Silicon_Teens-Just_Like_Eddie.mp3"] delegate:self];
 	
 	appDelegate.activeAudioPlayer = audioPlayer;
 	
-	NSLog(@"active audio player: %@",[appDelegate activeAudioPlayer]);
+	NSLog(@"step 2 - active audio player: %@",[appDelegate activeAudioPlayer]);
 	
 	[self showLoading];
 }
@@ -330,9 +346,6 @@ durationValue = _durationValue;
 }
 
 - (void)audioPlayerDownloadFailed:(AudioPlayer *)audioPlayer {
-	UIAlertView *alert = [[UIAlertView alloc] initWithTitle:nil message:@"Audio download failed" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
-	[alert show];
-	[alert autorelease];
 	[self showStopped];
 }
 
@@ -347,6 +360,27 @@ durationValue = _durationValue;
 	[self showStopped];
 }
 
+#pragma mark TTImageViewDelegate methods
+
+- (void)imageViewDidStartLoad:(TTImageView *)imageView{
+	NSLog(@"hi, I started loading the image");
+}
+
+- (void)imageView:(TTImageView *)imageView didLoadImage:(UIImage*)image{
+	
+	NSLog(@"hi, I finished loading the image");
+	//[coverArtActivityIndicatorView stopAnimating];
+} 	 
+
+- (void)imageViewDidFailLoadWithError:(NSError*)error {
+	UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error"
+													message:@"Cover art failed to load"
+												   delegate:self
+										  cancelButtonTitle:@"OK"
+										  otherButtonTitles:nil];
+	[alert show];
+	[alert release];
+}  	 
 
 @end
 

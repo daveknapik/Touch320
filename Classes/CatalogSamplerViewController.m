@@ -41,12 +41,14 @@
 }
 
 - (void)didSelectObject:(id)object atIndexPath:(NSIndexPath*)indexPath {
+	NSLog(@"selected catalog item");
+	
 	NSDictionary *query = [NSDictionary
 						   dictionaryWithObjectsAndKeys:
 						   [object title], @"title",
 						   [object subtitle], @"subtitle",
 						   [object artist], @"artist",
-						   [object description], @"description",
+						   [object release_description], @"release_description",
 						   [object catalogNumber], @"catalogNumber",
 						   [object release_url], @"release_url",
 						   [object mp3_sample_url], @"mp3_sample_url",

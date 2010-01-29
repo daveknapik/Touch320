@@ -305,7 +305,6 @@
 	[[appDelegate activeAudioPlayer] release];
 	
 	audioPlayer = [[AudioPlayer alloc] initPlayerWithURL:[NSURL URLWithString:self.link] delegate:self];
-	//audioPlayer = [[AudioPlayer alloc] initPlayerWithURL:[NSURL URLWithString:@"http://www.daveknapik.com/audio/Silicon_Teens-Just_Like_Eddie.mp3"] delegate:self];
 	
 	appDelegate.activeAudioPlayer = audioPlayer;
 	

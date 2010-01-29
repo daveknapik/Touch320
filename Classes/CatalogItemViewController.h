@@ -10,12 +10,13 @@
 #import <Three20/Three20.h>
 #import "AudioPlayer.h"
 
-@interface CatalogItemViewController : TTViewController <AudioPlayerDelegate> {
+@interface CatalogItemViewController : TTViewController <AudioPlayerDelegate, TTImageViewDelegate, UIAlertViewDelegate> {
 	NSString* _artist;
 	NSString* _subtitle;
-	NSString* _description;
+	NSString* _release_description;
 	NSString* _duration;
 	NSString* _mp3_sample_url;
+	NSString* _cover_art_url;
 	
 	UIScrollView* _catalogItemView;
 	
@@ -31,6 +32,8 @@
 	UILabel* _subtitleValue;
 	UILabel* _durationValue;
 	
+	TTPhotoView* _cover_art;
+	
 	UIActivityIndicatorView* activityIndicatorView;
 	UIButton* pauseButton;
 	UIButton* playButton;
@@ -39,10 +42,11 @@
 }
 
 @property (nonatomic, copy) NSString* artist;
-@property (nonatomic, copy) NSString* description;
+@property (nonatomic, copy) NSString* release_description;
 @property (nonatomic, copy) NSString* subtitle;
 @property (nonatomic, copy) NSString* duration;
 @property (nonatomic, copy) NSString* mp3_sample_url;
+@property (nonatomic, copy) NSString* cover_art_url;
 
 @property (nonatomic, retain) UIScrollView* catalogItemView;
 
@@ -57,6 +61,8 @@
 @property (nonatomic, retain) UILabel* descriptionValue;
 @property (nonatomic, retain) UILabel* subtitleValue;
 @property (nonatomic, retain) UILabel* durationValue;
+
+@property (nonatomic, retain) TTPhotoView* cover_art;
 
 - (id)initWithCatalogItem:(NSString *)placeholder query:(NSDictionary*)query;
 - (CGRect)resizeLabelFrame:(UILabel*)label forText:(NSString*)text;

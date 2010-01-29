@@ -14,7 +14,7 @@
 @synthesize title = _title, 
 			artist = _artist,
 			catalogNumber = _catalogNumber,
-			description = _description,
+			release_description = _release_description,
 			cover_art_url = _cover_art_url,
 			mp3_sample_url = _mp3_sample_url,
 			release_url = _release_url,
@@ -29,8 +29,8 @@
 			 title:(NSString*)title 
 		  subtitle:(NSString*)subtitle
 			artist:(NSString*)artist
-	 catalogNumber:(NSString*)catalogNumber
-	   description:(NSString*)description
+	 catalogNumber:(NSString*)catalogNumber 
+release_description:(NSString*)release_description
 	 cover_art_url:(NSString*)cover_art_url
 	mp3_sample_url:(NSString*)mp3_sample_url
 	   release_url:(NSString*)release_url
@@ -46,7 +46,7 @@
 	item.subtitle = subtitle;
 	item.artist = artist;
 	item.catalogNumber = catalogNumber;
-	item.description = description;
+	item.release_description = release_description;
 	item.cover_art_url = cover_art_url;
 	item.mp3_sample_url = mp3_sample_url;
 	item.release_url = release_url;
@@ -72,7 +72,7 @@
 	TT_RELEASE_SAFELY(_subtitle);
 	TT_RELEASE_SAFELY(_artist); 
 	TT_RELEASE_SAFELY(_catalogNumber); 
-	TT_RELEASE_SAFELY(_description); 
+	TT_RELEASE_SAFELY(_release_description); 
 	TT_RELEASE_SAFELY(_cover_art_url); 
 	TT_RELEASE_SAFELY(_mp3_sample_url); 
 	TT_RELEASE_SAFELY(_release_url); 
@@ -90,7 +90,7 @@
 		self.subtitle = [decoder decodeObjectForKey:@"subtitle"];
 		self.artist = [decoder decodeObjectForKey:@"artist"];
 		self.catalogNumber = [decoder decodeObjectForKey:@"catalogNumber"];
-		self.description = [decoder decodeObjectForKey:@"description"];
+		self.release_description = [decoder decodeObjectForKey:@"release_description"];
 		self.cover_art_url = [decoder decodeObjectForKey:@"cover_art_url"];
 		self.mp3_sample_url = [decoder decodeObjectForKey:@"mp3_sample_url"];
 		self.release_url = [decoder decodeObjectForKey:@"release_url"];
@@ -122,8 +122,8 @@
 		[encoder encodeObject:self.catalogNumber forKey:@"catalogNumber"]; 
 	} 
 	
-	if (self.description) { 
-		[encoder encodeObject:self.description forKey:@"description"]; 
+	if (self.release_description) { 
+		[encoder encodeObject:self.release_description forKey:@"release_description"]; 
 	} 
 	
 	if (self.cover_art_url) { 

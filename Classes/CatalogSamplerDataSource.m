@@ -48,7 +48,7 @@
 		NSString* artist = [theItem objectForKey:@"artist"];
 		NSString* title = [theItem objectForKey:@"title"];
 		NSString* catalogNumber = [theItem objectForKey:@"catalogue_number"];
-		NSString* description = [theItem objectForKey:@"description"];
+		NSString* release_description = [theItem objectForKey:@"description"];
 		NSString* cover_art_url = [theItem objectForKey:@"cover_art_url"];
 		NSString* mp3_sample_url = [theItem objectForKey:@"mp3_sample_url"];
 		NSString* release_url = [theItem objectForKey:@"release_url"];
@@ -64,7 +64,7 @@
 							  subtitle: artist
 							  artist: artist
 							  catalogNumber: catalogNumber
-							  description: description
+							  release_description: release_description
 							  cover_art_url: cover_art_url
 							  mp3_sample_url: mp3_sample_url
 							  release_url: release_url

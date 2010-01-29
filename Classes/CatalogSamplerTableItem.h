@@ -14,7 +14,7 @@
 	NSString* _title;
 	NSString* _artist;
 	NSString* _catalogNumber;
-	NSString* _description;
+	NSString* _release_description;
 	NSString* _cover_art_url;
 	NSString* _mp3_sample_url;
 	NSString* _release_url;
@@ -27,7 +27,7 @@
 @property (nonatomic, copy) NSString* title;
 @property (nonatomic, copy) NSString* artist;
 @property (nonatomic, copy) NSString* catalogNumber;
-@property (nonatomic, copy) NSString* description;
+@property (nonatomic, copy) NSString* release_description;
 @property (nonatomic, copy) NSString* cover_art_url;
 @property (nonatomic, copy) NSString* mp3_sample_url;
 @property (nonatomic, copy) NSString* release_url;
@@ -41,7 +41,7 @@
 		  subtitle:(NSString*)subtitle
 			artist:(NSString*)artist
 	 catalogNumber:(NSString*)catalogNumber
-	   description:(NSString*)description
+release_description:(NSString*)release_description
 	 cover_art_url:(NSString*)cover_art_url
 	mp3_sample_url:(NSString*)mp3_sample_url
 	   release_url:(NSString*)release_url
