@@ -27,10 +27,12 @@ void packetCallback(void *clientData, UInt32 byteCount, UInt32 packetCount, cons
 	// the C API.
 	// We pass 0 as a fileTypeHint because CoreAudio is pretty good at
 	// determining the fileType for us (and may ignore our hint anyway.)
+	//NSLog(@"opening the audio file stream");
+	
 	return AudioFileStreamOpen(self, 
 							   propertyCallback, 
 							   packetCallback, 
-							   0, 
+							   kAudioFileMP3Type, 
 							   &streamID);
 }
 
@@ -110,6 +112,9 @@ void packetCallback(void *clientData, UInt32 byteCount, UInt32 packetCount, cons
 												 kAudioFileStreamProperty_FormatList, 
 												 &formatListSize, 
 												 [listData mutableBytes]);
+	
+	NSLog(@"Audio file stream status: %d",status);
+	
 	AudioFormatListItem *formatList = [listData mutableBytes];
 	
 	AudioStreamBasicDescription asbd;

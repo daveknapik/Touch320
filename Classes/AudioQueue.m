@@ -15,6 +15,9 @@ void propertyChangeIsRunning(void *data, AudioQueueRef inAQ, AudioQueuePropertyI
 - (id)initQueueWithDelegate:(id<AudioQueueDelegate>)aDelegate {
 	self = [super init];
 	self.delegate = aDelegate;
+	
+	//NSLog(@"init audio queue");
+	
 	return self;
 }
 
