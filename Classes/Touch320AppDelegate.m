@@ -40,6 +40,7 @@ void interruptionListener (void *inClientData, UInt32 inInterruptionState);
 	TTNavigator* navigator = [TTNavigator navigator];
 	navigator.persistenceMode = TTNavigatorPersistenceModeNone;
 	navigator.window = [[[UIWindow alloc] initWithFrame:TTScreenBounds()] autorelease];
+	navigator.supportsShakeToReload = YES;
 	
 	TTURLMap* map = navigator.URLMap;
 	

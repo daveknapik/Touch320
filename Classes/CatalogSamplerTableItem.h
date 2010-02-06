@@ -21,7 +21,6 @@
 	NSString* _itunes_url;
 	NSString* _duration;
 	NSString* _track_listing;
-	NSString* _reviews;
 }
 
 @property (nonatomic, copy) NSString* title;
@@ -34,7 +33,6 @@
 @property (nonatomic, copy) NSString* itunes_url;
 @property (nonatomic, copy) NSString* duration;
 @property (nonatomic, copy) NSString* track_listing;
-@property (nonatomic, copy) NSString* reviews;
 
 + (id)itemWithText:(NSString*)text 
 			 title:(NSString*)title 
@@ -47,8 +45,7 @@ release_description:(NSString*)release_description
 	   release_url:(NSString*)release_url
 		itunes_url:(NSString*)itunes_url
 		  duration:(NSString*)duration
-	 track_listing:(NSString*)track_listing
-		   reviews:(NSString*)reviews;
+	 track_listing:(NSString*)track_listing;
 
 @end
 

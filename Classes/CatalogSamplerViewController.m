@@ -56,7 +56,6 @@
 						   [object itunes_url], @"itunes_url",
 						   [object duration], @"duration",
 						   [object track_listing], @"track_listing",
-						   [object reviews], @"reviews",
 						   nil];
 	[[TTNavigator navigator] openURL:@"tt://catalogItem/1" query:query animated:YES]; 
 }

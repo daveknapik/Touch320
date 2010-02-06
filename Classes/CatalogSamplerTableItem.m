@@ -20,8 +20,7 @@
 			release_url = _release_url,
 			itunes_url = _itunes_url,
 			duration = _duration,
-			track_listing = _track_listing,
-			reviews = _reviews;
+			track_listing = _track_listing;
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -37,7 +36,6 @@ release_description:(NSString*)release_description
 		itunes_url:(NSString*)itunes_url
 		  duration:(NSString*)duration
 	 track_listing:(NSString*)track_listing
-		   reviews:(NSString*)reviews 
 {
 	CatalogSamplerTableItem* item = [[[self alloc] init] autorelease]; 
 	
@@ -53,7 +51,6 @@ release_description:(NSString*)release_description
 	item.itunes_url = itunes_url;
 	item.duration = duration;
 	item.track_listing = track_listing;
-	item.reviews = reviews;
 	
 	return item; 
 } 
@@ -79,7 +76,6 @@ release_description:(NSString*)release_description
 	TT_RELEASE_SAFELY(_itunes_url); 
 	TT_RELEASE_SAFELY(_duration); 
 	TT_RELEASE_SAFELY(_track_listing); 
-	TT_RELEASE_SAFELY(_reviews);
 	
 	[super dealloc];
 }
@@ -97,7 +93,6 @@ release_description:(NSString*)release_description
 		self.itunes_url = [decoder decodeObjectForKey:@"itunes_url"];
 		self.duration = [decoder decodeObjectForKey:@"duration"];
 		self.track_listing = [decoder decodeObjectForKey:@"track_listing"];
-		self.reviews = [decoder decodeObjectForKey:@"reviews"];
 	} 
 	
 	return self;
@@ -148,10 +143,6 @@ release_description:(NSString*)release_description
 	
 	if (self.track_listing) { 
 		[encoder encodeObject:self.track_listing forKey:@"track_listing"]; 
-	} 
-	
-	if (self.reviews) { 
-		[encoder encodeObject:self.reviews forKey:@"reviews"]; 
 	} 
 } 
 
