@@ -11,14 +11,11 @@
 
 @interface RecipeBookTableItem : TTTableTextItem {
 	NSString* _title;
-	NSString* _link;
 }
 
 @property(nonatomic,copy) NSString* title;
-@property(nonatomic,copy) NSString* link;
 
 + (id)itemWithText:(NSString*)text 
-			 title:(NSString*)title 
-			  link:(NSString*)link;
+			 title:(NSString*)title;
 
 @end

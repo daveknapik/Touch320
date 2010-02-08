@@ -29,7 +29,7 @@
 		if (more)
 			page++;
 		
-		NSString* url=@"http://www.touchmusic.org.uk/index.xml";
+		NSString* url=@"http://www.touchmusic.org.uk/recipebook/categories.xml";
 		
 		TTURLRequest* request = [TTURLRequest requestWithURL:url delegate:self];
 		request.cachePolicy = cachePolicy;
@@ -59,7 +59,7 @@
     NSArray *resultNodes = NULL;
 	
     // Set the resultNodes Array to contain an object for every instance of an  node in our RSS feed
-    resultNodes = [rssParser nodesForXPath:@"//item" error:nil];
+    resultNodes = [rssParser nodesForXPath:@"//category" error:nil];
 	
 	int outerCounter = 0;
 	
@@ -80,14 +80,13 @@
 						 forKey:[[resultElement childAtIndex:counter] name]];
 		}
 		
+		if (!([[blogItem objectForKey:@"title"] isEqualToString:@"left"]) && !([[blogItem objectForKey:@"title"] isEqualToString:@"right"])) {
+			// Add the blogItem to the global blogEntries Array so that the view can access it.
+			NSNumber* key = [NSNumber numberWithInt:outerCounter];
+			[_recipes setObject:[blogItem copy] forKey:key];
+			outerCounter++;
+		}
 		
-		//NSString* key = [NSString stringWithFormat:@"%d",outerCounter];
-		NSNumber* key = [NSNumber numberWithInt:outerCounter];
-		
-		// Add the blogItem to the global blogEntries Array so that the view can access it.
-		[_recipes setObject:[blogItem copy] forKey:key];
-		
-		outerCounter++;
 		[blogItem release];
 	}	
 	

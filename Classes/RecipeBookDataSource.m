@@ -46,14 +46,12 @@
 		NSMutableDictionary* theItem = [_recipeBookModel.recipes objectForKey:key];
 		
 		NSString* title = [theItem objectForKey:@"title"];
-		NSString* link = [theItem objectForKey:@"link"];
 		
 		if( !TTIsEmptyString(title) ) {
 			
 			[items addObject:[RecipeBookTableItem
 							  itemWithText: title
-							  title: title
-							  link: link]];
+							  title: title]];
 		}
 	}
 	
