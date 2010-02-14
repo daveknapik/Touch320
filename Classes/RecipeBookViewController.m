@@ -40,14 +40,14 @@
 	NSLog(@"recipe book model created");
 }
 
-/*- (void)didSelectObject:(id)object atIndexPath:(NSIndexPath*)indexPath {
+- (void)didSelectObject:(id)object atIndexPath:(NSIndexPath*)indexPath {
 	NSDictionary *query = [NSDictionary
 						   dictionaryWithObjectsAndKeys:
-						   [object link], @"link",
-						   [object title], @"title",
+						   [object author], @"author",
+						   [object subtitle], @"title",
 						   nil];
-	[[TTNavigator navigator] openURL:@"tt://newsItem/1" query:query animated:YES]; 
-} */
+	[[TTNavigator navigator] openURL:@"tt://recipeItem/1" query:query animated:YES]; 
+}
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {

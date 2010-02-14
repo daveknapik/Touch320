@@ -53,7 +53,8 @@
 			[items addObject:[RecipeBookTableItem
 							  itemWithText: title
 							  title: title
-							  subtitle: subtitle]];
+							  subtitle: subtitle 
+							  author: title]];
 		}
 	}
 	
