@@ -13,6 +13,6 @@
 
 }
 
--(id)initWithTabBar:(NSString *)placeholder;
+-(id)initWithRecipes:(NSString *)placeholder query:(NSDictionary*)query;
 
 @end

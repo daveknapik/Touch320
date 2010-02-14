@@ -1,20 +1,20 @@
 //
-//  RecipeBookDataSource.m
+//  RecipeBookCategoryDataSource.m
 //  Touch320
 //
-//  Created by Dave Knapik on 05/01/2010.
+//  Created by Dave Knapik on 13/02/2010.
 //  Copyright 2010 __MyCompanyName__. All rights reserved.
 //
 
-#import "RecipeBookDataSource.h"
-#import "RecipeBookTableItem.h"
-#import "RecipeBookTableItemCell.h"
+#import "RecipeBookCategoryDataSource.h"
+#import "RecipeBookCategoryTableItem.h"
+#import "RecipeBookCategoryTableItemCell.h"
 
-@implementation RecipeBookDataSource
+@implementation RecipeBookCategoryDataSource
 
-- (id)initWithModel:(NSString *)category {
+- (id)initWithModel {
 	if( [self init] ) {
-		_recipeBookModel = [[RecipeBookModel alloc] initWithCategory:category];
+		_recipeBookCategoryModel = [[RecipeBookCategoryModel alloc] init];
 	}
 	
 	NSLog(@"init recipe book data source");
@@ -23,37 +23,35 @@
 }
 
 - (void)dealloc {
-	TT_RELEASE_SAFELY(_recipeBookModel);
+	TT_RELEASE_SAFELY(_recipeBookCategoryModel);
 	
 	[super dealloc];
 }
 
 - (id<TTModel>)model {
-	return _recipeBookModel;
+	return _recipeBookCategoryModel;
 }
 
 - (void)tableViewDidLoadModel:(UITableView*)tableView {
-	//NSLog(@"Recipe Book Items: %@", _recipeBookModel.newsItems);
+	//NSLog(@"Recipe Book Items: %@", _recipeBookCategoryModel.newsItems);
 	
 	NSMutableArray* items = [[NSMutableArray alloc] init];
 	
-	NSArray *keys = [_recipeBookModel.recipes allKeys];
+	NSArray *keys = [_recipeBookCategoryModel.recipes allKeys];
 	
 	NSArray *sortedKeys = [keys sortedArrayUsingSelector:@selector(compare:)];
 	
 	
 	for (id key in sortedKeys) {
-		NSMutableDictionary* theItem = [_recipeBookModel.recipes objectForKey:key];
+		NSMutableDictionary* theItem = [_recipeBookCategoryModel.recipes objectForKey:key];
 		
 		NSString* title = [theItem objectForKey:@"title"];
-		NSString* subtitle = [theItem objectForKey:@"excerpt"];
 		
 		if( !TTIsEmptyString(title) ) {
 			
-			[items addObject:[RecipeBookTableItem
+			[items addObject:[RecipeBookCategoryTableItem
 							  itemWithText: title
-							  title: title
-							  subtitle: subtitle]];
+							  title: title]];
 		}
 	}
 	
@@ -65,8 +63,8 @@
 // TTTableViewDataSource 
 
 - (Class)tableView:(UITableView*)tableView cellClassForObject:(id)object { 
-	if ([object isKindOfClass:[RecipeBookTableItem class]]) { 
-		return [RecipeBookTableItemCell class]; 
+	if ([object isKindOfClass:[RecipeBookCategoryTableItem class]]) { 
+		return [RecipeBookCategoryTableItemCell class]; 
 	} 
 	else { 
 		return [super tableView:tableView cellClassForObject:object]; 
@@ -78,4 +76,3 @@
 } 
 
 @end
-

@@ -43,7 +43,14 @@
 		DE93D90610F38DBA005B6255 /* RecipeBookTableItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DE93D90510F38DBA005B6255 /* RecipeBookTableItemCell.m */; };
 		DE93D90910F38DC3005B6255 /* RecipeBookDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = DE93D90810F38DC3005B6255 /* RecipeBookDataSource.m */; };
 		DE93D90C10F38DD3005B6255 /* RecipeBookModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DE93D90B10F38DD3005B6255 /* RecipeBookModel.m */; };
+		DE97ED4F1127A0D100E25713 /* RecipeBookCategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE97ED4E1127A0D100E25713 /* RecipeBookCategoryViewController.m */; };
+		DE97ED521127A0EE00E25713 /* RecipeBookCategoryTableItem.m in Sources */ = {isa = PBXBuildFile; fileRef = DE97ED511127A0EE00E25713 /* RecipeBookCategoryTableItem.m */; };
+		DE97ED551127A0FD00E25713 /* RecipeBookCategoryTableItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DE97ED541127A0FD00E25713 /* RecipeBookCategoryTableItemCell.m */; };
+		DE97ED581127A10900E25713 /* RecipeBookCategoryDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = DE97ED571127A10900E25713 /* RecipeBookCategoryDataSource.m */; };
+		DE97ED5B1127A11B00E25713 /* RecipeBookCategoryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DE97ED5A1127A11B00E25713 /* RecipeBookCategoryModel.m */; };
+		DE97EDF71127E91000E25713 /* RecipeCategories.plist in Resources */ = {isa = PBXBuildFile; fileRef = DE97EDF61127E91000E25713 /* RecipeCategories.plist */; };
 		DEAA259410FCB13C0059D87F /* blackbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = DEAA259310FCB13C0059D87F /* blackbutton.png */; };
+		DEAFCF111120C9070050C987 /* dist.plist in Resources */ = {isa = PBXBuildFile; fileRef = DEAFCF101120C9070050C987 /* dist.plist */; };
 		DEDEC5C110FF8AB100D9EA32 /* Connection.m in Sources */ = {isa = PBXBuildFile; fileRef = DEDEC57610FF8AB100D9EA32 /* Connection.m */; };
 		DEDEC5C210FF8AB100D9EA32 /* ConnectionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DEDEC57810FF8AB100D9EA32 /* ConnectionDelegate.m */; };
 		DEDEC5C310FF8AB100D9EA32 /* NSHTTPURLResponse+Error.m in Sources */ = {isa = PBXBuildFile; fileRef = DEDEC57A10FF8AB100D9EA32 /* NSHTTPURLResponse+Error.m */; };
@@ -193,7 +200,19 @@
 		DE93D90810F38DC3005B6255 /* RecipeBookDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecipeBookDataSource.m; sourceTree = "<group>"; };
 		DE93D90A10F38DD3005B6255 /* RecipeBookModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecipeBookModel.h; sourceTree = "<group>"; };
 		DE93D90B10F38DD3005B6255 /* RecipeBookModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecipeBookModel.m; sourceTree = "<group>"; };
+		DE97ED4D1127A0D100E25713 /* RecipeBookCategoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecipeBookCategoryViewController.h; sourceTree = "<group>"; };
+		DE97ED4E1127A0D100E25713 /* RecipeBookCategoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecipeBookCategoryViewController.m; sourceTree = "<group>"; };
+		DE97ED501127A0EE00E25713 /* RecipeBookCategoryTableItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecipeBookCategoryTableItem.h; sourceTree = "<group>"; };
+		DE97ED511127A0EE00E25713 /* RecipeBookCategoryTableItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecipeBookCategoryTableItem.m; sourceTree = "<group>"; };
+		DE97ED531127A0FD00E25713 /* RecipeBookCategoryTableItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecipeBookCategoryTableItemCell.h; sourceTree = "<group>"; };
+		DE97ED541127A0FD00E25713 /* RecipeBookCategoryTableItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecipeBookCategoryTableItemCell.m; sourceTree = "<group>"; };
+		DE97ED561127A10900E25713 /* RecipeBookCategoryDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecipeBookCategoryDataSource.h; sourceTree = "<group>"; };
+		DE97ED571127A10900E25713 /* RecipeBookCategoryDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecipeBookCategoryDataSource.m; sourceTree = "<group>"; };
+		DE97ED591127A11B00E25713 /* RecipeBookCategoryModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecipeBookCategoryModel.h; sourceTree = "<group>"; };
+		DE97ED5A1127A11B00E25713 /* RecipeBookCategoryModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecipeBookCategoryModel.m; sourceTree = "<group>"; };
+		DE97EDF61127E91000E25713 /* RecipeCategories.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = RecipeCategories.plist; sourceTree = "<group>"; };
 		DEAA259310FCB13C0059D87F /* blackbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blackbutton.png; sourceTree = "<group>"; };
+		DEAFCF101120C9070050C987 /* dist.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = dist.plist; sourceTree = "<group>"; };
 		DEDEC57510FF8AB100D9EA32 /* Connection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Connection.h; sourceTree = "<group>"; };
 		DEDEC57610FF8AB100D9EA32 /* Connection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Connection.m; sourceTree = "<group>"; };
 		DEDEC57710FF8AB100D9EA32 /* ConnectionDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConnectionDelegate.h; sourceTree = "<group>"; };
@@ -383,6 +402,7 @@
 				29B97317FDCFA39411CA2CEA /* Resources */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
+				DEAFCF101120C9070050C987 /* dist.plist */,
 			);
 			name = CustomTemplate;
 			sourceTree = "<group>";
@@ -402,6 +422,7 @@
 				DEE2D5651100BE6C004BB6F3 /* icon.png */,
 				DEAA259310FCB13C0059D87F /* blackbutton.png */,
 				8D1107310486CEB800E47090 /* Touch320-Info.plist */,
+				DE97EDF61127E91000E25713 /* RecipeCategories.plist */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -497,6 +518,16 @@
 		DE10402910F3F0480058DDB8 /* RecipeBook */ = {
 			isa = PBXGroup;
 			children = (
+				DE97ED4D1127A0D100E25713 /* RecipeBookCategoryViewController.h */,
+				DE97ED4E1127A0D100E25713 /* RecipeBookCategoryViewController.m */,
+				DE97ED501127A0EE00E25713 /* RecipeBookCategoryTableItem.h */,
+				DE97ED511127A0EE00E25713 /* RecipeBookCategoryTableItem.m */,
+				DE97ED531127A0FD00E25713 /* RecipeBookCategoryTableItemCell.h */,
+				DE97ED541127A0FD00E25713 /* RecipeBookCategoryTableItemCell.m */,
+				DE97ED561127A10900E25713 /* RecipeBookCategoryDataSource.h */,
+				DE97ED571127A10900E25713 /* RecipeBookCategoryDataSource.m */,
+				DE97ED591127A11B00E25713 /* RecipeBookCategoryModel.h */,
+				DE97ED5A1127A11B00E25713 /* RecipeBookCategoryModel.m */,
 				DE93D8FE10F38D6E005B6255 /* RecipeBookViewController.h */,
 				DE93D8FF10F38D6E005B6255 /* RecipeBookViewController.m */,
 				DE93D90110F38DAC005B6255 /* RecipeBookTableItem.h */,
@@ -811,6 +842,8 @@
 				DE6C15AF10DEFC380071A824 /* Default.png in Resources */,
 				DEAA259410FCB13C0059D87F /* blackbutton.png in Resources */,
 				DEE2D5661100BE6C004BB6F3 /* icon.png in Resources */,
+				DEAFCF111120C9070050C987 /* dist.plist in Resources */,
+				DE97EDF71127E91000E25713 /* RecipeCategories.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -908,6 +941,11 @@
 				DEEDD7EE110069F40034B464 /* CatalogSamplerTableItem.m in Sources */,
 				DEEDD7F111006A030034B464 /* CatalogSamplerTableItemCell.m in Sources */,
 				DE06A97D110D0DAA00E7F895 /* CatalogItemViewController.m in Sources */,
+				DE97ED4F1127A0D100E25713 /* RecipeBookCategoryViewController.m in Sources */,
+				DE97ED521127A0EE00E25713 /* RecipeBookCategoryTableItem.m in Sources */,
+				DE97ED551127A0FD00E25713 /* RecipeBookCategoryTableItemCell.m in Sources */,
+				DE97ED581127A10900E25713 /* RecipeBookCategoryDataSource.m in Sources */,
+				DE97ED5B1127A11B00E25713 /* RecipeBookCategoryModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -952,7 +990,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Michael Harding";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Michael Harding";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -968,6 +1007,8 @@
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = Touch;
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SDKROOT = iphoneos3.1;
 			};
 			name = Debug;
@@ -995,6 +1036,43 @@
 			};
 			name = Release;
 		};
+		DEAFCEE21120AF5E0050C987 /* Ad Hoc Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_ENTITLEMENTS = dist.plist;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Michael Harding";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					../../Three20/src,
+					/usr/include/libxml2,
+				);
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+					"-lxml2",
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = Touch;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "A5F1AEB5-9C98-4C97-8ECD-337C756EA072";
+				SDKROOT = iphoneos3.1;
+			};
+			name = "Ad Hoc Distribution";
+		};
+		DEAFCEE31120AF5E0050C987 /* Ad Hoc Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Touch320_Prefix.pch;
+				INFOPLIST_FILE = "Touch320-Info.plist";
+				PRODUCT_NAME = Touch320;
+			};
+			name = "Ad Hoc Distribution";
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1003,6 +1081,7 @@
 			buildConfigurations = (
 				1D6058940D05DD3E006BFB54 /* Debug */,
 				1D6058950D05DD3E006BFB54 /* Release */,
+				DEAFCEE31120AF5E0050C987 /* Ad Hoc Distribution */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1012,6 +1091,7 @@
 			buildConfigurations = (
 				C01FCF4F08A954540054247B /* Debug */,
 				C01FCF5008A954540054247B /* Release */,
+				DEAFCEE21120AF5E0050C987 /* Ad Hoc Distribution */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

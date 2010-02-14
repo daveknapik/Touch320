@@ -1,33 +1,26 @@
 //
-//  RecipeBookModel.m
+//  RecipeBookCategoryModel.m
 //  Touch320
 //
-//  Created by Dave Knapik on 05/01/2010.
+//  Created by Dave Knapik on 13/02/2010.
 //  Copyright 2010 __MyCompanyName__. All rights reserved.
 //
 
-#import "RecipeBookModel.h"
+#import "RecipeBookCategoryModel.h"
 #import "TouchXML.h"
 
-@implementation RecipeBookModel
+@implementation RecipeBookCategoryModel
 
-@synthesize recipes = _recipes, feedURL = _feedURL;
+@synthesize recipes = _recipes;
 
-- (id)initWithCategory:(NSString *)category {
+- (id)init {
 	page = 1;
-	
-    NSDictionary *dictionary = [[NSDictionary alloc] 
-                                initWithContentsOfFile:[[NSBundle mainBundle] pathForResource: @"RecipeCategories" ofType:@"plist"]]; 
-	
-	self.feedURL = [@"http://www.touchmusic.org.uk/recipebook/" stringByAppendingString:[dictionary objectForKey:category]];
-	
 	[super init];
 	return self;
 }
 
 - (void)dealloc {
 	TT_RELEASE_SAFELY(_recipes);
-	TT_RELEASE_SAFELY(_feedURL);
 	[super dealloc];
 }
 
@@ -36,7 +29,7 @@
 		if (more)
 			page++;
 		
-		NSString* url= self.feedURL;
+		NSString* url=@"http://www.touchmusic.org.uk/recipebook/categories.xml";
 		
 		TTURLRequest* request = [TTURLRequest requestWithURL:url delegate:self];
 		request.cachePolicy = cachePolicy;
@@ -66,7 +59,7 @@
     NSArray *resultNodes = NULL;
 	
     // Set the resultNodes Array to contain an object for every instance of an  node in our RSS feed
-    resultNodes = [rssParser nodesForXPath:@"//item" error:nil];
+    resultNodes = [rssParser nodesForXPath:@"//category" error:nil];
 	
 	int outerCounter = 0;
 	

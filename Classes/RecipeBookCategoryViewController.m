@@ -1,23 +1,24 @@
 //
-//  RecipeBookViewController.m
+//  RecipeBookCategoryViewController.m
 //  Touch320
 //
-//  Created by Dave Knapik on 05/01/2010.
+//  Created by Dave Knapik on 13/02/2010.
 //  Copyright 2010 __MyCompanyName__. All rights reserved.
 //
 
-#import "RecipeBookViewController.h"
-#import "RecipeBookDataSource.h"
+#import "RecipeBookCategoryViewController.h"
+#import "RecipeBookCategoryDataSource.h"
 
-@implementation RecipeBookViewController
 
--(id)initWithRecipes:(NSString *)placeholder query:(NSDictionary*)query {
+@implementation RecipeBookCategoryViewController
+
+-(id) initWithTabBar:(NSString *)placeholder {
 	if (self = [self init]) {
 		//this is the label on the tab button itself
-		self.title = [query objectForKey:@"title"];
+		self.title = @"Recipes";
 		
 		// set the long name shown in the navigation bar at the top
-		self.navigationItem.title = [query objectForKey:@"title"];
+		self.navigationItem.title=@"Recipes";
 		
 		self.navigationBarStyle = UIBarStyleDefault; 
 		self.navigationBarTintColor	= [UIColor blackColor];
@@ -36,18 +37,15 @@
 }
 
 - (void)createModel {
-	self.dataSource = [[[RecipeBookDataSource alloc] initWithModel:self.title] autorelease];
+	self.dataSource = [[[RecipeBookCategoryDataSource alloc] initWithModel] autorelease];
 	NSLog(@"recipe book model created");
 }
 
-/*- (void)didSelectObject:(id)object atIndexPath:(NSIndexPath*)indexPath {
+- (void)didSelectObject:(id)object atIndexPath:(NSIndexPath*)indexPath {
 	NSDictionary *query = [NSDictionary
-						   dictionaryWithObjectsAndKeys:
-						   [object link], @"link",
-						   [object title], @"title",
-						   nil];
-	[[TTNavigator navigator] openURL:@"tt://newsItem/1" query:query animated:YES]; 
-} */
+						   dictionaryWithObjectsAndKeys: [object title], @"title", nil];
+	[[TTNavigator navigator] openURL:@"tt://recipes/1" query:query animated:YES]; 
+ }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {

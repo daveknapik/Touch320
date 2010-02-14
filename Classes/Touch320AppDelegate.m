@@ -12,6 +12,7 @@
 #import "NewsItemViewController.h"
 #import "ImageGalleryViewController.h"
 #import "RecipeBookViewController.h"
+#import "RecipeBookCategoryViewController.h"
 
 #import "CatalogSamplerViewController.h"
 #import "CatalogItemViewController.h"
@@ -55,7 +56,8 @@ void interruptionListener (void *inClientData, UInt32 inInterruptionState);
 	[map from:@"tt://catalogItem/(initWithCatalogItem:)" toViewController:[CatalogItemViewController class]];
 	[map from:@"tt://radio/(initWithTabBar:)" toSharedViewController:[RadioViewController class]];
 	[map from:@"tt://radioItem/(initWithRadioItem:)" toViewController:[RadioItemViewController class]];
-	[map from:@"tt://recipeBook/(initWithTabBar:)" toSharedViewController:[RecipeBookViewController class]];
+	[map from:@"tt://recipeBook/(initWithTabBar:)" toSharedViewController:[RecipeBookCategoryViewController class]];
+	[map from:@"tt://recipes/(initWithRecipes:)" toViewController:[RecipeBookViewController class]];
 		
 	NSLog(@"controllers created");
 	

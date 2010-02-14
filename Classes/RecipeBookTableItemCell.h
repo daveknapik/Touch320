@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <Three20/Three20.h>
 
-@interface RecipeBookTableItemCell : TTTableTextItemCell {
+@interface RecipeBookTableItemCell : TTTableSubtitleItemCell {
 
 }
 

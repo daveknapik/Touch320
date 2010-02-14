@@ -1,15 +1,15 @@
 //
-//  RecipeBookTableItemCell.m
+//  RecipeBookCategoryTableItemCell.m
 //  Touch320
 //
-//  Created by Dave Knapik on 05/01/2010.
+//  Created by Dave Knapik on 13/02/2010.
 //  Copyright 2010 __MyCompanyName__. All rights reserved.
 //
 
-#import "RecipeBookTableItemCell.h"
-#import "RecipeBookTableItem.h"
+#import "RecipeBookCategoryTableItemCell.h"
+#import "RecipeBookCategoryTableItem.h"
 
-@implementation RecipeBookTableItemCell
+@implementation RecipeBookCategoryTableItemCell
 
 + (CGFloat)tableView:(UITableView*)tableView rowHeightForItem:(id)item { 
 	return 40;

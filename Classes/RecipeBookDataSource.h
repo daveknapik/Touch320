@@ -14,7 +14,7 @@
 	RecipeBookModel* _recipeBookModel;
 }
 
-- (id)initWithModel;
+- (id)initWithModel:(NSString *)category;
 
 @end
 
