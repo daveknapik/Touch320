@@ -276,7 +276,7 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>59</integer>
+									<integer>57</integer>
 									<integer>37</integer>
 									<integer>4</integer>
 									<integer>0</integer>
@@ -320,7 +320,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>RecipeBookItemViewController.m</string>
+								<string>RecipeBookModel.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -328,11 +328,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>RecipeBookItemViewController.m</string>
+										<string>RecipeBookModel.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>DE97F0361128CAE800E25713</string>
+										<string>DE97F05E1128DE4700E25713</string>
 										<key>history</key>
 										<array>
 											<string>DEFEE63810D80B79001213CE</string>
@@ -402,7 +402,6 @@
 											<string>DEC53389111910B600B1A2DB</string>
 											<string>DEC53396111DF77600B1A2DB</string>
 											<string>DEC5339A111DF77600B1A2DB</string>
-											<string>DEC5339B111DF77600B1A2DB</string>
 											<string>DE35DF3F111E1DDC00FE395E</string>
 											<string>DE35DF4D111F2CFB00FE395E</string>
 											<string>DE35DF51111F2CFB00FE395E</string>
@@ -435,7 +434,6 @@
 											<string>DE97EEE61128546B00E25713</string>
 											<string>DE97EEE71128546B00E25713</string>
 											<string>DE97EF031128566100E25713</string>
-											<string>DE97EF061128566100E25713</string>
 											<string>DE97EF46112899C000E25713</string>
 											<string>DE97EF491128B7DC00E25713</string>
 											<string>DE97EF4A1128B7DC00E25713</string>
@@ -450,10 +448,12 @@
 											<string>DE97F0041128C8D200E25713</string>
 											<string>DE97F0051128C8D200E25713</string>
 											<string>DE97F0061128C8D200E25713</string>
-											<string>DE97F0071128C8D200E25713</string>
-											<string>DE97F0301128CAE800E25713</string>
 											<string>DE97F0311128CAE800E25713</string>
-											<string>DE97F0321128CAE800E25713</string>
+											<string>DE97F0421128DCE300E25713</string>
+											<string>DE97F0431128DCE300E25713</string>
+											<string>DE97F0581128DE4700E25713</string>
+											<string>DE97F0591128DE4700E25713</string>
+											<string>DE97F05A1128DE4700E25713</string>
 										</array>
 										<key>prevStack</key>
 										<array>
@@ -937,6 +937,11 @@
 											<string>DE97F0331128CAE800E25713</string>
 											<string>DE97F0341128CAE800E25713</string>
 											<string>DE97F0351128CAE800E25713</string>
+											<string>DE97F0441128DCE300E25713</string>
+											<string>DE97F0451128DCE300E25713</string>
+											<string>DE97F05B1128DE4700E25713</string>
+											<string>DE97F05C1128DE4700E25713</string>
+											<string>DE97F05D1128DE4700E25713</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -1378,7 +1383,7 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CDD528C0622207200134675</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>AudioPlayerUtil.m</string>
+										<string>CatalogSamplerModel.m</string>
 										<key>StatusBarVisibility</key>
 										<true/>
 									</dict>

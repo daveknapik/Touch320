@@ -69,6 +69,7 @@
     resultNodes = [rssParser nodesForXPath:@"//item" error:nil];
 	
 	int outerCounter = 0;
+	NSString* emptyString = @"";
 	
 	// Loop through the resultNodes to access each items actual data
     for (CXMLElement *resultElement in resultNodes) {
@@ -81,10 +82,15 @@
 		
         // Loop through the children of the current  node
         for(counter = 0; counter < [resultElement childCount]; counter++) {
-			
-            // Add each field to the blogItem Dictionary with the node name as key and node value as the value
-            [blogItem setObject:[[resultElement childAtIndex:counter] stringValue] 
-						 forKey:[[resultElement childAtIndex:counter] name]];
+			if ([[resultElement childAtIndex:counter] stringValue] == nil) {
+				[blogItem setObject:emptyString 
+							 forKey:[[resultElement childAtIndex:counter] name]];
+			}
+			else {
+				// Add each field to the blogItem Dictionary with the node name as key and node value as the value
+				[blogItem setObject:[[resultElement childAtIndex:counter] stringValue] 
+							 forKey:[[resultElement childAtIndex:counter] name]];			
+			}
 		}
 		
 		if (!([[blogItem objectForKey:@"title"] isEqualToString:@"left"]) && !([[blogItem objectForKey:@"title"] isEqualToString:@"right"])) {
