@@ -10,9 +10,11 @@
 
 @implementation RecipeBookItemViewController
 
-@synthesize author = _author,
+@synthesize author = _author, 
+			recipe_description = _recipe_description,
 			titleValue = _titleValue,
 			authorValue = _authorValue,
+			descriptionValue = _descriptionValue,
 			recipeItemView = _recipeItemView;
 
 - (id)initWithRecipeItem:(NSString *)placeholder query:(NSDictionary*)query
@@ -26,10 +28,11 @@
 		self.statusBarStyle = UIStatusBarStyleBlackOpaque;
 		
 		self.author = [query objectForKey:@"author"];
+		self.recipe_description = [query objectForKey:@"recipe_description"];
 		 
 		/* NSLog(@"recipe item title: %@",self.navigationItem.title);
-		 NSLog(@"recipe item author: %@",self.author);*/
-		
+		NSLog(@"recipe item author: %@",self.author);
+		NSLog(@"recipe item description: %@",self.recipe_description); */
 	}
 	
 	return self;
@@ -95,11 +98,11 @@
 	[authorValue release];
 	previousSubviewHeight = authorValue.frame.size.height;
 	
-	//release_description value
-	/*yAxisPlacement = yAxisPlacement + previousSubviewHeight + 5;
+	//recipe_description value
+	yAxisPlacement = yAxisPlacement + previousSubviewHeight + 5;
 	
 	UILabel *descriptionValue = [[UILabel alloc] initWithFrame:CGRectMake(5, yAxisPlacement, 300, 100)];
-	descriptionValue.text = self.release_description;
+	descriptionValue.text = self.recipe_description;
 	descriptionValue.textAlignment = UITextAlignmentLeft;
 	descriptionValue.textColor = [UIColor blackColor];
 	descriptionValue.font = [UIFont systemFontOfSize:12];
@@ -108,11 +111,11 @@
 	descriptionValue.numberOfLines = 0;
 	
 	descriptionValue.frame = [self resizeLabelFrame:descriptionValue 
-											forText:self.release_description];
+											forText:self.recipe_description];
 	
 	[self.view addSubview:descriptionValue];
 	[descriptionValue release];
-	previousSubviewHeight = descriptionValue.frame.size.height;*/
+	previousSubviewHeight = descriptionValue.frame.size.height;
 	
     [super viewDidLoad];
 }
@@ -137,11 +140,13 @@
 	// Release any retained subviews of the main view.
 	// e.g. self.myOutlet = nil;
 	self.author = nil;
+	self.recipe_description = nil;
 	
 	self.recipeItemView = nil;
 	
 	self.titleValue = nil;
 	self.authorValue = nil;
+	self.descriptionValue = nil;
 	
 	[super viewDidUnload];
 }
@@ -149,9 +154,11 @@
 
 - (void)dealloc {
 	TT_RELEASE_SAFELY(_author);
+	TT_RELEASE_SAFELY(_recipe_description);
 	
 	TT_RELEASE_SAFELY(_titleValue);
 	TT_RELEASE_SAFELY(_authorValue);
+	TT_RELEASE_SAFELY(_descriptionValue);
 	
 	TT_RELEASE_SAFELY(_recipeItemView);
 	

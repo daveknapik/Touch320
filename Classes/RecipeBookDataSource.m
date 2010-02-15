@@ -47,6 +47,7 @@
 		
 		NSString* title = [theItem objectForKey:@"title"];
 		NSString* subtitle = [theItem objectForKey:@"excerpt"];
+		NSString* recipe_description = [theItem objectForKey:@"description"];
 		
 		if( !TTIsEmptyString(title) ) {
 			
@@ -54,7 +55,8 @@
 							  itemWithText: title
 							  title: title
 							  subtitle: subtitle 
-							  author: title]];
+							  author: title 
+							  recipe_description: recipe_description]];
 		}
 	}
 	

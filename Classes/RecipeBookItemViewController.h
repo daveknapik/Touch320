@@ -12,16 +12,22 @@
 
 @interface RecipeBookItemViewController : TTViewController {
 	NSString* _author;
+	NSString* _recipe_description;
 	
 	UILabel* _titleValue;
 	UILabel* _authorValue;
+	UILabel* _descriptionValue;
 	
 	UIScrollView* _recipeItemView;
 }
 
 @property (nonatomic, copy) NSString* author;
+@property (nonatomic, copy) NSString* recipe_description;
+
 @property (nonatomic, retain) UILabel* titleValue;
 @property (nonatomic, retain) UILabel* authorValue;
+@property (nonatomic, retain) UILabel* descriptionValue;
+
 @property (nonatomic, retain) UIScrollView* recipeItemView;
 
 - (id)initWithRecipeItem:(NSString *)placeholder query:(NSDictionary*)query;

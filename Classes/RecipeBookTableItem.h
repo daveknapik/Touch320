@@ -12,14 +12,17 @@
 @interface RecipeBookTableItem : TTTableSubtitleItem {
 	NSString* _title;
 	NSString* _author;
+	NSString* _recipe_description;
 }
 
 @property(nonatomic,copy) NSString* title;
 @property(nonatomic,copy) NSString* author;
+@property(nonatomic,copy) NSString* recipe_description;
 
 + (id)itemWithText:(NSString*)text 
 			 title:(NSString*)title
 		  subtitle:(NSString*)subtitle 
-			author:(NSString*)author;
+			author:(NSString*)author 
+recipe_description:(NSString*)recipe_description;
 
 @end
