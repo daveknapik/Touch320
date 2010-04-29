@@ -56,7 +56,7 @@
 		NSString* duration = [theItem objectForKey:@"duration"];
 		NSString* track_listing = [theItem objectForKey:@"track_listing"];
 		
-		if( !TTIsEmptyString(title) ) {
+		if( !TTIsSetWithItems(title) ) {
 			[items addObject:[CatalogSamplerTableItem
 							  itemWithText: title
 							  title: title

@@ -130,7 +130,7 @@ cover_art = _cover_art;
 		[cover_art showStatus:nil];
 	cover_art.hidesExtras = YES;
 	cover_art.hidesCaption = YES;
-		cover_art.URL = self.cover_art_url;
+		cover_art.urlPath = self.cover_art_url;
 		
 		[self.view addSubview:cover_art];
 		[cover_art release];

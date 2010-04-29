@@ -47,7 +47,8 @@
 						   [object subtitle], @"title",
 						   [object recipe_description], @"recipe_description",
 						   nil];
-	[[TTNavigator navigator] openURL:@"tt://recipeItem/1" query:query animated:YES]; 
+	//[[TTNavigator navigator] openURL:@"tt://recipeItem/1" query:query animated:YES]; 
+	[[TTNavigator navigator] openURLAction:[[[TTURLAction actionWithURLPath:@"tt://recipeItem/1"] applyQuery:query] applyAnimated:YES]];
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation

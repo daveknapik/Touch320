@@ -12,6 +12,17 @@
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
+		7318C3D71189E81B0044DBE7 /* CXMLDocument_CreationExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 7318C3C01189E81B0044DBE7 /* CXMLDocument_CreationExtensions.m */; };
+		7318C3D81189E81B0044DBE7 /* CXMLNode_CreationExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 7318C3C21189E81B0044DBE7 /* CXMLNode_CreationExtensions.m */; };
+		7318C3D91189E81B0044DBE7 /* CXMLDocument_PrivateExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 7318C3C41189E81B0044DBE7 /* CXMLDocument_PrivateExtensions.m */; };
+		7318C3DA1189E81B0044DBE7 /* CXMLDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 7318C3C61189E81B0044DBE7 /* CXMLDocument.m */; };
+		7318C3DB1189E81B0044DBE7 /* CXMLElement_CreationExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 7318C3C81189E81B0044DBE7 /* CXMLElement_CreationExtensions.m */; };
+		7318C3DC1189E81B0044DBE7 /* CXMLElement_ElementTreeExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 7318C3CA1189E81B0044DBE7 /* CXMLElement_ElementTreeExtensions.m */; };
+		7318C3DD1189E81B0044DBE7 /* CXMLElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 7318C3CC1189E81B0044DBE7 /* CXMLElement.m */; };
+		7318C3DE1189E81B0044DBE7 /* CXMLNode_PrivateExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 7318C3CE1189E81B0044DBE7 /* CXMLNode_PrivateExtensions.m */; };
+		7318C3DF1189E81B0044DBE7 /* CXMLNode_XPathExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 7318C3D01189E81B0044DBE7 /* CXMLNode_XPathExtensions.m */; };
+		7318C3E01189E81B0044DBE7 /* CXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 7318C3D21189E81B0044DBE7 /* CXMLNode.m */; };
+		7318C3E11189E81B0044DBE7 /* CTidy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7318C3D51189E81B0044DBE7 /* CTidy.m */; };
 		DE06A97D110D0DAA00E7F895 /* CatalogItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE06A97C110D0DAA00E7F895 /* CatalogItemViewController.m */; };
 		DE10401910F3EFE20058DDB8 /* RadioTableItem.m in Sources */ = {isa = PBXBuildFile; fileRef = DE10401810F3EFE20058DDB8 /* RadioTableItem.m */; };
 		DE10401C10F3EFEC0058DDB8 /* RadioTableItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DE10401B10F3EFEC0058DDB8 /* RadioTableItemCell.m */; };
@@ -89,23 +100,6 @@
 		DEF0C35C10F66DF900E74685 /* AudioFileStream.m in Sources */ = {isa = PBXBuildFile; fileRef = DEF0C35510F66DF900E74685 /* AudioFileStream.m */; };
 		DEF0C35D10F66DF900E74685 /* AudioQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = DEF0C35710F66DF900E74685 /* AudioQueue.m */; };
 		DEF0C35E10F66DF900E74685 /* AudioPlayerUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = DEF0C35910F66DF900E74685 /* AudioPlayerUtil.m */; };
-		DEFEE5E410D80AA3001213CE /* CXMLDocument_CreationExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = DEFEE5CD10D80AA3001213CE /* CXMLDocument_CreationExtensions.m */; };
-		DEFEE5E510D80AA3001213CE /* CXMLNode_CreationExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = DEFEE5CF10D80AA3001213CE /* CXMLNode_CreationExtensions.m */; };
-		DEFEE5E610D80AA3001213CE /* CXMLDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = DEFEE5D110D80AA3001213CE /* CXMLDocument.m */; };
-		DEFEE5E710D80AA3001213CE /* CXMLDocument_PrivateExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = DEFEE5D310D80AA3001213CE /* CXMLDocument_PrivateExtensions.m */; };
-		DEFEE5E810D80AA3001213CE /* CXMLElement.m in Sources */ = {isa = PBXBuildFile; fileRef = DEFEE5D510D80AA3001213CE /* CXMLElement.m */; };
-		DEFEE5E910D80AA3001213CE /* CXMLElement_CreationExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = DEFEE5D710D80AA3001213CE /* CXMLElement_CreationExtensions.m */; };
-		DEFEE5EA10D80AA3001213CE /* CXMLElement_ElementTreeExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = DEFEE5D910D80AA3001213CE /* CXMLElement_ElementTreeExtensions.m */; };
-		DEFEE5EB10D80AA3001213CE /* CXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = DEFEE5DB10D80AA3001213CE /* CXMLNode.m */; };
-		DEFEE5EC10D80AA3001213CE /* CXMLNode_PrivateExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = DEFEE5DD10D80AA3001213CE /* CXMLNode_PrivateExtensions.m */; };
-		DEFEE5ED10D80AA3001213CE /* CXMLNode_XPathExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = DEFEE5DF10D80AA3001213CE /* CXMLNode_XPathExtensions.m */; };
-		DEFEE5EE10D80AA3001213CE /* CTidy.m in Sources */ = {isa = PBXBuildFile; fileRef = DEFEE5E210D80AA3001213CE /* CTidy.m */; };
-		DEFEE64D10D80BA4001213CE /* NSObject+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = DEFEE64210D80BA4001213CE /* NSObject+SBJSON.m */; };
-		DEFEE64E10D80BA4001213CE /* NSString+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = DEFEE64410D80BA4001213CE /* NSString+SBJSON.m */; };
-		DEFEE64F10D80BA4001213CE /* SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = DEFEE64610D80BA4001213CE /* SBJSON.m */; };
-		DEFEE65010D80BA4001213CE /* SBJsonBase.m in Sources */ = {isa = PBXBuildFile; fileRef = DEFEE64810D80BA4001213CE /* SBJsonBase.m */; };
-		DEFEE65110D80BA4001213CE /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = DEFEE64A10D80BA4001213CE /* SBJsonParser.m */; };
-		DEFEE65210D80BA4001213CE /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = DEFEE64C10D80BA4001213CE /* SBJsonWriter.m */; };
 		DEFEE66F10D80BC4001213CE /* NewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DEFEE66310D80BC3001213CE /* NewsViewController.m */; };
 		DEFEE67010D80BC4001213CE /* ImageGalleryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DEFEE66510D80BC3001213CE /* ImageGalleryViewController.m */; };
 		DEFEE67110D80BC4001213CE /* CatalogSamplerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DEFEE66710D80BC3001213CE /* CatalogSamplerViewController.m */; };
@@ -115,6 +109,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		7318C3A71189E7070044DBE7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DE4F175610D8252D005E2446 /* Three20.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EB9E6C6210B6A8F800DE563C;
+			remoteInfo = UnitTests;
+		};
 		DE4F175D10D8252D005E2446 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = DE4F175610D8252D005E2446 /* Three20.xcodeproj */;
@@ -140,6 +141,29 @@
 		288765FC0DF74451002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* Touch320_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Touch320_Prefix.pch; sourceTree = "<group>"; };
+		7318C3BF1189E81B0044DBE7 /* CXMLDocument_CreationExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLDocument_CreationExtensions.h; sourceTree = "<group>"; };
+		7318C3C01189E81B0044DBE7 /* CXMLDocument_CreationExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLDocument_CreationExtensions.m; sourceTree = "<group>"; };
+		7318C3C11189E81B0044DBE7 /* CXMLNode_CreationExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLNode_CreationExtensions.h; sourceTree = "<group>"; };
+		7318C3C21189E81B0044DBE7 /* CXMLNode_CreationExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLNode_CreationExtensions.m; sourceTree = "<group>"; };
+		7318C3C31189E81B0044DBE7 /* CXMLDocument_PrivateExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CXMLDocument_PrivateExtensions.h; path = ../../TouchXML/Common/Source/CXMLDocument_PrivateExtensions.h; sourceTree = SOURCE_ROOT; };
+		7318C3C41189E81B0044DBE7 /* CXMLDocument_PrivateExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CXMLDocument_PrivateExtensions.m; path = ../../TouchXML/Common/Source/CXMLDocument_PrivateExtensions.m; sourceTree = SOURCE_ROOT; };
+		7318C3C51189E81B0044DBE7 /* CXMLDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CXMLDocument.h; path = ../../TouchXML/Common/Source/CXMLDocument.h; sourceTree = SOURCE_ROOT; };
+		7318C3C61189E81B0044DBE7 /* CXMLDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CXMLDocument.m; path = ../../TouchXML/Common/Source/CXMLDocument.m; sourceTree = SOURCE_ROOT; };
+		7318C3C71189E81B0044DBE7 /* CXMLElement_CreationExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CXMLElement_CreationExtensions.h; path = ../../TouchXML/Common/Source/CXMLElement_CreationExtensions.h; sourceTree = SOURCE_ROOT; };
+		7318C3C81189E81B0044DBE7 /* CXMLElement_CreationExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CXMLElement_CreationExtensions.m; path = ../../TouchXML/Common/Source/CXMLElement_CreationExtensions.m; sourceTree = SOURCE_ROOT; };
+		7318C3C91189E81B0044DBE7 /* CXMLElement_ElementTreeExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CXMLElement_ElementTreeExtensions.h; path = ../../TouchXML/Common/Source/CXMLElement_ElementTreeExtensions.h; sourceTree = SOURCE_ROOT; };
+		7318C3CA1189E81B0044DBE7 /* CXMLElement_ElementTreeExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CXMLElement_ElementTreeExtensions.m; path = ../../TouchXML/Common/Source/CXMLElement_ElementTreeExtensions.m; sourceTree = SOURCE_ROOT; };
+		7318C3CB1189E81B0044DBE7 /* CXMLElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CXMLElement.h; path = ../../TouchXML/Common/Source/CXMLElement.h; sourceTree = SOURCE_ROOT; };
+		7318C3CC1189E81B0044DBE7 /* CXMLElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CXMLElement.m; path = ../../TouchXML/Common/Source/CXMLElement.m; sourceTree = SOURCE_ROOT; };
+		7318C3CD1189E81B0044DBE7 /* CXMLNode_PrivateExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CXMLNode_PrivateExtensions.h; path = ../../TouchXML/Common/Source/CXMLNode_PrivateExtensions.h; sourceTree = SOURCE_ROOT; };
+		7318C3CE1189E81B0044DBE7 /* CXMLNode_PrivateExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CXMLNode_PrivateExtensions.m; path = ../../TouchXML/Common/Source/CXMLNode_PrivateExtensions.m; sourceTree = SOURCE_ROOT; };
+		7318C3CF1189E81B0044DBE7 /* CXMLNode_XPathExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CXMLNode_XPathExtensions.h; path = ../../TouchXML/Common/Source/CXMLNode_XPathExtensions.h; sourceTree = SOURCE_ROOT; };
+		7318C3D01189E81B0044DBE7 /* CXMLNode_XPathExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CXMLNode_XPathExtensions.m; path = ../../TouchXML/Common/Source/CXMLNode_XPathExtensions.m; sourceTree = SOURCE_ROOT; };
+		7318C3D11189E81B0044DBE7 /* CXMLNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CXMLNode.h; path = ../../TouchXML/Common/Source/CXMLNode.h; sourceTree = SOURCE_ROOT; };
+		7318C3D21189E81B0044DBE7 /* CXMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CXMLNode.m; path = ../../TouchXML/Common/Source/CXMLNode.m; sourceTree = SOURCE_ROOT; };
+		7318C3D41189E81B0044DBE7 /* CTidy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTidy.h; sourceTree = "<group>"; };
+		7318C3D51189E81B0044DBE7 /* CTidy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTidy.m; sourceTree = "<group>"; };
+		7318C3D61189E81B0044DBE7 /* TouchXML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TouchXML.h; path = ../../TouchXML/Common/Source/TouchXML.h; sourceTree = SOURCE_ROOT; };
 		8D1107310486CEB800E47090 /* Touch320-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Touch320-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 		DE06A97B110D0DAA00E7F895 /* CatalogItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CatalogItemViewController.h; sourceTree = "<group>"; };
 		DE06A97C110D0DAA00E7F895 /* CatalogItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CatalogItemViewController.m; sourceTree = "<group>"; };
@@ -296,42 +320,6 @@
 		DEF0C35710F66DF900E74685 /* AudioQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioQueue.m; sourceTree = "<group>"; };
 		DEF0C35810F66DF900E74685 /* AudioPlayerUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioPlayerUtil.h; sourceTree = "<group>"; };
 		DEF0C35910F66DF900E74685 /* AudioPlayerUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioPlayerUtil.m; sourceTree = "<group>"; };
-		DEFEE5CC10D80AA3001213CE /* CXMLDocument_CreationExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLDocument_CreationExtensions.h; sourceTree = "<group>"; };
-		DEFEE5CD10D80AA3001213CE /* CXMLDocument_CreationExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLDocument_CreationExtensions.m; sourceTree = "<group>"; };
-		DEFEE5CE10D80AA3001213CE /* CXMLNode_CreationExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLNode_CreationExtensions.h; sourceTree = "<group>"; };
-		DEFEE5CF10D80AA3001213CE /* CXMLNode_CreationExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLNode_CreationExtensions.m; sourceTree = "<group>"; };
-		DEFEE5D010D80AA3001213CE /* CXMLDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CXMLDocument.h; path = ../../touchcode/TouchXML/Common/Source/CXMLDocument.h; sourceTree = SOURCE_ROOT; };
-		DEFEE5D110D80AA3001213CE /* CXMLDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CXMLDocument.m; path = ../../touchcode/TouchXML/Common/Source/CXMLDocument.m; sourceTree = SOURCE_ROOT; };
-		DEFEE5D210D80AA3001213CE /* CXMLDocument_PrivateExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CXMLDocument_PrivateExtensions.h; path = ../../touchcode/TouchXML/Common/Source/CXMLDocument_PrivateExtensions.h; sourceTree = SOURCE_ROOT; };
-		DEFEE5D310D80AA3001213CE /* CXMLDocument_PrivateExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CXMLDocument_PrivateExtensions.m; path = ../../touchcode/TouchXML/Common/Source/CXMLDocument_PrivateExtensions.m; sourceTree = SOURCE_ROOT; };
-		DEFEE5D410D80AA3001213CE /* CXMLElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CXMLElement.h; path = ../../touchcode/TouchXML/Common/Source/CXMLElement.h; sourceTree = SOURCE_ROOT; };
-		DEFEE5D510D80AA3001213CE /* CXMLElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CXMLElement.m; path = ../../touchcode/TouchXML/Common/Source/CXMLElement.m; sourceTree = SOURCE_ROOT; };
-		DEFEE5D610D80AA3001213CE /* CXMLElement_CreationExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CXMLElement_CreationExtensions.h; path = ../../touchcode/TouchXML/Common/Source/CXMLElement_CreationExtensions.h; sourceTree = SOURCE_ROOT; };
-		DEFEE5D710D80AA3001213CE /* CXMLElement_CreationExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CXMLElement_CreationExtensions.m; path = ../../touchcode/TouchXML/Common/Source/CXMLElement_CreationExtensions.m; sourceTree = SOURCE_ROOT; };
-		DEFEE5D810D80AA3001213CE /* CXMLElement_ElementTreeExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CXMLElement_ElementTreeExtensions.h; path = ../../touchcode/TouchXML/Common/Source/CXMLElement_ElementTreeExtensions.h; sourceTree = SOURCE_ROOT; };
-		DEFEE5D910D80AA3001213CE /* CXMLElement_ElementTreeExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CXMLElement_ElementTreeExtensions.m; path = ../../touchcode/TouchXML/Common/Source/CXMLElement_ElementTreeExtensions.m; sourceTree = SOURCE_ROOT; };
-		DEFEE5DA10D80AA3001213CE /* CXMLNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CXMLNode.h; path = ../../touchcode/TouchXML/Common/Source/CXMLNode.h; sourceTree = SOURCE_ROOT; };
-		DEFEE5DB10D80AA3001213CE /* CXMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CXMLNode.m; path = ../../touchcode/TouchXML/Common/Source/CXMLNode.m; sourceTree = SOURCE_ROOT; };
-		DEFEE5DC10D80AA3001213CE /* CXMLNode_PrivateExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CXMLNode_PrivateExtensions.h; path = ../../touchcode/TouchXML/Common/Source/CXMLNode_PrivateExtensions.h; sourceTree = SOURCE_ROOT; };
-		DEFEE5DD10D80AA3001213CE /* CXMLNode_PrivateExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CXMLNode_PrivateExtensions.m; path = ../../touchcode/TouchXML/Common/Source/CXMLNode_PrivateExtensions.m; sourceTree = SOURCE_ROOT; };
-		DEFEE5DE10D80AA3001213CE /* CXMLNode_XPathExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CXMLNode_XPathExtensions.h; path = ../../touchcode/TouchXML/Common/Source/CXMLNode_XPathExtensions.h; sourceTree = SOURCE_ROOT; };
-		DEFEE5DF10D80AA3001213CE /* CXMLNode_XPathExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CXMLNode_XPathExtensions.m; path = ../../touchcode/TouchXML/Common/Source/CXMLNode_XPathExtensions.m; sourceTree = SOURCE_ROOT; };
-		DEFEE5E110D80AA3001213CE /* CTidy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTidy.h; sourceTree = "<group>"; };
-		DEFEE5E210D80AA3001213CE /* CTidy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTidy.m; sourceTree = "<group>"; };
-		DEFEE5E310D80AA3001213CE /* TouchXML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TouchXML.h; path = ../../touchcode/TouchXML/Common/Source/TouchXML.h; sourceTree = SOURCE_ROOT; };
-		DEFEE64010D80BA4001213CE /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSON.h; sourceTree = "<group>"; };
-		DEFEE64110D80BA4001213CE /* NSObject+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJSON.h"; sourceTree = "<group>"; };
-		DEFEE64210D80BA4001213CE /* NSObject+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SBJSON.m"; sourceTree = "<group>"; };
-		DEFEE64310D80BA4001213CE /* NSString+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SBJSON.h"; sourceTree = "<group>"; };
-		DEFEE64410D80BA4001213CE /* NSString+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SBJSON.m"; sourceTree = "<group>"; };
-		DEFEE64510D80BA4001213CE /* SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJSON.h; sourceTree = "<group>"; };
-		DEFEE64610D80BA4001213CE /* SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJSON.m; sourceTree = "<group>"; };
-		DEFEE64710D80BA4001213CE /* SBJsonBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonBase.h; sourceTree = "<group>"; };
-		DEFEE64810D80BA4001213CE /* SBJsonBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonBase.m; sourceTree = "<group>"; };
-		DEFEE64910D80BA4001213CE /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonParser.h; sourceTree = "<group>"; };
-		DEFEE64A10D80BA4001213CE /* SBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonParser.m; sourceTree = "<group>"; };
-		DEFEE64B10D80BA4001213CE /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
-		DEFEE64C10D80BA4001213CE /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
 		DEFEE66210D80BC3001213CE /* NewsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsViewController.h; sourceTree = "<group>"; };
 		DEFEE66310D80BC3001213CE /* NewsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsViewController.m; sourceTree = "<group>"; };
 		DEFEE66410D80BC3001213CE /* ImageGalleryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageGalleryViewController.h; sourceTree = "<group>"; };
@@ -366,6 +354,7 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				7318C3E51189E8660044DBE7 /* TouchXML */,
 				DEDEC57410FF8AB100D9EA32 /* objective_resource */,
 				DEF0C34F10F66DD000E74685 /* AudioUtil */,
 				DE10402310F3F01D0058DDB8 /* News */,
@@ -374,8 +363,6 @@
 				DE10402810F3F0400058DDB8 /* Radio */,
 				DE10402910F3F0480058DDB8 /* RecipeBook */,
 				DE3E4CED10D9292D00571DC6 /* Google Toolbox for Mac */,
-				DEFEE63F10D80BA4001213CE /* JSON */,
-				DEFEE60B10D80AE4001213CE /* TouchXML */,
 				1D3623240D0F684500981E51 /* Touch320AppDelegate.h */,
 				1D3623250D0F684500981E51 /* Touch320AppDelegate.m */,
 				DE8B82C210E0007200AB1281 /* MainTabBarController.h */,
@@ -440,6 +427,54 @@
 				288765FC0DF74451002DB57D /* CoreGraphics.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7318C3BE1189E81B0044DBE7 /* Creation */ = {
+			isa = PBXGroup;
+			children = (
+				7318C3BF1189E81B0044DBE7 /* CXMLDocument_CreationExtensions.h */,
+				7318C3C01189E81B0044DBE7 /* CXMLDocument_CreationExtensions.m */,
+				7318C3C11189E81B0044DBE7 /* CXMLNode_CreationExtensions.h */,
+				7318C3C21189E81B0044DBE7 /* CXMLNode_CreationExtensions.m */,
+			);
+			name = Creation;
+			path = ../../TouchXML/Common/Source/Creation;
+			sourceTree = SOURCE_ROOT;
+		};
+		7318C3D31189E81B0044DBE7 /* Tidy */ = {
+			isa = PBXGroup;
+			children = (
+				7318C3D41189E81B0044DBE7 /* CTidy.h */,
+				7318C3D51189E81B0044DBE7 /* CTidy.m */,
+			);
+			name = Tidy;
+			path = ../../TouchXML/Common/Source/Tidy;
+			sourceTree = SOURCE_ROOT;
+		};
+		7318C3E51189E8660044DBE7 /* TouchXML */ = {
+			isa = PBXGroup;
+			children = (
+				7318C3D31189E81B0044DBE7 /* Tidy */,
+				7318C3BE1189E81B0044DBE7 /* Creation */,
+				7318C3C31189E81B0044DBE7 /* CXMLDocument_PrivateExtensions.h */,
+				7318C3C41189E81B0044DBE7 /* CXMLDocument_PrivateExtensions.m */,
+				7318C3C51189E81B0044DBE7 /* CXMLDocument.h */,
+				7318C3C61189E81B0044DBE7 /* CXMLDocument.m */,
+				7318C3C71189E81B0044DBE7 /* CXMLElement_CreationExtensions.h */,
+				7318C3C81189E81B0044DBE7 /* CXMLElement_CreationExtensions.m */,
+				7318C3C91189E81B0044DBE7 /* CXMLElement_ElementTreeExtensions.h */,
+				7318C3CA1189E81B0044DBE7 /* CXMLElement_ElementTreeExtensions.m */,
+				7318C3CB1189E81B0044DBE7 /* CXMLElement.h */,
+				7318C3CC1189E81B0044DBE7 /* CXMLElement.m */,
+				7318C3CD1189E81B0044DBE7 /* CXMLNode_PrivateExtensions.h */,
+				7318C3CE1189E81B0044DBE7 /* CXMLNode_PrivateExtensions.m */,
+				7318C3CF1189E81B0044DBE7 /* CXMLNode_XPathExtensions.h */,
+				7318C3D01189E81B0044DBE7 /* CXMLNode_XPathExtensions.m */,
+				7318C3D11189E81B0044DBE7 /* CXMLNode.h */,
+				7318C3D21189E81B0044DBE7 /* CXMLNode.m */,
+				7318C3D61189E81B0044DBE7 /* TouchXML.h */,
+			);
+			name = TouchXML;
 			sourceTree = "<group>";
 		};
 		DE10402310F3F01D0058DDB8 /* News */ = {
@@ -577,6 +612,7 @@
 			isa = PBXGroup;
 			children = (
 				DE4F175E10D8252D005E2446 /* libThree20.a */,
+				7318C3A81189E7070044DBE7 /* UnitTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -716,74 +752,6 @@
 			name = AudioUtil;
 			sourceTree = "<group>";
 		};
-		DEFEE5CB10D80AA3001213CE /* Creation */ = {
-			isa = PBXGroup;
-			children = (
-				DEFEE5CC10D80AA3001213CE /* CXMLDocument_CreationExtensions.h */,
-				DEFEE5CD10D80AA3001213CE /* CXMLDocument_CreationExtensions.m */,
-				DEFEE5CE10D80AA3001213CE /* CXMLNode_CreationExtensions.h */,
-				DEFEE5CF10D80AA3001213CE /* CXMLNode_CreationExtensions.m */,
-			);
-			name = Creation;
-			path = ../../touchcode/TouchXML/Common/Source/Creation;
-			sourceTree = SOURCE_ROOT;
-		};
-		DEFEE5E010D80AA3001213CE /* Tidy */ = {
-			isa = PBXGroup;
-			children = (
-				DEFEE5E110D80AA3001213CE /* CTidy.h */,
-				DEFEE5E210D80AA3001213CE /* CTidy.m */,
-			);
-			name = Tidy;
-			path = ../../touchcode/TouchXML/Common/Source/Tidy;
-			sourceTree = SOURCE_ROOT;
-		};
-		DEFEE60B10D80AE4001213CE /* TouchXML */ = {
-			isa = PBXGroup;
-			children = (
-				DEFEE5CB10D80AA3001213CE /* Creation */,
-				DEFEE5D010D80AA3001213CE /* CXMLDocument.h */,
-				DEFEE5D110D80AA3001213CE /* CXMLDocument.m */,
-				DEFEE5D210D80AA3001213CE /* CXMLDocument_PrivateExtensions.h */,
-				DEFEE5D310D80AA3001213CE /* CXMLDocument_PrivateExtensions.m */,
-				DEFEE5D410D80AA3001213CE /* CXMLElement.h */,
-				DEFEE5D510D80AA3001213CE /* CXMLElement.m */,
-				DEFEE5D610D80AA3001213CE /* CXMLElement_CreationExtensions.h */,
-				DEFEE5D710D80AA3001213CE /* CXMLElement_CreationExtensions.m */,
-				DEFEE5D810D80AA3001213CE /* CXMLElement_ElementTreeExtensions.h */,
-				DEFEE5D910D80AA3001213CE /* CXMLElement_ElementTreeExtensions.m */,
-				DEFEE5DA10D80AA3001213CE /* CXMLNode.h */,
-				DEFEE5DB10D80AA3001213CE /* CXMLNode.m */,
-				DEFEE5DC10D80AA3001213CE /* CXMLNode_PrivateExtensions.h */,
-				DEFEE5DD10D80AA3001213CE /* CXMLNode_PrivateExtensions.m */,
-				DEFEE5DE10D80AA3001213CE /* CXMLNode_XPathExtensions.h */,
-				DEFEE5DF10D80AA3001213CE /* CXMLNode_XPathExtensions.m */,
-				DEFEE5E010D80AA3001213CE /* Tidy */,
-				DEFEE5E310D80AA3001213CE /* TouchXML.h */,
-			);
-			name = TouchXML;
-			sourceTree = "<group>";
-		};
-		DEFEE63F10D80BA4001213CE /* JSON */ = {
-			isa = PBXGroup;
-			children = (
-				DEFEE64010D80BA4001213CE /* JSON.h */,
-				DEFEE64110D80BA4001213CE /* NSObject+SBJSON.h */,
-				DEFEE64210D80BA4001213CE /* NSObject+SBJSON.m */,
-				DEFEE64310D80BA4001213CE /* NSString+SBJSON.h */,
-				DEFEE64410D80BA4001213CE /* NSString+SBJSON.m */,
-				DEFEE64510D80BA4001213CE /* SBJSON.h */,
-				DEFEE64610D80BA4001213CE /* SBJSON.m */,
-				DEFEE64710D80BA4001213CE /* SBJsonBase.h */,
-				DEFEE64810D80BA4001213CE /* SBJsonBase.m */,
-				DEFEE64910D80BA4001213CE /* SBJsonParser.h */,
-				DEFEE64A10D80BA4001213CE /* SBJsonParser.m */,
-				DEFEE64B10D80BA4001213CE /* SBJsonWriter.h */,
-				DEFEE64C10D80BA4001213CE /* SBJsonWriter.m */,
-			);
-			path = JSON;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -829,6 +797,13 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
+		7318C3A81189E7070044DBE7 /* UnitTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = UnitTests.octest;
+			remoteRef = 7318C3A71189E7070044DBE7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		DE4F175E10D8252D005E2446 /* libThree20.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
@@ -861,23 +836,6 @@
 			files = (
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				1D3623260D0F684500981E51 /* Touch320AppDelegate.m in Sources */,
-				DEFEE5E410D80AA3001213CE /* CXMLDocument_CreationExtensions.m in Sources */,
-				DEFEE5E510D80AA3001213CE /* CXMLNode_CreationExtensions.m in Sources */,
-				DEFEE5E610D80AA3001213CE /* CXMLDocument.m in Sources */,
-				DEFEE5E710D80AA3001213CE /* CXMLDocument_PrivateExtensions.m in Sources */,
-				DEFEE5E810D80AA3001213CE /* CXMLElement.m in Sources */,
-				DEFEE5E910D80AA3001213CE /* CXMLElement_CreationExtensions.m in Sources */,
-				DEFEE5EA10D80AA3001213CE /* CXMLElement_ElementTreeExtensions.m in Sources */,
-				DEFEE5EB10D80AA3001213CE /* CXMLNode.m in Sources */,
-				DEFEE5EC10D80AA3001213CE /* CXMLNode_PrivateExtensions.m in Sources */,
-				DEFEE5ED10D80AA3001213CE /* CXMLNode_XPathExtensions.m in Sources */,
-				DEFEE5EE10D80AA3001213CE /* CTidy.m in Sources */,
-				DEFEE64D10D80BA4001213CE /* NSObject+SBJSON.m in Sources */,
-				DEFEE64E10D80BA4001213CE /* NSString+SBJSON.m in Sources */,
-				DEFEE64F10D80BA4001213CE /* SBJSON.m in Sources */,
-				DEFEE65010D80BA4001213CE /* SBJsonBase.m in Sources */,
-				DEFEE65110D80BA4001213CE /* SBJsonParser.m in Sources */,
-				DEFEE65210D80BA4001213CE /* SBJsonWriter.m in Sources */,
 				DEFEE66F10D80BC4001213CE /* NewsViewController.m in Sources */,
 				DEFEE67010D80BC4001213CE /* ImageGalleryViewController.m in Sources */,
 				DEFEE67110D80BC4001213CE /* CatalogSamplerViewController.m in Sources */,
@@ -952,6 +910,17 @@
 				DE97ED581127A10900E25713 /* RecipeBookCategoryDataSource.m in Sources */,
 				DE97ED5B1127A11B00E25713 /* RecipeBookCategoryModel.m in Sources */,
 				DE97EF1B11285F5400E25713 /* RecipeBookItemViewController.m in Sources */,
+				7318C3D71189E81B0044DBE7 /* CXMLDocument_CreationExtensions.m in Sources */,
+				7318C3D81189E81B0044DBE7 /* CXMLNode_CreationExtensions.m in Sources */,
+				7318C3D91189E81B0044DBE7 /* CXMLDocument_PrivateExtensions.m in Sources */,
+				7318C3DA1189E81B0044DBE7 /* CXMLDocument.m in Sources */,
+				7318C3DB1189E81B0044DBE7 /* CXMLElement_CreationExtensions.m in Sources */,
+				7318C3DC1189E81B0044DBE7 /* CXMLElement_ElementTreeExtensions.m in Sources */,
+				7318C3DD1189E81B0044DBE7 /* CXMLElement.m in Sources */,
+				7318C3DE1189E81B0044DBE7 /* CXMLNode_PrivateExtensions.m in Sources */,
+				7318C3DF1189E81B0044DBE7 /* CXMLNode_XPathExtensions.m in Sources */,
+				7318C3E01189E81B0044DBE7 /* CXMLNode.m in Sources */,
+				7318C3E11189E81B0044DBE7 /* CTidy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -969,6 +938,7 @@
 		1D6058940D05DD3E006BFB54 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ADDITIONAL_SDKS = "";
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -976,6 +946,11 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Touch320_Prefix.pch;
 				INFOPLIST_FILE = "Touch320-Info.plist";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+					"-lxml2",
+				);
 				PRODUCT_NAME = Touch320;
 			};
 			name = Debug;
@@ -983,11 +958,17 @@
 		1D6058950D05DD3E006BFB54 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ADDITIONAL_SDKS = "";
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Touch320_Prefix.pch;
 				INFOPLIST_FILE = "Touch320-Info.plist";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+					"-lxml2",
+				);
 				PRODUCT_NAME = Touch320;
 			};
 			name = Release;
@@ -1070,11 +1051,17 @@
 		DEAFCEE31120AF5E0050C987 /* Ad Hoc Distribution */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ADDITIONAL_SDKS = "";
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Touch320_Prefix.pch;
 				INFOPLIST_FILE = "Touch320-Info.plist";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+					"-lxml2",
+				);
 				PRODUCT_NAME = Touch320;
 			};
 			name = "Ad Hoc Distribution";

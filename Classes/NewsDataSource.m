@@ -49,7 +49,7 @@
 		NSString* title = [theItem objectForKey:@"title"];
 		NSString* link = [theItem objectForKey:@"link"];
 		
-		if( !TTIsEmptyString(title) ) {
+		if( !TTIsSetWithItems(title) ) {
 			
 			[items addObject:[NewsTableItem
 							  itemWithText: title

@@ -52,7 +52,7 @@
 		NSString* link = [theItem objectForKey:@"guid"];
 		NSString* duration = [theItem objectForKey:@"duration"];
 		
-		if( !TTIsEmptyString(title) ) {
+		if( !TTIsSetWithItems(title) ) {
 			[items addObject:[RadioTableItem
 							  itemWithText: title
 							  title: title

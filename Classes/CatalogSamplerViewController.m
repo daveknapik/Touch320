@@ -57,7 +57,8 @@
 						   [object duration], @"duration",
 						   [object track_listing], @"track_listing",
 						   nil];
-	[[TTNavigator navigator] openURL:@"tt://catalogItem/1" query:query animated:YES]; 
+	//[[TTNavigator navigator] openURL:@"tt://catalogItem/1" query:query animated:YES]; 
+	[[TTNavigator navigator] openURLAction:[[[TTURLAction actionWithURLPath:@"tt://catalogItem/1"] applyQuery:query] applyAnimated:YES]];
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation

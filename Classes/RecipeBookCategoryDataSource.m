@@ -47,7 +47,7 @@
 		
 		NSString* title = [theItem objectForKey:@"title"];
 		
-		if( !TTIsEmptyString(title) ) {
+		if( !TTIsSetWithItems(title) ) {
 			
 			[items addObject:[RecipeBookCategoryTableItem
 							  itemWithText: title

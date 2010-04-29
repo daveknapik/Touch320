@@ -47,7 +47,8 @@
 						   [object link], @"link",
 						   [object title], @"title",
 						   nil];
-	[[TTNavigator navigator] openURL:@"tt://newsItem/1" query:query animated:YES]; 
+	//[[TTNavigator navigator] openURL:@"tt://newsItem/1" query:query animated:YES]; 
+	[[TTNavigator navigator] openURLAction:[[[TTURLAction actionWithURLPath:@"tt://newsItem/1"] applyQuery:query] applyAnimated:YES]]; 
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation

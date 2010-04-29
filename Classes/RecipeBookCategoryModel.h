@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <Three20/Three20.h>
+#import <Three20/Three20+Additions.h>
 
 @interface RecipeBookCategoryModel : TTURLRequestModel {
 	NSMutableDictionary* _recipes;

@@ -3,7 +3,7 @@
 //
 //  based on http://github.com/klazuka/TTRemoteExamples
 
-#import <Three20/Three20.h>
+#import <Three20/Three20+Additions.h>
 
 @interface FlickrJSONResponse : NSObject <TTURLResponse>
 {

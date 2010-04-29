@@ -44,7 +44,8 @@
 - (void)didSelectObject:(id)object atIndexPath:(NSIndexPath*)indexPath {
 	NSDictionary *query = [NSDictionary
 						   dictionaryWithObjectsAndKeys: [object title], @"title", nil];
-	[[TTNavigator navigator] openURL:@"tt://recipes/1" query:query animated:YES]; 
+	//[[TTNavigator navigator] openURL:@"tt://recipes/1" query:query animated:YES]; 
+	[[TTNavigator navigator] openURLAction:[[[TTURLAction actionWithURLPath:@"tt://recipes/1"] applyQuery:query] applyAnimated:YES]];
  }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation

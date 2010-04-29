@@ -49,7 +49,7 @@
 		NSString* subtitle = [theItem objectForKey:@"excerpt"];
 		NSString* recipe_description = [theItem objectForKey:@"description"];
 		
-		if( !TTIsEmptyString(title) ) {
+		if( !TTIsSetWithItems(title) ) {
 			
 			[items addObject:[RecipeBookTableItem
 							  itemWithText: title

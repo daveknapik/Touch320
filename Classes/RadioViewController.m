@@ -51,7 +51,8 @@
 						   [object link], @"link",
 						   [object duration], @"duration",
 						   nil];
-	[[TTNavigator navigator] openURL:@"tt://radioItem/1" query:query animated:YES]; 
+	//[[TTNavigator navigator] openURL:@"tt://radioItem/1" query:query animated:YES]; 
+	[[TTNavigator navigator] openURLAction:[[[TTURLAction actionWithURLPath:@"tt://radioItem/1"] applyQuery:query] applyAnimated:YES]];
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation

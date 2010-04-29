@@ -6,7 +6,7 @@
 //  Copyright 2009 __MyCompanyName__. All rights reserved.
 //
 
-#import <Three20/Three20.h>
+#import <Three20/Three20+Additions.h>
 #import "CatalogSamplerModel.h"
 
 
