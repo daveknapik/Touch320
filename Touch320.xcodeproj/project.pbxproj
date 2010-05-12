@@ -23,6 +23,7 @@
 		7318C3DF1189E81B0044DBE7 /* CXMLNode_XPathExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 7318C3D01189E81B0044DBE7 /* CXMLNode_XPathExtensions.m */; };
 		7318C3E01189E81B0044DBE7 /* CXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 7318C3D21189E81B0044DBE7 /* CXMLNode.m */; };
 		7318C3E11189E81B0044DBE7 /* CTidy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7318C3D51189E81B0044DBE7 /* CTidy.m */; };
+		733D612A119B3AD200B36F02 /* mobile.css in Resources */ = {isa = PBXBuildFile; fileRef = 733D6129119B3AD200B36F02 /* mobile.css */; };
 		DE06A97D110D0DAA00E7F895 /* CatalogItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE06A97C110D0DAA00E7F895 /* CatalogItemViewController.m */; };
 		DE10401910F3EFE20058DDB8 /* RadioTableItem.m in Sources */ = {isa = PBXBuildFile; fileRef = DE10401810F3EFE20058DDB8 /* RadioTableItem.m */; };
 		DE10401C10F3EFEC0058DDB8 /* RadioTableItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DE10401B10F3EFEC0058DDB8 /* RadioTableItemCell.m */; };
@@ -164,6 +165,7 @@
 		7318C3D41189E81B0044DBE7 /* CTidy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTidy.h; sourceTree = "<group>"; };
 		7318C3D51189E81B0044DBE7 /* CTidy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTidy.m; sourceTree = "<group>"; };
 		7318C3D61189E81B0044DBE7 /* TouchXML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TouchXML.h; path = ../../TouchXML/Common/Source/TouchXML.h; sourceTree = SOURCE_ROOT; };
+		733D6129119B3AD200B36F02 /* mobile.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = mobile.css; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Touch320-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Touch320-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 		DE06A97B110D0DAA00E7F895 /* CatalogItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CatalogItemViewController.h; sourceTree = "<group>"; };
 		DE06A97C110D0DAA00E7F895 /* CatalogItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CatalogItemViewController.m; sourceTree = "<group>"; };
@@ -409,6 +411,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				733D6129119B3AD200B36F02 /* mobile.css */,
 				DEE2D5651100BE6C004BB6F3 /* icon.png */,
 				DEAA259310FCB13C0059D87F /* blackbutton.png */,
 				8D1107310486CEB800E47090 /* Touch320-Info.plist */,
@@ -824,6 +827,7 @@
 				DEE2D5661100BE6C004BB6F3 /* icon.png in Resources */,
 				DEAFCF111120C9070050C987 /* dist.plist in Resources */,
 				DE97EDF71127E91000E25713 /* RecipeCategories.plist in Resources */,
+				733D612A119B3AD200B36F02 /* mobile.css in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
