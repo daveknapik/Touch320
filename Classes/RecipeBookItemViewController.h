@@ -10,7 +10,7 @@
 #import <Three20/Three20+Additions.h>
 #import "AudioPlayer.h"
 
-@interface RecipeBookItemViewController : TTViewController {
+@interface RecipeBookItemViewController : TTViewController <UIWebViewDelegate> {
 	NSString* _author;
 	NSString* _recipe_description;
 	
@@ -18,7 +18,7 @@
 	UILabel* _authorValue;
 	UILabel* _descriptionValue;
 	
-	UIScrollView* _recipeItemView;
+	UIWebView* _recipeItemView;
 }
 
 @property (nonatomic, copy) NSString* author;
@@ -28,7 +28,7 @@
 @property (nonatomic, retain) UILabel* authorValue;
 @property (nonatomic, retain) UILabel* descriptionValue;
 
-@property (nonatomic, retain) UIScrollView* recipeItemView;
+@property (nonatomic, retain) UIWebView* recipeItemView;
 
 - (id)initWithRecipeItem:(NSString *)placeholder query:(NSDictionary*)query;
 - (CGRect)resizeLabelFrame:(UILabel*)label forText:(NSString*)text;

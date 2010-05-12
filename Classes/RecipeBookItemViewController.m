@@ -45,7 +45,31 @@
 }
 
 - (void)viewDidLoad {
-	self.view = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, 320, 2300)];
+	self.recipeItemView = [[UIWebView alloc] initWithFrame:CGRectMake(0, 0, 320, 366)];
+	self.recipeItemView.delegate = self;
+	
+	NSString *recipeHTML = [NSString stringWithFormat:@"<meta name=\"viewport\" content=\"width=device-width\" />"];
+	
+	recipeHTML = [recipeHTML stringByAppendingString:@"<link rel=\"stylesheet\" href=\"http://www.daveknapik.com/dropbox/mobile.css\" />"];
+	recipeHTML = [recipeHTML stringByAppendingString:@"<p><strong>"];
+	recipeHTML = [recipeHTML stringByAppendingString:self.navigationItem.title];
+	recipeHTML = [recipeHTML stringByAppendingString:@"</strong>"];
+	
+	recipeHTML = [recipeHTML stringByAppendingString:@"<br />by "];
+	recipeHTML = [recipeHTML stringByAppendingString:self.author];
+	recipeHTML = [recipeHTML stringByAppendingString:@"</p>"];
+	
+	recipeHTML = [recipeHTML stringByAppendingString:self.recipe_description];
+	
+	[self.recipeItemView loadHTMLString:recipeHTML baseURL:nil];
+	
+	self.recipeItemView.scalesPageToFit = YES;
+	self.recipeItemView.autoresizesSubviews = YES;
+	
+	[self.view addSubview:self.recipeItemView];
+	
+	
+	/*self.view = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, 320, 2300)];
 	[self.view setContentSize:CGSizeMake(320,2300)];
 	
 	self.recipeItemView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, 320, 2300)];
@@ -115,7 +139,7 @@
 	
 	[self.view addSubview:descriptionValue];
 	[descriptionValue release];
-	previousSubviewHeight = descriptionValue.frame.size.height;
+	previousSubviewHeight = descriptionValue.frame.size.height;*/
 	
 	NSLog(self.recipe_description);
 	
@@ -153,6 +177,9 @@
 	[super viewDidUnload];
 }
 
+/*- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
+	return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
+} */
 
 - (void)dealloc {
 	TT_RELEASE_SAFELY(_author);
