@@ -4,7 +4,6 @@
 //  based on http://github.com/klazuka/TTRemoteExamples
 
 #import "FlickrJSONResponse.h"
-#import "JSON/JSON.h"
 #import "ImageGalleryPhoto.h"
 
 @implementation FlickrJSONResponse
