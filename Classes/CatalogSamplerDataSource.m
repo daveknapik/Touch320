@@ -53,7 +53,7 @@
 		NSString* mp3_sample_url = [theItem objectForKey:@"mp3_sample_url"];
 		NSString* release_url = [theItem objectForKey:@"release_url"];
 		NSString* itunes_url = [theItem objectForKey:@"itunes_url"];
-		NSString* duration = [theItem objectForKey:@"duration"];
+		NSString* release_duration = [theItem objectForKey:@"release_duration"];
 		NSString* track_listing = [theItem objectForKey:@"track_listing"];
 		
 		if( !TTIsSetWithItems(title) ) {
@@ -68,7 +68,7 @@
 							  mp3_sample_url: mp3_sample_url
 							  release_url: release_url
 							  itunes_url: itunes_url
-							  duration: duration
+							  release_duration: release_duration
 							  track_listing: track_listing]];
 		}
 		

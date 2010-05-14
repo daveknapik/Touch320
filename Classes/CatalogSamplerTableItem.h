@@ -19,7 +19,7 @@
 	NSString* _mp3_sample_url;
 	NSString* _release_url;
 	NSString* _itunes_url;
-	NSString* _duration;
+	NSString* _release_duration;
 	NSString* _track_listing;
 }
 
@@ -31,7 +31,7 @@
 @property (nonatomic, copy) NSString* mp3_sample_url;
 @property (nonatomic, copy) NSString* release_url;
 @property (nonatomic, copy) NSString* itunes_url;
-@property (nonatomic, copy) NSString* duration;
+@property (nonatomic, copy) NSString* release_duration;
 @property (nonatomic, copy) NSString* track_listing;
 
 + (id)itemWithText:(NSString*)text 
@@ -43,8 +43,8 @@ release_description:(NSString*)release_description
 	 cover_art_url:(NSString*)cover_art_url
 	mp3_sample_url:(NSString*)mp3_sample_url
 	   release_url:(NSString*)release_url
-		itunes_url:(NSString*)itunes_url
-		  duration:(NSString*)duration
+		itunes_url:(NSString*)itunes_url 
+  release_duration:(NSString*)release_duration
 	 track_listing:(NSString*)track_listing;
 
 @end

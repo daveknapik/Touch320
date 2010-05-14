@@ -114,21 +114,21 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = DEDA867C119BA677007CF258 /* Three20.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = BEF31F3A0F352DF5000DE5D2 /* libThree20.a */;
+			remoteGlobalIDString = BEF31F3A0F352DF5000DE5D2;
 			remoteInfo = Three20;
 		};
 		DEDA870D119BA77D007CF258 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = DEDA867C119BA677007CF258 /* Three20.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = EB9E6C6210B6A8F800DE563C /* UnitTests.octest */;
+			remoteGlobalIDString = EB9E6C6210B6A8F800DE563C;
 			remoteInfo = UnitTests;
 		};
 		DEDA8719119BA797007CF258 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = DEDA867C119BA677007CF258 /* Three20.xcodeproj */;
 			proxyType = 1;
-			remoteGlobalIDString = BEF31F390F352DF5000DE5D2 /* Three20 */;
+			remoteGlobalIDString = BEF31F390F352DF5000DE5D2;
 			remoteInfo = Three20;
 		};
 /* End PBXContainerItemProxy section */
@@ -1055,7 +1055,7 @@
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = Touch;
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "A5F1AEB5-9C98-4C97-8ECD-337C756EA072";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "87580A16-02C8-43B7-97AF-550513F87006";
 				SDKROOT = iphoneos3.1;
 			};
 			name = "Ad Hoc Distribution";

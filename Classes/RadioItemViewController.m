@@ -16,20 +16,20 @@
 			subtitle = _subtitle,
 			pubDate = _pubDate,
 			link = _link,
-			duration = _duration,
+			episode_duration = _episode_duration,
 			radioItemView = _radioItemView,
 			titleLabel = _titleLabel,
 			authorLabel = _authorLabel,
 			summaryLabel = _summaryLabel,
 			subtitleLabel = _subtitleLabel,
 			pubDateLabel = _pubDateLabel,
-			durationLabel = _durationLabel,
+			episode_durationLabel = _episode_durationLabel,
 			titleValue = _titleValue,
 			authorValue = _authorValue,
 			summaryValue = _summaryValue,
 			subtitleValue = _subtitleValue,
 			pubDateValue = _pubDateValue,
-			durationValue = _durationValue;
+			episode_durationValue = _episode_durationValue;
 
 - (id)initWithRadioItem:(NSString *)placeholder query:(NSDictionary*)query
 {
@@ -46,7 +46,7 @@
 		self.summary = [query objectForKey:@"summary"];
 		self.pubDate = [query objectForKey:@"pubDate"];
 		self.link = [query objectForKey:@"link"];
-		self.duration = [query objectForKey:@"duration"];
+		self.episode_duration = [query objectForKey:@"episode_duration"];
 		
 		Touch320AppDelegate *appDelegate;
 		appDelegate = (Touch320AppDelegate*)[UIApplication sharedApplication].delegate;
@@ -63,7 +63,7 @@
 		NSLog(@"radio item subtitle: %@",self.subtitle);
 		NSLog(@"radio item author: %@",self.author);
 		NSLog(@"radio item summary: %@",self.summary);
-		NSLog(@"radio item duration: %@",self.duration);
+		NSLog(@"radio item episode_duration: %@",self.episode_duration);
 		NSLog(@"radio item link: %@",self.link);
 		NSLog(@"radio item pubDate: %@",self.pubDate);
 		*/
@@ -198,7 +198,7 @@
 	self.summary = nil;
 	self.pubDate = nil;
 	self.link = nil;
-	self.duration = nil;
+	self.episode_duration = nil;
 	
 	self.radioItemView = nil;
 	
@@ -207,14 +207,14 @@
 	self.subtitleLabel = nil;
 	self.summaryLabel = nil;
 	self.pubDateLabel = nil;
-	self.durationLabel = nil;
+	self.episode_durationLabel = nil;
 	
 	self.titleValue = nil;
 	self.authorValue = nil;
 	self.subtitleValue = nil;
 	self.summaryValue = nil;
 	self.pubDateValue = nil;
-	self.durationValue = nil;
+	self.episode_durationValue = nil;
 	
 	playButton = nil;
 	pauseButton = nil;
@@ -230,7 +230,7 @@
 	TT_RELEASE_SAFELY(_summary);
 	TT_RELEASE_SAFELY(_pubDate);
 	TT_RELEASE_SAFELY(_link);
-	TT_RELEASE_SAFELY(_duration);
+	TT_RELEASE_SAFELY(_episode_duration);
 	
 	TT_RELEASE_SAFELY(_radioItemView);
 	
@@ -239,14 +239,14 @@
 	TT_RELEASE_SAFELY(_subtitleLabel);
 	TT_RELEASE_SAFELY(_summaryLabel);
 	TT_RELEASE_SAFELY(_pubDateLabel);
-	TT_RELEASE_SAFELY(_durationLabel);
+	TT_RELEASE_SAFELY(_episode_durationLabel);
 	
 	TT_RELEASE_SAFELY(_titleValue);
 	TT_RELEASE_SAFELY(_authorValue);
 	TT_RELEASE_SAFELY(_subtitleValue);
 	TT_RELEASE_SAFELY(_summaryValue);
 	TT_RELEASE_SAFELY(_pubDateValue);
-	TT_RELEASE_SAFELY(_durationValue);
+	TT_RELEASE_SAFELY(_episode_durationValue);
 	
 	TT_RELEASE_SAFELY(playButton);
 	TT_RELEASE_SAFELY(pauseButton);

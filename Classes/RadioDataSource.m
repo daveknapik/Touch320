@@ -50,7 +50,7 @@
 		NSString* summary = [theItem objectForKey:@"summary"];
 		NSString* pubDate = [theItem objectForKey:@"pubDate"];
 		NSString* link = [theItem objectForKey:@"guid"];
-		NSString* duration = [theItem objectForKey:@"duration"];
+		NSString* episode_duration = [theItem objectForKey:@"duration"];
 		
 		if( !TTIsSetWithItems(title) ) {
 			[items addObject:[RadioTableItem
@@ -61,7 +61,7 @@
 							  summary: summary
 							  pubDate: pubDate
 							  link: link
-							  duration: duration]];
+							  episode_duration: episode_duration]];
 		}
 	} 
 	

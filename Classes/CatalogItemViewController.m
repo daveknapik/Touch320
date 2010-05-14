@@ -14,7 +14,7 @@
 @synthesize artist = _artist,
 release_description = _release_description,
 subtitle = _subtitle,
-duration = _duration,
+release_duration = _release_duration,
 mp3_sample_url = _mp3_sample_url,
 cover_art_url = _cover_art_url,
 catalogItemView = _catalogItemView,
@@ -22,12 +22,12 @@ titleLabel = _titleLabel,
 artistLabel = _artistLabel,
 descriptionLabel = _descriptionLabel,
 subtitleLabel = _subtitleLabel,
-durationLabel = _durationLabel,
+release_durationLabel = _release_durationLabel,
 titleValue = _titleValue,
 artistValue = _artistValue,
 descriptionValue = _descriptionValue,
 subtitleValue = _subtitleValue,
-durationValue = _durationValue,
+release_durationValue = _release_durationValue,
 cover_art = _cover_art;
 
 - (id)initWithCatalogItem:(NSString *)placeholder query:(NSDictionary*)query
@@ -43,10 +43,12 @@ cover_art = _cover_art;
 		self.artist = [query objectForKey:@"artist"];
 		self.subtitle = [query objectForKey:@"subtitle"];
 		self.release_description = [query objectForKey:@"release_description"];
-		self.duration = [query objectForKey:@"duration"];
+		self.release_duration = [query objectForKey:@"release_duration"];
 		self.mp3_sample_url = [[query objectForKey:@"mp3_sample_url"] stringByReplacingOccurrencesOfString:@" " withString:@"%20"];
 		//self.mp3_sample_url = @"http://www.daveknapik.com/audio/Silicon_Teens-Just_Like_Eddie.mp3";
 		self.cover_art_url = [[query objectForKey:@"cover_art_url"] stringByReplacingOccurrencesOfString:@" " withString:@"%20"];
+		
+		NSLog(self.mp3_sample_url);
 		
 		Touch320AppDelegate *appDelegate;
 		appDelegate = (Touch320AppDelegate*)[UIApplication sharedApplication].delegate;
@@ -220,7 +222,7 @@ cover_art = _cover_art;
 	// e.g. self.myOutlet = nil;
 	self.artist = nil;
 	self.release_description = nil;
-	self.duration = nil;
+	self.release_duration = nil;
 	self.mp3_sample_url = nil;
 	self.cover_art_url = nil;
 	
@@ -230,13 +232,13 @@ cover_art = _cover_art;
 	self.artistLabel = nil;
 	self.subtitleLabel = nil;
 	self.descriptionLabel = nil;
-	self.durationLabel = nil;
+	self.release_durationLabel = nil;
 	
 	self.titleValue = nil;
 	self.artistValue = nil;
 	self.subtitleValue = nil;
 	self.descriptionValue = nil;
-	self.durationValue = nil;
+	self.release_durationValue = nil;
 	
 	playButton = nil;
 	pauseButton = nil;
@@ -251,7 +253,7 @@ cover_art = _cover_art;
 	TT_RELEASE_SAFELY(_artist);
 	TT_RELEASE_SAFELY(_subtitle);
 	TT_RELEASE_SAFELY(_release_description);
-	TT_RELEASE_SAFELY(_duration);
+	TT_RELEASE_SAFELY(_release_duration);
 	TT_RELEASE_SAFELY(_mp3_sample_url);
 	TT_RELEASE_SAFELY(_cover_art_url);
 	
@@ -261,13 +263,13 @@ cover_art = _cover_art;
 	TT_RELEASE_SAFELY(_artistLabel);
 	TT_RELEASE_SAFELY(_subtitleLabel);
 	TT_RELEASE_SAFELY(_descriptionLabel);
-	TT_RELEASE_SAFELY(_durationLabel);
+	TT_RELEASE_SAFELY(_release_durationLabel);
 	
 	TT_RELEASE_SAFELY(_titleValue);
 	TT_RELEASE_SAFELY(_artistValue);
 	TT_RELEASE_SAFELY(_subtitleValue);
 	TT_RELEASE_SAFELY(_descriptionValue);
-	TT_RELEASE_SAFELY(_durationValue);
+	TT_RELEASE_SAFELY(_release_durationValue);
 	
 	TT_RELEASE_SAFELY(playButton);
 	TT_RELEASE_SAFELY(pauseButton);

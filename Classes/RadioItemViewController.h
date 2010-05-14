@@ -16,7 +16,7 @@
 	NSString* _summary;
 	NSString* _pubDate;
 	NSString* _link;
-	NSString* _duration;
+	NSString* _episode_duration;
 	
 	UIScrollView* _radioItemView;
 	
@@ -25,14 +25,14 @@
 	UILabel* _summaryLabel;
 	UILabel* _subtitleLabel;
 	UILabel* _pubDateLabel;
-	UILabel* _durationLabel;
+	UILabel* _episode_durationLabel;
 	
 	UILabel* _titleValue;
 	UILabel* _authorValue;
 	UILabel* _summaryValue;
 	UILabel* _subtitleValue;
 	UILabel* _pubDateValue;
-	UILabel* _durationValue;
+	UILabel* _episode_durationValue;
 	
 	UIActivityIndicatorView* activityIndicatorView;
 	UIButton* pauseButton;
@@ -46,7 +46,7 @@
 @property (nonatomic, copy) NSString* subtitle;
 @property (nonatomic, copy) NSString* pubDate;
 @property (nonatomic, copy) NSString* link;
-@property (nonatomic, copy) NSString* duration;
+@property (nonatomic, copy) NSString* episode_duration;
 
 @property (nonatomic, retain) UIScrollView* radioItemView;
 
@@ -55,14 +55,14 @@
 @property (nonatomic, retain) UILabel* summaryLabel;
 @property (nonatomic, retain) UILabel* subtitleLabel;
 @property (nonatomic, retain) UILabel* pubDateLabel;
-@property (nonatomic, retain) UILabel* durationLabel;
+@property (nonatomic, retain) UILabel* episode_durationLabel;
 
 @property (nonatomic, retain) UILabel* titleValue;
 @property (nonatomic, retain) UILabel* authorValue;
 @property (nonatomic, retain) UILabel* summaryValue;
 @property (nonatomic, retain) UILabel* subtitleValue;
 @property (nonatomic, retain) UILabel* pubDateValue;
-@property (nonatomic, retain) UILabel* durationValue;
+@property (nonatomic, retain) UILabel* episode_durationValue;
 
 - (id)initWithRadioItem:(NSString *)placeholder query:(NSDictionary*)query;
 - (CGRect)resizeLabelFrame:(UILabel*)label forText:(NSString*)text;

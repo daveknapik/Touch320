@@ -14,7 +14,7 @@
 	NSString* _artist;
 	NSString* _subtitle;
 	NSString* _release_description;
-	NSString* _duration;
+	NSString* _release_duration;
 	NSString* _mp3_sample_url;
 	NSString* _cover_art_url;
 	
@@ -24,13 +24,13 @@
 	UILabel* _artistLabel;
 	UILabel* _descriptionLabel;
 	UILabel* _subtitleLabel;
-	UILabel* _durationLabel;
+	UILabel* _release_durationLabel;
 	
 	UILabel* _titleValue;
 	UILabel* _artistValue;
 	UILabel* _descriptionValue;
 	UILabel* _subtitleValue;
-	UILabel* _durationValue;
+	UILabel* _release_durationValue;
 	
 	TTPhotoView* _cover_art;
 	
@@ -44,7 +44,7 @@
 @property (nonatomic, copy) NSString* artist;
 @property (nonatomic, copy) NSString* release_description;
 @property (nonatomic, copy) NSString* subtitle;
-@property (nonatomic, copy) NSString* duration;
+@property (nonatomic, copy) NSString* release_duration;
 @property (nonatomic, copy) NSString* mp3_sample_url;
 @property (nonatomic, copy) NSString* cover_art_url;
 
@@ -54,13 +54,13 @@
 @property (nonatomic, retain) UILabel* artistLabel;
 @property (nonatomic, retain) UILabel* descriptionLabel;
 @property (nonatomic, retain) UILabel* subtitleLabel;
-@property (nonatomic, retain) UILabel* durationLabel;
+@property (nonatomic, retain) UILabel* release_durationLabel;
 
 @property (nonatomic, retain) UILabel* titleValue;
 @property (nonatomic, retain) UILabel* artistValue;
 @property (nonatomic, retain) UILabel* descriptionValue;
 @property (nonatomic, retain) UILabel* subtitleValue;
-@property (nonatomic, retain) UILabel* durationValue;
+@property (nonatomic, retain) UILabel* release_durationValue;
 
 @property (nonatomic, retain) TTPhotoView* cover_art;
 

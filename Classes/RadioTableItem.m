@@ -15,7 +15,7 @@
 			summary = _summary,
 			pubDate = _pubDate,
 			link = _link,
-			duration = _duration;
+			episode_duration = _episode_duration;
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -25,8 +25,8 @@
 		  subtitle:(NSString*)subtitle 
 		   summary:(NSString*)summary
 		   pubDate:(NSString*)pubDate
-			  link:(NSString*)link
-		  duration:(NSString*)duration { 
+			  link:(NSString*)link 
+  episode_duration:(NSString*)episode_duration { 
 	RadioTableItem* item = [[[self alloc] init] autorelease]; 
 	
 	item.text = text; 
@@ -36,7 +36,7 @@
 	item.summary = summary;
 	item.pubDate = pubDate;
 	item.link = link;
-	item.duration = duration;
+	item.episode_duration = episode_duration;
 	
 	return item; 
 } 
@@ -49,7 +49,7 @@
 		_summary = nil;
 		_pubDate = nil;
 		_link = nil;
-		_duration = nil;
+		_episode_duration = nil;
 	} 
 	
 	return self;
@@ -62,7 +62,7 @@
 	TT_RELEASE_SAFELY(_summary);
 	TT_RELEASE_SAFELY(_pubDate);
 	TT_RELEASE_SAFELY(_link);
-	TT_RELEASE_SAFELY(_duration);
+	TT_RELEASE_SAFELY(_episode_duration);
 	[super dealloc];
 }
 
@@ -74,7 +74,7 @@
 		self.summary = [decoder decodeObjectForKey:@"summary"];
 		self.pubDate = [decoder decodeObjectForKey:@"pubDate"];
 		self.link = [decoder decodeObjectForKey:@"link"];
-		self.duration = [decoder decodeObjectForKey:@"duration"];
+		self.episode_duration = [decoder decodeObjectForKey:@"episode_duration"];
 	} 
 	
 	return self;
@@ -107,8 +107,8 @@
 		[encoder encodeObject:self.link forKey:@"link"]; 
 	}
 	
-	if (self.duration) { 
-		[encoder encodeObject:self.duration forKey:@"duration"]; 
+	if (self.episode_duration) { 
+		[encoder encodeObject:self.episode_duration forKey:@"episode_duration"]; 
 	}
 } 
 

@@ -19,7 +19,7 @@
 			mp3_sample_url = _mp3_sample_url,
 			release_url = _release_url,
 			itunes_url = _itunes_url,
-			duration = _duration,
+			release_duration = _release_duration,
 			track_listing = _track_listing;
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
@@ -33,8 +33,8 @@ release_description:(NSString*)release_description
 	 cover_art_url:(NSString*)cover_art_url
 	mp3_sample_url:(NSString*)mp3_sample_url
 	   release_url:(NSString*)release_url
-		itunes_url:(NSString*)itunes_url
-		  duration:(NSString*)duration
+		itunes_url:(NSString*)itunes_url 
+  release_duration:(NSString*)release_duration
 	 track_listing:(NSString*)track_listing
 {
 	CatalogSamplerTableItem* item = [[[self alloc] init] autorelease]; 
@@ -49,7 +49,7 @@ release_description:(NSString*)release_description
 	item.mp3_sample_url = mp3_sample_url;
 	item.release_url = release_url;
 	item.itunes_url = itunes_url;
-	item.duration = duration;
+	item.release_duration = release_duration;
 	item.track_listing = track_listing;
 	
 	return item; 
@@ -74,7 +74,7 @@ release_description:(NSString*)release_description
 	TT_RELEASE_SAFELY(_mp3_sample_url); 
 	TT_RELEASE_SAFELY(_release_url); 
 	TT_RELEASE_SAFELY(_itunes_url); 
-	TT_RELEASE_SAFELY(_duration); 
+	TT_RELEASE_SAFELY(_release_duration); 
 	TT_RELEASE_SAFELY(_track_listing); 
 	
 	[super dealloc];
@@ -91,7 +91,7 @@ release_description:(NSString*)release_description
 		self.mp3_sample_url = [decoder decodeObjectForKey:@"mp3_sample_url"];
 		self.release_url = [decoder decodeObjectForKey:@"release_url"];
 		self.itunes_url = [decoder decodeObjectForKey:@"itunes_url"];
-		self.duration = [decoder decodeObjectForKey:@"duration"];
+		self.release_duration = [decoder decodeObjectForKey:@"release_duration"];
 		self.track_listing = [decoder decodeObjectForKey:@"track_listing"];
 	} 
 	
@@ -137,8 +137,8 @@ release_description:(NSString*)release_description
 		[encoder encodeObject:self.itunes_url forKey:@"itunes_url"]; 
 	} 
 	
-	if (self.duration) { 
-		[encoder encodeObject:self.duration forKey:@"duration"]; 
+	if (self.release_duration) { 
+		[encoder encodeObject:self.release_duration forKey:@"release_duration"]; 
 	} 
 	
 	if (self.track_listing) { 

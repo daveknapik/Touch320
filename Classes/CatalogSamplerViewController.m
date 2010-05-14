@@ -42,6 +42,17 @@
 
 - (void)didSelectObject:(id)object atIndexPath:(NSIndexPath*)indexPath {
 	NSLog(@"selected catalog item");
+	NSLog([object title]);
+	NSLog([object subtitle]);
+	NSLog([object artist]);
+	NSLog([object release_description]);
+	NSLog([object catalogNumber]);
+	NSLog([object release_url]);
+	NSLog([object mp3_sample_url]);
+	NSLog([object cover_art_url]);
+	NSLog([object itunes_url]);
+	NSLog([object track_listing]);
+	NSLog([object release_duration]);
 	
 	NSDictionary *query = [NSDictionary
 						   dictionaryWithObjectsAndKeys:
@@ -54,8 +65,8 @@
 						   [object mp3_sample_url], @"mp3_sample_url",
 						   [object cover_art_url], @"cover_art_url",
 						   [object itunes_url], @"itunes_url",
-						   [object duration], @"duration",
 						   [object track_listing], @"track_listing",
+						   [object release_duration], @"release_duration",
 						   nil];
 	//[[TTNavigator navigator] openURL:@"tt://catalogItem/1" query:query animated:YES]; 
 	[[TTNavigator navigator] openURLAction:[[[TTURLAction actionWithURLPath:@"tt://catalogItem/1"] applyQuery:query] applyAnimated:YES]];

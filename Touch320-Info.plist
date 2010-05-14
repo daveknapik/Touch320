@@ -24,5 +24,7 @@
 	<string>1.0</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>SignerIdentity</key>
+	<string>Apple iPhone OS Application Signing</string>
 </dict>
 </plist>

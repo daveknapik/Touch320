@@ -49,7 +49,7 @@
 						   [object summary], @"summary",
 						   [object pubDate], @"pubDate",
 						   [object link], @"link",
-						   [object duration], @"duration",
+						   [object episode_duration], @"episode_duration",
 						   nil];
 	//[[TTNavigator navigator] openURL:@"tt://radioItem/1" query:query animated:YES]; 
 	[[TTNavigator navigator] openURLAction:[[[TTURLAction actionWithURLPath:@"tt://radioItem/1"] applyQuery:query] applyAnimated:YES]];

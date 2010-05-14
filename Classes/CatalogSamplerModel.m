@@ -75,7 +75,6 @@
 		
         // Loop through the children of the current  node
         for(counter = 0; counter < [resultElement childCount]; counter++) {
-			
 			if ([[resultElement childAtIndex:counter] stringValue] == nil) {
 				[blogItem setObject:emptyString 
 							 forKey:[[resultElement childAtIndex:counter] name]];
