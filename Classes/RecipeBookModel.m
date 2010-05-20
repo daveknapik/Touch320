@@ -19,7 +19,12 @@
     NSDictionary *dictionary = [[NSDictionary alloc] 
                                 initWithContentsOfFile:[[NSBundle mainBundle] pathForResource: @"RecipeCategories" ofType:@"plist"]]; 
 	
-	self.feedURL = [@"http://www.touchmusic.org.uk/recipebook/" stringByAppendingString:[dictionary objectForKey:category]];
+	if ([dictionary objectForKey:category]){
+		self.feedURL = [@"http://www.touchmusic.org.uk/recipebook/" stringByAppendingString:[dictionary objectForKey:category]];
+	}
+	else {
+		self.feedURL = [[@"http://www.touchmusic.org.uk/recipebook/" stringByAppendingString:[category lowercaseString]] stringByAppendingString:@".xml"];
+	}
 	
 	[super init];
 	return self;

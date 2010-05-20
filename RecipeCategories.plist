@@ -6,6 +6,8 @@
 	<string>beverages.xml</string>
 	<key>Breads</key>
 	<string>breads.xml</string>
+	<key>Conceptual</key>
+	<string>conceptual.xml</string>
 	<key>Desserts</key>
 	<string>desserts.xml</string>
 	<key>Fish</key>
