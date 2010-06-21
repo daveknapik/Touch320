@@ -24,7 +24,7 @@
 	29B97313FDCFA39411CA2CEA /* Project object */ = {
 		activeBuildConfigurationName = Debug;
 		activeExecutable = 739F31111189E4EC0090A11D /* Touch320 */;
-		activeSDKPreference = iphonesimulator3.1.2;
+		activeSDKPreference = iphoneos3.1.2;
 		activeTarget = 1D6058900D05DD3D006BFB54 /* Touch320 */;
 		addToTargets = (
 			1D6058900D05DD3D006BFB54 /* Touch320 */,
@@ -39,7 +39,7 @@
 				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
 				PBXFileTableDataSourceColumnWidthsKey = (
 					20,
-					506,
+					671,
 					20,
 					48,
 					43,
@@ -78,13 +78,20 @@
 					PBXFileDataSource_Warnings_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 298307378;
-			PBXWorkspaceStateSaveDate = 298307378;
+			PBXPerProjectTemplateStateSaveDate = 298828326;
+			PBXWorkspaceStateSaveDate = 298828326;
 		};
 		perUserProjectItems = {
-			7309020611C7CF4400B90732 /* PBXTextBookmark */ = 7309020611C7CF4400B90732 /* PBXTextBookmark */;
-			7309020711C7CF4400B90732 /* PBXBookmark */ = 7309020711C7CF4400B90732 /* PBXBookmark */;
-			7309020811C7CF4400B90732 /* PBXBookmark */ = 7309020811C7CF4400B90732 /* PBXBookmark */;
+			7309020611C7CF4400B90732 = 7309020611C7CF4400B90732 /* PBXTextBookmark */;
+			7309021711C7D20300B90732 = 7309021711C7D20300B90732 /* PBXBookmark */;
+			7309021811C7D20300B90732 = 7309021811C7D20300B90732 /* PBXBookmark */;
+			7309021911C7D20300B90732 = 7309021911C7D20300B90732 /* PBXBookmark */;
+			7309022511CA748B00B90732 = 7309022511CA748B00B90732 /* PBXBookmark */;
+			730DE47E11CFC22800715199 /* PBXBookmark */ = 730DE47E11CFC22800715199 /* PBXBookmark */;
+			730DE48411CFC39500715199 /* PBXBookmark */ = 730DE48411CFC39500715199 /* PBXBookmark */;
+			730DE49011CFC46500715199 /* PBXBookmark */ = 730DE49011CFC46500715199 /* PBXBookmark */;
+			730DE49111CFC46500715199 /* PBXTextBookmark */ = 730DE49111CFC46500715199 /* PBXTextBookmark */;
+			730DE49211CFC46500715199 /* PlistBookmark */ = 730DE49211CFC46500715199 /* PlistBookmark */;
 			7318C3E21189E8540044DBE7 = 7318C3E21189E8540044DBE7 /* PBXTextBookmark */;
 			7318C3E61189E8890044DBE7 = 7318C3E61189E8890044DBE7 /* PBXTextBookmark */;
 			7318C4071189EAB40044DBE7 = 7318C4071189EAB40044DBE7 /* PBXTextBookmark */;
@@ -98,7 +105,6 @@
 			7318C4661189F14A0044DBE7 = 7318C4661189F14A0044DBE7 /* PBXTextBookmark */;
 			7318C4811189F3F00044DBE7 = 7318C4811189F3F00044DBE7 /* PBXTextBookmark */;
 			733443F211AB0C0300E1BAA3 = 733443F211AB0C0300E1BAA3 /* PBXTextBookmark */;
-			733A530C11AC339F005177D3 = 733A530C11AC339F005177D3 /* PBXTextBookmark */;
 			733D60DF119B1FEC00B36F02 = 733D60DF119B1FEC00B36F02 /* PBXTextBookmark */;
 			733D60E0119B1FEC00B36F02 = 733D60E0119B1FEC00B36F02 /* PBXTextBookmark */;
 			733D60E1119B1FEC00B36F02 = 733D60E1119B1FEC00B36F02 /* PBXTextBookmark */;
@@ -119,7 +125,6 @@
 			73C86B2811A58C5B004042C4 = 73C86B2811A58C5B004042C4 /* PlistBookmark */;
 			73C86B2911A58C5B004042C4 = 73C86B2911A58C5B004042C4 /* PlistBookmark */;
 			73D5C8EA119DAA6700B78DCC = 73D5C8EA119DAA6700B78DCC /* PBXTextBookmark */;
-			73EDEC5711B55FA50002D733 = 73EDEC5711B55FA50002D733 /* PBXTextBookmark */;
 		};
 		sourceControlManager = 739F31271189E5000090A11D /* Source Control */;
 		userBuildSettings = {
@@ -135,13 +140,54 @@
 		vrLen = 1023;
 		vrLoc = 1162;
 	};
-	7309020711C7CF4400B90732 /* PBXBookmark */ = {
+	7309021711C7D20300B90732 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = DEAA259310FCB13C0059D87F /* blackbutton.png */;
+	};
+	7309021811C7D20300B90732 /* PBXBookmark */ = {
 		isa = PBXBookmark;
 		fRef = DEE2D5651100BE6C004BB6F3 /* icon_old.png */;
 	};
-	7309020811C7CF4400B90732 /* PBXBookmark */ = {
+	7309021911C7D20300B90732 /* PBXBookmark */ = {
 		isa = PBXBookmark;
-		fRef = DEE2D5651100BE6C004BB6F3 /* icon_old.png */;
+		fRef = 7309020D11C7D08000B90732 /* icon.png */;
+	};
+	7309022511CA748B00B90732 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 7309020D11C7D08000B90732 /* icon.png */;
+	};
+	730DE47E11CFC22800715199 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 7309020D11C7D08000B90732 /* icon.png */;
+	};
+	730DE48411CFC39500715199 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 7309020D11C7D08000B90732 /* icon.png */;
+	};
+	730DE49011CFC46500715199 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 7309020D11C7D08000B90732 /* icon.png */;
+	};
+	730DE49111CFC46500715199 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = DE93D90B10F38DD3005B6255 /* RecipeBookModel.m */;
+		name = "RecipeBookModel.m: 26";
+		rLen = 0;
+		rLoc = 856;
+		rType = 0;
+		vrLen = 1228;
+		vrLoc = 196;
+	};
+	730DE49211CFC46500715199 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = DE97EDF61127E91000E25713 /* RecipeCategories.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = /Users/david.knapik/Documents/iPhoneDevelopment/Touch320/RecipeCategories.plist;
+		rLen = 0;
+		rLoc = 9223372036854775807;
 	};
 	7318C3C31189E81B0044DBE7 /* CXMLDocument_PrivateExtensions.h */ = {
 		uiCtxt = {
@@ -293,16 +339,6 @@
 		rType = 0;
 		vrLen = 881;
 		vrLoc = 228;
-	};
-	733A530C11AC339F005177D3 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = DE97EF1A11285F5400E25713 /* RecipeBookItemViewController.m */;
-		name = "RecipeBookItemViewController.m: 51";
-		rLen = 57;
-		rLoc = 1440;
-		rType = 0;
-		vrLen = 1025;
-		vrLoc = 1160;
 	};
 	733D60DF119B1FEC00B36F02 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
@@ -559,16 +595,6 @@
 		vrLen = 1220;
 		vrLoc = 365;
 	};
-	73EDEC5711B55FA50002D733 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = DE97EF1A11285F5400E25713 /* RecipeBookItemViewController.m */;
-		name = "RecipeBookItemViewController.m: 51";
-		rLen = 57;
-		rLoc = 1440;
-		rType = 0;
-		vrLen = 1025;
-		vrLoc = 1160;
-	};
 	DE06A97C110D0DAA00E7F895 /* CatalogItemViewController.m */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1064, 4732}}";
@@ -662,9 +688,9 @@
 	};
 	DE93D90B10F38DD3005B6255 /* RecipeBookModel.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1090, 1612}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1090, 1599}}";
 			sepNavSelRange = "{856, 0}";
-			sepNavVisRange = "{228, 881}";
+			sepNavVisRange = "{196, 1228}";
 		};
 	};
 	DE97ED4E1127A0D100E25713 /* RecipeBookCategoryViewController.m */ = {
