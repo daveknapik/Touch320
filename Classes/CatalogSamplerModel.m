@@ -31,7 +31,7 @@
 		if (more)
 			page++;
 		
-		NSString* url=@"http://electric-mist-70.heroku.com/releases.xml";
+		NSString* url=@"http://electric-mist-70.heroku.com/releases/publisher/Touch.xml";
 		//NSString* url=@"http://0.0.0.0:3000/releases.xml";
 		
 		TTURLRequest* request = [TTURLRequest requestWithURL:url delegate:self];
