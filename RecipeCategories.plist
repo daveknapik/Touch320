@@ -20,6 +20,8 @@
 	<string>pasta.xml</string>
 	<key>Prison Food</key>
 	<string>prisonfood.xml</string>
+	<key>Salads</key>
+	<string>salads.xml</string>
 	<key>Soups &amp; Starters</key>
 	<string>soupsandstarters.xml</string>
 	<key>Vegetarian &amp; Vegan</key>
