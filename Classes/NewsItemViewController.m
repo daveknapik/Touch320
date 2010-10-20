@@ -69,7 +69,7 @@
 	Touch320AppDelegate *appDelegate;
 	appDelegate = (Touch320AppDelegate*)[UIApplication sharedApplication].delegate;
 	
-	self.webView = [[UIWebView alloc] initWithFrame:CGRectMake(0, 0, appDelegate.deviceWidth, 366)];
+	self.webView = [[UIWebView alloc] initWithFrame:CGRectMake(0, 0, appDelegate.deviceWidth, appDelegate.deviceHeight - 114)];
 	self.webView.delegate = self;
 	
 	NSURL *url = [NSURL URLWithString:self.newsItemLink];

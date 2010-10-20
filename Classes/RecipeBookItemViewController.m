@@ -51,7 +51,7 @@
 	Touch320AppDelegate *appDelegate;
 	appDelegate = (Touch320AppDelegate*)[UIApplication sharedApplication].delegate;
 	
-	self.recipeItemView = [[UIWebView alloc] initWithFrame:CGRectMake(0, 0, appDelegate.deviceWidth, 366)];
+	self.recipeItemView = [[UIWebView alloc] initWithFrame:CGRectMake(0, 0, appDelegate.deviceWidth, appDelegate.deviceHeight - 114)];
 	
 	NSString *recipeHTML = [NSString stringWithFormat:@"<meta name=\"viewport\" content=\"width=device-width\" />"];
 	

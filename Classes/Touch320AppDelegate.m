@@ -83,8 +83,8 @@ void interruptionListener (void *inClientData, UInt32 inInterruptionState);
 	if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
 	{
 		// The device is an iPad running iPhone 3.2 or later.
-		self.deviceWidth = 960;
-		self.deviceHeight = 640;
+		self.deviceWidth = 768;
+		self.deviceHeight = 1024;
 	}
 	else
 	{

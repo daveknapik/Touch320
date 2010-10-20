@@ -87,7 +87,7 @@ cover_art = _cover_art;
 	//subtitle value
 	yAxisPlacement = yAxisPlacement + previousSubviewHeight + 5;
 	
-	UILabel *subtitleValue = [[UILabel alloc] initWithFrame:CGRectMake(5, yAxisPlacement, 300, 20)];
+	UILabel *subtitleValue = [[UILabel alloc] initWithFrame:CGRectMake(5, yAxisPlacement, appDelegate.deviceWidth - 20, 20)];
 	subtitleValue.text = self.subtitle;
 	subtitleValue.textAlignment = UITextAlignmentLeft;
 	subtitleValue.textColor = [UIColor blackColor];
@@ -107,7 +107,7 @@ cover_art = _cover_art;
 	//title value
 	yAxisPlacement = yAxisPlacement + previousSubviewHeight + 5;
 	
-	UILabel *titleValue = [[UILabel alloc] initWithFrame:CGRectMake(5, yAxisPlacement, 300, 40)];
+	UILabel *titleValue = [[UILabel alloc] initWithFrame:CGRectMake(5, yAxisPlacement, appDelegate.deviceWidth - 20, 40)];
 	titleValue.text = self.navigationItem.title;
 	titleValue.textAlignment = UITextAlignmentLeft;
 	titleValue.textColor = [UIColor blackColor];
@@ -145,7 +145,7 @@ cover_art = _cover_art;
 	//release_description value
 	yAxisPlacement = yAxisPlacement + previousSubviewHeight + 5;
 	
-	UILabel *descriptionValue = [[UILabel alloc] initWithFrame:CGRectMake(5, yAxisPlacement, 300, 100)];
+	UILabel *descriptionValue = [[UILabel alloc] initWithFrame:CGRectMake(5, yAxisPlacement, appDelegate.deviceWidth - 20, 100)];
 	descriptionValue.text = self.release_description;
 	descriptionValue.textAlignment = UITextAlignmentLeft;
 	descriptionValue.textColor = [UIColor blackColor];
@@ -205,8 +205,11 @@ cover_art = _cover_art;
 }
 
 - (CGRect)resizeLabelFrame:(UILabel*)label forText:(NSString*)text {
+	Touch320AppDelegate *appDelegate;
+	appDelegate = (Touch320AppDelegate*)[UIApplication sharedApplication].delegate;
+	
 	//Calculate the expected size based on the font and linebreak mode of your label
-	CGSize maximumSize = CGSizeMake(300,9999);
+	CGSize maximumSize = CGSizeMake(appDelegate.deviceWidth - 20,9999);
 	
 	CGSize expectedSize = [text sizeWithFont:label.font 
 						   constrainedToSize:maximumSize 
