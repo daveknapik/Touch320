@@ -70,7 +70,7 @@
                                 @"dcb74491ec5cbe64deb98b18df1125a9", @"api_key",
                                 @"json", @"format",
                                 [NSString stringWithFormat:@"%lu", (unsigned long)page], @"page",
-                                @"40", @"per_page",
+                                @"120", @"per_page",
                                 @"1", @"nojsoncallback",
                                 nil];
 	
