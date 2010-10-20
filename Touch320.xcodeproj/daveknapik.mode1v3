@@ -229,6 +229,8 @@
 			<key>Layout</key>
 			<array>
 				<dict>
+					<key>BecomeActive</key>
+					<true/>
 					<key>ContentConfiguration</key>
 					<dict>
 						<key>PBXBottomSmartGroupGIDs</key>
@@ -268,7 +270,7 @@
 								<string>DE40C0C1120DA3C8002EE0A6</string>
 								<string>080E96DDFE201D6D7F000001</string>
 								<string>DEDEC57410FF8AB100D9EA32</string>
-								<string>DE10402710F3F0360058DDB8</string>
+								<string>DE10402310F3F01D0058DDB8</string>
 								<string>DE10402910F3F0480058DDB8</string>
 								<string>29B97323FDCFA39411CA2CEA</string>
 								<string>1C37FBAC04509CD000000102</string>
@@ -278,14 +280,13 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>72</integer>
-									<integer>50</integer>
+									<integer>77</integer>
 									<integer>14</integer>
 									<integer>0</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 736}, {295, 673}}</string>
+							<string>{{0, 1111}, {295, 673}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -315,14 +316,12 @@
 					<key>Dock</key>
 					<array>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>RecipeBookItemViewController.m</string>
+								<string>Touch320AppDelegate.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -330,11 +329,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>RecipeBookItemViewController.m</string>
+										<string>Touch320AppDelegate.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>DE1979BB126F23F3002A6FA4</string>
+										<string>DE1979DB126F2C9E002A6FA4</string>
 										<key>history</key>
 										<array>
 											<string>DEFEE63810D80B79001213CE</string>
@@ -421,7 +420,6 @@
 											<string>DE9695C9119D8A2300F0EB35</string>
 											<string>DE9695CA119D8A2300F0EB35</string>
 											<string>DE7C2A3A119D8E3F00A55B69</string>
-											<string>DE0CF5B1119F0586004D51D4</string>
 											<string>DE40BFFF120D9959002EE0A6</string>
 											<string>DEF0E9F2120E3100007846FB</string>
 											<string>DEF0E9F3120E3100007846FB</string>
@@ -436,17 +434,18 @@
 											<string>DEF0EA42120E3214007846FB</string>
 											<string>DEB5C83412360D5B005FEB6E</string>
 											<string>DE7EB038126DF53D00D932C6</string>
-											<string>DE7EB03A126DF53D00D932C6</string>
 											<string>DE31EA64126DFBAC0030683A</string>
 											<string>DE31EA9D126E01190030683A</string>
 											<string>DE1978F9126E8703002A6FA4</string>
 											<string>DE1978FB126E8703002A6FA4</string>
 											<string>DE1978FF126E8703002A6FA4</string>
 											<string>DE19795C126E884E002A6FA4</string>
-											<string>DE19795F126E884E002A6FA4</string>
-											<string>DE1979B5126F23C2002A6FA4</string>
-											<string>DE1979BA126F23F3002A6FA4</string>
-											<string>DE1979B4126F23C2002A6FA4</string>
+											<string>DE1979CD126F2AA5002A6FA4</string>
+											<string>DE1979D6126F2C9E002A6FA4</string>
+											<string>DE1979D7126F2C9E002A6FA4</string>
+											<string>DE1979D8126F2C9E002A6FA4</string>
+											<string>DE1979D9126F2C9E002A6FA4</string>
+											<string>DE1979DA126F2C9E002A6FA4</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -642,10 +641,10 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>1C530D57069F1CE1000CFCEE</string>
 		<string>1CD10A99069EF8BA00B06720</string>
 		<string>DEFEE5F710D80AD2001213CE</string>
 		<string>1C78EAAD065D492600B07095</string>
+		<string>1C530D57069F1CE1000CFCEE</string>
 		<string>/Users/daveknapik/Documents/iPhoneDevelopment/Touchapp/Touch320/Touch320.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
@@ -954,7 +953,7 @@
 			<key>WindowToolGUID</key>
 			<string>1C530D57069F1CE1000CFCEE</string>
 			<key>WindowToolIsVisible</key>
-			<false/>
+			<true/>
 		</dict>
 		<dict>
 			<key>Identifier</key>

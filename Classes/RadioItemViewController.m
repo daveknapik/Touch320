@@ -79,13 +79,16 @@
 }
 
 - (void)viewDidLoad {
-	self.view = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, 320, 2300)];
-	[self.view setContentSize:CGSizeMake(320,2300)];
+	Touch320AppDelegate *appDelegate;
+	appDelegate = (Touch320AppDelegate*)[UIApplication sharedApplication].delegate;
 	
-	self.radioItemView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, 320, 2300)];
+	self.view = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, appDelegate.deviceWidth, 2300)];
+	[self.view setContentSize:CGSizeMake(appDelegate.deviceWidth,2300)];
+	
+	self.radioItemView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, appDelegate.deviceWidth, 2300)];
 	self.radioItemView.backgroundColor = [UIColor whiteColor];
 	
-	[self.radioItemView setContentSize:CGSizeMake(320, 2300)];
+	[self.radioItemView setContentSize:CGSizeMake(appDelegate.deviceWidth, 2300)];
 	
 	[self.view addSubview:self.radioItemView];
 	

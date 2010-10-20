@@ -10,6 +10,7 @@
 #import "NewsItem.h"
 #import "Book.h"
 #import "CatalogSamplerDataSource.h"
+#import "Touch320AppDelegate.h"
 
 @implementation NewsItemViewController
 
@@ -65,7 +66,10 @@
 
 */
 - (void)viewDidLoad {
-	self.webView = [[UIWebView alloc] initWithFrame:CGRectMake(0, 0, 320, 366)];
+	Touch320AppDelegate *appDelegate;
+	appDelegate = (Touch320AppDelegate*)[UIApplication sharedApplication].delegate;
+	
+	self.webView = [[UIWebView alloc] initWithFrame:CGRectMake(0, 0, appDelegate.deviceWidth, 366)];
 	self.webView.delegate = self;
 	
 	NSURL *url = [NSURL URLWithString:self.newsItemLink];

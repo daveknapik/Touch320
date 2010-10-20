@@ -67,13 +67,16 @@ cover_art = _cover_art;
 }
 
 - (void)viewDidLoad {
-	self.view = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, 320, 2300)];
-	[self.view setContentSize:CGSizeMake(320,2300)];
+	Touch320AppDelegate *appDelegate;
+	appDelegate = (Touch320AppDelegate*)[UIApplication sharedApplication].delegate;
 	
-	self.catalogItemView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, 320, 2300)];
+	self.view = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, appDelegate.deviceWidth, 2300)];
+	[self.view setContentSize:CGSizeMake(appDelegate.deviceWidth,2300)];
+	
+	self.catalogItemView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, appDelegate.deviceWidth, 2300)];
 	self.catalogItemView.backgroundColor = [UIColor whiteColor];
 	
-	[self.catalogItemView setContentSize:CGSizeMake(320, 2300)];
+	[self.catalogItemView setContentSize:CGSizeMake(appDelegate.deviceWidth, 2300)];
 	
 	[self.view addSubview:self.catalogItemView];
 	
