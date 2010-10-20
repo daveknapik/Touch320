@@ -12,11 +12,13 @@
 
 @interface Touch320AppDelegate : NSObject <UIApplicationDelegate> {
 	NSString* _link;
+	CGFloat _deviceWidth;
 	UIViewController* _activeViewController;
 	AudioPlayer* _activeAudioPlayer;
 }
 
 @property (nonatomic, retain) NSString* link;
+@property CGFloat deviceWidth;
 @property (nonatomic, retain) UIViewController* activeViewController;
 @property (nonatomic, retain) AudioPlayer* activeAudioPlayer;
 

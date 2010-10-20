@@ -24,7 +24,7 @@
 
 @implementation Touch320AppDelegate
 
-@synthesize link = _link, activeViewController = _activeViewController, activeAudioPlayer = _activeAudioPlayer;
+@synthesize link = _link, deviceWidth = _deviceWidth, activeViewController = _activeViewController, activeAudioPlayer = _activeAudioPlayer;
 
 void interruptionListener (void *inClientData, UInt32 inInterruptionState);
 
@@ -80,6 +80,18 @@ void interruptionListener (void *inClientData, UInt32 inInterruptionState);
 	UInt32 sessionCategory = kAudioSessionCategory_MediaPlayback;
 	AudioSessionSetProperty (kAudioSessionProperty_AudioCategory, sizeof (sessionCategory), &sessionCategory);
 
+	if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+	{
+		// The device is an iPad running iPhone 3.2 or later.
+		self.deviceWidth = 960;
+	}
+	else
+	{
+		// The device is an iPhone or iPod touch.
+		self.deviceWidth = 320;
+	}
+	
+	
 	//Set the address of the rails site. The trailing slash is required
 	[ObjectiveResourceConfig setSite:@"http://simple-stone-93.heroku.com/"];
 	//[ObjectiveResourceConfig setSite:@"http://0.0.0.0:3000/"];

@@ -7,6 +7,7 @@
 //
 
 #import "RecipeBookItemViewController.h"
+#import "Touch320AppDelegate.h"
 
 @implementation RecipeBookItemViewController
 
@@ -45,12 +46,18 @@
 }
 
 - (void)viewDidLoad {
-	self.recipeItemView = [[UIWebView alloc] initWithFrame:CGRectMake(0, 0, 320, 366)];
 	self.recipeItemView.delegate = self;
+	
+	Touch320AppDelegate *appDelegate;
+	appDelegate = (Touch320AppDelegate*)[UIApplication sharedApplication].delegate;
+	
+	self.recipeItemView = [[UIWebView alloc] initWithFrame:CGRectMake(0, 0, appDelegate.deviceWidth, 366)];
 	
 	NSString *recipeHTML = [NSString stringWithFormat:@"<meta name=\"viewport\" content=\"width=device-width\" />"];
 	
-	recipeHTML = [recipeHTML stringByAppendingString:@"<link rel=\"stylesheet\" href=\"http://www.daveknapik.com/dropbox/mobile.css\" />"];
+	recipeHTML = [recipeHTML stringByAppendingString:@"<link rel=\"stylesheet\" media=\"only screen and (max-device-width: 480px)\" href=\"http://www.daveknapik.com/dropbox/mobile.css\" />"];
+	recipeHTML = [recipeHTML stringByAppendingString:@"<link rel=\"stylesheet\" media=\"only screen and (min-device-width: 481px) and (max-device-width: 1024px)\" href=\"http://www.daveknapik.com/dropbox/ipad.css\" />"];
+	
 	recipeHTML = [recipeHTML stringByAppendingString:@"<p><strong>"];
 	recipeHTML = [recipeHTML stringByAppendingString:self.navigationItem.title];
 	recipeHTML = [recipeHTML stringByAppendingString:@"</strong>"];
