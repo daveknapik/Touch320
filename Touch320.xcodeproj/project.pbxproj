@@ -25,6 +25,11 @@
 		7318C3E01189E81B0044DBE7 /* CXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 7318C3D21189E81B0044DBE7 /* CXMLNode.m */; };
 		7318C3E11189E81B0044DBE7 /* CTidy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7318C3D51189E81B0044DBE7 /* CTidy.m */; };
 		733D612A119B3AD200B36F02 /* mobile.css in Resources */ = {isa = PBXBuildFile; fileRef = 733D6129119B3AD200B36F02 /* mobile.css */; };
+		735619CB126F69A2007CB975 /* catalog.png in Resources */ = {isa = PBXBuildFile; fileRef = 735619C6126F69A2007CB975 /* catalog.png */; };
+		735619CC126F69A2007CB975 /* news.png in Resources */ = {isa = PBXBuildFile; fileRef = 735619C7126F69A2007CB975 /* news.png */; };
+		735619CD126F69A2007CB975 /* images.png in Resources */ = {isa = PBXBuildFile; fileRef = 735619C8126F69A2007CB975 /* images.png */; };
+		735619CE126F69A2007CB975 /* radio.png in Resources */ = {isa = PBXBuildFile; fileRef = 735619C9126F69A2007CB975 /* radio.png */; };
+		735619CF126F69A2007CB975 /* recipes.png in Resources */ = {isa = PBXBuildFile; fileRef = 735619CA126F69A2007CB975 /* recipes.png */; };
 		73D5CA17119DB3BD00B78DCC /* Three20.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 73D5CA16119DB3BD00B78DCC /* Three20.bundle */; };
 		DE06A97D110D0DAA00E7F895 /* CatalogItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE06A97C110D0DAA00E7F895 /* CatalogItemViewController.m */; };
 		DE10401910F3EFE20058DDB8 /* RadioTableItem.m in Sources */ = {isa = PBXBuildFile; fileRef = DE10401810F3EFE20058DDB8 /* RadioTableItem.m */; };
@@ -258,6 +263,11 @@
 		7318C3D51189E81B0044DBE7 /* CTidy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTidy.m; sourceTree = "<group>"; };
 		7318C3D61189E81B0044DBE7 /* TouchXML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TouchXML.h; path = ../../TouchXML/Common/Source/TouchXML.h; sourceTree = SOURCE_ROOT; };
 		733D6129119B3AD200B36F02 /* mobile.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = mobile.css; sourceTree = "<group>"; };
+		735619C6126F69A2007CB975 /* catalog.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = catalog.png; sourceTree = "<group>"; };
+		735619C7126F69A2007CB975 /* news.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = news.png; sourceTree = "<group>"; };
+		735619C8126F69A2007CB975 /* images.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = images.png; sourceTree = "<group>"; };
+		735619C9126F69A2007CB975 /* radio.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = radio.png; sourceTree = "<group>"; };
+		735619CA126F69A2007CB975 /* recipes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = recipes.png; sourceTree = "<group>"; };
 		73D5CA16119DB3BD00B78DCC /* Three20.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = Three20.bundle; path = ../../three20/src/Three20.bundle; sourceTree = SOURCE_ROOT; };
 		8D1107310486CEB800E47090 /* Touch320-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Touch320-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 		DE06A97B110D0DAA00E7F895 /* CatalogItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CatalogItemViewController.h; sourceTree = "<group>"; };
@@ -522,6 +532,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				735619D0126F69A9007CB975 /* tab-bar-icons */,
 				733D6129119B3AD200B36F02 /* mobile.css */,
 				DEE2D5651100BE6C004BB6F3 /* icon_old.png */,
 				7309020D11C7D08000B90732 /* icon.png */,
@@ -590,6 +601,18 @@
 				7318C3D61189E81B0044DBE7 /* TouchXML.h */,
 			);
 			name = TouchXML;
+			sourceTree = "<group>";
+		};
+		735619D0126F69A9007CB975 /* tab-bar-icons */ = {
+			isa = PBXGroup;
+			children = (
+				735619C6126F69A2007CB975 /* catalog.png */,
+				735619C7126F69A2007CB975 /* news.png */,
+				735619C8126F69A2007CB975 /* images.png */,
+				735619C9126F69A2007CB975 /* radio.png */,
+				735619CA126F69A2007CB975 /* recipes.png */,
+			);
+			name = "tab-bar-icons";
 			sourceTree = "<group>";
 		};
 		DE10402310F3F01D0058DDB8 /* News */ = {
@@ -1117,6 +1140,11 @@
 				733D612A119B3AD200B36F02 /* mobile.css in Resources */,
 				73D5CA17119DB3BD00B78DCC /* Three20.bundle in Resources */,
 				7309020E11C7D08000B90732 /* icon.png in Resources */,
+				735619CB126F69A2007CB975 /* catalog.png in Resources */,
+				735619CC126F69A2007CB975 /* news.png in Resources */,
+				735619CD126F69A2007CB975 /* images.png in Resources */,
+				735619CE126F69A2007CB975 /* radio.png in Resources */,
+				735619CF126F69A2007CB975 /* recipes.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

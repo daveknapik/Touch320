@@ -21,6 +21,8 @@
 		self.navigationItem.title=@"Images";
 		
 		self.hidesBottomBarWhenPushed = NO;
+		
+		self.tabBarItem.image = [UIImage imageNamed:@"images.png"];
 	}
 	
 	return self;
