@@ -97,7 +97,7 @@
 	subtitleValue.text = self.subtitle;
 	subtitleValue.textAlignment = UITextAlignmentLeft;
 	subtitleValue.textColor = [UIColor blackColor];
-	subtitleValue.font = [UIFont boldSystemFontOfSize:12];
+	subtitleValue.font = [UIFont fontWithName:@"Helvetica-Bold" size:12];
 	subtitleValue.backgroundColor = [UIColor whiteColor];
 	subtitleValue.lineBreakMode = UILineBreakModeWordWrap;
 	subtitleValue.adjustsFontSizeToFitWidth = YES;
@@ -114,7 +114,7 @@
 	titleValue.text = self.navigationItem.title;
 	titleValue.textAlignment = UITextAlignmentLeft;
 	titleValue.textColor = [UIColor blackColor];
-	titleValue.font = [UIFont systemFontOfSize:12];
+	titleValue.font = [UIFont fontWithName:@"Helvetica" size:12];
 	titleValue.backgroundColor = [UIColor whiteColor];
 	titleValue.lineBreakMode = UILineBreakModeWordWrap;
 	titleValue.numberOfLines = 0;
@@ -130,7 +130,7 @@
 	summaryValue.text = self.summary;
 	summaryValue.textAlignment = UITextAlignmentLeft;
 	summaryValue.textColor = [UIColor blackColor];
-	summaryValue.font = [UIFont systemFontOfSize:12];
+	summaryValue.font = [UIFont fontWithName:@"Georgia" size:12];
 	summaryValue.backgroundColor = [UIColor whiteColor];
 	summaryValue.lineBreakMode = UILineBreakModeWordWrap;
 	summaryValue.numberOfLines = 0;

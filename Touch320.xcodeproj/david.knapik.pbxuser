@@ -100,6 +100,10 @@
 			7338AC3E127094C600341EDA /* PBXTextBookmark */ = 7338AC3E127094C600341EDA /* PBXTextBookmark */;
 			7338AC3F127094C600341EDA /* PBXTextBookmark */ = 7338AC3F127094C600341EDA /* PBXTextBookmark */;
 			7338AC40127094C600341EDA /* PBXTextBookmark */ = 7338AC40127094C600341EDA /* PBXTextBookmark */;
+			7338AC571270972E00341EDA /* PBXTextBookmark */ = 7338AC571270972E00341EDA /* PBXTextBookmark */;
+			7338AC581270972E00341EDA /* PBXTextBookmark */ = 7338AC581270972E00341EDA /* PBXTextBookmark */;
+			7338AC591270972E00341EDA /* PBXTextBookmark */ = 7338AC591270972E00341EDA /* PBXTextBookmark */;
+			7338AC5C1270A2AC00341EDA /* PBXTextBookmark */ = 7338AC5C1270A2AC00341EDA /* PBXTextBookmark */;
 			733C0162126FA7A800553B05 = 733C0162126FA7A800553B05 /* PBXTextBookmark */;
 			733C0163126FA7A800553B05 = 733C0163126FA7A800553B05 /* PBXTextBookmark */;
 			733D60DF119B1FEC00B36F02 = 733D60DF119B1FEC00B36F02 /* PBXTextBookmark */;
@@ -265,7 +269,7 @@
 		fRef = DE06A97C110D0DAA00E7F895 /* CatalogItemViewController.m */;
 		name = "CatalogItemViewController.m: 164";
 		rLen = 0;
-		rLoc = 5893;
+		rLoc = 5934;
 		rType = 0;
 		vrLen = 1208;
 		vrLoc = 3;
@@ -330,6 +334,46 @@
 		vrLen = 750;
 		vrLoc = 0;
 	};
+	7338AC571270972E00341EDA /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = DE4F197110D84EC8005E2446 /* ImageGalleryPhotoSource.m */;
+		name = "ImageGalleryPhotoSource.m: 7";
+		rLen = 0;
+		rLoc = 134;
+		rType = 0;
+		vrLen = 857;
+		vrLoc = 0;
+	};
+	7338AC581270972E00341EDA /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = DE97EF1A11285F5400E25713 /* RecipeBookItemViewController.m */;
+		name = "RecipeBookItemViewController.m: 10";
+		rLen = 31;
+		rLoc = 200;
+		rType = 0;
+		vrLen = 1721;
+		vrLoc = 1211;
+	};
+	7338AC591270972E00341EDA /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = DE06A97C110D0DAA00E7F895 /* CatalogItemViewController.m */;
+		name = "CatalogItemViewController.m: 114";
+		rLen = 0;
+		rLoc = 4102;
+		rType = 0;
+		vrLen = 1535;
+		vrLoc = 2902;
+	};
+	7338AC5C1270A2AC00341EDA /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = DE06A97C110D0DAA00E7F895 /* CatalogItemViewController.m */;
+		name = "CatalogItemViewController.m: 152";
+		rLen = 0;
+		rLoc = 5508;
+		rType = 0;
+		vrLen = 1484;
+		vrLoc = 4513;
+	};
 	733C0162126FA7A800553B05 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = DE4F197110D84EC8005E2446 /* ImageGalleryPhotoSource.m */;
@@ -345,7 +389,7 @@
 		fRef = DE06A97C110D0DAA00E7F895 /* CatalogItemViewController.m */;
 		name = "CatalogItemViewController.m: 164";
 		rLen = 0;
-		rLoc = 5893;
+		rLoc = 5934;
 		rType = 0;
 		vrLen = 1211;
 		vrLoc = 0;
@@ -613,7 +657,7 @@
 		fRef = DE06A97C110D0DAA00E7F895 /* CatalogItemViewController.m */;
 		name = "CatalogItemViewController.m: 164";
 		rLen = 0;
-		rLoc = 5893;
+		rLoc = 5934;
 		rType = 0;
 		vrLen = 1357;
 		vrLoc = 3718;
@@ -757,9 +801,9 @@
 	};
 	DE06A97C110D0DAA00E7F895 /* CatalogItemViewController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {957, 4667}}";
-			sepNavSelRange = "{5893, 0}";
-			sepNavVisRange = "{3, 1208}";
+			sepNavIntBoundsRect = "{{0, 0}, {957, 4849}}";
+			sepNavSelRange = "{5508, 0}";
+			sepNavVisRange = "{4513, 1484}";
 		};
 	};
 	DE1041E710F4C8780058DDB8 /* RadioItemViewController.m */ = {
@@ -836,7 +880,7 @@
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {849, 1495}}";
 			sepNavSelRange = "{134, 0}";
-			sepNavVisRange = "{0, 750}";
+			sepNavVisRange = "{0, 857}";
 		};
 	};
 	DE7455A210DE66DE00332FD6 /* ImageGalleryPhoto.m */ = {
@@ -940,9 +984,9 @@
 	};
 	DE97EF1A11285F5400E25713 /* RecipeBookItemViewController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1552, 2587}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1552, 2574}}";
 			sepNavSelRange = "{200, 31}";
-			sepNavVisRange = "{0, 1208}";
+			sepNavVisRange = "{1211, 1721}";
 		};
 	};
 	DEEDD7EC110069F40034B464 /* CatalogSamplerTableItem.h */ = {
