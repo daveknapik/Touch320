@@ -8,9 +8,10 @@
 
 #import <Foundation/Foundation.h>
 #import <Three20/Three20+Additions.h>
+#import <MessageUI/MessageUI.h>
 #import "AudioPlayer.h"
 
-@interface RecipeBookItemViewController : TTViewController <UIWebViewDelegate> {
+@interface RecipeBookItemViewController : TTViewController <UIWebViewDelegate, MFMailComposeViewControllerDelegate> {
 	NSString* _author;
 	NSString* _recipe_description;
 	

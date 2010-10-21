@@ -30,7 +30,10 @@
 		
 		self.author = [query objectForKey:@"author"];
 		self.recipe_description = [query objectForKey:@"recipe_description"];
-		 
+		
+		if ([MFMailComposeViewController canSendMail]) {
+			self.navigationItem.rightBarButtonItem = [[[UIBarButtonItem alloc] initWithTitle:@"Email" style:UIBarButtonItemStylePlain target:self action:@selector(sendRecipe)] autorelease];
+		}
 		/* NSLog(@"recipe item title: %@",self.navigationItem.title);
 		NSLog(@"recipe item author: %@",self.author);
 		NSLog(@"recipe item description: %@",self.recipe_description); */
@@ -58,7 +61,7 @@
 	recipeHTML = [recipeHTML stringByAppendingString:@"<link rel=\"stylesheet\" media=\"only screen and (max-device-width: 480px)\" href=\"http://www.daveknapik.com/dropbox/mobile.css\" />"];
 	recipeHTML = [recipeHTML stringByAppendingString:@"<link rel=\"stylesheet\" media=\"only screen and (min-device-width: 481px) and (max-device-width: 1024px)\" href=\"http://www.daveknapik.com/dropbox/ipad.css\" />"];
 	
-	recipeHTML = [recipeHTML stringByAppendingString:@"<p><strong>"];
+	recipeHTML = [recipeHTML stringByAppendingString:@"<p id='title'><strong>"];
 	recipeHTML = [recipeHTML stringByAppendingString:self.navigationItem.title];
 	recipeHTML = [recipeHTML stringByAppendingString:@"</strong>"];
 	
@@ -168,6 +171,36 @@
 	
 	return label.frame;
 }
+
+- (void)sendRecipe {
+	MFMailComposeViewController *controller = [[MFMailComposeViewController alloc] init];
+	controller.mailComposeDelegate = self;
+	
+	NSString *subject = [NSString stringWithFormat:@"A recipe cooked up by "];
+	subject = [subject stringByAppendingString:self.author];
+	subject = [subject stringByAppendingString:@" for Touch"];
+	
+	NSString *recipeHTML = [NSString stringWithFormat:@"<p id='title'><strong>"];
+	recipeHTML = [recipeHTML stringByAppendingString:self.navigationItem.title];
+	recipeHTML = [recipeHTML stringByAppendingString:@"</strong>"];
+	recipeHTML = [recipeHTML stringByAppendingString:@"<br />by "];
+	recipeHTML = [recipeHTML stringByAppendingString:self.author];
+	recipeHTML = [recipeHTML stringByAppendingString:@"</p>"];
+	recipeHTML = [recipeHTML stringByAppendingString:self.recipe_description];
+	
+	[controller setSubject:subject];
+	[controller setMessageBody:recipeHTML isHTML:YES];
+	
+	[self presentModalViewController:controller animated:YES];
+	
+	[controller release];
+}
+
+- (void)mailComposeController:(MFMailComposeViewController*)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError*)error {
+	[self becomeFirstResponder];
+	[self dismissModalViewControllerAnimated:YES];
+}
+
 
 - (void)viewDidUnload {
 	// Release any retained subviews of the main view.
