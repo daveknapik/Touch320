@@ -24,7 +24,7 @@
 
 @implementation Touch320AppDelegate
 
-@synthesize link = _link, deviceWidth = _deviceWidth, deviceHeight = _deviceHeight, activeViewController = _activeViewController, activeAudioPlayer = _activeAudioPlayer;
+@synthesize link = _link, numberOfThumbnails = _numberOfThumbnails, deviceWidth = _deviceWidth, deviceHeight = _deviceHeight, activeViewController = _activeViewController, activeAudioPlayer = _activeAudioPlayer;
 
 void interruptionListener (void *inClientData, UInt32 inInterruptionState);
 
@@ -85,12 +85,14 @@ void interruptionListener (void *inClientData, UInt32 inInterruptionState);
 		// The device is an iPad running iPhone 3.2 or later.
 		self.deviceWidth = 768;
 		self.deviceHeight = 1024;
+		self.numberOfThumbnails = @"120";
 	}
 	else
 	{
 		// The device is an iPhone or iPod touch.
 		self.deviceWidth = 320;
 		self.deviceHeight = 480;
+		self.numberOfThumbnails = @"40";
 	}
 	
 	

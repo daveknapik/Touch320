@@ -4,7 +4,7 @@
 
 #import "ImageGalleryPhotoSource.h"
 #import "ImageGalleryPhoto.h"
-
+#import "Touch320AppDelegate.h"
 
 @implementation ImageGalleryPhotoSource
 @synthesize title = _title;
@@ -52,6 +52,10 @@
 	if (more) {
 		page++;
 	}
+	
+	Touch320AppDelegate *appDelegate;
+	appDelegate = (Touch320AppDelegate*)[UIApplication sharedApplication].delegate;
+	
 	/*NSDictionary *parameters = [NSDictionary dictionaryWithObjectsAndKeys:
                                 @"flickr.photos.search", @"method",
                                 @"Philip Jeck", @"text",
@@ -70,7 +74,7 @@
                                 @"dcb74491ec5cbe64deb98b18df1125a9", @"api_key",
                                 @"json", @"format",
                                 [NSString stringWithFormat:@"%lu", (unsigned long)page], @"page",
-                                @"120", @"per_page",
+                                appDelegate.numberOfThumbnails, @"per_page",
                                 @"1", @"nojsoncallback",
                                 nil];
 	
