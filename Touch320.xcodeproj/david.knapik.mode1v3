@@ -229,6 +229,8 @@
 			<key>Layout</key>
 			<array>
 				<dict>
+					<key>BecomeActive</key>
+					<true/>
 					<key>ContentConfiguration</key>
 					<dict>
 						<key>PBXBottomSmartGroupGIDs</key>
@@ -265,7 +267,7 @@
 							<array>
 								<string>29B97314FDCFA39411CA2CEA</string>
 								<string>080E96DDFE201D6D7F000001</string>
-								<string>DE10402410F3F0240058DDB8</string>
+								<string>DE10402710F3F0360058DDB8</string>
 								<string>DE10402910F3F0480058DDB8</string>
 								<string>29B97323FDCFA39411CA2CEA</string>
 								<string>1C37FBAC04509CD000000102</string>
@@ -274,14 +276,14 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>50</integer>
 									<integer>28</integer>
+									<integer>16</integer>
 									<integer>10</integer>
 									<integer>0</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 135}, {307, 847}}</string>
+							<string>{{0, 122}, {307, 847}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -311,14 +313,12 @@
 					<key>Dock</key>
 					<array>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>RecipeBookItemViewController.m</string>
+								<string>CatalogItemViewController.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -326,11 +326,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>RecipeBookItemViewController.m</string>
+										<string>CatalogItemViewController.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>730990821270EE260085D9DA</string>
+										<string>730990DF1272480F0085D9DA</string>
 										<key>history</key>
 										<array>
 											<string>7318C3E21189E8540044DBE7</string>
@@ -377,15 +377,17 @@
 											<string>7338AC3B127094C600341EDA</string>
 											<string>7338AC3C127094C600341EDA</string>
 											<string>7338AC571270972E00341EDA</string>
-											<string>7338AC671270A7FB00341EDA</string>
 											<string>738E31F21270B956005A271F</string>
 											<string>738E31F31270B956005A271F</string>
 											<string>738E31F41270B956005A271F</string>
 											<string>738E31F51270B956005A271F</string>
 											<string>738E31F61270B956005A271F</string>
-											<string>738E31F71270B956005A271F</string>
 											<string>738E324B1270BC42005A271F</string>
-											<string>738E32691270C435005A271F</string>
+											<string>730990971270F0800085D9DA</string>
+											<string>730990A51270F11A0085D9DA</string>
+											<string>730990DC1272480F0085D9DA</string>
+											<string>730990DD1272480F0085D9DA</string>
+											<string>730990DE1272480F0085D9DA</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -583,6 +585,9 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
+		<string>730990A41270F0800085D9DA</string>
+		<string>1C78EAAD065D492600B07095</string>
+		<string>1CD10A99069EF8BA00B06720</string>
 		<string>739F31251189E5000090A11D</string>
 		<string>/Users/david.knapik/Documents/iPhoneDevelopment/Touch320/Touch320.xcodeproj</string>
 	</array>
@@ -786,13 +791,13 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1CD10A99069EF8BA00B06720</string>
-				<string>738E32511270BC42005A271F</string>
+				<string>7309909C1270F0800085D9DA</string>
 				<string>1C162984064C10D400B95A72</string>
-				<string>738E32521270BC42005A271F</string>
-				<string>738E32531270BC42005A271F</string>
-				<string>738E32541270BC42005A271F</string>
-				<string>738E32551270BC42005A271F</string>
-				<string>738E32561270BC42005A271F</string>
+				<string>7309909D1270F0800085D9DA</string>
+				<string>7309909E1270F0800085D9DA</string>
+				<string>7309909F1270F0800085D9DA</string>
+				<string>730990A01270F0800085D9DA</string>
+				<string>730990A11270F0800085D9DA</string>
 			</array>
 			<key>ToolbarConfiguration</key>
 			<string>xcode.toolbar.config.debugV3</string>
@@ -911,8 +916,6 @@
 					<key>Dock</key>
 					<array>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -948,7 +951,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1C78EAAD065D492600B07095</string>
-				<string>738E32571270BC42005A271F</string>
+				<string>730990A21270F0800085D9DA</string>
 				<string>1C78EAAC065D492600B07095</string>
 			</array>
 			<key>ToolbarConfiguration</key>
