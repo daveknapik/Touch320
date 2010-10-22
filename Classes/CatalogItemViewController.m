@@ -18,6 +18,7 @@ release_duration = _release_duration,
 mp3_sample_url = _mp3_sample_url,
 cover_art_url = _cover_art_url,
 catalogItemView = _catalogItemView,
+catalogItemWebView = _catalogItemWebView,
 titleLabel = _titleLabel,
 artistLabel = _artistLabel,
 descriptionLabel = _descriptionLabel,
@@ -73,15 +74,45 @@ cover_art = _cover_art;
 	self.view = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, appDelegate.deviceWidth, 2300)];
 	[self.view setContentSize:CGSizeMake(appDelegate.deviceWidth,2300)];
 	
-	self.catalogItemView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, appDelegate.deviceWidth, 2300)];
+	self.catalogItemWebView = [[UIWebView alloc] initWithFrame:CGRectMake(0, 0, appDelegate.deviceWidth, 300)];
+	
+	NSString *recipeHTML = [NSString stringWithFormat:@"<meta name=\"viewport\" content=\"width=device-width\" />"];
+	
+	recipeHTML = [recipeHTML stringByAppendingString:@"<link rel=\"stylesheet\" media=\"only screen and (max-device-width: 480px)\" href=\"http://www.daveknapik.com/dropbox/mobile.css\" />"];
+	recipeHTML = [recipeHTML stringByAppendingString:@"<link rel=\"stylesheet\" media=\"only screen and (min-device-width: 481px) and (max-device-width: 1024px)\" href=\"http://www.daveknapik.com/dropbox/ipad.css\" />"];
+	
+	recipeHTML = [recipeHTML stringByAppendingString:@"<p id='title'><strong>"];
+	recipeHTML = [recipeHTML stringByAppendingString:self.subtitle];
+	recipeHTML = [recipeHTML stringByAppendingString:@"</strong>"];
+	
+	recipeHTML = [recipeHTML stringByAppendingString:@"<br />"];
+	recipeHTML = [recipeHTML stringByAppendingString:self.navigationItem.title];
+	recipeHTML = [recipeHTML stringByAppendingString:@"</p>"];
+	
+	recipeHTML = [recipeHTML stringByAppendingString:@"<div class='floatright'><img width='150' height='150' src='"];
+	recipeHTML = [recipeHTML stringByAppendingString:self.cover_art_url];
+	recipeHTML = [recipeHTML stringByAppendingString:@"'></div>"];
+	
+	recipeHTML = [recipeHTML stringByAppendingString:@"<p>"];
+	recipeHTML = [recipeHTML stringByAppendingString:self.release_description];
+	recipeHTML = [recipeHTML stringByAppendingString:@"</p>"];
+	
+	[self.catalogItemWebView loadHTMLString:recipeHTML baseURL:nil];
+	
+	self.catalogItemWebView.scalesPageToFit = YES;
+	self.catalogItemWebView.autoresizesSubviews = YES;
+	
+	[self.view addSubview:self.catalogItemWebView];
+	
+	self.catalogItemView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 300, appDelegate.deviceWidth, 2000)];
 	self.catalogItemView.backgroundColor = [UIColor whiteColor];
 	
-	[self.catalogItemView setContentSize:CGSizeMake(appDelegate.deviceWidth, 2300)];
+	[self.catalogItemView setContentSize:CGSizeMake(appDelegate.deviceWidth, 2000)];
 	
 	[self.view addSubview:self.catalogItemView];
 	
 	//initialize y-axis subview placement variable
-	int yAxisPlacement = 0;
+	int yAxisPlacement = 300;
 	int previousSubviewHeight = 0;
 	
 	//subtitle value
@@ -233,6 +264,7 @@ cover_art = _cover_art;
 	self.cover_art_url = nil;
 	
 	self.catalogItemView = nil;
+	self.catalogItemWebView = nil;
 	
 	self.titleLabel = nil;
 	self.artistLabel = nil;
@@ -264,6 +296,7 @@ cover_art = _cover_art;
 	TT_RELEASE_SAFELY(_cover_art_url);
 	
 	TT_RELEASE_SAFELY(_catalogItemView);
+	TT_RELEASE_SAFELY(_catalogItemWebView);
 	
 	TT_RELEASE_SAFELY(_titleLabel);
 	TT_RELEASE_SAFELY(_artistLabel);

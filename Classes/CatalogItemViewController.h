@@ -19,6 +19,7 @@
 	NSString* _cover_art_url;
 	
 	UIScrollView* _catalogItemView;
+	UIWebView* _catalogItemWebView;
 	
 	UILabel* _titleLabel;
 	UILabel* _artistLabel;
@@ -49,6 +50,7 @@
 @property (nonatomic, copy) NSString* cover_art_url;
 
 @property (nonatomic, retain) UIScrollView* catalogItemView;
+@property (nonatomic, retain) UIWebView* catalogItemWebView;
 
 @property (nonatomic, retain) UILabel* titleLabel;
 @property (nonatomic, retain) UILabel* artistLabel;
