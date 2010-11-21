@@ -229,8 +229,6 @@
 			<key>Layout</key>
 			<array>
 				<dict>
-					<key>BecomeActive</key>
-					<true/>
 					<key>ContentConfiguration</key>
 					<dict>
 						<key>PBXBottomSmartGroupGIDs</key>
@@ -269,9 +267,7 @@
 								<string>DE40C0B5120DA3C8002EE0A6</string>
 								<string>DE40C0C1120DA3C8002EE0A6</string>
 								<string>080E96DDFE201D6D7F000001</string>
-								<string>DEDEC57410FF8AB100D9EA32</string>
-								<string>DE10402310F3F01D0058DDB8</string>
-								<string>DE10402910F3F0480058DDB8</string>
+								<string>DE10402410F3F0240058DDB8</string>
 								<string>29B97323FDCFA39411CA2CEA</string>
 								<string>1C37FBAC04509CD000000102</string>
 								<string>1C37FAAC04509CD000000102</string>
@@ -280,13 +276,13 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>77</integer>
+									<integer>35</integer>
 									<integer>14</integer>
 									<integer>0</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 1111}, {295, 673}}</string>
+							<string>{{0, 199}, {295, 673}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -316,6 +312,8 @@
 					<key>Dock</key>
 					<array>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -333,7 +331,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>DE1979DB126F2C9E002A6FA4</string>
+										<string>DEA7919C1299DA11001DEF8E</string>
 										<key>history</key>
 										<array>
 											<string>DEFEE63810D80B79001213CE</string>
@@ -370,9 +368,7 @@
 											<string>DEE65F2D1101D49E00D1B7AD</string>
 											<string>DE06A920110C8B4F00E7F895</string>
 											<string>DE680C0C110EFA5400447216</string>
-											<string>DE680C49110F4C5F00447216</string>
 											<string>DEA5B9D21111C34400F8F5BC</string>
-											<string>DEA5B9D31111C34400F8F5BC</string>
 											<string>DE815B491111D7A40045E751</string>
 											<string>DEC5335111190C4600B1A2DB</string>
 											<string>DEC5337411190F6C00B1A2DB</string>
@@ -400,7 +396,6 @@
 											<string>DEA85AA61176BEC200B52041</string>
 											<string>DEDA85E4119BA51D007CF258</string>
 											<string>DEDA85E5119BA51D007CF258</string>
-											<string>DEDF5D96119CD25100E347B8</string>
 											<string>DEDF5D97119CD25100E347B8</string>
 											<string>DEDF5D99119CD25100E347B8</string>
 											<string>DEDF5DC5119CD4D300E347B8</string>
@@ -445,7 +440,10 @@
 											<string>DE1979D7126F2C9E002A6FA4</string>
 											<string>DE1979D8126F2C9E002A6FA4</string>
 											<string>DE1979D9126F2C9E002A6FA4</string>
-											<string>DE1979DA126F2C9E002A6FA4</string>
+											<string>DEA791941299D6F3001DEF8E</string>
+											<string>DEA791951299D6F3001DEF8E</string>
+											<string>DEA791961299D6F3001DEF8E</string>
+											<string>DEA791971299D6F3001DEF8E</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -457,14 +455,14 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 0}, {1123, 398}}</string>
+								<string>{{0, 0}, {1123, 389}}</string>
 								<key>RubberWindowFrame</key>
 								<string>0 146 1440 732 0 0 1440 878 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
 							<key>Proportion</key>
-							<string>398pt</string>
+							<string>389pt</string>
 						</dict>
 						<dict>
 							<key>ContentConfiguration</key>
@@ -477,14 +475,14 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 403}, {1123, 288}}</string>
+								<string>{{0, 394}, {1123, 297}}</string>
 								<key>RubberWindowFrame</key>
 								<string>0 146 1440 732 0 0 1440 878 </string>
 							</dict>
 							<key>Module</key>
 							<string>XCDetailModule</string>
 							<key>Proportion</key>
-							<string>288pt</string>
+							<string>297pt</string>
 						</dict>
 					</array>
 					<key>Proportion</key>
@@ -503,9 +501,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>DE197962126E884E002A6FA4</string>
+				<string>DEA7916B1299BF91001DEF8E</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>DE197963126E884E002A6FA4</string>
+				<string>DEA7916C1299BF91001DEF8E</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
 			</array>
@@ -641,10 +639,10 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
+		<string>1C530D57069F1CE1000CFCEE</string>
+		<string>1C78EAAD065D492600B07095</string>
 		<string>1CD10A99069EF8BA00B06720</string>
 		<string>DEFEE5F710D80AD2001213CE</string>
-		<string>1C78EAAD065D492600B07095</string>
-		<string>1C530D57069F1CE1000CFCEE</string>
 		<string>/Users/daveknapik/Documents/iPhoneDevelopment/Touchapp/Touch320/Touch320.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
@@ -669,7 +667,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CD0528F0623707200166675</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>RecipeBookItemViewController.m</string>
+								<string></string>
 								<key>StatusBarVisibility</key>
 								<true/>
 							</dict>
@@ -686,8 +684,6 @@
 							<string>173pt</string>
 						</dict>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -727,7 +723,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>DEFEE5F710D80AD2001213CE</string>
-				<string>DE19794D126E8823002A6FA4</string>
+				<string>DEA7916D1299BF91001DEF8E</string>
 				<string>1CD0528F0623707200166675</string>
 				<string>XCMainBuildResultsModuleGUID</string>
 			</array>
@@ -847,13 +843,13 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1CD10A99069EF8BA00B06720</string>
-				<string>DE19794E126E8823002A6FA4</string>
+				<string>DEA7916E1299BF91001DEF8E</string>
 				<string>1C162984064C10D400B95A72</string>
-				<string>DE19794F126E8823002A6FA4</string>
-				<string>DE197950126E8823002A6FA4</string>
-				<string>DE197951126E8823002A6FA4</string>
-				<string>DE197952126E8823002A6FA4</string>
-				<string>DE197953126E8823002A6FA4</string>
+				<string>DEA7916F1299BF91001DEF8E</string>
+				<string>DEA791701299BF91001DEF8E</string>
+				<string>DEA791711299BF91001DEF8E</string>
+				<string>DEA791721299BF91001DEF8E</string>
+				<string>DEA791731299BF91001DEF8E</string>
 			</array>
 			<key>ToolbarConfiguration</key>
 			<string>xcode.toolbar.config.debugV3</string>
@@ -943,8 +939,8 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1C530D57069F1CE1000CFCEE</string>
-				<string>DE197957126E8831002A6FA4</string>
-				<string>DE197958126E8831002A6FA4</string>
+				<string>DEA791801299CC78001DEF8E</string>
+				<string>DEA791811299CC78001DEF8E</string>
 				<string>1CDD528C0622207200134675</string>
 				<string>1CD0528E0623707200166675</string>
 			</array>
@@ -953,7 +949,7 @@
 			<key>WindowToolGUID</key>
 			<string>1C530D57069F1CE1000CFCEE</string>
 			<key>WindowToolIsVisible</key>
-			<true/>
+			<false/>
 		</dict>
 		<dict>
 			<key>Identifier</key>
@@ -972,8 +968,6 @@
 					<key>Dock</key>
 					<array>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -1009,7 +1003,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1C78EAAD065D492600B07095</string>
-				<string>DE197954126E8823002A6FA4</string>
+				<string>DEA791741299BF91001DEF8E</string>
 				<string>1C78EAAC065D492600B07095</string>
 			</array>
 			<key>ToolbarConfiguration</key>
@@ -1019,7 +1013,7 @@
 			<key>WindowToolGUID</key>
 			<string>1C78EAAD065D492600B07095</string>
 			<key>WindowToolIsVisible</key>
-			<true/>
+			<false/>
 		</dict>
 		<dict>
 			<key>FirstTimeWindowDisplayed</key>
