@@ -17,6 +17,7 @@
 	NSString* _release_duration;
 	NSString* _mp3_sample_url;
 	NSString* _cover_art_url;
+	NSString* _itunes_url;
 	
 	UIScrollView* _catalogItemView;
 	
@@ -31,6 +32,8 @@
 	UILabel* _descriptionValue;
 	UILabel* _subtitleValue;
 	UILabel* _release_durationValue;
+	
+	UILabel* _buy_button;
 	
 	TTPhotoView* _cover_art;
 	
@@ -47,6 +50,7 @@
 @property (nonatomic, copy) NSString* release_duration;
 @property (nonatomic, copy) NSString* mp3_sample_url;
 @property (nonatomic, copy) NSString* cover_art_url;
+@property (nonatomic, copy) NSString* itunes_url;
 
 @property (nonatomic, retain) UIScrollView* catalogItemView;
 
@@ -61,6 +65,8 @@
 @property (nonatomic, retain) UILabel* descriptionValue;
 @property (nonatomic, retain) UILabel* subtitleValue;
 @property (nonatomic, retain) UILabel* release_durationValue;
+
+@property (nonatomic, retain) UILabel* buy_button;
 
 @property (nonatomic, retain) TTPhotoView* cover_art;
 

@@ -17,6 +17,7 @@ subtitle = _subtitle,
 release_duration = _release_duration,
 mp3_sample_url = _mp3_sample_url,
 cover_art_url = _cover_art_url,
+itunes_url = _itunes_url,
 catalogItemView = _catalogItemView,
 titleLabel = _titleLabel,
 artistLabel = _artistLabel,
@@ -28,6 +29,7 @@ artistValue = _artistValue,
 descriptionValue = _descriptionValue,
 subtitleValue = _subtitleValue,
 release_durationValue = _release_durationValue,
+buy_button = _buy_button,
 cover_art = _cover_art;
 
 - (id)initWithCatalogItem:(NSString *)placeholder query:(NSDictionary*)query
@@ -47,9 +49,10 @@ cover_art = _cover_art;
 		self.mp3_sample_url = [[query objectForKey:@"mp3_sample_url"] stringByReplacingOccurrencesOfString:@" " withString:@"%20"];
 		//self.mp3_sample_url = @"http://www.daveknapik.com/audio/Silicon_Teens-Just_Like_Eddie.mp3";
 		self.cover_art_url = [[query objectForKey:@"cover_art_url"] stringByReplacingOccurrencesOfString:@" " withString:@"%20"];
+		self.itunes_url = [[query objectForKey:@"itunes_url"] stringByReplacingOccurrencesOfString:@" " withString:@"%20"];
 		
 		NSLog(self.mp3_sample_url);
-		
+		NSLog(self.itunes_url);
 		Touch320AppDelegate *appDelegate;
 		appDelegate = (Touch320AppDelegate*)[UIApplication sharedApplication].delegate;
 		
@@ -141,7 +144,28 @@ cover_art = _cover_art;
 		[cover_art release];
 		previousSubviewHeight = cover_art.frame.size.height;
 	//}
+	
+	//buy button
+	if ([self.itunes_url length] != 0) {
+		yAxisPlacement = yAxisPlacement + previousSubviewHeight + 5;
 		
+		UILabel* buy_button = [[UILabel alloc] initWithFrame:CGRectMake(5, yAxisPlacement, appDelegate.deviceWidth - 20, 100)];
+		buy_button.text = self.itunes_url;
+		buy_button.textAlignment = UITextAlignmentLeft;
+		buy_button.textColor = [UIColor blackColor];
+		buy_button.font = [UIFont fontWithName:@"Georgia" size:12];
+		buy_button.backgroundColor = [UIColor whiteColor];
+		buy_button.lineBreakMode = UILineBreakModeWordWrap;
+		buy_button.numberOfLines = 0;
+		
+		buy_button.frame = [self resizeLabelFrame:buy_button 
+												forText:self.itunes_url];
+		
+		[self.view addSubview:buy_button];
+		[buy_button release];
+		previousSubviewHeight = buy_button.frame.size.height;
+	}
+	
 	//release_description value
 	yAxisPlacement = yAxisPlacement + previousSubviewHeight + 5;
 	
@@ -231,6 +255,7 @@ cover_art = _cover_art;
 	self.release_duration = nil;
 	self.mp3_sample_url = nil;
 	self.cover_art_url = nil;
+	self.itunes_url = nil;
 	
 	self.catalogItemView = nil;
 	
@@ -249,6 +274,7 @@ cover_art = _cover_art;
 	playButton = nil;
 	pauseButton = nil;
 	activityIndicatorView = nil;
+	_buy_button = nil;
 	_cover_art = nil;
 	
 	[super viewDidUnload];
@@ -262,6 +288,7 @@ cover_art = _cover_art;
 	TT_RELEASE_SAFELY(_release_duration);
 	TT_RELEASE_SAFELY(_mp3_sample_url);
 	TT_RELEASE_SAFELY(_cover_art_url);
+	TT_RELEASE_SAFELY(_itunes_url);
 	
 	TT_RELEASE_SAFELY(_catalogItemView);
 	
@@ -280,6 +307,7 @@ cover_art = _cover_art;
 	TT_RELEASE_SAFELY(playButton);
 	TT_RELEASE_SAFELY(pauseButton);
 	TT_RELEASE_SAFELY(activityIndicatorView);
+	TT_RELEASE_SAFELY(_buy_button);
 	TT_RELEASE_SAFELY(_cover_art);
 	
 	[super dealloc];
