@@ -45,12 +45,12 @@
 		NSMutableDictionary* theItem = [_radioModel.radioItems objectForKey:key];
 		
 		NSString* title = [theItem objectForKey:@"title"];
-		NSString* author = [theItem objectForKey:@"author"];
-		NSString* subtitle = [theItem objectForKey:@"subtitle"];
-		NSString* summary = [theItem objectForKey:@"summary"];
+		NSString* author = [theItem objectForKey:@"itunes:author"];
+		NSString* subtitle = [theItem objectForKey:@"itunes:subtitle"];
+		NSString* summary = [theItem objectForKey:@"itunes:summary"];
 		NSString* pubDate = [theItem objectForKey:@"pubDate"];
 		NSString* link = [theItem objectForKey:@"guid"];
-		NSString* episode_duration = [theItem objectForKey:@"duration"];
+		NSString* episode_duration = [theItem objectForKey:@"itunes:duration"];
 		
 		if( !TTIsSetWithItems(title) ) {
 			[items addObject:[RadioTableItem

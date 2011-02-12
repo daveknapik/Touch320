@@ -89,6 +89,8 @@
 		// Add the blogItem to the global blogEntries Array so that the view can access it.
 		[_radioItems setObject:[blogItem copy] forKey:key];
 		
+		//NSLog(@"my dictionary = %@", blogItem);
+		
 		outerCounter++;
 		[blogItem release];
 	}	

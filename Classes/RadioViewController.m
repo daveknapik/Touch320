@@ -53,7 +53,18 @@
 						   [object link], @"link",
 						   [object episode_duration], @"episode_duration",
 						   nil];
+	
 	//[[TTNavigator navigator] openURL:@"tt://radioItem/1" query:query animated:YES]; 
+	
+	/*NSLog(@"object author: %@",[object author]);
+	NSLog(@"object title: %@",[object title]);
+	NSLog(@"object subtitle: %@",[object subtitle]);
+	NSLog(@"object summary: %@",[object summary]);
+	NSLog(@"object pubDate: %@",[object pubDate]);
+	NSLog(@"object link: %@",[object link]);
+	NSLog(@"object episode_duration: %@",[object episode_duration]);
+	NSLog(@"query: %@",query);*/
+	
 	[[TTNavigator navigator] openURLAction:[[[TTURLAction actionWithURLPath:@"tt://radioItem/1"] applyQuery:query] applyAnimated:YES]];
 }
 

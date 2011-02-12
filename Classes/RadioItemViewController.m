@@ -54,6 +54,7 @@
 		appDelegate.link = self.link;
 		appDelegate.activeViewController = self;
 		
+		NSLog(@"subtitle: %@",self.subtitle);
 		NSLog(@"link: %@",self.link);
 		
 		/*
