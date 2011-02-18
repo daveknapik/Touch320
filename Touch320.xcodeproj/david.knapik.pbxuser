@@ -23,9 +23,9 @@
 	};
 	29B97313FDCFA39411CA2CEA /* Project object */ = {
 		activeArchitecturePreference = armv6;
-		activeBuildConfigurationName = Debug;
+		activeBuildConfigurationName = "Ad Hoc Distribution";
 		activeExecutable = 739F31111189E4EC0090A11D /* Touch320 */;
-		activeSDKPreference = iphonesimulator4.2;
+		activeSDKPreference = iphoneos4.2;
 		activeTarget = 1D6058900D05DD3D006BFB54 /* Touch320 */;
 		addToTargets = (
 			1D6058900D05DD3D006BFB54 /* Touch320 */,
@@ -172,6 +172,7 @@
 			7302EE0A130DD7C700CA87FF /* PBXTextBookmark */ = 7302EE0A130DD7C700CA87FF /* PBXTextBookmark */;
 			7302EE0B130DD7DE00CA87FF /* PBXTextBookmark */ = 7302EE0B130DD7DE00CA87FF /* PBXTextBookmark */;
 			7302EE0F130EE03E00CA87FF /* PBXTextBookmark */ = 7302EE0F130EE03E00CA87FF /* PBXTextBookmark */;
+			7302EE16130EE2CA00CA87FF /* PBXTextBookmark */ = 7302EE16130EE2CA00CA87FF /* PBXTextBookmark */;
 			7309021711C7D20300B90732 = 7309021711C7D20300B90732 /* PBXBookmark */;
 			730990971270F0800085D9DA = 730990971270F0800085D9DA /* PBXTextBookmark */;
 			730990A51270F11A0085D9DA = 730990A51270F11A0085D9DA /* PBXTextBookmark */;
@@ -1132,6 +1133,16 @@
 		vrLen = 1160;
 		vrLoc = 9365;
 	};
+	7302EE16130EE2CA00CA87FF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = DE06A97C110D0DAA00E7F895 /* CatalogItemViewController.m */;
+		name = "CatalogItemViewController.m: 263";
+		rLen = 0;
+		rLoc = 10248;
+		rType = 0;
+		vrLen = 1224;
+		vrLoc = 9438;
+	};
 	7309021711C7D20300B90732 /* PBXBookmark */ = {
 		isa = PBXBookmark;
 		fRef = DEAA259310FCB13C0059D87F /* blackbutton.png */;
@@ -1642,7 +1653,7 @@
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {957, 5395}}";
 			sepNavSelRange = "{10248, 0}";
-			sepNavVisRange = "{9365, 1160}";
+			sepNavVisRange = "{9438, 1224}";
 		};
 	};
 	DE10401710F3EFE20058DDB8 /* RadioTableItem.h */ = {
