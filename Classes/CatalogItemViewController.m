@@ -29,7 +29,6 @@ artistValue = _artistValue,
 descriptionValue = _descriptionValue,
 subtitleValue = _subtitleValue,
 release_durationValue = _release_durationValue,
-buy_button = _buy_button,
 cover_art = _cover_art;
 
 - (id)initWithCatalogItem:(NSString *)placeholder query:(NSDictionary*)query
@@ -82,6 +81,9 @@ cover_art = _cover_art;
 	[self.catalogItemView setContentSize:CGSizeMake(appDelegate.deviceWidth, 2300)];
 	
 	[self.view addSubview:self.catalogItemView];
+	
+	//button background images
+	UIImage* blackBackgroundImage = [[UIImage imageNamed:@"blackbutton.png"] stretchableImageWithLeftCapWidth:12.0f topCapHeight:0.0f];
 	
 	//initialize y-axis subview placement variable
 	int yAxisPlacement = 0;
@@ -149,7 +151,7 @@ cover_art = _cover_art;
 	if ([self.itunes_url length] != 0) {
 		yAxisPlacement = yAxisPlacement + previousSubviewHeight + 5;
 		
-		UILabel* buy_button = [[UILabel alloc] initWithFrame:CGRectMake(5, yAxisPlacement, appDelegate.deviceWidth - 20, 100)];
+		/*UILabel* buy_button = [[UILabel alloc] initWithFrame:CGRectMake(5, yAxisPlacement, appDelegate.deviceWidth - 20, 100)];
 		buy_button.text = self.itunes_url;
 		buy_button.textAlignment = UITextAlignmentLeft;
 		buy_button.textColor = [UIColor blackColor];
@@ -163,7 +165,18 @@ cover_art = _cover_art;
 		
 		[self.view addSubview:buy_button];
 		[buy_button release];
-		previousSubviewHeight = buy_button.frame.size.height;
+		previousSubviewHeight = buy_button.frame.size.height;*/
+		
+		buyButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+		buyButton.frame = CGRectMake(50, yAxisPlacement, 200, 40);
+		[buyButton setTitle:@"Buy" forState:UIControlStateNormal];
+		[buyButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+		[buyButton setBackgroundImage:blackBackgroundImage forState:UIControlStateNormal];
+		buyButton.titleLabel.font = [UIFont boldSystemFontOfSize:12];
+		buyButton.backgroundColor = [UIColor clearColor];
+		[buyButton addTarget:self action:@selector(buttonClicked) forControlEvents:UIControlEventTouchUpInside];
+		[self.view addSubview:buyButton];
+		previousSubviewHeight = buyButton.frame.size.height;
 	}
 	
 	//release_description value
@@ -187,9 +200,6 @@ cover_art = _cover_art;
 	
 	//BUTTONS
 	yAxisPlacement = yAxisPlacement + previousSubviewHeight + 5;
-	
-	//button background images
-	UIImage* blackBackgroundImage = [[UIImage imageNamed:@"blackbutton.png"] stretchableImageWithLeftCapWidth:12.0f topCapHeight:0.0f];
 	
 	//play button
 	playButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
@@ -247,6 +257,12 @@ cover_art = _cover_art;
 	return label.frame;
 }
 
+- (void)buttonClicked {
+	NSLog(self.itunes_url);
+	
+	[[UIApplication sharedApplication] openURL:[NSURL URLWithString:self.itunes_url]];
+}
+
 - (void)viewDidUnload {
 	// Release any retained subviews of the main view.
 	// e.g. self.myOutlet = nil;
@@ -273,8 +289,8 @@ cover_art = _cover_art;
 	
 	playButton = nil;
 	pauseButton = nil;
+	buyButton = nil;
 	activityIndicatorView = nil;
-	_buy_button = nil;
 	_cover_art = nil;
 	
 	[super viewDidUnload];
@@ -306,8 +322,8 @@ cover_art = _cover_art;
 	
 	TT_RELEASE_SAFELY(playButton);
 	TT_RELEASE_SAFELY(pauseButton);
+	TT_RELEASE_SAFELY(buyButton);
 	TT_RELEASE_SAFELY(activityIndicatorView);
-	TT_RELEASE_SAFELY(_buy_button);
 	TT_RELEASE_SAFELY(_cover_art);
 	
 	[super dealloc];

@@ -33,13 +33,12 @@
 	UILabel* _subtitleValue;
 	UILabel* _release_durationValue;
 	
-	UILabel* _buy_button;
-	
 	TTPhotoView* _cover_art;
 	
 	UIActivityIndicatorView* activityIndicatorView;
 	UIButton* pauseButton;
 	UIButton* playButton;
+	UIButton* buyButton;
 	
 	AudioPlayer *audioPlayer;
 }
@@ -66,8 +65,6 @@
 @property (nonatomic, retain) UILabel* subtitleValue;
 @property (nonatomic, retain) UILabel* release_durationValue;
 
-@property (nonatomic, retain) UILabel* buy_button;
-
 @property (nonatomic, retain) TTPhotoView* cover_art;
 
 - (id)initWithCatalogItem:(NSString *)placeholder query:(NSDictionary*)query;
@@ -76,6 +73,7 @@
 - (void)load;
 - (void)pause;
 - (void)play;
+- (void)buttonClicked;
 - (void)showPlaying;
 - (void)showPaused;
 - (void)showLoading;

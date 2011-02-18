@@ -69,6 +69,8 @@
 	recipeHTML = [recipeHTML stringByAppendingString:self.author];
 	recipeHTML = [recipeHTML stringByAppendingString:@"</p>"];
 	
+	//recipeHTML = [recipeHTML stringByAppendingString:@"<p><a href=\"http://itunes.apple.com/us/album/a-hidden-place/id417727682?uo=4\" target=\"itunes_store\">A Hidden Place - Sohrab</a></p>"];
+	
 	recipeHTML = [recipeHTML stringByAppendingString:self.recipe_description];
 	
 	[self.recipeItemView loadHTMLString:recipeHTML baseURL:nil];
