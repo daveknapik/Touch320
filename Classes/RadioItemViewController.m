@@ -146,7 +146,7 @@
 	UIImage* blackBackgroundImage = [[UIImage imageNamed:@"blackbutton.png"] stretchableImageWithLeftCapWidth:12.0f topCapHeight:0.0f];
 	
 	//play button
-	playButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+	playButton = [UIButton buttonWithType:UIButtonTypeCustom];
 	playButton.frame = CGRectMake(50, subtitleValue.frame.size.height + titleValue.frame.size.height + summaryValue.frame.size.height + 15, 200, 40);
 	[playButton setTitle:@"Play" forState:UIControlStateNormal];
 	[playButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
@@ -158,7 +158,7 @@
 	[self.view addSubview:playButton];
 	
 	//pause button
-	pauseButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+	pauseButton = [UIButton buttonWithType:UIButtonTypeCustom];
 	pauseButton.frame = CGRectMake(50, subtitleValue.frame.size.height + titleValue.frame.size.height + summaryValue.frame.size.height + 15, 200, 40);
 	[pauseButton setTitle:@"Pause" forState:UIControlStateNormal];
 	[pauseButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];

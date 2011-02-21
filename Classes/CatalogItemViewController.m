@@ -84,6 +84,7 @@ cover_art = _cover_art;
 	
 	//button background images
 	UIImage* blackBackgroundImage = [[UIImage imageNamed:@"blackbutton.png"] stretchableImageWithLeftCapWidth:12.0f topCapHeight:0.0f];
+	UIImage* buyButtonGreen = [[UIImage imageNamed:@"buyButtonGreen.png"] stretchableImageWithLeftCapWidth:12.0f topCapHeight:0.0f];
 	
 	//initialize y-axis subview placement variable
 	int yAxisPlacement = 0;
@@ -149,8 +150,6 @@ cover_art = _cover_art;
 	
 	//buy button
 	if ([self.itunes_url length] != 0) {
-		yAxisPlacement = yAxisPlacement + previousSubviewHeight + 5;
-		
 		/*UILabel* buy_button = [[UILabel alloc] initWithFrame:CGRectMake(5, yAxisPlacement, appDelegate.deviceWidth - 20, 100)];
 		buy_button.text = self.itunes_url;
 		buy_button.textAlignment = UITextAlignmentLeft;
@@ -167,16 +166,15 @@ cover_art = _cover_art;
 		[buy_button release];
 		previousSubviewHeight = buy_button.frame.size.height;*/
 		
-		buyButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-		buyButton.frame = CGRectMake(50, yAxisPlacement, 200, 40);
+		buyButton = [UIButton buttonWithType:UIButtonTypeCustom];
+		buyButton.frame = CGRectMake(170, 42, 77, 32);
 		[buyButton setTitle:@"Buy" forState:UIControlStateNormal];
 		[buyButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-		[buyButton setBackgroundImage:blackBackgroundImage forState:UIControlStateNormal];
+		[buyButton setBackgroundImage:buyButtonGreen forState:UIControlStateNormal];
 		buyButton.titleLabel.font = [UIFont boldSystemFontOfSize:12];
 		buyButton.backgroundColor = [UIColor clearColor];
 		[buyButton addTarget:self action:@selector(buttonClicked) forControlEvents:UIControlEventTouchUpInside];
 		[self.view addSubview:buyButton];
-		previousSubviewHeight = buyButton.frame.size.height;
 	}
 	
 	//release_description value
@@ -202,8 +200,8 @@ cover_art = _cover_art;
 	yAxisPlacement = yAxisPlacement + previousSubviewHeight + 5;
 	
 	//play button
-	playButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-	playButton.frame = CGRectMake(50, yAxisPlacement, 200, 40);
+	playButton = [UIButton buttonWithType:UIButtonTypeCustom];
+	playButton.frame = CGRectMake(170, 75, 77, 32);
 	[playButton setTitle:@"Play" forState:UIControlStateNormal];
 	[playButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
 	[playButton setBackgroundImage:blackBackgroundImage forState:UIControlStateNormal];
@@ -213,8 +211,8 @@ cover_art = _cover_art;
 	[playButton addTarget:self action:@selector(play) forControlEvents:UIControlEventTouchUpInside];
 	
 	//pause button
-	pauseButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-	pauseButton.frame = CGRectMake(50, yAxisPlacement, 200, 40);
+	pauseButton = [UIButton buttonWithType:UIButtonTypeCustom];
+	pauseButton.frame = CGRectMake(170, 75, 77, 32);
 	[pauseButton setTitle:@"Pause" forState:UIControlStateNormal];
 	[pauseButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
 	[pauseButton setBackgroundImage:blackBackgroundImage forState:UIControlStateNormal];
@@ -225,7 +223,7 @@ cover_art = _cover_art;
 	
 	//activityIndicatorView
 	activityIndicatorView = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
-	activityIndicatorView.center = CGPointMake(150, yAxisPlacement + 35);
+	activityIndicatorView.center = CGPointMake(208, 95);
 	
 	//if ([self.mp3_sample_url length] != 0) {
 		[self.view addSubview:playButton];
