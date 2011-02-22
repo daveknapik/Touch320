@@ -282,7 +282,7 @@
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 155}, {307, 673}}</string>
+							<string>{{0, 473}, {307, 673}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -331,7 +331,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>73032EE81312D5C000E51791</string>
+										<string>73A428A1131473CE00D5C95B</string>
 										<key>history</key>
 										<array>
 											<string>7318C4091189EAB40044DBE7</string>
@@ -396,7 +396,7 @@
 											<string>73032EB21312CD2E00E51791</string>
 											<string>73032EC21312D02800E51791</string>
 											<string>73032EE61312D5C000E51791</string>
-											<string>73032EE71312D5C000E51791</string>
+											<string>73032EEB1312D78D00E51791</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -408,14 +408,14 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 0}, {981, 606}}</string>
+								<string>{{0, 0}, {981, 604}}</string>
 								<key>RubberWindowFrame</key>
 								<string>124 146 1310 732 0 0 1440 878 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
 							<key>Proportion</key>
-							<string>606pt</string>
+							<string>604pt</string>
 						</dict>
 						<dict>
 							<key>ContentConfiguration</key>
@@ -428,14 +428,14 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 611}, {981, 80}}</string>
+								<string>{{0, 609}, {981, 82}}</string>
 								<key>RubberWindowFrame</key>
 								<string>124 146 1310 732 0 0 1440 878 </string>
 							</dict>
 							<key>Module</key>
 							<string>XCDetailModule</string>
 							<key>Proportion</key>
-							<string>80pt</string>
+							<string>82pt</string>
 						</dict>
 					</array>
 					<key>Proportion</key>
@@ -454,9 +454,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>73032E411312BA7D00E51791</string>
+				<string>73A428A2131473CE00D5C95B</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>73032E421312BA7D00E51791</string>
+				<string>73A428A3131473CE00D5C95B</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
 			</array>
@@ -594,11 +594,6 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>73032EE91312D5C000E51791</string>
-		<string>73032EEA1312D5C000E51791</string>
-		<string>73032E751312BB3300E51791</string>
-		<string>1C78EAAD065D492600B07095</string>
-		<string>1CD10A99069EF8BA00B06720</string>
 		<string>739F31251189E5000090A11D</string>
 		<string>/Users/david.knapik/Documents/iPhoneDev/Touch320/Touch320.xcodeproj</string>
 	</array>
@@ -680,7 +675,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>739F31251189E5000090A11D</string>
-				<string>73032E431312BA7D00E51791</string>
+				<string>73A428A4131473CE00D5C95B</string>
 				<string>1CD0528F0623707200166675</string>
 				<string>XCMainBuildResultsModuleGUID</string>
 			</array>

@@ -44,6 +44,9 @@
 		735619CE126F69A2007CB975 /* radio.png in Resources */ = {isa = PBXBuildFile; fileRef = 735619C9126F69A2007CB975 /* radio.png */; };
 		735619CF126F69A2007CB975 /* recipes.png in Resources */ = {isa = PBXBuildFile; fileRef = 735619CA126F69A2007CB975 /* recipes.png */; };
 		738E31C91270B457005A271F /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 738E31C81270B457005A271F /* MessageUI.framework */; };
+		73A428E5131473EC00D5C95B /* Default-Portrait.png in Resources */ = {isa = PBXBuildFile; fileRef = 73A428E2131473EC00D5C95B /* Default-Portrait.png */; };
+		73A428E6131473EC00D5C95B /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 73A428E3131473EC00D5C95B /* Default.png */; };
+		73A428E7131473EC00D5C95B /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 73A428E4131473EC00D5C95B /* Default@2x.png */; };
 		DE06A97D110D0DAA00E7F895 /* CatalogItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE06A97C110D0DAA00E7F895 /* CatalogItemViewController.m */; };
 		DE10401910F3EFE20058DDB8 /* RadioTableItem.m in Sources */ = {isa = PBXBuildFile; fileRef = DE10401810F3EFE20058DDB8 /* RadioTableItem.m */; };
 		DE10401C10F3EFEC0058DDB8 /* RadioTableItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DE10401B10F3EFEC0058DDB8 /* RadioTableItemCell.m */; };
@@ -64,7 +67,6 @@
 		DE3E4CF410D9292D00571DC6 /* GTMNSDictionary+URLArguments.m in Sources */ = {isa = PBXBuildFile; fileRef = DE3E4CF210D9292D00571DC6 /* GTMNSDictionary+URLArguments.m */; };
 		DE4F178E10D825CE005E2446 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE4F178D10D825CE005E2446 /* QuartzCore.framework */; };
 		DE4F197210D84EC8005E2446 /* ImageGalleryPhotoSource.m in Sources */ = {isa = PBXBuildFile; fileRef = DE4F197110D84EC8005E2446 /* ImageGalleryPhotoSource.m */; };
-		DE6C15AF10DEFC380071A824 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = DE6C15AE10DEFC380071A824 /* Default.png */; };
 		DE6C163D10DFFB8A0071A824 /* ImageGalleryPhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE6C163C10DFFB8A0071A824 /* ImageGalleryPhotoViewController.m */; };
 		DE7455A310DE66DE00332FD6 /* ImageGalleryPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = DE7455A210DE66DE00332FD6 /* ImageGalleryPhoto.m */; };
 		DE8B82C410E0007200AB1281 /* MainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE8B82C310E0007200AB1281 /* MainTabBarController.m */; };
@@ -527,6 +529,9 @@
 		735619C9126F69A2007CB975 /* radio.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = radio.png; sourceTree = "<group>"; };
 		735619CA126F69A2007CB975 /* recipes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = recipes.png; sourceTree = "<group>"; };
 		738E31C81270B457005A271F /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		73A428E2131473EC00D5C95B /* Default-Portrait.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait.png"; sourceTree = "<group>"; };
+		73A428E3131473EC00D5C95B /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		73A428E4131473EC00D5C95B /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Touch320-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Touch320-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 		DE06A97B110D0DAA00E7F895 /* CatalogItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CatalogItemViewController.h; sourceTree = "<group>"; };
 		DE06A97C110D0DAA00E7F895 /* CatalogItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CatalogItemViewController.m; sourceTree = "<group>"; };
@@ -569,7 +574,6 @@
 		DE4F178D10D825CE005E2446 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = ../../../../../../Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.1.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = SOURCE_ROOT; };
 		DE4F197010D84EC8005E2446 /* ImageGalleryPhotoSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageGalleryPhotoSource.h; sourceTree = "<group>"; };
 		DE4F197110D84EC8005E2446 /* ImageGalleryPhotoSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageGalleryPhotoSource.m; sourceTree = "<group>"; };
-		DE6C15AE10DEFC380071A824 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		DE6C163B10DFFB8A0071A824 /* ImageGalleryPhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageGalleryPhotoViewController.h; sourceTree = "<group>"; };
 		DE6C163C10DFFB8A0071A824 /* ImageGalleryPhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageGalleryPhotoViewController.m; sourceTree = "<group>"; };
 		DE7455A110DE66DE00332FD6 /* ImageGalleryPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageGalleryPhoto.h; sourceTree = "<group>"; };
@@ -752,7 +756,9 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
-				DE6C15AE10DEFC380071A824 /* Default.png */,
+				73A428E2131473EC00D5C95B /* Default-Portrait.png */,
+				73A428E3131473EC00D5C95B /* Default.png */,
+				73A428E4131473EC00D5C95B /* Default@2x.png */,
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
@@ -1622,7 +1628,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				320B6C86F11D9990244A9731 /* Three20.bundle in Resources */,
-				DE6C15AF10DEFC380071A824 /* Default.png in Resources */,
 				DEE2D5661100BE6C004BB6F3 /* icon_old.png in Resources */,
 				DEAFCF111120C9070050C987 /* dist.plist in Resources */,
 				DE97EDF71127E91000E25713 /* RecipeCategories.plist in Resources */,
@@ -1635,6 +1640,9 @@
 				735619CF126F69A2007CB975 /* recipes.png in Resources */,
 				73032EAB1312CCC800E51791 /* buyButtonGreen.png in Resources */,
 				73032EBD1312CE9800E51791 /* blackbutton.png in Resources */,
+				73A428E5131473EC00D5C95B /* Default-Portrait.png in Resources */,
+				73A428E6131473EC00D5C95B /* Default.png in Resources */,
+				73A428E7131473EC00D5C95B /* Default@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
