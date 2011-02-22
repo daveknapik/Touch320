@@ -62,7 +62,7 @@
 				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
 				PBXFileTableDataSourceColumnWidthsKey = (
 					20,
-					631,
+					702,
 					60,
 					20,
 					48,
@@ -79,8 +79,8 @@
 					PBXFileDataSource_Warnings_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 320107448;
-			PBXWorkspaceStateSaveDate = 320107448;
+			PBXPerProjectTemplateStateSaveDate = 320108164;
+			PBXWorkspaceStateSaveDate = 320108164;
 		};
 		perUserProjectItems = {
 			7302EBE61304CC0500CA87FF = 7302EBE61304CC0500CA87FF /* PBXTextBookmark */;
@@ -103,8 +103,6 @@
 			73032EB21312CD2E00E51791 = 73032EB21312CD2E00E51791 /* PBXBookmark */;
 			73032EC21312D02800E51791 = 73032EC21312D02800E51791 /* PBXBookmark */;
 			73032EE61312D5C000E51791 = 73032EE61312D5C000E51791 /* PBXTextBookmark */;
-			73032EE71312D5C000E51791 = 73032EE71312D5C000E51791 /* PBXTextBookmark */;
-			73032EEB1312D78D00E51791 = 73032EEB1312D78D00E51791 /* PBXTextBookmark */;
 			730990971270F0800085D9DA = 730990971270F0800085D9DA /* PBXTextBookmark */;
 			730DE49111CFC46500715199 = 730DE49111CFC46500715199 /* PBXTextBookmark */;
 			7318C4091189EAB40044DBE7 = 7318C4091189EAB40044DBE7 /* PBXTextBookmark */;
@@ -140,7 +138,11 @@
 			738E31F51270B956005A271F = 738E31F51270B956005A271F /* PBXTextBookmark */;
 			738E31F61270B956005A271F = 738E31F61270B956005A271F /* PBXTextBookmark */;
 			738E324B1270BC42005A271F = 738E324B1270BC42005A271F /* PBXTextBookmark */;
-			73A428A1131473CE00D5C95B /* PBXTextBookmark */ = 73A428A1131473CE00D5C95B /* PBXTextBookmark */;
+			73A428EC131475F800D5C95B = 73A428EC131475F800D5C95B /* PBXTextBookmark */;
+			73A428ED131475F800D5C95B = 73A428ED131475F800D5C95B /* PBXBookmark */;
+			73A428EE131475F800D5C95B = 73A428EE131475F800D5C95B /* PlistBookmark */;
+			73A429551314770D00D5C95B /* PlistBookmark */ = 73A429551314770D00D5C95B /* PlistBookmark */;
+			73A429561314770D00D5C95B /* PlistBookmark */ = 73A429561314770D00D5C95B /* PlistBookmark */;
 			73C86ACD11A5852D004042C4 = 73C86ACD11A5852D004042C4 /* PBXTextBookmark */;
 			73C86ACE11A5852D004042C4 = 73C86ACE11A5852D004042C4 /* PBXTextBookmark */;
 			73C86AD011A5852D004042C4 = 73C86AD011A5852D004042C4 /* PBXTextBookmark */;
@@ -361,26 +363,6 @@
 		rType = 0;
 		vrLen = 2095;
 		vrLoc = 6104;
-	};
-	73032EE71312D5C000E51791 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = DE1041E710F4C8780058DDB8 /* RadioItemViewController.m */;
-		name = "RadioItemViewController.m: 41";
-		rLen = 0;
-		rLoc = 1188;
-		rType = 0;
-		vrLen = 1514;
-		vrLoc = 1784;
-	};
-	73032EEB1312D78D00E51791 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = DE1041E710F4C8780058DDB8 /* RadioItemViewController.m */;
-		name = "RadioItemViewController.m: 161";
-		rLen = 0;
-		rLoc = 5974;
-		rType = 0;
-		vrLen = 2288;
-		vrLoc = 4210;
 	};
 	730990971270F0800085D9DA /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
@@ -756,15 +738,52 @@
 		isa = PBXCodeSenseManager;
 		indexTemplatePath = "";
 	};
-	73A428A1131473CE00D5C95B /* PBXTextBookmark */ = {
+	73A428EC131475F800D5C95B /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = DE1041E710F4C8780058DDB8 /* RadioItemViewController.m */;
 		name = "RadioItemViewController.m: 161";
 		rLen = 0;
 		rLoc = 5974;
 		rType = 0;
-		vrLen = 2241;
-		vrLoc = 4257;
+		vrLen = 2288;
+		vrLoc = 4210;
+	};
+	73A428ED131475F800D5C95B /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 8D1107310486CEB800E47090 /* Touch320-Info.plist */;
+	};
+	73A428EE131475F800D5C95B /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 8D1107310486CEB800E47090 /* Touch320-Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = "/Users/david.knapik/Documents/iPhoneDev/Touch320/Touch320-Info.plist";
+		rLen = 0;
+		rLoc = 9223372036854775808;
+	};
+	73A429551314770D00D5C95B /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 8D1107310486CEB800E47090 /* Touch320-Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = "/Users/david.knapik/Documents/iPhoneDev/Touch320/Touch320-Info.plist";
+		rLen = 0;
+		rLoc = 9223372036854775807;
+	};
+	73A429561314770D00D5C95B /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 8D1107310486CEB800E47090 /* Touch320-Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = "/Users/david.knapik/Documents/iPhoneDev/Touch320/Touch320-Info.plist";
+		rLen = 0;
+		rLoc = 9223372036854775807;
 	};
 	73C86ACD11A5852D004042C4 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
@@ -895,9 +914,9 @@
 	};
 	DE1041E710F4C8780058DDB8 /* RadioItemViewController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1258, 4173}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1258, 4199}}";
 			sepNavSelRange = "{5974, 0}";
-			sepNavVisRange = "{4210, 2264}";
+			sepNavVisRange = "{4155, 2319}";
 		};
 	};
 	DE160F3510EC0888005A2F1E /* NewsTableItemCell.h */ = {

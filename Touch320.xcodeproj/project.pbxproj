@@ -1872,7 +1872,7 @@
 					../../three20/Build/Products/three20,
 					/usr/include/libxml2,
 				);
-				IPHONEOS_DEPLOYMENT_TARGET = 3.1.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.2;
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-all_load",
@@ -1900,7 +1900,7 @@
 					../../three20/Build/Products/three20,
 					/usr/include/libxml2,
 				);
-				IPHONEOS_DEPLOYMENT_TARGET = 3.1.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.2;
 				OTHER_LDFLAGS = (
 					"-force_load",
 					"-lxml2",
@@ -1926,7 +1926,7 @@
 					../../three20/Build/Products/three20,
 					/usr/include/libxml2,
 				);
-				IPHONEOS_DEPLOYMENT_TARGET = 3.1.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.2;
 				OTHER_LDFLAGS = (
 					"-force_load",
 					"-lxml2",
