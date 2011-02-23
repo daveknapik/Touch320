@@ -47,6 +47,7 @@
 		73A428E5131473EC00D5C95B /* Default-Portrait.png in Resources */ = {isa = PBXBuildFile; fileRef = 73A428E2131473EC00D5C95B /* Default-Portrait.png */; };
 		73A428E6131473EC00D5C95B /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 73A428E3131473EC00D5C95B /* Default.png */; };
 		73A428E7131473EC00D5C95B /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 73A428E4131473EC00D5C95B /* Default@2x.png */; };
+		73A429681315A30700D5C95B /* iTunesArtwork.png in Resources */ = {isa = PBXBuildFile; fileRef = 73A429671315A30700D5C95B /* iTunesArtwork.png */; };
 		DE06A97D110D0DAA00E7F895 /* CatalogItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE06A97C110D0DAA00E7F895 /* CatalogItemViewController.m */; };
 		DE10401910F3EFE20058DDB8 /* RadioTableItem.m in Sources */ = {isa = PBXBuildFile; fileRef = DE10401810F3EFE20058DDB8 /* RadioTableItem.m */; };
 		DE10401C10F3EFEC0058DDB8 /* RadioTableItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DE10401B10F3EFEC0058DDB8 /* RadioTableItemCell.m */; };
@@ -532,6 +533,7 @@
 		73A428E2131473EC00D5C95B /* Default-Portrait.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait.png"; sourceTree = "<group>"; };
 		73A428E3131473EC00D5C95B /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		73A428E4131473EC00D5C95B /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		73A429671315A30700D5C95B /* iTunesArtwork.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iTunesArtwork.png; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Touch320-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Touch320-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 		DE06A97B110D0DAA00E7F895 /* CatalogItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CatalogItemViewController.h; sourceTree = "<group>"; };
 		DE06A97C110D0DAA00E7F895 /* CatalogItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CatalogItemViewController.m; sourceTree = "<group>"; };
@@ -756,6 +758,7 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				73A429671315A30700D5C95B /* iTunesArtwork.png */,
 				73A428E2131473EC00D5C95B /* Default-Portrait.png */,
 				73A428E3131473EC00D5C95B /* Default.png */,
 				73A428E4131473EC00D5C95B /* Default@2x.png */,
@@ -1643,6 +1646,7 @@
 				73A428E5131473EC00D5C95B /* Default-Portrait.png in Resources */,
 				73A428E6131473EC00D5C95B /* Default.png in Resources */,
 				73A428E7131473EC00D5C95B /* Default@2x.png in Resources */,
+				73A429681315A30700D5C95B /* iTunesArtwork.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
