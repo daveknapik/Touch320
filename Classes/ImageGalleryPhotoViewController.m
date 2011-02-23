@@ -7,12 +7,18 @@
 //
 
 #import "ImageGalleryPhotoViewController.h"
+#define degreesToRadian(x) (M_PI * (x) / 180.0)
 
 
 @implementation ImageGalleryPhotoViewController
 
 - (id)initWithPhoto:(id<TTPhoto>)photo {
 	return self;
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+	[super viewWillAppear:NO];
+    [[UIDevice currentDevice] setOrientation:UIInterfaceOrientationLandscapeRight];
 }
 
 - (void)updateChrome { 
@@ -48,9 +54,7 @@
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
-	return (interfaceOrientation !=
-			UIInterfaceOrientationPortraitUpsideDown);
-	
-} 
+	return (interfaceOrientation == UIInterfaceOrientationLandscapeRight);	
+}
 
 @end
