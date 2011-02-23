@@ -47,6 +47,9 @@
 		73A428E6131473EC00D5C95B /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 73A428E3131473EC00D5C95B /* Default.png */; };
 		73A428E7131473EC00D5C95B /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 73A428E4131473EC00D5C95B /* Default@2x.png */; };
 		73A429681315A30700D5C95B /* iTunesArtwork.png in Resources */ = {isa = PBXBuildFile; fileRef = 73A429671315A30700D5C95B /* iTunesArtwork.png */; };
+		73D7B32D1315AF4A0080513E /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 73D7B32A1315AF4A0080513E /* Icon-72.png */; };
+		73D7B32E1315AF4A0080513E /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 73D7B32B1315AF4A0080513E /* Icon.png */; };
+		73D7B32F1315AF4A0080513E /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 73D7B32C1315AF4A0080513E /* Icon@2x.png */; };
 		DE06A97D110D0DAA00E7F895 /* CatalogItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE06A97C110D0DAA00E7F895 /* CatalogItemViewController.m */; };
 		DE10401910F3EFE20058DDB8 /* RadioTableItem.m in Sources */ = {isa = PBXBuildFile; fileRef = DE10401810F3EFE20058DDB8 /* RadioTableItem.m */; };
 		DE10401C10F3EFEC0058DDB8 /* RadioTableItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DE10401B10F3EFEC0058DDB8 /* RadioTableItemCell.m */; };
@@ -531,6 +534,9 @@
 		73A428E3131473EC00D5C95B /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		73A428E4131473EC00D5C95B /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		73A429671315A30700D5C95B /* iTunesArtwork.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iTunesArtwork.png; sourceTree = "<group>"; };
+		73D7B32A1315AF4A0080513E /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
+		73D7B32B1315AF4A0080513E /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		73D7B32C1315AF4A0080513E /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Touch320-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Touch320-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 		DE06A97B110D0DAA00E7F895 /* CatalogItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CatalogItemViewController.h; sourceTree = "<group>"; };
 		DE06A97C110D0DAA00E7F895 /* CatalogItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CatalogItemViewController.m; sourceTree = "<group>"; };
@@ -781,6 +787,9 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				73D7B32A1315AF4A0080513E /* Icon-72.png */,
+				73D7B32B1315AF4A0080513E /* Icon.png */,
+				73D7B32C1315AF4A0080513E /* Icon@2x.png */,
 				73032EBC1312CE9800E51791 /* blackbutton.png */,
 				73032EAA1312CCC800E51791 /* buyButtonGreen.png */,
 				320B6C86F11D9990244A9730 /* Three20.bundle */,
@@ -1639,6 +1648,9 @@
 				73A428E6131473EC00D5C95B /* Default.png in Resources */,
 				73A428E7131473EC00D5C95B /* Default@2x.png in Resources */,
 				73A429681315A30700D5C95B /* iTunesArtwork.png in Resources */,
+				73D7B32D1315AF4A0080513E /* Icon-72.png in Resources */,
+				73D7B32E1315AF4A0080513E /* Icon.png in Resources */,
+				73D7B32F1315AF4A0080513E /* Icon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
