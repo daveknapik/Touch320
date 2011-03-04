@@ -107,6 +107,8 @@ void interruptionListener (void *inClientData, UInt32 inInterruptionState);
 	//Set ObjectiveResource to use either XML or JSON
 	[ObjectiveResourceConfig setResponseType:XmlResponse];//the default
 	//[ObjectiveResourceConfig setResponseType:JSONResponse];
+	
+	[[UIApplication sharedApplication] setStatusBarHidden:NO];
 }
 
 - (BOOL)navigator:(TTNavigator*)navigator shouldOpenURL:(NSURL*)URL {
