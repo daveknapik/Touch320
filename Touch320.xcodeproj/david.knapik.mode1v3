@@ -229,8 +229,6 @@
 			<key>Layout</key>
 			<array>
 				<dict>
-					<key>BecomeActive</key>
-					<true/>
 					<key>ContentConfiguration</key>
 					<dict>
 						<key>PBXBottomSmartGroupGIDs</key>
@@ -274,8 +272,8 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>7</integer>
-									<integer>6</integer>
+									<integer>16</integer>
+									<integer>9</integer>
 									<integer>0</integer>
 								</array>
 							</array>
@@ -315,7 +313,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>iTunesArtwork.png</string>
+								<string>Touch320-Info.plist</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -323,11 +321,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>iTunesArtwork.png</string>
+										<string>Touch320-Info.plist</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>7371347E13215999008DA83E</string>
+										<string>737134C913216160008DA83E</string>
 										<key>history</key>
 										<array>
 											<string>7318C4091189EAB40044DBE7</string>
@@ -373,7 +371,6 @@
 											<string>7302EDC8130D9CFB00CA87FF</string>
 											<string>7302EDE0130DC63900CA87FF</string>
 											<string>73032EB21312CD2E00E51791</string>
-											<string>73032EC21312D02800E51791</string>
 											<string>73D7B3541315B4560080513E</string>
 											<string>73D7B3551315B4560080513E</string>
 											<string>73D7B3561315B4560080513E</string>
@@ -390,9 +387,12 @@
 											<string>7371341713214D34008DA83E</string>
 											<string>73713430132150AD008DA83E</string>
 											<string>73713431132150AD008DA83E</string>
-											<string>73713432132150AD008DA83E</string>
-											<string>7371347D13215999008DA83E</string>
-											<string>7371342F132150AD008DA83E</string>
+											<string>7371348D13215C6C008DA83E</string>
+											<string>7371348F13215C6C008DA83E</string>
+											<string>737134AD13215CDC008DA83E</string>
+											<string>737134AE13215CDC008DA83E</string>
+											<string>737134C713216160008DA83E</string>
+											<string>737134C813216160008DA83E</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -590,7 +590,6 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>7371347B13215946008DA83E</string>
 		<string>1C530D57069F1CE1000CFCEE</string>
 		<string>73713436132150AD008DA83E</string>
 		<string>73713437132150AD008DA83E</string>
@@ -692,7 +691,7 @@
 			<key>WindowToolGUID</key>
 			<string>739F31251189E5000090A11D</string>
 			<key>WindowToolIsVisible</key>
-			<true/>
+			<false/>
 		</dict>
 		<dict>
 			<key>FirstTimeWindowDisplayed</key>
