@@ -572,6 +572,12 @@
 		vrLen = 1474;
 		vrLoc = 3;
 	};
+	7371340C13214C0E008DA83E /* iTunesArtwork.png */ = {
+		isa = PBXFileReference;
+		name = iTunesArtwork.png;
+		path = /Users/david.knapik/Documents/iPhoneDev/Touch320/iTunesArtwork;
+		sourceTree = "<absolute>";
+	};
 	7371341713214D34008DA83E /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = DE6C163C10DFFB8A0071A824 /* ImageGalleryPhotoViewController.m */;
@@ -817,9 +823,8 @@
 	};
 	73A429671315A30700D5C95B /* iTunesArtwork.png */ = {
 		isa = PBXFileReference;
-		lastKnownFileType = image.png;
 		name = iTunesArtwork.png;
-		path = /Users/david.knapik/Documents/iPhoneDev/Touch320/iTunesArtwork.png;
+		path = /Users/david.knapik/Documents/iPhoneDev/Touch320/iTunesArtwork;
 		sourceTree = "<absolute>";
 	};
 	73C86ACD11A5852D004042C4 /* PBXTextBookmark */ = {
