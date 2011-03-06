@@ -15,6 +15,8 @@
 @implementation NewsItemViewController
 
 @synthesize newsItemLink = _newsItemLink, 
+			pubDate = _pubDate,
+			description = _description,
 			myIndicator = _myIndicator,
 			loadingText = _loadingText,
 			webView = _webView;
@@ -30,8 +32,8 @@
 		self.statusBarStyle = UIStatusBarStyleBlackOpaque;
 		
 		self.newsItemLink = [query objectForKey:@"link"];
-		
-		NSLog(@"description%@",[query objectForKey:@"description"]);
+		self.pubDate = [query objectForKey:@"pubDate"];
+		self.description = [query objectForKey:@"description"];
 		
 		self.loadingText = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 320, 50)];
 		self.loadingText.text = @"Loading...";
@@ -74,10 +76,24 @@
 	self.webView = [[UIWebView alloc] initWithFrame:CGRectMake(0, 0, appDelegate.deviceWidth, appDelegate.deviceHeight - 114)];
 	self.webView.delegate = self;
 	
-	NSURL *url = [NSURL URLWithString:self.newsItemLink];
-	NSURLRequest *request = [NSURLRequest requestWithURL:url];
+	NSString *newsHTML = [NSString stringWithFormat:@"<meta name=\"viewport\" content=\"width=device-width\" />"];
 	
-	[self.webView loadRequest:request];
+	newsHTML = [newsHTML stringByAppendingString:@"<link rel=\"stylesheet\" media=\"only screen and (max-device-width: 480px)\" href=\"http://www.daveknapik.com/dropbox/mobile.css\" />"];
+	newsHTML = [newsHTML stringByAppendingString:@"<link rel=\"stylesheet\" media=\"only screen and (min-device-width: 481px) and (max-device-width: 1024px)\" href=\"http://www.daveknapik.com/dropbox/ipad.css\" />"];
+	
+	newsHTML = [newsHTML stringByAppendingString:@"<p id='title'><strong>"];
+	newsHTML = [newsHTML stringByAppendingString:self.navigationItem.title];
+	newsHTML = [newsHTML stringByAppendingString:@"</strong>"];
+	
+	newsHTML = [newsHTML stringByAppendingString:@"<br />"];
+	//newsHTML = [newsHTML stringByAppendingString:self.pubDate];
+	newsHTML = [newsHTML stringByAppendingString:@"</p>"];
+	
+	newsHTML = [newsHTML stringByAppendingString:@"<span class='bodycopy'>"];
+	newsHTML = [newsHTML stringByAppendingString:self.description];
+	newsHTML = [newsHTML stringByAppendingString:@"</span>"];
+	
+	[self.webView loadHTMLString:newsHTML baseURL:nil];
 	
 	self.webView.scalesPageToFit = YES;
 	self.webView.autoresizesSubviews = YES;
@@ -112,6 +128,8 @@
 	// e.g. self.myOutlet = nil;
 	self.myIndicator = nil;
 	self.newsItemLink = nil;
+	self.pubDate = nil;
+	self.description = nil;
 	self.loadingText = nil;
 	self.webView = nil;
 	[super viewDidUnload];
@@ -121,6 +139,8 @@
 - (void)dealloc {
 	TT_RELEASE_SAFELY(_myIndicator); 
 	TT_RELEASE_SAFELY(_newsItemLink);
+	TT_RELEASE_SAFELY(_pubDate);
+	TT_RELEASE_SAFELY(_description);
 	TT_RELEASE_SAFELY(_loadingText);
 	TT_RELEASE_SAFELY(_webView);
     [super dealloc];
