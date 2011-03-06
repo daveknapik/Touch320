@@ -12,13 +12,19 @@
 @interface NewsTableItem : TTTableTextItem {
 	NSString* _title;
 	NSString* _link;
+	NSString* _description;
+	NSString* _pubDate;
 }
 
 @property(nonatomic,copy) NSString* title;
 @property(nonatomic,copy) NSString* link;
+@property(nonatomic,copy) NSString* description;
+@property(nonatomic,copy) NSString* pubDate;
 
 + (id)itemWithText:(NSString*)text 
 			 title:(NSString*)title 
-			  link:(NSString*)link;
+			  link:(NSString*)link
+	   description:(NSString*)description
+		   pubDate:(NSString*)pubDate;
 
 @end

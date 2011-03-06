@@ -48,13 +48,17 @@
 		
 		NSString* title = [theItem objectForKey:@"title"];
 		NSString* link = [theItem objectForKey:@"link"];
+		NSString* description = [theItem objectForKey:@"description"];
+		NSString* pubDate = [theItem objectForKey:@"pubDate"];
 		
 		if( !TTIsSetWithItems(title) ) {
 			
 			[items addObject:[NewsTableItem
 							  itemWithText: title
 							  title: title
-							  link: link]];
+							  link: link
+							  description: description
+							  pubDate: pubDate]];
 		}
 	} 
 	

@@ -31,6 +31,8 @@
 		
 		self.newsItemLink = [query objectForKey:@"link"];
 		
+		NSLog(@"description%@",[query objectForKey:@"description"]);
+		
 		self.loadingText = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 320, 50)];
 		self.loadingText.text = @"Loading...";
 		self.loadingText.textColor = [UIColor grayColor];
