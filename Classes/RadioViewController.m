@@ -23,7 +23,7 @@
 		self.navigationBarTintColor	= [UIColor blackColor];
 		self.statusBarStyle = UIStatusBarStyleBlackOpaque;
 		
-		self.tabBarItem.image = [UIImage imageNamed:@"radio.png"];
+		self.tabBarItem.image = [UIImage imageNamed:@"radio"];
 	}
 	
 	return self;

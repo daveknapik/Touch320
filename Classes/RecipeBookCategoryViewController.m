@@ -24,7 +24,7 @@
 		self.navigationBarTintColor	= [UIColor blackColor];
 		self.statusBarStyle = UIStatusBarStyleBlackOpaque;
 		
-		self.tabBarItem.image = [UIImage imageNamed:@"recipes.png"];
+		self.tabBarItem.image = [UIImage imageNamed:@"recipes"];
 	}
 	
 	return self;

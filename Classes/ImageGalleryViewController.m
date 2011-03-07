@@ -22,7 +22,7 @@
 		
 		self.hidesBottomBarWhenPushed = NO;
 		
-		self.tabBarItem.image = [UIImage imageNamed:@"images.png"];
+		self.tabBarItem.image = [UIImage imageNamed:@"images"];
 	}
 	
 	return self;
