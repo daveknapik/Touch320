@@ -268,7 +268,6 @@
 								<string>29B97314FDCFA39411CA2CEA</string>
 								<string>080E96DDFE201D6D7F000001</string>
 								<string>29B97317FDCFA39411CA2CEA</string>
-								<string>735619D0126F69A9007CB975</string>
 								<string>DE31EA79126DFC360030683A</string>
 								<string>1C37FBAC04509CD000000102</string>
 								<string>1C37FABC05509CD000000102</string>
@@ -276,32 +275,7 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>30</integer>
-									<integer>29</integer>
-									<integer>24</integer>
-									<integer>0</integer>
-								</array>
-								<array>
-									<integer>31</integer>
-									<integer>29</integer>
-									<integer>24</integer>
-									<integer>0</integer>
-								</array>
-								<array>
-									<integer>32</integer>
-									<integer>29</integer>
-									<integer>24</integer>
-									<integer>0</integer>
-								</array>
-								<array>
-									<integer>33</integer>
-									<integer>29</integer>
-									<integer>24</integer>
-									<integer>0</integer>
-								</array>
-								<array>
-									<integer>34</integer>
-									<integer>29</integer>
+									<integer>25</integer>
 									<integer>24</integer>
 									<integer>0</integer>
 								</array>
@@ -354,7 +328,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>732DE1401325454D00A23DF5</string>
+										<string>732DE1681325471C00A23DF5</string>
 										<key>history</key>
 										<array>
 											<string>7318C4091189EAB40044DBE7</string>
@@ -390,7 +364,6 @@
 											<string>7302EDA8130D98B800CA87FF</string>
 											<string>7302EDC8130D9CFB00CA87FF</string>
 											<string>7302EDE0130DC63900CA87FF</string>
-											<string>73032EB21312CD2E00E51791</string>
 											<string>73D7B3561315B4560080513E</string>
 											<string>73D7B3581315B4560080513E</string>
 											<string>73D7B3591315B4560080513E</string>
@@ -424,7 +397,8 @@
 											<string>730FC03213242D2F00033052</string>
 											<string>730FC03313242D2F00033052</string>
 											<string>732DE13E1325454D00A23DF5</string>
-											<string>732DE13F1325454D00A23DF5</string>
+											<string>732DE1661325471C00A23DF5</string>
+											<string>732DE1671325471C00A23DF5</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -622,6 +596,8 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
+		<string>1C78EAAD065D492600B07095</string>
+		<string>1CD10A99069EF8BA00B06720</string>
 		<string>1C530D57069F1CE1000CFCEE</string>
 		<string>739F31251189E5000090A11D</string>
 		<string>/Users/david.knapik/Documents/iPhoneDev/Touch320/Touch320.xcodeproj</string>
@@ -648,7 +624,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CD0528F0623707200166675</string>
 								<key>PBXProjectModuleLabel</key>
-								<string></string>
+								<string>NewsViewController.m</string>
 								<key>StatusBarVisibility</key>
 								<true/>
 							</dict>
@@ -665,6 +641,8 @@
 							<string>348pt</string>
 						</dict>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -826,13 +804,13 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1CD10A99069EF8BA00B06720</string>
-				<string>730FBFCD1323E6D100033052</string>
+				<string>732DE1461325464B00A23DF5</string>
 				<string>1C162984064C10D400B95A72</string>
-				<string>730FBFCE1323E6D100033052</string>
-				<string>730FBFCF1323E6D100033052</string>
-				<string>730FBFD01323E6D100033052</string>
-				<string>730FBFD11323E6D100033052</string>
-				<string>730FBFD21323E6D100033052</string>
+				<string>732DE1471325464B00A23DF5</string>
+				<string>732DE1481325464B00A23DF5</string>
+				<string>732DE1491325464B00A23DF5</string>
+				<string>732DE14A1325464B00A23DF5</string>
+				<string>732DE14B1325464B00A23DF5</string>
 			</array>
 			<key>ToolbarConfiguration</key>
 			<string>xcode.toolbar.config.debugV3</string>
@@ -951,8 +929,6 @@
 					<key>Dock</key>
 					<array>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -988,7 +964,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1C78EAAD065D492600B07095</string>
-				<string>730FBFD31323E6D100033052</string>
+				<string>732DE14C1325464B00A23DF5</string>
 				<string>1C78EAAC065D492600B07095</string>
 			</array>
 			<key>ToolbarConfiguration</key>

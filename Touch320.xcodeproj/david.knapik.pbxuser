@@ -131,6 +131,15 @@
 			732DE13E1325454D00A23DF5 /* PBXTextBookmark */ = 732DE13E1325454D00A23DF5 /* PBXTextBookmark */;
 			732DE13F1325454D00A23DF5 /* PBXTextBookmark */ = 732DE13F1325454D00A23DF5 /* PBXTextBookmark */;
 			732DE1401325454D00A23DF5 /* PBXTextBookmark */ = 732DE1401325454D00A23DF5 /* PBXTextBookmark */;
+			732DE1431325464B00A23DF5 /* PBXTextBookmark */ = 732DE1431325464B00A23DF5 /* PBXTextBookmark */;
+			732DE1441325464B00A23DF5 /* PBXBookmark */ = 732DE1441325464B00A23DF5 /* PBXBookmark */;
+			732DE1451325464B00A23DF5 /* PBXBookmark */ = 732DE1451325464B00A23DF5 /* PBXBookmark */;
+			732DE1611325470D00A23DF5 /* XCBuildMessageTextBookmark */ = 732DE1611325470D00A23DF5 /* XCBuildMessageTextBookmark */;
+			732DE1621325470D00A23DF5 /* PBXTextBookmark */ = 732DE1621325470D00A23DF5 /* PBXTextBookmark */;
+			732DE1631325470D00A23DF5 /* PBXTextBookmark */ = 732DE1631325470D00A23DF5 /* PBXTextBookmark */;
+			732DE1661325471C00A23DF5 /* PBXBookmark */ = 732DE1661325471C00A23DF5 /* PBXBookmark */;
+			732DE1671325471C00A23DF5 /* XCBuildMessageTextBookmark */ = 732DE1671325471C00A23DF5 /* XCBuildMessageTextBookmark */;
+			732DE1681325471C00A23DF5 /* PBXTextBookmark */ = 732DE1681325471C00A23DF5 /* PBXTextBookmark */;
 			7338AC571270972E00341EDA = 7338AC571270972E00341EDA /* PBXTextBookmark */;
 			733D613A119B5F5A00B36F02 = 733D613A119B5F5A00B36F02 /* PBXTextBookmark */;
 			735619A1126F556D007CB975 = 735619A1126F556D007CB975 /* PlistBookmark */;
@@ -662,6 +671,76 @@
 		rType = 0;
 		vrLen = 1059;
 		vrLoc = 83;
+	};
+	732DE1431325464B00A23DF5 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = DEFEE66310D80BC3001213CE /* NewsViewController.m */;
+		name = "NewsViewController.m: 27";
+		rLen = 16;
+		rLoc = 688;
+		rType = 0;
+		vrLen = 983;
+		vrLoc = 83;
+	};
+	732DE1441325464B00A23DF5 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 73032EAA1312CCC800E51791 /* buyButtonGreen.png */;
+	};
+	732DE1451325464B00A23DF5 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 73032EAA1312CCC800E51791 /* buyButtonGreen.png */;
+	};
+	732DE1611325470D00A23DF5 /* XCBuildMessageTextBookmark */ = {
+		isa = PBXTextBookmark;
+		comments = "No '-pubDate' method found";
+		fRef = DEFEE66310D80BC3001213CE /* NewsViewController.m */;
+		fallbackIsa = XCBuildMessageTextBookmark;
+		rLen = 1;
+		rLoc = 51;
+		rType = 1;
+	};
+	732DE1621325470D00A23DF5 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = DEFEE66310D80BC3001213CE /* NewsViewController.m */;
+		name = "NewsViewController.m: 52";
+		rLen = 0;
+		rLoc = 1257;
+		rType = 0;
+		vrLen = 868;
+		vrLoc = 964;
+	};
+	732DE1631325470D00A23DF5 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = DEFEE66710D80BC3001213CE /* CatalogSamplerViewController.m */;
+		name = "CatalogSamplerViewController.m: 26";
+		rLen = 0;
+		rLoc = 754;
+		rType = 0;
+		vrLen = 607;
+		vrLoc = 280;
+	};
+	732DE1661325471C00A23DF5 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 73032EAA1312CCC800E51791 /* buyButtonGreen.png */;
+	};
+	732DE1671325471C00A23DF5 /* XCBuildMessageTextBookmark */ = {
+		isa = PBXTextBookmark;
+		comments = "No '-pubDate' method found";
+		fRef = DEFEE66310D80BC3001213CE /* NewsViewController.m */;
+		fallbackIsa = XCBuildMessageTextBookmark;
+		rLen = 1;
+		rLoc = 51;
+		rType = 1;
+	};
+	732DE1681325471C00A23DF5 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = DEFEE66310D80BC3001213CE /* NewsViewController.m */;
+		name = "NewsViewController.m: 52";
+		rLen = 0;
+		rLoc = 1257;
+		rType = 0;
+		vrLen = 1186;
+		vrLoc = 759;
 	};
 	7338AC571270972E00341EDA /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
@@ -1360,9 +1439,9 @@
 	};
 	DEFEE66310D80BC3001213CE /* NewsViewController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {920, 1040}}";
-			sepNavSelRange = "{688, 16}";
-			sepNavVisRange = "{83, 1059}";
+			sepNavIntBoundsRect = "{{0, 0}, {957, 975}}";
+			sepNavSelRange = "{1257, 0}";
+			sepNavVisRange = "{759, 1186}";
 			sepNavWindowFrame = "{{1002, 186}, {750, 558}}";
 		};
 	};
@@ -1389,9 +1468,9 @@
 	};
 	DEFEE66710D80BC3001213CE /* CatalogSamplerViewController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1088, 1313}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1088, 1326}}";
 			sepNavSelRange = "{754, 0}";
-			sepNavVisRange = "{280, 610}";
+			sepNavVisRange = "{280, 607}";
 		};
 	};
 	DEFEE66810D80BC3001213CE /* RadioViewController.h */ = {
