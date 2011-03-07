@@ -35,7 +35,14 @@
 {
 	if (self = [self init]) {		
 		// set the long name shown in the navigation bar at the top
-		self.navigationItem.title = [query objectForKey:@"title"];
+		//self.navigationItem.title = [query objectForKey:@"title"];
+		
+		self.navigationItem.title=@"";
+		
+		self.navigationItem.backBarButtonItem = [[[UIBarButtonItem alloc] initWithTitle:@"Radio"
+																				  style:UIBarButtonItemStyleBordered
+																				 target:nil
+																				 action:nil] autorelease];
 		
 		self.navigationBarStyle = UIBarStyleDefault; 
 		self.navigationBarTintColor	= [UIColor blackColor];

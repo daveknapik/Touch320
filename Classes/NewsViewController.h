@@ -12,7 +12,6 @@
 @interface NewsViewController : TTTableViewController {
 }
 
-
 -(id)initWithTabBar:(NSString *)placeholder;
 
 @end

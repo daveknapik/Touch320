@@ -17,7 +17,12 @@
 		self.title = @"Catalogue";
 		
 		// set the long name shown in the navigation bar at the top
-		self.navigationItem.title=@"Catalogue";
+		self.navigationItem.title=@"";
+		
+		self.navigationItem.backBarButtonItem = [[[UIBarButtonItem alloc] initWithTitle:@"Catalogue"
+																				  style:UIBarButtonItemStyleBordered
+																				 target:nil
+																				 action:nil] autorelease];
 		
 		self.navigationBarStyle = UIBarStyleDefault; 
 		self.navigationBarTintColor	= [UIColor blackColor];

@@ -11,6 +11,7 @@
 #import "AudioPlayer.h"
 
 @interface CatalogItemViewController : TTViewController <AudioPlayerDelegate, TTImageViewDelegate, UIAlertViewDelegate> {
+	NSString* _release_title;
 	NSString* _artist;
 	NSString* _subtitle;
 	NSString* _release_description;
@@ -43,6 +44,7 @@
 	AudioPlayer *audioPlayer;
 }
 
+@property (nonatomic, copy) NSString* release_title;
 @property (nonatomic, copy) NSString* artist;
 @property (nonatomic, copy) NSString* release_description;
 @property (nonatomic, copy) NSString* subtitle;

@@ -82,7 +82,7 @@ void interruptionListener (void *inClientData, UInt32 inInterruptionState);
 
 	if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
 	{
-		// The device is an iPad running iPhone 3.2 or later.
+		// The device is an iPad
 		self.deviceWidth = 768;
 		self.deviceHeight = 1024;
 		self.numberOfThumbnails = @"120";
@@ -94,7 +94,6 @@ void interruptionListener (void *inClientData, UInt32 inInterruptionState);
 		self.deviceHeight = 480;
 		self.numberOfThumbnails = @"40";
 	}
-	
 	
 	//Set the address of the rails site. The trailing slash is required
 	[ObjectiveResourceConfig setSite:@"http://simple-stone-93.heroku.com/"];
@@ -143,3 +142,35 @@ void interruptionListener(void *userData, UInt32  interruptionState) {
 }
 
 @end
+
+@implementation UINavigationBar (UINavigationBarCategory) 
+- (void)drawRect:(CGRect)rect { 
+	if (self.topItem.backBarButtonItem.title == @"News") {
+		UIImage *image = [UIImage imageNamed: @"news-nav"];
+		[image drawInRect:CGRectMake(0, 0, self.frame.size.width, 
+									 self.frame.size.height)];
+	}
+	else if (self.topItem.backBarButtonItem.title == @"Images") {
+		UIImage *image = [UIImage imageNamed: @"images-nav"];
+		[image drawInRect:CGRectMake(0, 0, self.frame.size.width, 
+									 self.frame.size.height)];
+	}
+	else if (self.topItem.backBarButtonItem.title == @"Catalogue") {
+		UIImage *image = [UIImage imageNamed: @"catalog-nav"];
+		[image drawInRect:CGRectMake(0, 0, self.frame.size.width, 
+									 self.frame.size.height)];
+	}
+	else if (self.topItem.backBarButtonItem.title == @"Radio") {
+		UIImage *image = [UIImage imageNamed: @"radio-nav"];
+		[image drawInRect:CGRectMake(0, 0, self.frame.size.width, 
+									 self.frame.size.height)];
+	}
+	else if (self.topItem.backBarButtonItem.title == @"Recipes") {
+		UIImage *image = [UIImage imageNamed: @"recipes-nav"];
+		[image drawInRect:CGRectMake(0, 0, self.frame.size.width, 
+									 self.frame.size.height)];
+	}
+	NSLog(@"self.topItem.title:%@",self.topItem.title);
+} 
+
+@end 

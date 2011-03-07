@@ -13,6 +13,7 @@
 
 @interface RecipeBookItemViewController : TTViewController <UIWebViewDelegate, MFMailComposeViewControllerDelegate> {
 	NSString* _author;
+	NSString* _recipe_title;
 	NSString* _recipe_description;
 	
 	UILabel* _titleValue;
@@ -23,6 +24,7 @@
 }
 
 @property (nonatomic, copy) NSString* author;
+@property (nonatomic, copy) NSString* recipe_title;
 @property (nonatomic, copy) NSString* recipe_description;
 
 @property (nonatomic, retain) UILabel* titleValue;

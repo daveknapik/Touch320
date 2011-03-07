@@ -14,7 +14,8 @@
 
 @implementation NewsItemViewController
 
-@synthesize newsItemLink = _newsItemLink, 
+@synthesize newsItemTitle = _newsItemTitle,
+			newsItemLink = _newsItemLink, 
 			pubDate = _pubDate,
 			description = _description,
 			myIndicator = _myIndicator,
@@ -25,12 +26,18 @@
 {
 	if (self = [self init]) {		
 		// set the long name shown in the navigation bar at the top
-		self.navigationItem.title = [query objectForKey:@"title"];
+		self.navigationItem.title=@"";
+		
+		self.navigationItem.backBarButtonItem = [[[UIBarButtonItem alloc] initWithTitle:@"News"
+																				  style:UIBarButtonItemStyleBordered
+																				 target:nil
+																				 action:nil] autorelease];
 		
 		self.navigationBarStyle = UIBarStyleDefault; 
 		self.navigationBarTintColor	= [UIColor blackColor];
 		self.statusBarStyle = UIStatusBarStyleBlackOpaque;
 		
+		self.newsItemTitle = [query objectForKey:@"title"];
 		self.newsItemLink = [query objectForKey:@"link"];
 		self.pubDate = [query objectForKey:@"pubDate"];
 		self.description = [query objectForKey:@"description"];
@@ -82,7 +89,7 @@
 	newsHTML = [newsHTML stringByAppendingString:@"<link rel=\"stylesheet\" media=\"only screen and (min-device-width: 481px) and (max-device-width: 1024px)\" href=\"http://www.daveknapik.com/dropbox/ipad.css\" />"];
 	
 	newsHTML = [newsHTML stringByAppendingString:@"<p id='title'><strong>"];
-	newsHTML = [newsHTML stringByAppendingString:self.navigationItem.title];
+	newsHTML = [newsHTML stringByAppendingString:self.newsItemTitle];
 	newsHTML = [newsHTML stringByAppendingString:@"</strong>"];
 	
 	newsHTML = [newsHTML stringByAppendingString:@"<br />"];
@@ -127,6 +134,7 @@
 	// Release any retained subviews of the main view.
 	// e.g. self.myOutlet = nil;
 	self.myIndicator = nil;
+	self.newsItemTitle = nil;
 	self.newsItemLink = nil;
 	self.pubDate = nil;
 	self.description = nil;
@@ -138,6 +146,7 @@
 
 - (void)dealloc {
 	TT_RELEASE_SAFELY(_myIndicator); 
+	TT_RELEASE_SAFELY(_newsItemTitle);
 	TT_RELEASE_SAFELY(_newsItemLink);
 	TT_RELEASE_SAFELY(_pubDate);
 	TT_RELEASE_SAFELY(_description);

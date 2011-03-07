@@ -18,7 +18,12 @@
 		self.title = @"News";
 		
 		// set the long name shown in the navigation bar at the top
-		self.navigationItem.title=@"News";
+		self.navigationItem.title=@"";
+		
+		self.navigationItem.backBarButtonItem = [[[UIBarButtonItem alloc] initWithTitle:@"News"
+																				style:UIBarButtonItemStyleBordered
+																				target:nil
+																				action:nil] autorelease];
 		
 		self.navigationBarStyle = UIBarStyleDefault; 
 		self.navigationBarTintColor	= [UIColor blackColor];

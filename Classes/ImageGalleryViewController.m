@@ -18,7 +18,12 @@
 		self.title = @"Images";
 		
 		// set the long name shown in the navigation bar at the top
-		self.navigationItem.title=@"Images";
+		self.navigationItem.title=@"";
+		
+		self.navigationItem.backBarButtonItem = [[[UIBarButtonItem alloc] initWithTitle:@"Images"
+																				  style:UIBarButtonItemStyleBordered
+																				 target:nil
+																				 action:nil] autorelease];
 		
 		self.hidesBottomBarWhenPushed = NO;
 		

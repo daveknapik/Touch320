@@ -10,6 +10,7 @@
 #import <Three20/Three20+Additions.h>
 
 @interface NewsItemViewController : TTViewController <UIWebViewDelegate> {
+	NSString* _newsItemTitle;
 	NSString* _newsItemLink;
 	NSString* _pubDate;
 	NSString* _description;
@@ -18,6 +19,7 @@
 	UIWebView* _webView;
 }
 
+@property (nonatomic, copy) NSString* newsItemTitle;
 @property (nonatomic, copy) NSString* newsItemLink;
 @property (nonatomic, copy) NSString* pubDate;
 @property (nonatomic, copy) NSString* description;

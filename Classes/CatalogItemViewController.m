@@ -12,6 +12,7 @@
 @implementation CatalogItemViewController
 
 @synthesize artist = _artist,
+release_title = _release_title,
 release_description = _release_description,
 subtitle = _subtitle,
 release_duration = _release_duration,
@@ -35,12 +36,19 @@ cover_art = _cover_art;
 {
 	if (self = [self init]) {		
 		// set the long name shown in the navigation bar at the top
-		self.navigationItem.title = [query objectForKey:@"title"];
+		
+		self.navigationItem.title=@"";
+		
+		self.navigationItem.backBarButtonItem = [[[UIBarButtonItem alloc] initWithTitle:@"Catalogue"
+																				  style:UIBarButtonItemStyleBordered
+																				 target:nil
+																				 action:nil] autorelease];
 		
 		self.navigationBarStyle = UIBarStyleDefault; 
 		self.navigationBarTintColor	= [UIColor blackColor];
 		self.statusBarStyle = UIStatusBarStyleBlackOpaque;
 		
+		self.release_title = [query objectForKey:@"title"];
 		self.artist = [query objectForKey:@"artist"];
 		self.subtitle = [query objectForKey:@"subtitle"];
 		self.release_description = [query objectForKey:@"release_description"];
@@ -114,7 +122,7 @@ cover_art = _cover_art;
 	yAxisPlacement = yAxisPlacement + previousSubviewHeight + 5;
 	
 	UILabel *titleValue = [[UILabel alloc] initWithFrame:CGRectMake(5, yAxisPlacement, appDelegate.deviceWidth - 20, 40)];
-	titleValue.text = self.navigationItem.title;
+	titleValue.text = self.release_title;
 	titleValue.textAlignment = UITextAlignmentLeft;
 	titleValue.textColor = [UIColor blackColor];
 	titleValue.font = [UIFont fontWithName:@"Helvetica" size:12];
@@ -123,7 +131,7 @@ cover_art = _cover_art;
 	titleValue.numberOfLines = 0;
 	
 	titleValue.frame = [self resizeLabelFrame:titleValue 
-									  forText:self.navigationItem.title];
+									  forText:self.release_title];
 	
 	[self.view addSubview:titleValue];
 	[titleValue release];
@@ -265,6 +273,7 @@ cover_art = _cover_art;
 	// Release any retained subviews of the main view.
 	// e.g. self.myOutlet = nil;
 	self.artist = nil;
+	self.release_title = nil;
 	self.release_description = nil;
 	self.release_duration = nil;
 	self.mp3_sample_url = nil;
@@ -297,6 +306,7 @@ cover_art = _cover_art;
 
 - (void)dealloc {
 	TT_RELEASE_SAFELY(_artist);
+	TT_RELEASE_SAFELY(_release_title);
 	TT_RELEASE_SAFELY(_subtitle);
 	TT_RELEASE_SAFELY(_release_description);
 	TT_RELEASE_SAFELY(_release_duration);

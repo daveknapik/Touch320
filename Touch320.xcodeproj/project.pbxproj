@@ -51,6 +51,11 @@
 		732DE15E1325465100A23DF5 /* radio-nav@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 732DE1541325465100A23DF5 /* radio-nav@2x.png */; };
 		732DE15F1325465100A23DF5 /* recipes-nav.png in Resources */ = {isa = PBXBuildFile; fileRef = 732DE1551325465100A23DF5 /* recipes-nav.png */; };
 		732DE1601325465100A23DF5 /* recipes-nav@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 732DE1561325465100A23DF5 /* recipes-nav@2x.png */; };
+		732DE31313256BF600A23DF5 /* catalog@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 732DE30E13256BF600A23DF5 /* catalog@2x.png */; };
+		732DE31413256BF600A23DF5 /* images@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 732DE30F13256BF600A23DF5 /* images@2x.png */; };
+		732DE31513256BF600A23DF5 /* news@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 732DE31013256BF600A23DF5 /* news@2x.png */; };
+		732DE31613256BF600A23DF5 /* radio@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 732DE31113256BF600A23DF5 /* radio@2x.png */; };
+		732DE31713256BF600A23DF5 /* recipes@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 732DE31213256BF600A23DF5 /* recipes@2x.png */; };
 		733D612A119B3AD200B36F02 /* mobile.css in Resources */ = {isa = PBXBuildFile; fileRef = 733D6129119B3AD200B36F02 /* mobile.css */; };
 		7371348013215A2C008DA83E /* iTunesArtwork in Resources */ = {isa = PBXBuildFile; fileRef = 7371347F13215A2C008DA83E /* iTunesArtwork */; };
 		738E31C91270B457005A271F /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 738E31C81270B457005A271F /* MessageUI.framework */; };
@@ -548,6 +553,11 @@
 		732DE1541325465100A23DF5 /* radio-nav@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "radio-nav@2x.png"; sourceTree = "<group>"; };
 		732DE1551325465100A23DF5 /* recipes-nav.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "recipes-nav.png"; sourceTree = "<group>"; };
 		732DE1561325465100A23DF5 /* recipes-nav@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "recipes-nav@2x.png"; sourceTree = "<group>"; };
+		732DE30E13256BF600A23DF5 /* catalog@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "catalog@2x.png"; sourceTree = "<group>"; };
+		732DE30F13256BF600A23DF5 /* images@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "images@2x.png"; sourceTree = "<group>"; };
+		732DE31013256BF600A23DF5 /* news@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "news@2x.png"; sourceTree = "<group>"; };
+		732DE31113256BF600A23DF5 /* radio@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "radio@2x.png"; sourceTree = "<group>"; };
+		732DE31213256BF600A23DF5 /* recipes@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "recipes@2x.png"; sourceTree = "<group>"; };
 		733D6129119B3AD200B36F02 /* mobile.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = mobile.css; sourceTree = "<group>"; };
 		7371347F13215A2C008DA83E /* iTunesArtwork */ = {isa = PBXFileReference; lastKnownFileType = file; path = iTunesArtwork; sourceTree = "<group>"; };
 		738E31C81270B457005A271F /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
@@ -1006,6 +1016,11 @@
 		735619D0126F69A9007CB975 /* tab-bar-icons */ = {
 			isa = PBXGroup;
 			children = (
+				732DE30E13256BF600A23DF5 /* catalog@2x.png */,
+				732DE30F13256BF600A23DF5 /* images@2x.png */,
+				732DE31013256BF600A23DF5 /* news@2x.png */,
+				732DE31113256BF600A23DF5 /* radio@2x.png */,
+				732DE31213256BF600A23DF5 /* recipes@2x.png */,
 				732DE1321325454100A23DF5 /* catalog.png */,
 				732DE1331325454100A23DF5 /* images.png */,
 				732DE1341325454100A23DF5 /* news.png */,
@@ -1699,6 +1714,11 @@
 				732DE15E1325465100A23DF5 /* radio-nav@2x.png in Resources */,
 				732DE15F1325465100A23DF5 /* recipes-nav.png in Resources */,
 				732DE1601325465100A23DF5 /* recipes-nav@2x.png in Resources */,
+				732DE31313256BF600A23DF5 /* catalog@2x.png in Resources */,
+				732DE31413256BF600A23DF5 /* images@2x.png in Resources */,
+				732DE31513256BF600A23DF5 /* news@2x.png in Resources */,
+				732DE31613256BF600A23DF5 /* radio@2x.png in Resources */,
+				732DE31713256BF600A23DF5 /* recipes@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

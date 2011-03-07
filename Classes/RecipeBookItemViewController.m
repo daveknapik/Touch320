@@ -12,6 +12,7 @@
 @implementation RecipeBookItemViewController
 
 @synthesize author = _author, 
+			recipe_title = _recipe_title,
 			recipe_description = _recipe_description,
 			titleValue = _titleValue,
 			authorValue = _authorValue,
@@ -22,19 +23,25 @@
 {
 	if (self = [self init]) {		
 		// set the long name shown in the navigation bar at the top
-		self.navigationItem.title = [query objectForKey:@"title"];
+		self.navigationItem.title=@"";
+		
+		self.navigationItem.backBarButtonItem = [[[UIBarButtonItem alloc] initWithTitle:@"Recipes"
+																				  style:UIBarButtonItemStyleBordered
+																				 target:nil
+																				 action:nil] autorelease];
 		
 		self.navigationBarStyle = UIBarStyleDefault; 
 		self.navigationBarTintColor	= [UIColor blackColor];
 		self.statusBarStyle = UIStatusBarStyleBlackOpaque;
 		
 		self.author = [query objectForKey:@"author"];
+		self.recipe_title = [query objectForKey:@"title"];
 		self.recipe_description = [query objectForKey:@"recipe_description"];
 		
 		if ([MFMailComposeViewController canSendMail]) {
 			self.navigationItem.rightBarButtonItem = [[[UIBarButtonItem alloc] initWithTitle:@"Email" style:UIBarButtonItemStylePlain target:self action:@selector(sendRecipe)] autorelease];
 		}
-		/* NSLog(@"recipe item title: %@",self.navigationItem.title);
+		/* NSLog(@"recipe item title: %@",self.recipe_title);
 		NSLog(@"recipe item author: %@",self.author);
 		NSLog(@"recipe item description: %@",self.recipe_description); */
 	}
@@ -62,7 +69,7 @@
 	recipeHTML = [recipeHTML stringByAppendingString:@"<link rel=\"stylesheet\" media=\"only screen and (min-device-width: 481px) and (max-device-width: 1024px)\" href=\"http://www.daveknapik.com/dropbox/ipad.css\" />"];
 	
 	recipeHTML = [recipeHTML stringByAppendingString:@"<p id='title'><strong>"];
-	recipeHTML = [recipeHTML stringByAppendingString:self.navigationItem.title];
+	recipeHTML = [recipeHTML stringByAppendingString:self.recipe_title];
 	recipeHTML = [recipeHTML stringByAppendingString:@"</strong>"];
 	
 	recipeHTML = [recipeHTML stringByAppendingString:@"<br />by "];
@@ -183,7 +190,7 @@
 	subject = [subject stringByAppendingString:@" for Touch"];
 	
 	NSString *recipeHTML = [NSString stringWithFormat:@"<p id='title'><strong>"];
-	recipeHTML = [recipeHTML stringByAppendingString:self.navigationItem.title];
+	recipeHTML = [recipeHTML stringByAppendingString:self.recipe_title];
 	recipeHTML = [recipeHTML stringByAppendingString:@"</strong>"];
 	recipeHTML = [recipeHTML stringByAppendingString:@"<br />by "];
 	recipeHTML = [recipeHTML stringByAppendingString:self.author];
@@ -195,6 +202,7 @@
 	
 	[self presentModalViewController:controller animated:YES];
 	
+	[[controller navigationBar] setTintColor:[UIColor blackColor]];	
 	[controller release];
 }
 
@@ -208,6 +216,7 @@
 	// Release any retained subviews of the main view.
 	// e.g. self.myOutlet = nil;
 	self.author = nil;
+	self.recipe_title = nil;
 	self.recipe_description = nil;
 	
 	self.recipeItemView = nil;
@@ -225,6 +234,7 @@
 
 - (void)dealloc {
 	TT_RELEASE_SAFELY(_author);
+	TT_RELEASE_SAFELY(_recipe_title);
 	TT_RELEASE_SAFELY(_recipe_description);
 	
 	TT_RELEASE_SAFELY(_titleValue);
