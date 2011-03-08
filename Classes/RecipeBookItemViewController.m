@@ -228,9 +228,10 @@
 	[super viewDidUnload];
 }
 
-/*- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
-	return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
-} */
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
+{
+	return (interfaceOrientation == UIInterfaceOrientationPortrait);
+}
 
 - (void)dealloc {
 	TT_RELEASE_SAFELY(_author);

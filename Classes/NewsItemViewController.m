@@ -110,9 +110,10 @@
     [super viewDidLoad];
 }
 
-/*- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
-	return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
-} */ 
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
+{
+	return (interfaceOrientation == UIInterfaceOrientationPortrait);
+}
  
 /*- (void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation {
 	if (fromInterfaceOrientation == UIInterfaceOrientationPortrait) {

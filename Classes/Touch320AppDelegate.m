@@ -145,32 +145,69 @@ void interruptionListener(void *userData, UInt32  interruptionState) {
 
 @implementation UINavigationBar (UINavigationBarCategory) 
 - (void)drawRect:(CGRect)rect { 
-	if (self.topItem.backBarButtonItem.title == @"News") {
-		UIImage *image = [UIImage imageNamed: @"news-nav"];
-		[image drawInRect:CGRectMake(0, 0, self.frame.size.width, 
-									 self.frame.size.height)];
+	if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+	{
+		NSLog(@"device: iPad");
+		
+		if (self.topItem.backBarButtonItem.title == @"News") {
+			UIImage *image = [UIImage imageNamed: @"news-nav-iPad"];
+			[image drawInRect:CGRectMake(0, 0, self.frame.size.width, 
+										 self.frame.size.height)];
+		}
+		else if (self.topItem.backBarButtonItem.title == @"Images") {
+			UIImage *image = [UIImage imageNamed: @"images-nav-iPad"];
+			[image drawInRect:CGRectMake(0, 0, self.frame.size.width, 
+										 self.frame.size.height)];
+		}
+		else if (self.topItem.backBarButtonItem.title == @"Catalogue") {
+			UIImage *image = [UIImage imageNamed: @"catalog-nav-iPad"];
+			[image drawInRect:CGRectMake(0, 0, self.frame.size.width, 
+										 self.frame.size.height)];
+		}
+		else if (self.topItem.backBarButtonItem.title == @"Radio") {
+			UIImage *image = [UIImage imageNamed: @"radio-nav-iPad"];
+			[image drawInRect:CGRectMake(0, 0, self.frame.size.width, 
+										 self.frame.size.height)];
+		}
+		else if (self.topItem.backBarButtonItem.title == @"Recipes") {
+			UIImage *image = [UIImage imageNamed: @"recipes-nav-iPad"];
+			[image drawInRect:CGRectMake(0, 0, self.frame.size.width, 
+										 self.frame.size.height)];
+		}
 	}
-	else if (self.topItem.backBarButtonItem.title == @"Images") {
-		UIImage *image = [UIImage imageNamed: @"images-nav"];
-		[image drawInRect:CGRectMake(0, 0, self.frame.size.width, 
-									 self.frame.size.height)];
+	else
+	{
+		NSLog(@"device: iPhone");
+		if (self.topItem.backBarButtonItem.title == @"News") {
+			UIImage *image = [UIImage imageNamed: @"news-nav"];
+			[image drawInRect:CGRectMake(0, 0, self.frame.size.width, 
+										 self.frame.size.height)];
+		}
+		else if (self.topItem.backBarButtonItem.title == @"Images") {
+			UIImage *image = [UIImage imageNamed: @"images-nav"];
+			[image drawInRect:CGRectMake(0, 0, self.frame.size.width, 
+										 self.frame.size.height)];
+		}
+		else if (self.topItem.backBarButtonItem.title == @"Catalogue") {
+			UIImage *image = [UIImage imageNamed: @"catalog-nav"];
+			[image drawInRect:CGRectMake(0, 0, self.frame.size.width, 
+										 self.frame.size.height)];
+		}
+		else if (self.topItem.backBarButtonItem.title == @"Radio") {
+			UIImage *image = [UIImage imageNamed: @"radio-nav"];
+			[image drawInRect:CGRectMake(0, 0, self.frame.size.width, 
+										 self.frame.size.height)];
+		}
+		else if (self.topItem.backBarButtonItem.title == @"Recipes") {
+			UIImage *image = [UIImage imageNamed: @"recipes-nav"];
+			[image drawInRect:CGRectMake(0, 0, self.frame.size.width, 
+										 self.frame.size.height)];
+		}		
+		
 	}
-	else if (self.topItem.backBarButtonItem.title == @"Catalogue") {
-		UIImage *image = [UIImage imageNamed: @"catalog-nav"];
-		[image drawInRect:CGRectMake(0, 0, self.frame.size.width, 
-									 self.frame.size.height)];
-	}
-	else if (self.topItem.backBarButtonItem.title == @"Radio") {
-		UIImage *image = [UIImage imageNamed: @"radio-nav"];
-		[image drawInRect:CGRectMake(0, 0, self.frame.size.width, 
-									 self.frame.size.height)];
-	}
-	else if (self.topItem.backBarButtonItem.title == @"Recipes") {
-		UIImage *image = [UIImage imageNamed: @"recipes-nav"];
-		[image drawInRect:CGRectMake(0, 0, self.frame.size.width, 
-									 self.frame.size.height)];
-	}
-	NSLog(@"self.topItem.title:%@",self.topItem.title);
+	
+	NSLog(@"frame width:%f",self.frame.size.width);
+	NSLog(@"frame height:%f",self.frame.size.height);
 } 
 
 @end 

@@ -79,10 +79,10 @@
 	[[TTNavigator navigator] openURLAction:[[[TTURLAction actionWithURLPath:@"tt://catalogItem/1"] applyQuery:query] applyAnimated:YES]];
 }
 
-/*- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
-	return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
-}*/
+	return (interfaceOrientation == UIInterfaceOrientationPortrait);
+}
 
 - (void)didReceiveMemoryWarning {
 	// Releases the view if it doesn't have a superview.
