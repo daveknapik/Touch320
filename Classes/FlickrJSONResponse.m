@@ -5,6 +5,7 @@
 
 #import "FlickrJSONResponse.h"
 #import "ImageGalleryPhoto.h"
+#import "Touch320AppDelegate.h"
 
 @implementation FlickrJSONResponse
 @synthesize objects, totalObjectsAvailableOnServer;
@@ -16,6 +17,9 @@
 
 - (NSError*)request:(TTURLRequest*)request processResponse:(NSHTTPURLResponse*)response data:(id)data
 {
+	Touch320AppDelegate *appDelegate;
+	appDelegate = (Touch320AppDelegate*)[UIApplication sharedApplication].delegate;
+	
     NSString *responseBody = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
     
     // Parse the JSON data that we retrieved from the server.
@@ -30,16 +34,25 @@
     // Create the ImageGalleryPhotos
     NSArray *results = [root objectForKey:@"photo"];
     for (NSDictionary *rawResult in results) {        
-		
-		NSString* bigURL = [rawResult objectForKey:@"url_o"];
 		NSString* smallURL = [rawResult objectForKey:@"url_t"];
 		NSString* title = [rawResult objectForKey:@"title"];
-		CGSize bigSize = CGSizeMake([[rawResult objectForKey:@"width_m"] floatValue],
-									[[rawResult objectForKey:@"height_m"] floatValue]);
 		
-		ImageGalleryPhoto* photo = [[[ImageGalleryPhoto alloc] initWithURL:bigURL smallURL:smallURL size:bigSize caption:title] autorelease];
-		
-        [self.objects addObject:photo];
+		if (appDelegate.imageSize == @"large") {
+			NSString* bigURL = [rawResult objectForKey:@"url_l"];
+			CGSize bigSize = CGSizeMake([[rawResult objectForKey:@"width_l"] floatValue],
+										[[rawResult objectForKey:@"height_l"] floatValue]);	
+			ImageGalleryPhoto* photo = [[[ImageGalleryPhoto alloc] initWithURL:bigURL smallURL:smallURL size:bigSize caption:title] autorelease];
+
+			[self.objects addObject:photo];
+		}
+		else {
+			NSString* bigURL = [rawResult objectForKey:@"url_z"];
+			CGSize bigSize = CGSizeMake([[rawResult objectForKey:@"width_z"] floatValue],
+										[[rawResult objectForKey:@"height_z"] floatValue]);
+			ImageGalleryPhoto* photo = [[[ImageGalleryPhoto alloc] initWithURL:bigURL smallURL:smallURL size:bigSize caption:title] autorelease];
+
+			[self.objects addObject:photo];
+		}
     }
     
     return nil;

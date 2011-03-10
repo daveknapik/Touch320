@@ -24,7 +24,7 @@
 
 @implementation Touch320AppDelegate
 
-@synthesize link = _link, numberOfThumbnails = _numberOfThumbnails, deviceWidth = _deviceWidth, deviceHeight = _deviceHeight, activeViewController = _activeViewController, activeAudioPlayer = _activeAudioPlayer;
+@synthesize link = _link, numberOfThumbnails = _numberOfThumbnails, imageSize = _imageSize, deviceWidth = _deviceWidth, deviceHeight = _deviceHeight, activeViewController = _activeViewController, activeAudioPlayer = _activeAudioPlayer;
 
 void interruptionListener (void *inClientData, UInt32 inInterruptionState);
 
@@ -86,6 +86,7 @@ void interruptionListener (void *inClientData, UInt32 inInterruptionState);
 		self.deviceWidth = 768;
 		self.deviceHeight = 1024;
 		self.numberOfThumbnails = @"120";
+		self.imageSize = @"large";
 	}
 	else
 	{
@@ -93,6 +94,7 @@ void interruptionListener (void *inClientData, UInt32 inInterruptionState);
 		self.deviceWidth = 320;
 		self.deviceHeight = 480;
 		self.numberOfThumbnails = @"40";
+		self.imageSize = @"medium640";
 	}
 	
 	//Set the address of the rails site. The trailing slash is required

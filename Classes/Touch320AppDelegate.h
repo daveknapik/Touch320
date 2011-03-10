@@ -13,6 +13,7 @@
 @interface Touch320AppDelegate : NSObject <UIApplicationDelegate> {
 	NSString* _link;
 	NSString* _numberOfThumbnails;
+	NSString* _imageSize;
 	CGFloat _deviceWidth;
 	CGFloat _deviceHeight;
 	UIViewController* _activeViewController;
@@ -21,6 +22,7 @@
 
 @property (nonatomic, retain) NSString* link;
 @property (nonatomic, retain) NSString* numberOfThumbnails;
+@property (nonatomic, retain) NSString* imageSize;
 @property CGFloat deviceWidth;
 @property CGFloat deviceHeight;
 @property (nonatomic, retain) UIViewController* activeViewController;

@@ -59,11 +59,11 @@
 		733D612A119B3AD200B36F02 /* mobile.css in Resources */ = {isa = PBXBuildFile; fileRef = 733D6129119B3AD200B36F02 /* mobile.css */; };
 		7371348013215A2C008DA83E /* iTunesArtwork in Resources */ = {isa = PBXBuildFile; fileRef = 7371347F13215A2C008DA83E /* iTunesArtwork */; };
 		738E31C91270B457005A271F /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 738E31C81270B457005A271F /* MessageUI.framework */; };
-		73AFB9E313258ECA008640EB /* catalog-nav-iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 73AFB9DE13258ECA008640EB /* catalog-nav-iPad.png */; };
-		73AFB9E413258ECA008640EB /* images-nav-iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 73AFB9DF13258ECA008640EB /* images-nav-iPad.png */; };
-		73AFB9E513258ECA008640EB /* news-nav-iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 73AFB9E013258ECA008640EB /* news-nav-iPad.png */; };
-		73AFB9E613258ECA008640EB /* radio-nav-iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 73AFB9E113258ECA008640EB /* radio-nav-iPad.png */; };
-		73AFB9E713258ECA008640EB /* recipes-nav-iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 73AFB9E213258ECA008640EB /* recipes-nav-iPad.png */; };
+		73C4B2721326C9F800D7A2C2 /* catalog-nav-iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 73C4B26D1326C9F800D7A2C2 /* catalog-nav-iPad.png */; };
+		73C4B2731326C9F800D7A2C2 /* images-nav-iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 73C4B26E1326C9F800D7A2C2 /* images-nav-iPad.png */; };
+		73C4B2741326C9F800D7A2C2 /* news-nav-iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 73C4B26F1326C9F800D7A2C2 /* news-nav-iPad.png */; };
+		73C4B2751326C9F800D7A2C2 /* radio-nav-iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 73C4B2701326C9F800D7A2C2 /* radio-nav-iPad.png */; };
+		73C4B2761326C9F800D7A2C2 /* recipes-nav-iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 73C4B2711326C9F800D7A2C2 /* recipes-nav-iPad.png */; };
 		73F3C72E1322AE4E0036B7DE /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 73F3C72B1322AE4E0036B7DE /* Icon-72.png */; };
 		73F3C72F1322AE4E0036B7DE /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 73F3C72C1322AE4E0036B7DE /* Icon.png */; };
 		73F3C7301322AE4E0036B7DE /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 73F3C72D1322AE4E0036B7DE /* Icon@2x.png */; };
@@ -566,11 +566,11 @@
 		733D6129119B3AD200B36F02 /* mobile.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = mobile.css; sourceTree = "<group>"; };
 		7371347F13215A2C008DA83E /* iTunesArtwork */ = {isa = PBXFileReference; lastKnownFileType = file; path = iTunesArtwork; sourceTree = "<group>"; };
 		738E31C81270B457005A271F /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
-		73AFB9DE13258ECA008640EB /* catalog-nav-iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "catalog-nav-iPad.png"; sourceTree = "<group>"; };
-		73AFB9DF13258ECA008640EB /* images-nav-iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "images-nav-iPad.png"; sourceTree = "<group>"; };
-		73AFB9E013258ECA008640EB /* news-nav-iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "news-nav-iPad.png"; sourceTree = "<group>"; };
-		73AFB9E113258ECA008640EB /* radio-nav-iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "radio-nav-iPad.png"; sourceTree = "<group>"; };
-		73AFB9E213258ECA008640EB /* recipes-nav-iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "recipes-nav-iPad.png"; sourceTree = "<group>"; };
+		73C4B26D1326C9F800D7A2C2 /* catalog-nav-iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "catalog-nav-iPad.png"; sourceTree = "<group>"; };
+		73C4B26E1326C9F800D7A2C2 /* images-nav-iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "images-nav-iPad.png"; sourceTree = "<group>"; };
+		73C4B26F1326C9F800D7A2C2 /* news-nav-iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "news-nav-iPad.png"; sourceTree = "<group>"; };
+		73C4B2701326C9F800D7A2C2 /* radio-nav-iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "radio-nav-iPad.png"; sourceTree = "<group>"; };
+		73C4B2711326C9F800D7A2C2 /* recipes-nav-iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "recipes-nav-iPad.png"; sourceTree = "<group>"; };
 		73F3C72B1322AE4E0036B7DE /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
 		73F3C72C1322AE4E0036B7DE /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		73F3C72D1322AE4E0036B7DE /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
@@ -1009,11 +1009,11 @@
 		732DE1421325464100A23DF5 /* nav-bar-images */ = {
 			isa = PBXGroup;
 			children = (
-				73AFB9DE13258ECA008640EB /* catalog-nav-iPad.png */,
-				73AFB9DF13258ECA008640EB /* images-nav-iPad.png */,
-				73AFB9E013258ECA008640EB /* news-nav-iPad.png */,
-				73AFB9E113258ECA008640EB /* radio-nav-iPad.png */,
-				73AFB9E213258ECA008640EB /* recipes-nav-iPad.png */,
+				73C4B26D1326C9F800D7A2C2 /* catalog-nav-iPad.png */,
+				73C4B26E1326C9F800D7A2C2 /* images-nav-iPad.png */,
+				73C4B26F1326C9F800D7A2C2 /* news-nav-iPad.png */,
+				73C4B2701326C9F800D7A2C2 /* radio-nav-iPad.png */,
+				73C4B2711326C9F800D7A2C2 /* recipes-nav-iPad.png */,
 				732DE14D1325465100A23DF5 /* catalog-nav.png */,
 				732DE14E1325465100A23DF5 /* catalog-nav@2x.png */,
 				732DE14F1325465100A23DF5 /* images-nav.png */,
@@ -1734,11 +1734,11 @@
 				732DE31513256BF600A23DF5 /* news@2x.png in Resources */,
 				732DE31613256BF600A23DF5 /* radio@2x.png in Resources */,
 				732DE31713256BF600A23DF5 /* recipes@2x.png in Resources */,
-				73AFB9E313258ECA008640EB /* catalog-nav-iPad.png in Resources */,
-				73AFB9E413258ECA008640EB /* images-nav-iPad.png in Resources */,
-				73AFB9E513258ECA008640EB /* news-nav-iPad.png in Resources */,
-				73AFB9E613258ECA008640EB /* radio-nav-iPad.png in Resources */,
-				73AFB9E713258ECA008640EB /* recipes-nav-iPad.png in Resources */,
+				73C4B2721326C9F800D7A2C2 /* catalog-nav-iPad.png in Resources */,
+				73C4B2731326C9F800D7A2C2 /* images-nav-iPad.png in Resources */,
+				73C4B2741326C9F800D7A2C2 /* news-nav-iPad.png in Resources */,
+				73C4B2751326C9F800D7A2C2 /* radio-nav-iPad.png in Resources */,
+				73C4B2761326C9F800D7A2C2 /* recipes-nav-iPad.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
