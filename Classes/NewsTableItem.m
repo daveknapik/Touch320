@@ -25,7 +25,7 @@
 		   pubDate:(NSString*)pubDate{ 
 	NewsTableItem* item = [[[self alloc] init] autorelease]; 
 	
-	item.text = text; 
+	item.text = @""; 
 	item.title = title; 
 	item.link = link;
 	item.description = description;

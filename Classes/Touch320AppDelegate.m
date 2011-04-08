@@ -24,7 +24,7 @@
 
 @implementation Touch320AppDelegate
 
-@synthesize link = _link, numberOfThumbnails = _numberOfThumbnails, imageSize = _imageSize, deviceWidth = _deviceWidth, deviceHeight = _deviceHeight, activeViewController = _activeViewController, activeAudioPlayer = _activeAudioPlayer;
+@synthesize link = _link, numberOfThumbnails = _numberOfThumbnails, imageSize = _imageSize, deviceWidth = _deviceWidth, deviceHeight = _deviceHeight, deviceMultiplier = _deviceMultiplier, activeViewController = _activeViewController, activeAudioPlayer = _activeAudioPlayer;
 
 void interruptionListener (void *inClientData, UInt32 inInterruptionState);
 
@@ -85,6 +85,7 @@ void interruptionListener (void *inClientData, UInt32 inInterruptionState);
 		// The device is an iPad
 		self.deviceWidth = 768;
 		self.deviceHeight = 1024;
+		self.deviceMultiplier = 2;
 		self.numberOfThumbnails = @"120";
 		self.imageSize = @"large";
 	}
@@ -93,6 +94,7 @@ void interruptionListener (void *inClientData, UInt32 inInterruptionState);
 		// The device is an iPhone or iPod touch.
 		self.deviceWidth = 320;
 		self.deviceHeight = 480;
+		self.deviceMultiplier = 1;
 		self.numberOfThumbnails = @"40";
 		self.imageSize = @"medium640";
 	}

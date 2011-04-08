@@ -16,6 +16,7 @@
 	NSString* _imageSize;
 	CGFloat _deviceWidth;
 	CGFloat _deviceHeight;
+	CGFloat _deviceMultiplier;
 	UIViewController* _activeViewController;
 	AudioPlayer* _activeAudioPlayer;
 }
@@ -25,6 +26,7 @@
 @property (nonatomic, retain) NSString* imageSize;
 @property CGFloat deviceWidth;
 @property CGFloat deviceHeight;
+@property CGFloat deviceMultiplier;
 @property (nonatomic, retain) UIViewController* activeViewController;
 @property (nonatomic, retain) AudioPlayer* activeAudioPlayer;
 
