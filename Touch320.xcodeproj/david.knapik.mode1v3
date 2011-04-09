@@ -266,19 +266,20 @@
 								<string>29B97314FDCFA39411CA2CEA</string>
 								<string>080E96DDFE201D6D7F000001</string>
 								<string>DE10402310F3F01D0058DDB8</string>
+								<string>29B97315FDCFA39411CA2CEA</string>
 								<string>29B97317FDCFA39411CA2CEA</string>
 								<string>1C37FBAC04509CD000000102</string>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>40</integer>
-									<integer>7</integer>
+									<integer>45</integer>
+									<integer>44</integer>
 									<integer>0</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 306}, {307, 673}}</string>
+							<string>{{0, 151}, {307, 673}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -315,7 +316,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>BannerImageTableCell.m</string>
+								<string>NewsTableItemCell.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -323,11 +324,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>BannerImageTableCell.m</string>
+										<string>NewsTableItemCell.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>73C8D8101350E3AE00AF404B</string>
+										<string>73C8D8351350E82500AF404B</string>
 										<key>history</key>
 										<array>
 											<string>7318C4431189EFEF0044DBE7</string>
@@ -412,14 +413,14 @@
 											<string>73C8D7A51350C52000AF404B</string>
 											<string>73C8D7A61350C52000AF404B</string>
 											<string>73C8D7BF1350C60500AF404B</string>
-											<string>73C8D7E41350C8A700AF404B</string>
 											<string>73C8D7E51350C8A700AF404B</string>
-											<string>73C8D7E61350C8A700AF404B</string>
 											<string>73C8D7F31350C95300AF404B</string>
-											<string>73C8D7F91350E11A00AF404B</string>
 											<string>73C8D7FA1350E11A00AF404B</string>
-											<string>73C8D7FB1350E11A00AF404B</string>
-											<string>73C8D7FC1350E11A00AF404B</string>
+											<string>73C8D8111350E7C400AF404B</string>
+											<string>73C8D8121350E7C400AF404B</string>
+											<string>73C8D8131350E7C400AF404B</string>
+											<string>73C8D8141350E7C400AF404B</string>
+											<string>73C8D8151350E7C400AF404B</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>

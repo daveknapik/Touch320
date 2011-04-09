@@ -28,7 +28,7 @@
 		_subtitleLabel = [[UILabel alloc] initWithFrame:CGRectZero];
 		[self.contentView addSubview:_subtitleLabel];
 		
-		_totem = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"news"]];  
+		_totem = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"go"]];  
         [self.contentView addSubview:_totem];
 	}
 	
