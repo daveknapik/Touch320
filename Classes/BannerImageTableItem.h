@@ -13,7 +13,7 @@
 	UIImage* _banner;
 }
 
-@property(nonatomic,copy) UIImage* banner;
+@property(nonatomic,retain) UIImage* banner;
 
 + (id)itemWithBannerImage:(UIImage*)banner;
 
