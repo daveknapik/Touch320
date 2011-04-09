@@ -62,7 +62,7 @@
 	
 	
 	_subtitleLabel.textColor = [UIColor grayColor]; 
-	_subtitleLabel.font = [UIFont fontWithName:@"Helvetica" size:10]; 
+	_subtitleLabel.font = [UIFont fontWithName:@"Helvetica-Bold" size:10]; 
 	_subtitleLabel.textAlignment = UITextAlignmentLeft; 
 	_subtitleLabel.contentMode = UIViewContentModeCenter; 
 	_subtitleLabel.lineBreakMode = UILineBreakModeTailTruncation; 

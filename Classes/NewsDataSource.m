@@ -10,6 +10,8 @@
 #import "NewsTableItem.h"
 #import "NewsTableItemCell.h"
 #import "NewsItemViewController.h"
+#import "BannerImageTableItem.h"
+#import "BannerImageTableCell.h"
 
 @implementation NewsDataSource
 
@@ -42,6 +44,8 @@
 	
 	NSArray *sortedKeys = [keys sortedArrayUsingSelector:@selector(compare:)];
 
+	[items addObject:[BannerImageTableItem
+					  itemWithBannerImage:[UIImage imageNamed:@"news-index"]]];
 	
 	for (id key in sortedKeys) {
 		NSMutableDictionary* theItem = [_newsModel.newsItems objectForKey:key];
@@ -73,6 +77,9 @@
 	if ([object isKindOfClass:[NewsTableItem class]]) { 
 		return [NewsTableItemCell class]; 
 	} 
+	else if ([object isKindOfClass:[BannerImageTableItem class]]) { 
+		return [BannerImageTableCell class]; 
+	}
 	else { 
 		return [super tableView:tableView cellClassForObject:object]; 
 	}
