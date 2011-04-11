@@ -33,7 +33,6 @@
 		
 		TTURLRequest* request = [TTURLRequest requestWithURL:url delegate:self];
 		request.cachePolicy = cachePolicy;
-		request.cacheExpirationAge = 600;
 		
 		id<TTURLResponse> response = [[TTURLDataResponse alloc] init];
 		request.response = response;
@@ -45,6 +44,8 @@
 }
 
 - (void)requestDidFinishLoad:(TTURLRequest*)request {
+	request.cacheExpirationAge = 600;
+	
 	TTURLDataResponse* response = request.response;
 	
 	TT_RELEASE_SAFELY(_newsItems);
@@ -90,5 +91,17 @@
 	
 	[super requestDidFinishLoad:request];
 }
+
+/*-(void)didFailLoadWithError:(NSError *)error {
+	NSLog(@"error: %@",error);
+	
+	[UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
+	
+	// Set the Error View
+	TTErrorView* errorView = [[TTErrorView alloc] initWithTitle:@"LOL" subtitle:@"LMFAO." image:nil];
+	errorView.autoresizingMask = (UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleBottomMargin);
+	
+	self.errorView = errorView;
+}*/
 
 @end

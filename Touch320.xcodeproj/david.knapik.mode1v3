@@ -281,7 +281,7 @@
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 52}, {307, 673}}</string>
+							<string>{{0, 0}, {307, 673}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -330,7 +330,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>735D292413538279006240B4</string>
+										<string>735D297F13539696006240B4</string>
 										<key>history</key>
 										<array>
 											<string>7318C4431189EFEF0044DBE7</string>
@@ -338,7 +338,6 @@
 											<string>733D613A119B5F5A00B36F02</string>
 											<string>73C86ACD11A5852D004042C4</string>
 											<string>73C86ACE11A5852D004042C4</string>
-											<string>73C86AF611A586F8004042C4</string>
 											<string>73C86AF911A586F8004042C4</string>
 											<string>730DE49111CFC46500715199</string>
 											<string>735619A1126F556D007CB975</string>
@@ -365,8 +364,6 @@
 											<string>730FBFC21323E1E500033052</string>
 											<string>732DE1661325471C00A23DF5</string>
 											<string>732DE1F41325528B00A23DF5</string>
-											<string>732DE247132558B100A23DF5</string>
-											<string>732DE27E13255DE900A23DF5</string>
 											<string>732DE2EF1325694300A23DF5</string>
 											<string>732DE2FA13256A6900A23DF5</string>
 											<string>732DE32D13256FAF00A23DF5</string>
@@ -398,9 +395,7 @@
 											<string>731E3BA21329577A0001012A</string>
 											<string>731E3BBC13295A0E0001012A</string>
 											<string>731E3BBD13295A0E0001012A</string>
-											<string>73B0A408134F92340038D0A5</string>
 											<string>73B0A42C134F96750038D0A5</string>
-											<string>73B0A42D134F96750038D0A5</string>
 											<string>73B0A47C134F9E410038D0A5</string>
 											<string>73B0A47D134F9E410038D0A5</string>
 											<string>73B0A47E134F9E410038D0A5</string>
@@ -410,20 +405,25 @@
 											<string>73C8D79F1350C52000AF404B</string>
 											<string>73C8D7A51350C52000AF404B</string>
 											<string>73C8D7A61350C52000AF404B</string>
-											<string>73C8D7BF1350C60500AF404B</string>
 											<string>73C8D7F31350C95300AF404B</string>
 											<string>73C8D83F1350EA0200AF404B</string>
 											<string>73C8D8401350EA0200AF404B</string>
-											<string>73C8D8421350EA0200AF404B</string>
 											<string>73C8D8571350F09B00AF404B</string>
 											<string>73C8D85C1350F10300AF404B</string>
 											<string>73C8D8601350F14400AF404B</string>
 											<string>73C8D8611350F14400AF404B</string>
-											<string>735D28BD135367B6006240B4</string>
-											<string>735D28C2135367FE006240B4</string>
 											<string>735D290F1353774F006240B4</string>
 											<string>735D292213538279006240B4</string>
-											<string>735D292313538279006240B4</string>
+											<string>735D29321353860E006240B4</string>
+											<string>735D29331353860E006240B4</string>
+											<string>735D293B1353867B006240B4</string>
+											<string>735D294013538845006240B4</string>
+											<string>735D297513539565006240B4</string>
+											<string>735D297613539565006240B4</string>
+											<string>735D297713539565006240B4</string>
+											<string>735D297813539565006240B4</string>
+											<string>735D297913539565006240B4</string>
+											<string>735D297A13539565006240B4</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -867,7 +867,7 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CDD528C0622207200134675</string>
 										<key>PBXProjectModuleLabel</key>
-										<string></string>
+										<string>NewsModel.m</string>
 										<key>StatusBarVisibility</key>
 										<true/>
 									</dict>
