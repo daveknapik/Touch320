@@ -6,14 +6,18 @@
 //  Copyright 2009 __MyCompanyName__. All rights reserved.
 //
 
-#import "Touch320AppDelegate.h"
 #import "NewsTableItemCell.h"
 #import "NewsTableItem.h"
 
 @implementation NewsTableItemCell
 
 + (CGFloat)tableView:(UITableView*)tableView rowHeightForObject:(id)item {  
-	return 58.0;
+	if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
+		return 87;
+	}
+	else {
+		return 58;
+	}
 }
 
 
@@ -48,13 +52,8 @@
 - (void)layoutSubviews {
 	[super layoutSubviews];
 	
-	Touch320AppDelegate *appDelegate;
-	
-	appDelegate = (Touch320AppDelegate*)[UIApplication sharedApplication].delegate;	
-	
 	// Set the size, font, foreground color, background color
 	_titleLabel.textColor = [UIColor blackColor]; 
-	_titleLabel.font = [UIFont fontWithName:@"Helvetica" size:14]; 
 	_titleLabel.textAlignment = UITextAlignmentLeft; 
 	_titleLabel.contentMode = UIViewContentModeCenter; 
 	_titleLabel.lineBreakMode = UILineBreakModeTailTruncation; 
@@ -62,21 +61,28 @@
 	
 	
 	_subtitleLabel.textColor = [UIColor grayColor]; 
-	_subtitleLabel.font = [UIFont fontWithName:@"Helvetica-Bold" size:10]; 
 	_subtitleLabel.textAlignment = UITextAlignmentLeft; 
 	_subtitleLabel.contentMode = UIViewContentModeCenter; 
 	_subtitleLabel.lineBreakMode = UILineBreakModeTailTruncation; 
 	_subtitleLabel.numberOfLines = 0;
-
-	if (appDelegate.deviceWidth == 320) {
-		[_titleLabel setFrame:CGRectMake(19,16,237,15)];
-		[_subtitleLabel setFrame:CGRectMake(19,31,237,15)];
-		[_totem setFrame:CGRectMake(271, 9, 30, 30)];
+	
+	if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
+		//iPad
+		[_titleLabel setFrame:CGRectMake(50,23,468,22)];
+		[_subtitleLabel setFrame:CGRectMake(50,45,468,22)];
+		[_totem setFrame:CGRectMake(673, 14, 45, 45)];
+		
+		_titleLabel.font = [UIFont fontWithName:@"Helvetica" size:21]; 
+		_subtitleLabel.font = [UIFont fontWithName:@"Helvetica-Bold" size:15]; 
 	}
-	else if (appDelegate.deviceWidth == 768) {
-		[_titleLabel setFrame:CGRectMake(120,16,468,15)];
-		[_subtitleLabel setFrame:CGRectMake(120,31,468,15)];
-		[_totem setFrame:CGRectMake(588, 9, 30, 30)];
+	else {
+		//iPhone
+		[_titleLabel setFrame:CGRectMake(17,16,247,15)];
+		[_subtitleLabel setFrame:CGRectMake(17,31,247,15)];
+		[_totem setFrame:CGRectMake(273, 9, 30, 30)];
+		
+		_titleLabel.font = [UIFont fontWithName:@"Helvetica" size:14]; 
+		_subtitleLabel.font = [UIFont fontWithName:@"Helvetica-Bold" size:10]; 
 	}
 	
 }
