@@ -23,9 +23,9 @@
 	};
 	29B97313FDCFA39411CA2CEA /* Project object */ = {
 		activeArchitecturePreference = armv6;
-		activeBuildConfigurationName = "Ad Hoc Distribution";
+		activeBuildConfigurationName = Debug;
 		activeExecutable = 739F31111189E4EC0090A11D /* Touch320 */;
-		activeSDKPreference = iphoneos4.2;
+		activeSDKPreference = iphonesimulator4.2;
 		activeTarget = 1D6058900D05DD3D006BFB54 /* Touch320 */;
 		addToTargets = (
 			1D6058900D05DD3D006BFB54 /* Touch320 */,
@@ -156,6 +156,9 @@
 			735D291913537876006240B4 /* PBXTextBookmark */ = 735D291913537876006240B4 /* PBXTextBookmark */;
 			735D291C135378C6006240B4 /* PBXTextBookmark */ = 735D291C135378C6006240B4 /* PBXTextBookmark */;
 			735D29211353792C006240B4 /* PBXTextBookmark */ = 735D29211353792C006240B4 /* PBXTextBookmark */;
+			735D292213538279006240B4 /* PBXTextBookmark */ = 735D292213538279006240B4 /* PBXTextBookmark */;
+			735D292313538279006240B4 /* PBXTextBookmark */ = 735D292313538279006240B4 /* PBXTextBookmark */;
+			735D292413538279006240B4 /* PBXTextBookmark */ = 735D292413538279006240B4 /* PBXTextBookmark */;
 			736F39D812D7CD6500E5A24B = 736F39D812D7CD6500E5A24B /* PBXTextBookmark */;
 			73713430132150AD008DA83E = 73713430132150AD008DA83E /* PlistBookmark */;
 			7371348D13215C6C008DA83E = 7371348D13215C6C008DA83E /* PBXBookmark */;
@@ -364,7 +367,7 @@
 		isa = PBXTextBookmark;
 		fRef = DE160F4310EC091B005A2F1E /* NewsModel.m */;
 		name = "NewsModel.m: 32";
-		rLen = 38;
+		rLen = 39;
 		rLoc = 512;
 		rType = 0;
 		vrLen = 1599;
@@ -838,7 +841,7 @@
 		isa = PBXTextBookmark;
 		fRef = DE160F4310EC091B005A2F1E /* NewsModel.m */;
 		name = "NewsModel.m: 32";
-		rLen = 38;
+		rLen = 39;
 		rLoc = 512;
 		rType = 0;
 		vrLen = 1593;
@@ -848,7 +851,7 @@
 		isa = PBXTextBookmark;
 		fRef = DE160F4310EC091B005A2F1E /* NewsModel.m */;
 		name = "NewsModel.m: 32";
-		rLen = 38;
+		rLen = 39;
 		rLoc = 512;
 		rType = 0;
 		vrLen = 1045;
@@ -859,7 +862,7 @@
 		fRef = DE160F4310EC091B005A2F1E /* NewsModel.m */;
 		name = "NewsModel.m: 39";
 		rLen = 0;
-		rLoc = 798;
+		rLoc = 799;
 		rType = 0;
 		vrLen = 1043;
 		vrLoc = 272;
@@ -973,6 +976,36 @@
 		rType = 0;
 		vrLen = 1185;
 		vrLoc = 1372;
+	};
+	735D292213538279006240B4 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = DE160F3810EC0888005A2F1E /* NewsTableItemCell.m */;
+		name = "NewsTableItemCell.m: 73";
+		rLen = 0;
+		rLoc = 1992;
+		rType = 0;
+		vrLen = 1335;
+		vrLoc = 1141;
+	};
+	735D292313538279006240B4 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = DE160F4310EC091B005A2F1E /* NewsModel.m */;
+		name = "NewsModel.m: 39";
+		rLen = 0;
+		rLoc = 799;
+		rType = 0;
+		vrLen = 1028;
+		vrLoc = 287;
+	};
+	735D292413538279006240B4 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = DE160F4310EC091B005A2F1E /* NewsModel.m */;
+		name = "NewsModel.m: 32";
+		rLen = 0;
+		rLoc = 547;
+		rType = 0;
+		vrLen = 1029;
+		vrLoc = 287;
 	};
 	736F39D812D7CD6500E5A24B /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
@@ -1644,9 +1677,9 @@
 	};
 	DE160F3810EC0888005A2F1E /* NewsTableItemCell.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {920, 1391}}";
+			sepNavIntBoundsRect = "{{0, 0}, {920, 1404}}";
 			sepNavSelRange = "{1992, 0}";
-			sepNavVisRange = "{1372, 1185}";
+			sepNavVisRange = "{1141, 1335}";
 		};
 	};
 	DE160F3F10EC090F005A2F1E /* NewsDataSource.h */ = {
@@ -1672,9 +1705,9 @@
 	};
 	DE160F4310EC091B005A2F1E /* NewsModel.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {920, 1235}}";
-			sepNavSelRange = "{798, 0}";
-			sepNavVisRange = "{272, 1043}";
+			sepNavIntBoundsRect = "{{0, 0}, {920, 1339}}";
+			sepNavSelRange = "{547, 0}";
+			sepNavVisRange = "{287, 1029}";
 		};
 	};
 	DE160F4510EC0976005A2F1E /* CatalogSamplerModel.m */ = {

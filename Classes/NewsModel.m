@@ -29,7 +29,7 @@
 		if (more)
 			page++;
 		
-		NSString* url=@"http://www.touchmusic.org.uk/index.xml";
+		NSString* url=@"http://www.touchmusic.org.uk/iphone.xml";
 		
 		TTURLRequest* request = [TTURLRequest requestWithURL:url delegate:self];
 		request.cachePolicy = cachePolicy;

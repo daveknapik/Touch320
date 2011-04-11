@@ -274,7 +274,7 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>21</integer>
+									<integer>25</integer>
 									<integer>11</integer>
 									<integer>7</integer>
 									<integer>0</integer>
@@ -318,7 +318,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>NewsTableItemCell.m</string>
+								<string>NewsModel.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -326,11 +326,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>NewsTableItemCell.m</string>
+										<string>NewsModel.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>735D29211353792C006240B4</string>
+										<string>735D292413538279006240B4</string>
 										<key>history</key>
 										<array>
 											<string>7318C4431189EFEF0044DBE7</string>
@@ -421,9 +421,9 @@
 											<string>73C8D8611350F14400AF404B</string>
 											<string>735D28BD135367B6006240B4</string>
 											<string>735D28C2135367FE006240B4</string>
-											<string>735D290C135376E3006240B4</string>
 											<string>735D290F1353774F006240B4</string>
-											<string>735D29101353774F006240B4</string>
+											<string>735D292213538279006240B4</string>
+											<string>735D292313538279006240B4</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
