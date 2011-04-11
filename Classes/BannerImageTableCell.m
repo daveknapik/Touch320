@@ -6,14 +6,19 @@
 //  Copyright 2011 __MyCompanyName__. All rights reserved.
 //
 
-#import "Touch320AppDelegate.h"
 #import "BannerImageTableCell.h"
 #import "BannerImageTableItem.h"
 
 @implementation BannerImageTableCell
 
 + (CGFloat)tableView:(UITableView*)tableView rowHeightForObject:(id)item {  
-	return 125;
+	if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
+		return 307;
+	}
+	else {
+		return 125;
+	}
+	
 }
 
 
@@ -40,15 +45,11 @@
 - (void)layoutSubviews {
 	[super layoutSubviews];
 	
-	Touch320AppDelegate *appDelegate;
-	
-	appDelegate = (Touch320AppDelegate*)[UIApplication sharedApplication].delegate;	
-	
-	if (appDelegate.deviceWidth == 320) {
-		[_banner setFrame:CGRectMake(0, 0, 320, 125)];
+	if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
+		[_banner setFrame:CGRectMake(0, 0, 768, 307)];
 	}
-	else if (appDelegate.deviceWidth == 768) {
-		[_banner setFrame:CGRectMake(0, 0, 768, 300)];
+	else {
+		[_banner setFrame:CGRectMake(0, 0, 320, 125)];
 	}
 	
 }
@@ -66,6 +67,8 @@
 		
 		BannerImageTableItem *item = object;
 		_banner.image = item.banner;
+		
+		NSLog(@"image width: %d",item.banner.size);
 	}
 }
 

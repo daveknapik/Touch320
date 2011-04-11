@@ -43,9 +43,16 @@
 	NSArray *keys = [_newsModel.newsItems allKeys];
 	
 	NSArray *sortedKeys = [keys sortedArrayUsingSelector:@selector(compare:)];
-
-	[items addObject:[BannerImageTableItem
-					  itemWithBannerImage:[UIImage imageNamed:@"news-index"]]];
+	
+	if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
+		[items addObject:[BannerImageTableItem
+						  itemWithBannerImage:[UIImage imageNamed:@"newport-pylons"]]];
+	}
+	else {
+		[items addObject:[BannerImageTableItem
+						  itemWithBannerImage:[UIImage imageNamed:@"newport-pylons-iPad"]]];
+	}
+	
 	
 	for (id key in sortedKeys) {
 		NSMutableDictionary* theItem = [_newsModel.newsItems objectForKey:key];
