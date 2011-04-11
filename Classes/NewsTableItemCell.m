@@ -69,14 +69,14 @@
 	_subtitleLabel.numberOfLines = 0;
 
 	if (appDelegate.deviceWidth == 320) {
-		[_titleLabel setFrame:CGRectMake(24,16,237,15)];
-		[_subtitleLabel setFrame:CGRectMake(24,31,237,15)];
-		[_totem setFrame:CGRectMake(261, 9, 30, 30)];
+		[_titleLabel setFrame:CGRectMake(19,16,237,15)];
+		[_subtitleLabel setFrame:CGRectMake(19,31,237,15)];
+		[_totem setFrame:CGRectMake(271, 9, 30, 30)];
 	}
 	else if (appDelegate.deviceWidth == 768) {
-		[_titleLabel setFrame:CGRectMake(58,16,568,15)];
-		[_subtitleLabel setFrame:CGRectMake(58,31,568,15)];
-		[_totem setFrame:CGRectMake(626, 9, 30, 30)];
+		[_titleLabel setFrame:CGRectMake(120,16,468,15)];
+		[_subtitleLabel setFrame:CGRectMake(120,31,468,15)];
+		[_totem setFrame:CGRectMake(588, 9, 30, 30)];
 	}
 	
 }
