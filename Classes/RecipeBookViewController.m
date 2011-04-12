@@ -50,7 +50,7 @@
 	NSDictionary *query = [NSDictionary
 						   dictionaryWithObjectsAndKeys:
 						   [object author], @"author",
-						   [object subtitle], @"title",
+						   [object recipe_title], @"title",
 						   [object recipe_description], @"recipe_description",
 						   nil];
 	//[[TTNavigator navigator] openURL:@"tt://recipeItem/1" query:query animated:YES]; 

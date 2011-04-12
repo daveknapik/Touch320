@@ -276,14 +276,14 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>35</integer>
+									<integer>41</integer>
 									<integer>29</integer>
 									<integer>7</integer>
 									<integer>0</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 147}, {307, 673}}</string>
+							<string>{{0, 179}, {307, 673}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -320,7 +320,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>RecipeBookCategoryTableItemCell.m</string>
+								<string>RecipeBookViewController.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -328,19 +328,17 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>RecipeBookCategoryTableItemCell.m</string>
+										<string>RecipeBookViewController.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>7382A2331354A7B400517F92</string>
+										<string>7382A2871354AF3600517F92</string>
 										<key>history</key>
 										<array>
 											<string>7318C4431189EFEF0044DBE7</string>
 											<string>7318C4451189EFEF0044DBE7</string>
 											<string>733D613A119B5F5A00B36F02</string>
 											<string>73C86ACD11A5852D004042C4</string>
-											<string>73C86AF911A586F8004042C4</string>
-											<string>730DE49111CFC46500715199</string>
 											<string>735619A1126F556D007CB975</string>
 											<string>73561A57126F702D007CB975</string>
 											<string>73561A58126F702D007CB975</string>
@@ -395,7 +393,6 @@
 											<string>731E3BBC13295A0E0001012A</string>
 											<string>731E3BBD13295A0E0001012A</string>
 											<string>73B0A42C134F96750038D0A5</string>
-											<string>73B0A47C134F9E410038D0A5</string>
 											<string>73B0A52C134FB38D0038D0A5</string>
 											<string>73C8D79F1350C52000AF404B</string>
 											<string>73C8D7A51350C52000AF404B</string>
@@ -415,21 +412,25 @@
 											<string>7382A1E913549DFC00517F92</string>
 											<string>7382A2021354A1E600517F92</string>
 											<string>7382A2031354A1E600517F92</string>
-											<string>7382A2041354A1E600517F92</string>
-											<string>7382A2051354A1E600517F92</string>
 											<string>7382A2061354A1E600517F92</string>
 											<string>7382A2071354A1E600517F92</string>
 											<string>7382A2081354A1E600517F92</string>
-											<string>7382A20A1354A1E600517F92</string>
-											<string>7382A20B1354A1E600517F92</string>
 											<string>7382A20D1354A1E600517F92</string>
 											<string>7382A20F1354A1E600517F92</string>
 											<string>7382A2101354A1E600517F92</string>
-											<string>7382A2191354A25500517F92</string>
-											<string>7382A21A1354A25500517F92</string>
 											<string>7382A21B1354A25500517F92</string>
-											<string>7382A2201354A64300517F92</string>
-											<string>7382A2211354A64300517F92</string>
+											<string>7382A2351354AB4000517F92</string>
+											<string>7382A2361354AB4000517F92</string>
+											<string>7382A2401354ABCC00517F92</string>
+											<string>7382A2721354AEC100517F92</string>
+											<string>7382A2731354AEC100517F92</string>
+											<string>7382A2741354AEC100517F92</string>
+											<string>7382A2751354AEC100517F92</string>
+											<string>7382A2761354AEC100517F92</string>
+											<string>7382A2801354AF0E00517F92</string>
+											<string>7382A2811354AF0E00517F92</string>
+											<string>7382A2851354AF3600517F92</string>
+											<string>7382A2861354AF3600517F92</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -650,12 +651,14 @@
 					<key>Dock</key>
 					<array>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
 								<string>1CD0528F0623707200166675</string>
 								<key>PBXProjectModuleLabel</key>
-								<string></string>
+								<string>RecipeBookTableItem.m</string>
 								<key>StatusBarVisibility</key>
 								<true/>
 							</dict>

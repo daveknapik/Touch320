@@ -13,6 +13,7 @@
 
 @synthesize title = _title,
 			author = _author, 
+      recipe_title = _recipe_title,
 recipe_description = _recipe_description; 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
@@ -20,14 +21,16 @@ recipe_description = _recipe_description;
 + (id)itemWithText:(NSString*)text 
 			 title:(NSString*)title 
 		  subtitle:(NSString*)subtitle 
-			author:(NSString*)author 
+			author:(NSString*)author
+	  recipe_title:(NSString*)recipe_title
 recipe_description:(NSString*)recipe_description { 
 	RecipeBookTableItem* item = [[[self alloc] init] autorelease]; 
 	
 	item.text = @""; 
 	item.title = title;
-	item.subtitle = subtitle;
+	item.subtitle = @"";
 	item.author = author;
+	item.recipe_title = recipe_title;
 	item.recipe_description = recipe_description;
 	
 	return item; 
@@ -38,6 +41,7 @@ recipe_description:(NSString*)recipe_description {
 		_title = nil; 
 		_subtitle = nil;
 		_author = nil;
+		_recipe_title = nil;
 		_recipe_description = nil;
 	} 
 	
@@ -48,6 +52,7 @@ recipe_description:(NSString*)recipe_description {
 	TT_RELEASE_SAFELY(_title); 
 	TT_RELEASE_SAFELY(_subtitle);
 	TT_RELEASE_SAFELY(_author);
+	TT_RELEASE_SAFELY(_recipe_title);
 	TT_RELEASE_SAFELY(_recipe_description);
 	[super dealloc];
 }
@@ -57,6 +62,7 @@ recipe_description:(NSString*)recipe_description {
 		self.title = [decoder decodeObjectForKey:@"title"]; 
 		self.subtitle = [decoder decodeObjectForKey:@"subtitle"];
 		self.author = [decoder decodeObjectForKey:@"author"];
+		self.recipe_title = [decoder decodeObjectForKey:@"recipe_title"];
 		self.recipe_description = [decoder decodeObjectForKey:@"recipe_description"];
 	} 
 	
@@ -76,6 +82,10 @@ recipe_description:(NSString*)recipe_description {
 	
 	if (self.author) { 
 		[encoder encodeObject:self.author forKey:@"author"]; 
+	}
+	
+	if (self.recipe_title) {
+		[encoder encodeObject:self.recipe_title forKey:@"recipe_title"];
 	}
 	
 	if (self.recipe_description) { 

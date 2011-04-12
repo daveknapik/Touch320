@@ -13,16 +13,19 @@
 	NSString* _title;
 	NSString* _author;
 	NSString* _recipe_description;
+	NSString* _recipe_title;
 }
 
 @property(nonatomic,copy) NSString* title;
 @property(nonatomic,copy) NSString* author;
 @property(nonatomic,copy) NSString* recipe_description;
+@property(nonatomic,copy) NSString* recipe_title;
 
 + (id)itemWithText:(NSString*)text 
 			 title:(NSString*)title
 		  subtitle:(NSString*)subtitle 
 			author:(NSString*)author 
+	  recipe_title:(NSString*)recipe_title
 recipe_description:(NSString*)recipe_description;
 
 @end

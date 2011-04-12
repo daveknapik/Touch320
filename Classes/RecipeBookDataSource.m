@@ -56,6 +56,7 @@
 							  title: title
 							  subtitle: subtitle 
 							  author: title 
+							  recipe_title: subtitle
 							  recipe_description: recipe_description]];
 		}
 	}
