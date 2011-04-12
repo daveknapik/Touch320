@@ -9,9 +9,9 @@
 	};
 	1D3623250D0F684500981E51 /* Touch320AppDelegate.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {920, 3068}}";
-			sepNavSelRange = "{7670, 0}";
-			sepNavVisRange = "{6940, 1686}";
+			sepNavIntBoundsRect = "{{0, 0}, {920, 3081}}";
+			sepNavSelRange = "{7778, 0}";
+			sepNavVisRange = "{7931, 1588}";
 			sepNavWindowFrame = "{{84, 467}, {1315, 643}}";
 		};
 	};
@@ -23,9 +23,9 @@
 	};
 	29B97313FDCFA39411CA2CEA /* Project object */ = {
 		activeArchitecturePreference = armv6;
-		activeBuildConfigurationName = Debug;
+		activeBuildConfigurationName = "Ad Hoc Distribution";
 		activeExecutable = 739F31111189E4EC0090A11D /* Touch320 */;
-		activeSDKPreference = iphonesimulator4.2;
+		activeSDKPreference = iphoneos4.2;
 		activeTarget = 1D6058900D05DD3D006BFB54 /* Touch320 */;
 		addToTargets = (
 			1D6058900D05DD3D006BFB54 /* Touch320 */,
@@ -422,6 +422,8 @@
 			7382A3701354E32000517F92 /* PBXTextBookmark */ = 7382A3701354E32000517F92 /* PBXTextBookmark */;
 			7382A3711354E33C00517F92 /* PBXTextBookmark */ = 7382A3711354E33C00517F92 /* PBXTextBookmark */;
 			7382A3741354E36400517F92 /* PBXTextBookmark */ = 7382A3741354E36400517F92 /* PBXTextBookmark */;
+			7382A3771354E3D300517F92 /* PBXTextBookmark */ = 7382A3771354E3D300517F92 /* PBXTextBookmark */;
+			7382A37A1354E40200517F92 /* PBXTextBookmark */ = 7382A37A1354E40200517F92 /* PBXTextBookmark */;
 			738E31F31270B956005A271F = 738E31F31270B956005A271F /* PBXTextBookmark */;
 			739D64E81325FA4B0052D4A0 = 739D64E81325FA4B0052D4A0 /* PBXTextBookmark */;
 			739D64EA1325FA4B0052D4A0 = 739D64EA1325FA4B0052D4A0 /* PBXTextBookmark */;
@@ -3613,7 +3615,7 @@
 		fRef = 1D3623250D0F684500981E51 /* Touch320AppDelegate.m */;
 		name = "Touch320AppDelegate.m: 209";
 		rLen = 0;
-		rLoc = 9190;
+		rLoc = 9294;
 		rType = 0;
 		vrLen = 1313;
 		vrLoc = 7307;
@@ -3623,7 +3625,7 @@
 		fRef = 1D3623250D0F684500981E51 /* Touch320AppDelegate.m */;
 		name = "Touch320AppDelegate.m: 209";
 		rLen = 0;
-		rLoc = 9190;
+		rLoc = 9294;
 		rType = 0;
 		vrLen = 1309;
 		vrLoc = 7311;
@@ -3633,7 +3635,7 @@
 		fRef = 1D3623250D0F684500981E51 /* Touch320AppDelegate.m */;
 		name = "Touch320AppDelegate.m: 209";
 		rLen = 0;
-		rLoc = 9190;
+		rLoc = 9294;
 		rType = 0;
 		vrLen = 1309;
 		vrLoc = 7311;
@@ -3673,7 +3675,7 @@
 		fRef = 1D3623250D0F684500981E51 /* Touch320AppDelegate.m */;
 		name = "Touch320AppDelegate.m: 209";
 		rLen = 0;
-		rLoc = 9190;
+		rLoc = 9294;
 		rType = 0;
 		vrLen = 1308;
 		vrLoc = 7311;
@@ -3683,7 +3685,7 @@
 		fRef = 1D3623250D0F684500981E51 /* Touch320AppDelegate.m */;
 		name = "Touch320AppDelegate.m: 209";
 		rLen = 0;
-		rLoc = 9173;
+		rLoc = 9277;
 		rType = 0;
 		vrLen = 1356;
 		vrLoc = 7320;
@@ -3693,7 +3695,7 @@
 		fRef = 1D3623250D0F684500981E51 /* Touch320AppDelegate.m */;
 		name = "Touch320AppDelegate.m: 188";
 		rLen = 0;
-		rLoc = 7925;
+		rLoc = 8029;
 		rType = 0;
 		vrLen = 1620;
 		vrLoc = 7320;
@@ -3703,7 +3705,7 @@
 		fRef = 1D3623250D0F684500981E51 /* Touch320AppDelegate.m */;
 		name = "Touch320AppDelegate.m: 206";
 		rLen = 0;
-		rLoc = 8856;
+		rLoc = 8960;
 		rType = 0;
 		vrLen = 1621;
 		vrLoc = 7320;
@@ -3713,7 +3715,7 @@
 		fRef = 1D3623250D0F684500981E51 /* Touch320AppDelegate.m */;
 		name = "Touch320AppDelegate.m: 200";
 		rLen = 0;
-		rLoc = 8542;
+		rLoc = 8646;
 		rType = 0;
 		vrLen = 1620;
 		vrLoc = 7320;
@@ -3723,7 +3725,7 @@
 		fRef = 1D3623250D0F684500981E51 /* Touch320AppDelegate.m */;
 		name = "Touch320AppDelegate.m: 194";
 		rLen = 3;
-		rLoc = 8192;
+		rLoc = 8296;
 		rType = 0;
 		vrLen = 1620;
 		vrLoc = 7320;
@@ -3733,7 +3735,7 @@
 		fRef = 1D3623250D0F684500981E51 /* Touch320AppDelegate.m */;
 		name = "Touch320AppDelegate.m: 194";
 		rLen = 0;
-		rLoc = 8224;
+		rLoc = 8328;
 		rType = 0;
 		vrLen = 1620;
 		vrLoc = 7320;
@@ -3747,6 +3749,26 @@
 		rType = 0;
 		vrLen = 1686;
 		vrLoc = 6940;
+	};
+	7382A3771354E3D300517F92 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623250D0F684500981E51 /* Touch320AppDelegate.m */;
+		name = "Touch320AppDelegate.m: 187";
+		rLen = 0;
+		rLoc = 7778;
+		rType = 0;
+		vrLen = 1688;
+		vrLoc = 5987;
+	};
+	7382A37A1354E40200517F92 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623250D0F684500981E51 /* Touch320AppDelegate.m */;
+		name = "Touch320AppDelegate.m: 187";
+		rLen = 0;
+		rLoc = 7778;
+		rType = 0;
+		vrLen = 1588;
+		vrLoc = 7931;
 	};
 	738E31F31270B956005A271F /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
