@@ -79,7 +79,7 @@
 		//iPhone
 		[_titleLabel setFrame:CGRectMake(17,16,247,15)];
 		[_subtitleLabel setFrame:CGRectMake(17,31,247,15)];
-		[_totem setFrame:CGRectMake(273, 9, 30, 30)];
+		[_totem setFrame:CGRectMake(273, 14, 30, 30)];
 		
 		_titleLabel.font = [UIFont fontWithName:@"Helvetica" size:14]; 
 		_subtitleLabel.font = [UIFont fontWithName:@"Helvetica-Bold" size:10]; 

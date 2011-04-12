@@ -376,6 +376,10 @@
 			7382A3281354D46800517F92 /* PBXTextBookmark */ = 7382A3281354D46800517F92 /* PBXTextBookmark */;
 			7382A3291354D46800517F92 /* PBXTextBookmark */ = 7382A3291354D46800517F92 /* PBXTextBookmark */;
 			7382A32A1354D46800517F92 /* PBXTextBookmark */ = 7382A32A1354D46800517F92 /* PBXTextBookmark */;
+			7382A32F1354D4DE00517F92 /* PBXTextBookmark */ = 7382A32F1354D4DE00517F92 /* PBXTextBookmark */;
+			7382A3301354D4DE00517F92 /* PBXTextBookmark */ = 7382A3301354D4DE00517F92 /* PBXTextBookmark */;
+			7382A3311354D4DE00517F92 /* PBXTextBookmark */ = 7382A3311354D4DE00517F92 /* PBXTextBookmark */;
+			7382A3321354D4DE00517F92 /* PBXTextBookmark */ = 7382A3321354D4DE00517F92 /* PBXTextBookmark */;
 			738E31F31270B956005A271F = 738E31F31270B956005A271F /* PBXTextBookmark */;
 			739D64E81325FA4B0052D4A0 = 739D64E81325FA4B0052D4A0 /* PBXTextBookmark */;
 			739D64EA1325FA4B0052D4A0 = 739D64EA1325FA4B0052D4A0 /* PBXTextBookmark */;
@@ -1835,7 +1839,7 @@
 		fRef = DE160F3810EC0888005A2F1E /* NewsTableItemCell.m */;
 		name = "NewsTableItemCell.m: 90";
 		rLen = 323;
-		rLoc = 2477;
+		rLoc = 2478;
 		rType = 0;
 		vrLen = 848;
 		vrLoc = 1959;
@@ -1955,7 +1959,7 @@
 		fRef = DE160F3810EC0888005A2F1E /* NewsTableItemCell.m */;
 		name = "NewsTableItemCell.m: 90";
 		rLen = 323;
-		rLoc = 2477;
+		rLoc = 2478;
 		rType = 0;
 		vrLen = 1008;
 		vrLoc = 1747;
@@ -2114,7 +2118,7 @@
 		isa = PBXTextBookmark;
 		fRef = DE160F3810EC0888005A2F1E /* NewsTableItemCell.m */;
 		name = "NewsTableItemCell.m: 49";
-		rLen = 1675;
+		rLen = 1676;
 		rLoc = 1126;
 		rType = 0;
 		vrLen = 1116;
@@ -2522,7 +2526,7 @@
 		isa = PBXTextBookmark;
 		fRef = DE160F3810EC0888005A2F1E /* NewsTableItemCell.m */;
 		name = "NewsTableItemCell.m: 49";
-		rLen = 1675;
+		rLen = 1676;
 		rLoc = 1126;
 		rType = 0;
 		vrLen = 985;
@@ -3248,6 +3252,46 @@
 		vrLen = 1333;
 		vrLoc = 1141;
 	};
+	7382A32F1354D4DE00517F92 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = DE93D90510F38DBA005B6255 /* RecipeBookTableItemCell.m */;
+		name = "RecipeBookTableItemCell.m: 72";
+		rLen = 0;
+		rLoc = 2019;
+		rType = 0;
+		vrLen = 1310;
+		vrLoc = 1235;
+	};
+	7382A3301354D4DE00517F92 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = DE97ED541127A0FD00E25713 /* RecipeBookCategoryTableItemCell.m */;
+		name = "RecipeBookCategoryTableItemCell.m: 59";
+		rLen = 0;
+		rLoc = 1536;
+		rType = 0;
+		vrLen = 980;
+		vrLoc = 929;
+	};
+	7382A3311354D4DE00517F92 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = DE160F3810EC0888005A2F1E /* NewsTableItemCell.m */;
+		name = "NewsTableItemCell.m: 73";
+		rLen = 0;
+		rLoc = 1996;
+		rType = 0;
+		vrLen = 1333;
+		vrLoc = 1141;
+	};
+	7382A3321354D4DE00517F92 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = DE160F3810EC0888005A2F1E /* NewsTableItemCell.m */;
+		name = "NewsTableItemCell.m: 82";
+		rLen = 0;
+		rLoc = 2315;
+		rType = 0;
+		vrLen = 1337;
+		vrLoc = 1141;
+	};
 	738E31F31270B956005A271F /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = DE7455A110DE66DE00332FD6 /* ImageGalleryPhoto.h */;
@@ -3879,8 +3923,8 @@
 	DE160F3810EC0888005A2F1E /* NewsTableItemCell.m */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {920, 1339}}";
-			sepNavSelRange = "{1996, 0}";
-			sepNavVisRange = "{1141, 1333}";
+			sepNavSelRange = "{2315, 0}";
+			sepNavVisRange = "{1141, 1337}";
 		};
 	};
 	DE160F3F10EC090F005A2F1E /* NewsDataSource.h */ = {
@@ -4048,7 +4092,7 @@
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {920, 1378}}";
 			sepNavSelRange = "{2019, 0}";
-			sepNavVisRange = "{1235, 1311}";
+			sepNavVisRange = "{1235, 1310}";
 		};
 	};
 	DE93D90810F38DC3005B6255 /* RecipeBookDataSource.m */ = {
@@ -4110,7 +4154,7 @@
 	};
 	DE97ED541127A0FD00E25713 /* RecipeBookCategoryTableItemCell.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {920, 1157}}";
+			sepNavIntBoundsRect = "{{0, 0}, {920, 1170}}";
 			sepNavSelRange = "{1536, 0}";
 			sepNavVisRange = "{929, 980}";
 		};
