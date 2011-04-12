@@ -8,6 +8,7 @@
 
 #import "NewsViewController.h"
 #import "NewsDataSource.h"
+#import "NewsTableItem.h"
 #import "Touch320AppDelegate.h"
 
 @implementation NewsViewController
@@ -50,15 +51,17 @@
 }
 
 - (void)didSelectObject:(id)object atIndexPath:(NSIndexPath*)indexPath {
-	NSDictionary *query = [NSDictionary
-						   dictionaryWithObjectsAndKeys:
-						   [object link], @"link",
-						   [object title], @"title",
-						   [object description], @"description",
-						   [object pubDate], @"pubDate",
-						   nil];
-	//[[TTNavigator navigator] openURL:@"tt://newsItem/1" query:query animated:YES]; 
-	[[TTNavigator navigator] openURLAction:[[[TTURLAction actionWithURLPath:@"tt://newsItem/1"] applyQuery:query] applyAnimated:YES]]; 
+	if ([object isKindOfClass:[NewsTableItem class]]) { 
+		NSDictionary *query = [NSDictionary
+							   dictionaryWithObjectsAndKeys:
+							   [object link], @"link",
+							   [object title], @"title",
+							   [object description], @"description",
+							   [object pubDate], @"pubDate",
+							   nil];
+		//[[TTNavigator navigator] openURL:@"tt://newsItem/1" query:query animated:YES]; 
+		[[TTNavigator navigator] openURLAction:[[[TTURLAction actionWithURLPath:@"tt://newsItem/1"] applyQuery:query] applyAnimated:YES]];
+	}
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
