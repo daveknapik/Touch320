@@ -68,9 +68,9 @@
 	
 	if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
 		//iPad
-		[_titleLabel setFrame:CGRectMake(50,23,468,22)];
+		[_titleLabel setFrame:CGRectMake(50,20,468,25)];
 		[_subtitleLabel setFrame:CGRectMake(50,45,468,22)];
-		[_totem setFrame:CGRectMake(673, 14, 45, 45)];
+		[_totem setFrame:CGRectMake(673, 19, 45, 45)];
 		
 		_titleLabel.font = [UIFont fontWithName:@"Helvetica" size:21]; 
 		_subtitleLabel.font = [UIFont fontWithName:@"Helvetica-Bold" size:15]; 

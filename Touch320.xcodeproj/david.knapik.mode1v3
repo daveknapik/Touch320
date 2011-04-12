@@ -276,14 +276,14 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>47</integer>
-									<integer>29</integer>
+									<integer>21</integer>
+									<integer>11</integer>
 									<integer>7</integer>
 									<integer>0</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 250}, {307, 673}}</string>
+							<string>{{0, 145}, {307, 673}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -320,7 +320,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>RecipeBookDataSource.m</string>
+								<string>NewsTableItemCell.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -328,11 +328,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>RecipeBookDataSource.m</string>
+										<string>NewsTableItemCell.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>7382A2B41354B57D00517F92</string>
+										<string>7382A32A1354D46800517F92</string>
 										<key>history</key>
 										<array>
 											<string>7318C4431189EFEF0044DBE7</string>
@@ -419,9 +419,6 @@
 											<string>7382A2751354AEC100517F92</string>
 											<string>7382A2761354AEC100517F92</string>
 											<string>7382A2801354AF0E00517F92</string>
-											<string>7382A2811354AF0E00517F92</string>
-											<string>7382A2851354AF3600517F92</string>
-											<string>7382A28D1354B1B900517F92</string>
 											<string>7382A28E1354B1B900517F92</string>
 											<string>7382A28F1354B1B900517F92</string>
 											<string>7382A2901354B1B900517F92</string>
@@ -430,8 +427,11 @@
 											<string>7382A29A1354B30E00517F92</string>
 											<string>7382A2A11354B3BD00517F92</string>
 											<string>7382A2A31354B3BD00517F92</string>
-											<string>7382A2AA1354B4E100517F92</string>
-											<string>7382A2AB1354B4E100517F92</string>
+											<string>7382A2BE1354CCB500517F92</string>
+											<string>7382A3051354D11A00517F92</string>
+											<string>7382A3271354D46800517F92</string>
+											<string>7382A3281354D46800517F92</string>
+											<string>7382A3291354D46800517F92</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -629,12 +629,12 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>7382A2B51354B57D00517F92</string>
+		<string>7382A2C11354CCB500517F92</string>
 		<string>7382A2B61354B57D00517F92</string>
 		<string>1C530D57069F1CE1000CFCEE</string>
-		<string>1C78EAAD065D492600B07095</string>
 		<string>1CD10A99069EF8BA00B06720</string>
 		<string>739F31251189E5000090A11D</string>
+		<string>1C78EAAD065D492600B07095</string>
 		<string>/Users/david.knapik/Documents/iPhoneDev/Touch320/Touch320.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
@@ -964,6 +964,8 @@
 					<key>Dock</key>
 					<array>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -1009,7 +1011,7 @@
 			<key>WindowToolGUID</key>
 			<string>1C78EAAD065D492600B07095</string>
 			<key>WindowToolIsVisible</key>
-			<false/>
+			<true/>
 		</dict>
 		<dict>
 			<key>Identifier</key>
