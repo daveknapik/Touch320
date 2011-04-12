@@ -10,7 +10,8 @@
 #import <Three20/Three20+Additions.h>
 
 @interface RecipeBookCategoryTableItemCell : TTTableTextItemCell {
-	
+	UILabel *_titleLabel;
+	UIImageView *_totem;
 }
 
 @end

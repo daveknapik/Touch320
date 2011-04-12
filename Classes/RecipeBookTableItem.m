@@ -24,7 +24,7 @@ recipe_description = _recipe_description;
 recipe_description:(NSString*)recipe_description { 
 	RecipeBookTableItem* item = [[[self alloc] init] autorelease]; 
 	
-	item.text = text; 
+	item.text = @""; 
 	item.title = title;
 	item.subtitle = subtitle;
 	item.author = author;

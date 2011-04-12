@@ -35,6 +35,7 @@
 - (id)init {
 	if (self = [super init]) {
 		self.tableViewStyle = UITableViewStylePlain;
+		self.variableHeightRows = YES;
 	}
 	
 	return self;

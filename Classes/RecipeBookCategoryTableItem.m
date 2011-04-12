@@ -19,7 +19,7 @@
 			 title:(NSString*)title { 
 	RecipeBookCategoryTableItem* item = [[[self alloc] init] autorelease]; 
 	
-	item.text = text; 
+	item.text = @""; 
 	item.title = title;
 	
 	return item; 

@@ -11,9 +11,14 @@
 
 @implementation RecipeBookTableItemCell
 
-+ (CGFloat)tableView:(UITableView*)tableView rowHeightForItem:(id)item { 
-	return 40;
-} 
++ (CGFloat)tableView:(UITableView*)tableView rowHeightForObject:(id)item {  
+	if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
+		return 87;
+	}
+	else {
+		return 58;
+	}
+}
 
 - (void)dealloc {  
 	[super dealloc];
