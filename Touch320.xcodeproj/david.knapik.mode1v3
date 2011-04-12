@@ -276,14 +276,14 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>41</integer>
+									<integer>47</integer>
 									<integer>29</integer>
 									<integer>7</integer>
 									<integer>0</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 179}, {307, 673}}</string>
+							<string>{{0, 250}, {307, 673}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -320,7 +320,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>RecipeBookViewController.m</string>
+								<string>RecipeBookDataSource.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -328,11 +328,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>RecipeBookViewController.m</string>
+										<string>RecipeBookDataSource.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>7382A2871354AF3600517F92</string>
+										<string>7382A2B41354B57D00517F92</string>
 										<key>history</key>
 										<array>
 											<string>7318C4431189EFEF0044DBE7</string>
@@ -399,7 +399,6 @@
 											<string>73C8D7F31350C95300AF404B</string>
 											<string>73C8D83F1350EA0200AF404B</string>
 											<string>73C8D8571350F09B00AF404B</string>
-											<string>73C8D85C1350F10300AF404B</string>
 											<string>73C8D8601350F14400AF404B</string>
 											<string>73C8D8611350F14400AF404B</string>
 											<string>735D290F1353774F006240B4</string>
@@ -407,30 +406,32 @@
 											<string>735D29331353860E006240B4</string>
 											<string>735D293B1353867B006240B4</string>
 											<string>735D297613539565006240B4</string>
-											<string>735D297813539565006240B4</string>
 											<string>7382A1E813549DFC00517F92</string>
-											<string>7382A1E913549DFC00517F92</string>
 											<string>7382A2021354A1E600517F92</string>
 											<string>7382A2031354A1E600517F92</string>
 											<string>7382A2061354A1E600517F92</string>
-											<string>7382A2071354A1E600517F92</string>
 											<string>7382A2081354A1E600517F92</string>
-											<string>7382A20D1354A1E600517F92</string>
-											<string>7382A20F1354A1E600517F92</string>
-											<string>7382A2101354A1E600517F92</string>
 											<string>7382A21B1354A25500517F92</string>
 											<string>7382A2351354AB4000517F92</string>
 											<string>7382A2361354AB4000517F92</string>
-											<string>7382A2401354ABCC00517F92</string>
 											<string>7382A2721354AEC100517F92</string>
 											<string>7382A2731354AEC100517F92</string>
-											<string>7382A2741354AEC100517F92</string>
 											<string>7382A2751354AEC100517F92</string>
 											<string>7382A2761354AEC100517F92</string>
 											<string>7382A2801354AF0E00517F92</string>
 											<string>7382A2811354AF0E00517F92</string>
 											<string>7382A2851354AF3600517F92</string>
-											<string>7382A2861354AF3600517F92</string>
+											<string>7382A28D1354B1B900517F92</string>
+											<string>7382A28E1354B1B900517F92</string>
+											<string>7382A28F1354B1B900517F92</string>
+											<string>7382A2901354B1B900517F92</string>
+											<string>7382A2951354B2C200517F92</string>
+											<string>7382A2961354B2C200517F92</string>
+											<string>7382A29A1354B30E00517F92</string>
+											<string>7382A2A11354B3BD00517F92</string>
+											<string>7382A2A31354B3BD00517F92</string>
+											<string>7382A2AA1354B4E100517F92</string>
+											<string>7382A2AB1354B4E100517F92</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -628,10 +629,12 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
+		<string>7382A2B51354B57D00517F92</string>
+		<string>7382A2B61354B57D00517F92</string>
+		<string>1C530D57069F1CE1000CFCEE</string>
 		<string>1C78EAAD065D492600B07095</string>
 		<string>1CD10A99069EF8BA00B06720</string>
 		<string>739F31251189E5000090A11D</string>
-		<string>1C530D57069F1CE1000CFCEE</string>
 		<string>/Users/david.knapik/Documents/iPhoneDev/Touch320/Touch320.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
@@ -942,7 +945,7 @@
 			<key>WindowToolGUID</key>
 			<string>1C530D57069F1CE1000CFCEE</string>
 			<key>WindowToolIsVisible</key>
-			<true/>
+			<false/>
 		</dict>
 		<dict>
 			<key>Identifier</key>

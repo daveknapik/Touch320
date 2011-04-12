@@ -8,6 +8,7 @@
 
 #import "RecipeBookViewController.h"
 #import "RecipeBookDataSource.h"
+#import "RecipeBookTableItem.h"
 
 @implementation RecipeBookViewController
 
@@ -47,14 +48,16 @@
 }
 
 - (void)didSelectObject:(id)object atIndexPath:(NSIndexPath*)indexPath {
-	NSDictionary *query = [NSDictionary
-						   dictionaryWithObjectsAndKeys:
-						   [object author], @"author",
-						   [object recipe_title], @"title",
-						   [object recipe_description], @"recipe_description",
-						   nil];
-	//[[TTNavigator navigator] openURL:@"tt://recipeItem/1" query:query animated:YES]; 
-	[[TTNavigator navigator] openURLAction:[[[TTURLAction actionWithURLPath:@"tt://recipeItem/1"] applyQuery:query] applyAnimated:YES]];
+	if ([object isKindOfClass:[RecipeBookTableItem class]]) { 
+		NSDictionary *query = [NSDictionary
+							   dictionaryWithObjectsAndKeys:
+							   [object author], @"author",
+							   [object recipe_title], @"title",
+							   [object recipe_description], @"recipe_description",
+							   nil];
+		//[[TTNavigator navigator] openURL:@"tt://recipeItem/1" query:query animated:YES]; 
+		[[TTNavigator navigator] openURLAction:[[[TTURLAction actionWithURLPath:@"tt://recipeItem/1"] applyQuery:query] applyAnimated:YES]];
+	}
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation

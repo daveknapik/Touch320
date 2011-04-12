@@ -9,6 +9,8 @@
 #import "RecipeBookCategoryDataSource.h"
 #import "RecipeBookCategoryTableItem.h"
 #import "RecipeBookCategoryTableItemCell.h"
+#import "BannerImageTableItem.h"
+#import "BannerImageTableCell.h"
 
 @implementation RecipeBookCategoryDataSource
 
@@ -41,6 +43,14 @@
 	
 	NSArray *sortedKeys = [keys sortedArrayUsingSelector:@selector(compare:)];
 	
+	if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
+		[items addObject:[BannerImageTableItem
+						  itemWithBannerImage:[UIImage imageNamed:@"harvest"]]];
+	}
+	else {
+		[items addObject:[BannerImageTableItem
+						  itemWithBannerImage:[UIImage imageNamed:@"harvest-iPad"]]];
+	}
 	
 	for (id key in sortedKeys) {
 		NSMutableDictionary* theItem = [_recipeBookCategoryModel.recipes objectForKey:key];
@@ -66,6 +76,9 @@
 	if ([object isKindOfClass:[RecipeBookCategoryTableItem class]]) { 
 		return [RecipeBookCategoryTableItemCell class]; 
 	} 
+	else if ([object isKindOfClass:[BannerImageTableItem class]]) { 
+		return [BannerImageTableCell class]; 
+	}
 	else { 
 		return [super tableView:tableView cellClassForObject:object]; 
 	}
