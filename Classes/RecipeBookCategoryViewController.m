@@ -26,8 +26,6 @@
 																				 target:nil
 																				 action:nil] autorelease];
 		
-		self.navigationBarStyle = UIBarStyleDefault; 
-		self.navigationBarTintColor	= [UIColor blackColor];
 		self.statusBarStyle = UIStatusBarStyleBlackOpaque;
 		
 		self.tabBarItem.image = [UIImage imageNamed:@"recipes"];
@@ -43,6 +41,19 @@
 	}
 	
 	return self;
+}
+
+-(void)viewWillAppear:(BOOL)animated {
+	[super viewWillAppear:YES];
+	UINavigationBar *nb = self.navigationController.navigationBar;
+	nb.tintColor = [UIColor colorWithRed:32/255.0 green:70/255.0 blue:117/255.0 alpha:1];
+	
+	if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
+		nb.layer.contents = (id)[UIImage imageNamed:@"recipes-nav-iPad"].CGImage;
+	}
+	else {
+		nb.layer.contents = (id)[UIImage imageNamed:@"recipes-nav"].CGImage;
+	}
 }
 
 - (void)createModel {

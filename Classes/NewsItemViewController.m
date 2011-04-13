@@ -33,8 +33,6 @@
 																				 target:nil
 																				 action:nil] autorelease];
 		
-		self.navigationBarStyle = UIBarStyleDefault; 
-		self.navigationBarTintColor	= [UIColor blackColor];
 		self.statusBarStyle = UIStatusBarStyleBlackOpaque;
 		
 		self.newsItemTitle = [query objectForKey:@"title"];
@@ -76,6 +74,20 @@
 }
 
 */
+
+-(void)viewWillAppear:(BOOL)animated {
+	[super viewWillAppear:YES];
+	UINavigationBar *nb = self.navigationController.navigationBar;
+	nb.tintColor = [UIColor blackColor];
+	
+	if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
+		nb.layer.contents = (id)[UIImage imageNamed:@"news-nav-iPad"].CGImage;
+	}
+	else {
+		nb.layer.contents = (id)[UIImage imageNamed:@"news-nav"].CGImage;
+	}	
+}
+
 - (void)viewDidLoad {
 	Touch320AppDelegate *appDelegate;
 	appDelegate = (Touch320AppDelegate*)[UIApplication sharedApplication].delegate;

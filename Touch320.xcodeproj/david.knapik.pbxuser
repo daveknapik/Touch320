@@ -9,9 +9,9 @@
 	};
 	1D3623250D0F684500981E51 /* Touch320AppDelegate.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {920, 3081}}";
-			sepNavSelRange = "{7778, 0}";
-			sepNavVisRange = "{7931, 1588}";
+			sepNavIntBoundsRect = "{{0, 0}, {1923, 1924}}";
+			sepNavSelRange = "{5986, 0}";
+			sepNavVisRange = "{3, 1284}";
 			sepNavWindowFrame = "{{84, 467}, {1315, 643}}";
 		};
 	};
@@ -91,8 +91,8 @@
 					PBXFileDataSource_Warnings_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 324410160;
-			PBXWorkspaceStateSaveDate = 324410160;
+			PBXPerProjectTemplateStateSaveDate = 324420296;
+			PBXWorkspaceStateSaveDate = 324420296;
 		};
 		perUserProjectItems = {
 			7302EBE61304CC0500CA87FF = 7302EBE61304CC0500CA87FF /* PBXTextBookmark */;
@@ -108,6 +108,22 @@
 			730DE49111CFC46500715199 = 730DE49111CFC46500715199 /* PBXTextBookmark */;
 			730FBFC21323E1E500033052 = 730FBFC21323E1E500033052 /* PlistBookmark */;
 			730FBFE71323EB0200033052 = 730FBFE71323EB0200033052 /* PBXTextBookmark */;
+			7315A0EF135653A700345C54 /* PBXTextBookmark */ = 7315A0EF135653A700345C54 /* PBXTextBookmark */;
+			7315A0F0135653A700345C54 /* PBXTextBookmark */ = 7315A0F0135653A700345C54 /* PBXTextBookmark */;
+			7315A0F1135653A700345C54 /* PBXTextBookmark */ = 7315A0F1135653A700345C54 /* PBXTextBookmark */;
+			7315A0F2135653A700345C54 /* PBXTextBookmark */ = 7315A0F2135653A700345C54 /* PBXTextBookmark */;
+			7315A0F3135653A700345C54 /* PBXTextBookmark */ = 7315A0F3135653A700345C54 /* PBXTextBookmark */;
+			7315A0F4135653A700345C54 /* PBXTextBookmark */ = 7315A0F4135653A700345C54 /* PBXTextBookmark */;
+			7315A0F5135653A700345C54 /* PBXTextBookmark */ = 7315A0F5135653A700345C54 /* PBXTextBookmark */;
+			7315A0F6135653A700345C54 /* PBXTextBookmark */ = 7315A0F6135653A700345C54 /* PBXTextBookmark */;
+			7315A1071356551100345C54 /* PBXTextBookmark */ = 7315A1071356551100345C54 /* PBXTextBookmark */;
+			7315A1081356551100345C54 /* PBXTextBookmark */ = 7315A1081356551100345C54 /* PBXTextBookmark */;
+			7315A1091356551100345C54 /* PBXTextBookmark */ = 7315A1091356551100345C54 /* PBXTextBookmark */;
+			7315A10A1356551100345C54 /* PBXTextBookmark */ = 7315A10A1356551100345C54 /* PBXTextBookmark */;
+			7315A10D1356566300345C54 /* PBXTextBookmark */ = 7315A10D1356566300345C54 /* PBXTextBookmark */;
+			7315A10E1356566300345C54 /* PBXTextBookmark */ = 7315A10E1356566300345C54 /* PBXTextBookmark */;
+			7315A10F1356566300345C54 /* PBXTextBookmark */ = 7315A10F1356566300345C54 /* PBXTextBookmark */;
+			7315A1101356566300345C54 /* PBXTextBookmark */ = 7315A1101356566300345C54 /* PBXTextBookmark */;
 			7318C4431189EFEF0044DBE7 = 7318C4431189EFEF0044DBE7 /* PBXTextBookmark */;
 			7318C4451189EFEF0044DBE7 = 7318C4451189EFEF0044DBE7 /* PBXTextBookmark */;
 			731E3B92132953280001012A = 731E3B92132953280001012A /* PBXTextBookmark */;
@@ -487,6 +503,11 @@
 		name = RadioViewController.m;
 		path = /Users/david.knapik/Documents/iPhoneDev/Touch320/Classes/RadioViewController.m;
 		sourceTree = "<absolute>";
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {920, 1274}}";
+			sepNavSelRange = "{721, 0}";
+			sepNavVisRange = "{292, 806}";
+		};
 	};
 	7302EBE61304CC0500CA87FF /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
@@ -633,6 +654,166 @@
 		vrLen = 1599;
 		vrLoc = 1076;
 	};
+	7315A0EF135653A700345C54 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623250D0F684500981E51 /* Touch320AppDelegate.m */;
+		name = "Touch320AppDelegate.m: 148";
+		rLen = 0;
+		rLoc = 5986;
+		rType = 0;
+		vrLen = 1067;
+		vrLoc = 4919;
+	};
+	7315A0F0135653A700345C54 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = DE97EF1911285F5400E25713 /* RecipeBookItemViewController.h */;
+		name = "RecipeBookItemViewController.h: 12";
+		rLen = 0;
+		rLoc = 296;
+		rType = 0;
+		vrLen = 1005;
+		vrLoc = 0;
+	};
+	7315A0F1135653A700345C54 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = DE97ED4D1127A0D100E25713 /* RecipeBookCategoryViewController.h */;
+		name = "RecipeBookCategoryViewController.h: 12";
+		rLen = 0;
+		rLoc = 259;
+		rType = 0;
+		vrLen = 385;
+		vrLoc = 0;
+	};
+	7315A0F2135653A700345C54 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = DE97EF1A11285F5400E25713 /* RecipeBookItemViewController.m */;
+		name = "RecipeBookItemViewController.m: 64";
+		rLen = 0;
+		rLoc = 1909;
+		rType = 0;
+		vrLen = 1462;
+		vrLoc = 1642;
+	};
+	7315A0F3135653A700345C54 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = DE93D8FE10F38D6E005B6255 /* RecipeBookViewController.h */;
+		name = "RecipeBookViewController.h: 11";
+		rLen = 0;
+		rLoc = 250;
+		rType = 0;
+		vrLen = 397;
+		vrLoc = 0;
+	};
+	7315A0F4135653A700345C54 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = DE93D8FF10F38D6E005B6255 /* RecipeBookViewController.m */;
+		name = "RecipeBookViewController.m: 55";
+		rLen = 0;
+		rLoc = 1487;
+		rType = 0;
+		vrLen = 1324;
+		vrLoc = 1049;
+	};
+	7315A0F5135653A700345C54 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = DE97ED4E1127A0D100E25713 /* RecipeBookCategoryViewController.m */;
+		name = "RecipeBookCategoryViewController.m: 54";
+		rLen = 220;
+		rLoc = 1324;
+		rType = 0;
+		vrLen = 1386;
+		vrLoc = 1205;
+	};
+	7315A0F6135653A700345C54 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = DE97ED4E1127A0D100E25713 /* RecipeBookCategoryViewController.m */;
+		name = "RecipeBookCategoryViewController.m: 54";
+		rLen = 220;
+		rLoc = 1324;
+		rType = 0;
+		vrLen = 1295;
+		vrLoc = 1205;
+	};
+	7315A1071356551100345C54 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = DE97EF1A11285F5400E25713 /* RecipeBookItemViewController.m */;
+		name = "RecipeBookItemViewController.m: 58";
+		rLen = 0;
+		rLoc = 1818;
+		rType = 0;
+		vrLen = 1376;
+		vrLoc = 233;
+	};
+	7315A1081356551100345C54 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = DE93D8FF10F38D6E005B6255 /* RecipeBookViewController.m */;
+		name = "RecipeBookViewController.m: 45";
+		rLen = 0;
+		rLoc = 1176;
+		rType = 0;
+		vrLen = 1108;
+		vrLoc = 885;
+	};
+	7315A1091356551100345C54 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = DE97ED4E1127A0D100E25713 /* RecipeBookCategoryViewController.m */;
+		name = "RecipeBookCategoryViewController.m: 28";
+		rLen = 0;
+		rLoc = 821;
+		rType = 0;
+		vrLen = 999;
+		vrLoc = 415;
+	};
+	7315A10A1356551100345C54 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = DE97ED4E1127A0D100E25713 /* RecipeBookCategoryViewController.m */;
+		name = "RecipeBookCategoryViewController.m: 48";
+		rLen = 0;
+		rLoc = 1233;
+		rType = 0;
+		vrLen = 1050;
+		vrLoc = 822;
+	};
+	7315A10D1356566300345C54 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = DE97ED4E1127A0D100E25713 /* RecipeBookCategoryViewController.m */;
+		name = "RecipeBookCategoryViewController.m: 48";
+		rLen = 0;
+		rLoc = 1233;
+		rType = 0;
+		vrLen = 1219;
+		vrLoc = 940;
+	};
+	7315A10E1356566300345C54 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623250D0F684500981E51 /* Touch320AppDelegate.m */;
+		name = "Touch320AppDelegate.m: 148";
+		rLen = 0;
+		rLoc = 5986;
+		rType = 0;
+		vrLen = 1284;
+		vrLoc = 3;
+	};
+	7315A10F1356566300345C54 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = DE8B82C310E0007200AB1281 /* MainTabBarController.m */;
+		name = "MainTabBarController.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 646;
+		vrLoc = 0;
+	};
+	7315A1101356566300345C54 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = DE97EF1A11285F5400E25713 /* RecipeBookItemViewController.m */;
+		name = "RecipeBookItemViewController.m: 214";
+		rLen = 0;
+		rLoc = 8234;
+		rType = 0;
+		vrLen = 1352;
+		vrLoc = 7125;
+	};
 	7318C4431189EFEF0044DBE7 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = DE160F4710EC0976005A2F1E /* CatalogSamplerDataSource.h */;
@@ -698,7 +879,7 @@
 		fRef = 7302EBE21304CBE300CA87FF /* RadioViewController.m */;
 		name = "RadioViewController.m: 79";
 		rLen = 0;
-		rLoc = 2408;
+		rLoc = 2750;
 		rType = 0;
 		vrLen = 1047;
 		vrLoc = 0;
@@ -782,7 +963,7 @@
 		fRef = DE97EF1911285F5400E25713 /* RecipeBookItemViewController.h */;
 		name = "RecipeBookItemViewController.h: 27";
 		rLen = 0;
-		rLoc = 692;
+		rLoc = 726;
 		rType = 0;
 		vrLen = 1123;
 		vrLoc = 0;
@@ -1309,7 +1490,7 @@
 		fRef = 1D3623250D0F684500981E51 /* Touch320AppDelegate.m */;
 		name = "Touch320AppDelegate.m: 151";
 		rLen = 0;
-		rLoc = 6079;
+		rLoc = 5986;
 		rType = 0;
 		vrLen = 1691;
 		vrLoc = 320;
@@ -1803,7 +1984,7 @@
 		fRef = DE93D8FF10F38D6E005B6255 /* RecipeBookViewController.m */;
 		name = "RecipeBookViewController.m: 38";
 		rLen = 0;
-		rLoc = 1124;
+		rLoc = 1022;
 		rType = 0;
 		vrLen = 1110;
 		vrLoc = 155;
@@ -1833,7 +2014,7 @@
 		fRef = DE97ED4E1127A0D100E25713 /* RecipeBookCategoryViewController.m */;
 		name = "RecipeBookCategoryViewController.m: 41";
 		rLen = 0;
-		rLoc = 1181;
+		rLoc = 1079;
 		rType = 0;
 		vrLen = 1004;
 		vrLoc = 159;
@@ -2539,7 +2720,7 @@
 		fRef = DE93D8FF10F38D6E005B6255 /* RecipeBookViewController.m */;
 		name = "RecipeBookViewController.m: 38";
 		rLen = 0;
-		rLoc = 1124;
+		rLoc = 1022;
 		rType = 0;
 		vrLen = 1110;
 		vrLoc = 155;
@@ -2549,7 +2730,7 @@
 		fRef = DE93D8FF10F38D6E005B6255 /* RecipeBookViewController.m */;
 		name = "RecipeBookViewController.m: 53";
 		rLen = 0;
-		rLoc = 1434;
+		rLoc = 1778;
 		rType = 0;
 		vrLen = 1102;
 		vrLoc = 1093;
@@ -2559,7 +2740,7 @@
 		fRef = DE93D8FF10F38D6E005B6255 /* RecipeBookViewController.m */;
 		name = "RecipeBookViewController.m: 53";
 		rLen = 0;
-		rLoc = 1434;
+		rLoc = 1778;
 		rType = 0;
 		vrLen = 1102;
 		vrLoc = 1093;
@@ -2679,7 +2860,7 @@
 		fRef = DE97ED4E1127A0D100E25713 /* RecipeBookCategoryViewController.m */;
 		name = "RecipeBookCategoryViewController.m: 41";
 		rLen = 0;
-		rLoc = 1181;
+		rLoc = 1079;
 		rType = 0;
 		vrLen = 1004;
 		vrLoc = 159;
@@ -2689,7 +2870,7 @@
 		fRef = DE97ED4E1127A0D100E25713 /* RecipeBookCategoryViewController.m */;
 		name = "RecipeBookCategoryViewController.m: 57";
 		rLen = 0;
-		rLoc = 1690;
+		rLoc = 2034;
 		rType = 0;
 		vrLen = 1140;
 		vrLoc = 1004;
@@ -2769,7 +2950,7 @@
 		fRef = DE97ED4E1127A0D100E25713 /* RecipeBookCategoryViewController.m */;
 		name = "RecipeBookCategoryViewController.m: 54";
 		rLen = 66;
-		rLoc = 1428;
+		rLoc = 1772;
 		rType = 0;
 		vrLen = 1148;
 		vrLoc = 1074;
@@ -2779,7 +2960,7 @@
 		fRef = DE93D8FF10F38D6E005B6255 /* RecipeBookViewController.m */;
 		name = "RecipeBookViewController.m: 53";
 		rLen = 0;
-		rLoc = 1434;
+		rLoc = 1778;
 		rType = 0;
 		vrLen = 1102;
 		vrLoc = 1093;
@@ -2789,7 +2970,7 @@
 		fRef = DE93D8FF10F38D6E005B6255 /* RecipeBookViewController.m */;
 		name = "RecipeBookViewController.m: 53";
 		rLen = 0;
-		rLoc = 1434;
+		rLoc = 1778;
 		rType = 0;
 		vrLen = 1102;
 		vrLoc = 1093;
@@ -3419,7 +3600,7 @@
 		fRef = DE97ED4E1127A0D100E25713 /* RecipeBookCategoryViewController.m */;
 		name = "RecipeBookCategoryViewController.m: 54";
 		rLen = 66;
-		rLoc = 1428;
+		rLoc = 1772;
 		rType = 0;
 		vrLen = 1161;
 		vrLoc = 1061;
@@ -3429,7 +3610,7 @@
 		fRef = DE97ED4E1127A0D100E25713 /* RecipeBookCategoryViewController.m */;
 		name = "RecipeBookCategoryViewController.m: 30";
 		rLen = 0;
-		rLoc = 923;
+		rLoc = 821;
 		rType = 0;
 		vrLen = 1059;
 		vrLoc = 0;
@@ -3439,7 +3620,7 @@
 		fRef = DE97ED4E1127A0D100E25713 /* RecipeBookCategoryViewController.m */;
 		name = "RecipeBookCategoryViewController.m: 29";
 		rLen = 0;
-		rLoc = 824;
+		rLoc = 818;
 		rType = 0;
 		vrLen = 1061;
 		vrLoc = 0;
@@ -3449,7 +3630,7 @@
 		fRef = DE97ED4E1127A0D100E25713 /* RecipeBookCategoryViewController.m */;
 		name = "RecipeBookCategoryViewController.m: 29";
 		rLen = 0;
-		rLoc = 824;
+		rLoc = 818;
 		rType = 0;
 		vrLen = 1059;
 		vrLoc = 0;
@@ -3459,7 +3640,7 @@
 		fRef = DE97ED4E1127A0D100E25713 /* RecipeBookCategoryViewController.m */;
 		name = "RecipeBookCategoryViewController.m: 29";
 		rLen = 0;
-		rLoc = 821;
+		rLoc = 818;
 		rType = 0;
 		vrLen = 1142;
 		vrLoc = 0;
@@ -3469,7 +3650,7 @@
 		fRef = DE97ED4E1127A0D100E25713 /* RecipeBookCategoryViewController.m */;
 		name = "RecipeBookCategoryViewController.m: 28";
 		rLen = 0;
-		rLoc = 821;
+		rLoc = 818;
 		rType = 0;
 		vrLen = 1100;
 		vrLoc = 0;
@@ -3479,7 +3660,7 @@
 		fRef = DE97ED4E1127A0D100E25713 /* RecipeBookCategoryViewController.m */;
 		name = "RecipeBookCategoryViewController.m: 28";
 		rLen = 0;
-		rLoc = 821;
+		rLoc = 818;
 		rType = 0;
 		vrLen = 1059;
 		vrLoc = 0;
@@ -3499,7 +3680,7 @@
 		fRef = DE97ED4E1127A0D100E25713 /* RecipeBookCategoryViewController.m */;
 		name = "RecipeBookCategoryViewController.m: 28";
 		rLen = 0;
-		rLoc = 821;
+		rLoc = 818;
 		rType = 0;
 		vrLen = 1062;
 		vrLoc = 290;
@@ -3517,16 +3698,16 @@
 	7382A3531354DD3400517F92 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = 1D3623250D0F684500981E51 /* Touch320AppDelegate.m */;
-		rLen = 8;
-		rLoc = 6055;
+		rLen = 0;
+		rLoc = 5986;
 		rType = 0;
 	};
 	7382A3541354DD3400517F92 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = 1D3623250D0F684500981E51 /* Touch320AppDelegate.m */;
 		name = "Touch320AppDelegate.m: 151";
-		rLen = 8;
-		rLoc = 6055;
+		rLen = 0;
+		rLoc = 5986;
 		rType = 0;
 		vrLen = 1093;
 		vrLoc = 5987;
@@ -3536,7 +3717,7 @@
 		fRef = DE97ED4E1127A0D100E25713 /* RecipeBookCategoryViewController.m */;
 		name = "RecipeBookCategoryViewController.m: 31";
 		rLen = 0;
-		rLoc = 943;
+		rLoc = 841;
 		rType = 0;
 		vrLen = 1012;
 		vrLoc = 340;
@@ -3545,8 +3726,8 @@
 		isa = PBXTextBookmark;
 		fRef = 1D3623250D0F684500981E51 /* Touch320AppDelegate.m */;
 		name = "Touch320AppDelegate.m: 151";
-		rLen = 8;
-		rLoc = 6055;
+		rLen = 0;
+		rLoc = 5986;
 		rType = 0;
 		vrLen = 1340;
 		vrLoc = 5513;
@@ -3555,8 +3736,8 @@
 		isa = PBXTextBookmark;
 		fRef = 1D3623250D0F684500981E51 /* Touch320AppDelegate.m */;
 		name = "Touch320AppDelegate.m: 151";
-		rLen = 8;
-		rLoc = 6055;
+		rLen = 0;
+		rLoc = 5986;
 		rType = 0;
 		vrLen = 1609;
 		vrLoc = 6853;
@@ -3575,8 +3756,8 @@
 		isa = PBXTextBookmark;
 		fRef = 1D3623250D0F684500981E51 /* Touch320AppDelegate.m */;
 		name = "Touch320AppDelegate.m: 151";
-		rLen = 8;
-		rLoc = 6055;
+		rLen = 0;
+		rLoc = 5986;
 		rType = 0;
 		vrLen = 1157;
 		vrLoc = 5988;
@@ -3585,7 +3766,7 @@
 		isa = PBXTextBookmark;
 		fRef = DE97ED4E1127A0D100E25713 /* RecipeBookCategoryViewController.m */;
 		rLen = 0;
-		rLoc = 923;
+		rLoc = 821;
 		rType = 0;
 	};
 	7382A35B1354DD9B00517F92 /* PBXTextBookmark */ = {
@@ -3593,7 +3774,7 @@
 		fRef = DE97ED4E1127A0D100E25713 /* RecipeBookCategoryViewController.m */;
 		name = "RecipeBookCategoryViewController.m: 30";
 		rLen = 0;
-		rLoc = 923;
+		rLoc = 821;
 		rType = 0;
 		vrLen = 714;
 		vrLoc = 489;
@@ -3603,7 +3784,7 @@
 		fRef = DE97ED4E1127A0D100E25713 /* RecipeBookCategoryViewController.m */;
 		name = "RecipeBookCategoryViewController.m: 30";
 		rLen = 0;
-		rLoc = 923;
+		rLoc = 821;
 		rType = 0;
 		vrLen = 1014;
 		vrLoc = 340;
@@ -3613,7 +3794,7 @@
 		fRef = 1D3623250D0F684500981E51 /* Touch320AppDelegate.m */;
 		name = "Touch320AppDelegate.m: 209";
 		rLen = 0;
-		rLoc = 9294;
+		rLoc = 5986;
 		rType = 0;
 		vrLen = 1313;
 		vrLoc = 7307;
@@ -3623,7 +3804,7 @@
 		fRef = 1D3623250D0F684500981E51 /* Touch320AppDelegate.m */;
 		name = "Touch320AppDelegate.m: 209";
 		rLen = 0;
-		rLoc = 9294;
+		rLoc = 5986;
 		rType = 0;
 		vrLen = 1309;
 		vrLoc = 7311;
@@ -3633,7 +3814,7 @@
 		fRef = 1D3623250D0F684500981E51 /* Touch320AppDelegate.m */;
 		name = "Touch320AppDelegate.m: 209";
 		rLen = 0;
-		rLoc = 9294;
+		rLoc = 5986;
 		rType = 0;
 		vrLen = 1309;
 		vrLoc = 7311;
@@ -3643,7 +3824,7 @@
 		fRef = DE97ED4E1127A0D100E25713 /* RecipeBookCategoryViewController.m */;
 		name = "RecipeBookCategoryViewController.m: 30";
 		rLen = 0;
-		rLoc = 923;
+		rLoc = 821;
 		rType = 0;
 		vrLen = 1011;
 		vrLoc = 341;
@@ -3652,8 +3833,8 @@
 		isa = PBXTextBookmark;
 		fRef = DE97ED4E1127A0D100E25713 /* RecipeBookCategoryViewController.m */;
 		name = "RecipeBookCategoryViewController.m: 30";
-		rLen = 10;
-		rLoc = 911;
+		rLen = 0;
+		rLoc = 818;
 		rType = 0;
 		vrLen = 1012;
 		vrLoc = 415;
@@ -3662,8 +3843,8 @@
 		isa = PBXTextBookmark;
 		fRef = DE97ED4E1127A0D100E25713 /* RecipeBookCategoryViewController.m */;
 		name = "RecipeBookCategoryViewController.m: 30";
-		rLen = 10;
-		rLoc = 911;
+		rLen = 0;
+		rLoc = 818;
 		rType = 0;
 		vrLen = 1012;
 		vrLoc = 415;
@@ -3673,7 +3854,7 @@
 		fRef = 1D3623250D0F684500981E51 /* Touch320AppDelegate.m */;
 		name = "Touch320AppDelegate.m: 209";
 		rLen = 0;
-		rLoc = 9294;
+		rLoc = 5986;
 		rType = 0;
 		vrLen = 1308;
 		vrLoc = 7311;
@@ -3683,7 +3864,7 @@
 		fRef = 1D3623250D0F684500981E51 /* Touch320AppDelegate.m */;
 		name = "Touch320AppDelegate.m: 209";
 		rLen = 0;
-		rLoc = 9277;
+		rLoc = 5986;
 		rType = 0;
 		vrLen = 1356;
 		vrLoc = 7320;
@@ -3693,7 +3874,7 @@
 		fRef = 1D3623250D0F684500981E51 /* Touch320AppDelegate.m */;
 		name = "Touch320AppDelegate.m: 188";
 		rLen = 0;
-		rLoc = 8029;
+		rLoc = 5986;
 		rType = 0;
 		vrLen = 1620;
 		vrLoc = 7320;
@@ -3703,7 +3884,7 @@
 		fRef = 1D3623250D0F684500981E51 /* Touch320AppDelegate.m */;
 		name = "Touch320AppDelegate.m: 206";
 		rLen = 0;
-		rLoc = 8960;
+		rLoc = 5986;
 		rType = 0;
 		vrLen = 1621;
 		vrLoc = 7320;
@@ -3713,7 +3894,7 @@
 		fRef = 1D3623250D0F684500981E51 /* Touch320AppDelegate.m */;
 		name = "Touch320AppDelegate.m: 200";
 		rLen = 0;
-		rLoc = 8646;
+		rLoc = 5986;
 		rType = 0;
 		vrLen = 1620;
 		vrLoc = 7320;
@@ -3722,8 +3903,8 @@
 		isa = PBXTextBookmark;
 		fRef = 1D3623250D0F684500981E51 /* Touch320AppDelegate.m */;
 		name = "Touch320AppDelegate.m: 194";
-		rLen = 3;
-		rLoc = 8296;
+		rLen = 0;
+		rLoc = 5986;
 		rType = 0;
 		vrLen = 1620;
 		vrLoc = 7320;
@@ -3733,7 +3914,7 @@
 		fRef = 1D3623250D0F684500981E51 /* Touch320AppDelegate.m */;
 		name = "Touch320AppDelegate.m: 194";
 		rLen = 0;
-		rLoc = 8328;
+		rLoc = 5986;
 		rType = 0;
 		vrLen = 1620;
 		vrLoc = 7320;
@@ -3743,7 +3924,7 @@
 		fRef = 1D3623250D0F684500981E51 /* Touch320AppDelegate.m */;
 		name = "Touch320AppDelegate.m: 183";
 		rLen = 0;
-		rLoc = 7670;
+		rLoc = 5986;
 		rType = 0;
 		vrLen = 1686;
 		vrLoc = 6940;
@@ -3753,7 +3934,7 @@
 		fRef = 1D3623250D0F684500981E51 /* Touch320AppDelegate.m */;
 		name = "Touch320AppDelegate.m: 187";
 		rLen = 0;
-		rLoc = 7778;
+		rLoc = 5986;
 		rType = 0;
 		vrLen = 1688;
 		vrLoc = 5987;
@@ -3763,9 +3944,9 @@
 		fRef = 1D3623250D0F684500981E51 /* Touch320AppDelegate.m */;
 		name = "Touch320AppDelegate.m: 187";
 		rLen = 0;
-		rLoc = 7778;
+		rLoc = 5986;
 		rType = 0;
-		vrLen = 1588;
+		vrLen = 1380;
 		vrLoc = 7931;
 	};
 	738E31F31270B956005A271F /* PBXTextBookmark */ = {
@@ -3813,7 +3994,7 @@
 		fRef = DE97ED4E1127A0D100E25713 /* RecipeBookCategoryViewController.m */;
 		name = "RecipeBookCategoryViewController.m: 61";
 		rLen = 0;
-		rLoc = 1987;
+		rLoc = 2331;
 		rType = 0;
 		vrLen = 1190;
 		vrLoc = 779;
@@ -3823,7 +4004,7 @@
 		fRef = DE97EF1A11285F5400E25713 /* RecipeBookItemViewController.m */;
 		name = "RecipeBookItemViewController.m: 234";
 		rLen = 0;
-		rLoc = 8692;
+		rLoc = 8971;
 		rType = 0;
 		vrLen = 1593;
 		vrLoc = 4236;
@@ -3973,7 +4154,7 @@
 		fRef = DE1041E710F4C8780058DDB8 /* RadioItemViewController.m */;
 		name = "RadioItemViewController.m: 58";
 		rLen = 151;
-		rLoc = 1858;
+		rLoc = 1756;
 		rType = 0;
 		vrLen = 964;
 		vrLoc = 7637;
@@ -4033,7 +4214,7 @@
 		fRef = DE93D8FF10F38D6E005B6255 /* RecipeBookViewController.m */;
 		name = "RecipeBookViewController.m: 44";
 		rLen = 0;
-		rLoc = 1220;
+		rLoc = 1564;
 		rType = 0;
 		vrLen = 1125;
 		vrLoc = 795;
@@ -4363,16 +4544,16 @@
 	};
 	DE1041E610F4C8780058DDB8 /* RadioItemViewController.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {920, 962}}";
-			sepNavSelRange = "{0, 0}";
-			sepNavVisRange = "{594, 1349}";
+			sepNavIntBoundsRect = "{{0, 0}, {920, 1144}}";
+			sepNavSelRange = "{259, 0}";
+			sepNavVisRange = "{0, 761}";
 		};
 	};
 	DE1041E710F4C8780058DDB8 /* RadioItemViewController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1258, 4641}}";
-			sepNavSelRange = "{1858, 151}";
-			sepNavVisRange = "{7637, 964}";
+			sepNavIntBoundsRect = "{{0, 0}, {920, 4927}}";
+			sepNavSelRange = "{2518, 442}";
+			sepNavVisRange = "{2457, 1114}";
 		};
 	};
 	DE160F3510EC0888005A2F1E /* NewsTableItemCell.h */ = {
@@ -4524,23 +4705,23 @@
 	};
 	DE8B82C310E0007200AB1281 /* MainTabBarController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {920, 463}}";
+			sepNavIntBoundsRect = "{{0, 0}, {920, 424}}";
 			sepNavSelRange = "{0, 0}";
 			sepNavVisRange = "{0, 646}";
 		};
 	};
 	DE93D8FE10F38D6E005B6255 /* RecipeBookViewController.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {920, 484}}";
-			sepNavSelRange = "{0, 0}";
-			sepNavVisRange = "{0, 363}";
+			sepNavIntBoundsRect = "{{0, 0}, {920, 472}}";
+			sepNavSelRange = "{250, 0}";
+			sepNavVisRange = "{0, 397}";
 		};
 	};
 	DE93D8FF10F38D6E005B6255 /* RecipeBookViewController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {992, 1040}}";
-			sepNavSelRange = "{256, 0}";
-			sepNavVisRange = "{1125, 1167}";
+			sepNavIntBoundsRect = "{{0, 0}, {920, 1196}}";
+			sepNavSelRange = "{1405, 0}";
+			sepNavVisRange = "{885, 930}";
 		};
 	};
 	DE93D90110F38DAC005B6255 /* RecipeBookTableItem.h */ = {
@@ -4594,16 +4775,16 @@
 	};
 	DE97ED4D1127A0D100E25713 /* RecipeBookCategoryViewController.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {920, 484}}";
-			sepNavSelRange = "{0, 0}";
-			sepNavVisRange = "{0, 351}";
+			sepNavIntBoundsRect = "{{0, 0}, {920, 424}}";
+			sepNavSelRange = "{225, 33}";
+			sepNavVisRange = "{0, 385}";
 		};
 	};
 	DE97ED4E1127A0D100E25713 /* RecipeBookCategoryViewController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {920, 1014}}";
-			sepNavSelRange = "{911, 10}";
-			sepNavVisRange = "{415, 1012}";
+			sepNavIntBoundsRect = "{{0, 0}, {920, 1157}}";
+			sepNavSelRange = "{1462, 0}";
+			sepNavVisRange = "{940, 899}";
 			sepNavWindowFrame = "{{38, 594}, {750, 558}}";
 		};
 	};
@@ -4658,16 +4839,16 @@
 	};
 	DE97EF1911285F5400E25713 /* RecipeBookItemViewController.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {920, 520}}";
-			sepNavSelRange = "{692, 0}";
-			sepNavVisRange = "{0, 1123}";
+			sepNavIntBoundsRect = "{{0, 0}, {920, 533}}";
+			sepNavSelRange = "{296, 0}";
+			sepNavVisRange = "{0, 1005}";
 		};
 	};
 	DE97EF1A11285F5400E25713 /* RecipeBookItemViewController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1552, 3328}}";
-			sepNavSelRange = "{8692, 0}";
-			sepNavVisRange = "{4236, 1593}";
+			sepNavIntBoundsRect = "{{0, 0}, {1335, 3458}}";
+			sepNavSelRange = "{2047, 0}";
+			sepNavVisRange = "{1428, 884}";
 		};
 	};
 	DEDEC5F410FF8B1500D9EA32 /* Book.m */ = {
@@ -4743,9 +4924,9 @@
 	};
 	DEFEE66810D80BC3001213CE /* RadioViewController.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {920, 502}}";
-			sepNavSelRange = "{0, 0}";
-			sepNavVisRange = "{0, 322}";
+			sepNavIntBoundsRect = "{{0, 0}, {920, 424}}";
+			sepNavSelRange = "{242, 0}";
+			sepNavVisRange = "{0, 356}";
 		};
 	};
 	DEFEE66910D80BC3001213CE /* RadioViewController.m */ = {

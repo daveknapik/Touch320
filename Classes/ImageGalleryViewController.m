@@ -49,6 +49,19 @@
 	
 }
 
+-(void)viewWillAppear:(BOOL)animated {
+	[super viewWillAppear:YES];
+	UINavigationBar *nb = self.navigationController.navigationBar;
+	nb.tintColor = [UIColor colorWithRed:195/255.0 green:54/255.0 blue:37/255.0 alpha:1];
+	
+	if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
+		nb.layer.contents = (id)[UIImage imageNamed:@"images-nav-iPad"].CGImage;
+	}
+	else {
+		nb.layer.contents = (id)[UIImage imageNamed:@"images-nav"].CGImage;
+	}	
+}
+
 - (void)viewDidLoad {
 	ImageGalleryPhotoSource *imageGalleryPhotoSource = [[ImageGalleryPhotoSource alloc] init];
 	self.photoSource = imageGalleryPhotoSource;

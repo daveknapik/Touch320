@@ -44,8 +44,6 @@ cover_art = _cover_art;
 																				 target:nil
 																				 action:nil] autorelease];
 		
-		self.navigationBarStyle = UIBarStyleDefault; 
-		self.navigationBarTintColor	= [UIColor blackColor];
 		self.statusBarStyle = UIStatusBarStyleBlackOpaque;
 		
 		self.release_title = [query objectForKey:@"title"];
@@ -74,6 +72,19 @@ cover_art = _cover_art;
 	if (self = [super init]) {
 	}
 	return self;
+}
+
+-(void)viewWillAppear:(BOOL)animated {
+	[super viewWillAppear:YES];
+	UINavigationBar *nb = self.navigationController.navigationBar;
+	nb.tintColor = [UIColor colorWithRed:82/255.0 green:96/255.0 blue:45/255.0 alpha:1];
+	
+	if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
+		nb.layer.contents = (id)[UIImage imageNamed:@"catalog-nav-iPad"].CGImage;
+	}
+	else {
+		nb.layer.contents = (id)[UIImage imageNamed:@"catalog-nav"].CGImage;
+	}	
 }
 
 - (void)viewDidLoad {

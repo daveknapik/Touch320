@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <Three20/Three20+Additions.h>
+#import <QuartzCore/QuartzCore.h>
 #import "AudioPlayer.h"
 
 @interface CatalogItemViewController : TTViewController <AudioPlayerDelegate, TTImageViewDelegate, UIAlertViewDelegate> {

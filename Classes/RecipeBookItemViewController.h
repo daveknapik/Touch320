@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <Three20/Three20+Additions.h>
 #import <MessageUI/MessageUI.h>
+#import <QuartzCore/QuartzCore.h>
 #import "AudioPlayer.h"
 
 @interface RecipeBookItemViewController : TTViewController <UIWebViewDelegate, MFMailComposeViewControllerDelegate> {

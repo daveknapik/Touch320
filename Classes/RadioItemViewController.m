@@ -44,8 +44,6 @@
 																				 target:nil
 																				 action:nil] autorelease];
 		
-		self.navigationBarStyle = UIBarStyleDefault; 
-		self.navigationBarTintColor	= [UIColor blackColor];
 		self.statusBarStyle = UIStatusBarStyleBlackOpaque;
 		
 		self.author = [query objectForKey:@"author"];
@@ -84,6 +82,19 @@
 	if (self = [super init]) {
 	}
 	return self;
+}
+
+-(void)viewWillAppear:(BOOL)animated {
+	[super viewWillAppear:YES];
+	UINavigationBar *nb = self.navigationController.navigationBar;
+	nb.tintColor = [UIColor colorWithRed:176/255.0 green:169/255.0 blue:18/255.0 alpha:1];
+	
+	if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
+		nb.layer.contents = (id)[UIImage imageNamed:@"radio-nav-iPad"].CGImage;
+	}
+	else {
+		nb.layer.contents = (id)[UIImage imageNamed:@"radio-nav"].CGImage;
+	}	
 }
 
 - (void)viewDidLoad {

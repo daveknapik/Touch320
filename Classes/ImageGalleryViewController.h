@@ -7,6 +7,7 @@
 //
 
 #import <Three20/Three20+Additions.h>
+#import <QuartzCore/QuartzCore.h>
 
 @interface ImageGalleryViewController : TTThumbsViewController {
 	

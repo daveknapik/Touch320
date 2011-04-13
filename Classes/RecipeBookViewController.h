@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import <Three20/Three20+Additions.h>
+#import <QuartzCore/QuartzCore.h>
 
 @interface RecipeBookViewController : TTTableViewController {
 
