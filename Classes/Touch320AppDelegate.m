@@ -182,9 +182,6 @@ void interruptionListener(void *userData, UInt32  interruptionState) {
 										 self.frame.size.height)];
 			self.tintColor = [UIColor colorWithRed:32/255.0 green:70/255.0 blue:117/255.0 alpha:1];
 		}
-		else {
-			self.tintColor = [UIColor colorWithRed:195/255.0 green:54/255.0 blue:37/255.0 alpha:1];
-		}
 	}
 	else
 	{
@@ -217,9 +214,6 @@ void interruptionListener(void *userData, UInt32  interruptionState) {
 			[image drawInRect:CGRectMake(0, 0, self.frame.size.width, 
 										 self.frame.size.height)];
 			self.tintColor = [UIColor colorWithRed:32/255.0 green:70/255.0 blue:117/255.0 alpha:1];
-		}
-		else {
-			self.tintColor = [UIColor colorWithRed:195/255.0 green:54/255.0 blue:37/255.0 alpha:1];
 		}
 		
 	}
