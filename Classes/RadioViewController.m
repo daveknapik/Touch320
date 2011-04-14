@@ -35,6 +35,7 @@
 - (id)init {
 	if (self = [super init]) {
 		self.tableViewStyle = UITableViewStylePlain;
+		self.variableHeightRows = YES;
 	}
 	
 	return self;
@@ -68,6 +69,8 @@
 						   [object pubDate], @"pubDate",
 						   [object link], @"link",
 						   [object episode_duration], @"episode_duration",
+						   [object title_label], @"title_label",
+						   [object subtitle_label], @"subtitle_label",
 						   nil];
 	
 	//[[TTNavigator navigator] openURL:@"tt://radioItem/1" query:query animated:YES]; 

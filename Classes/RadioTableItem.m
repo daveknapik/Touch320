@@ -15,7 +15,9 @@
 			summary = _summary,
 			pubDate = _pubDate,
 			link = _link,
-			episode_duration = _episode_duration;
+			episode_duration = _episode_duration,
+			title_label = _title_label,
+			subtitle_label = _subtitle_label;
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -26,17 +28,21 @@
 		   summary:(NSString*)summary
 		   pubDate:(NSString*)pubDate
 			  link:(NSString*)link 
-  episode_duration:(NSString*)episode_duration { 
+  episode_duration:(NSString*)episode_duration
+	   title_label:(NSString*)title_label
+	subtitle_label:(NSString*)subtitle_label { 
 	RadioTableItem* item = [[[self alloc] init] autorelease]; 
 	
-	item.text = text; 
-	item.title = title; 
+	item.text = @""; 
+	item.title = @""; 
 	item.author = author;
-	item.subtitle = subtitle;
+	item.subtitle = @"";
 	item.summary = summary;
 	item.pubDate = pubDate;
 	item.link = link;
 	item.episode_duration = episode_duration;
+	item.title_label = title_label;
+	item.subtitle_label = subtitle_label;
 	
 	return item; 
 } 
@@ -50,6 +56,8 @@
 		_pubDate = nil;
 		_link = nil;
 		_episode_duration = nil;
+		_title_label = nil;
+		_subtitle_label = nil;
 	} 
 	
 	return self;
@@ -63,6 +71,8 @@
 	TT_RELEASE_SAFELY(_pubDate);
 	TT_RELEASE_SAFELY(_link);
 	TT_RELEASE_SAFELY(_episode_duration);
+	TT_RELEASE_SAFELY(_title_label);
+	TT_RELEASE_SAFELY(_subtitle_label);
 	[super dealloc];
 }
 
@@ -75,6 +85,8 @@
 		self.pubDate = [decoder decodeObjectForKey:@"pubDate"];
 		self.link = [decoder decodeObjectForKey:@"link"];
 		self.episode_duration = [decoder decodeObjectForKey:@"episode_duration"];
+		self.title_label = [decoder decodeObjectForKey:@"title_label"];
+		self.subtitle_label = [decoder decodeObjectForKey:@"subtitle_label"];
 	} 
 	
 	return self;
@@ -109,6 +121,14 @@
 	
 	if (self.episode_duration) { 
 		[encoder encodeObject:self.episode_duration forKey:@"episode_duration"]; 
+	}
+	
+	if (self.title_label) { 
+		[encoder encodeObject:self.title_label forKey:@"title_label"]; 
+	}
+	
+	if (self.subtitle_label) { 
+		[encoder encodeObject:self.subtitle_label forKey:@"subtitle_label"]; 
 	}
 } 
 

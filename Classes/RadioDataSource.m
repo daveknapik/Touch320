@@ -9,6 +9,8 @@
 #import "RadioDataSource.h"
 #import "RadioTableItem.h"
 #import "RadioTableItemCell.h"
+#import "BannerImageTableCell.h"
+#import "BannerImageTableItem.h"
 
 @implementation RadioDataSource
 
@@ -41,6 +43,15 @@
 	
 	NSArray *sortedKeys = [keys sortedArrayUsingSelector:@selector(compare:)];
 	
+	if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
+		[items addObject:[BannerImageTableItem
+						  itemWithBannerImage:[UIImage imageNamed:@"fence-field"]]];
+	}
+	else {
+		[items addObject:[BannerImageTableItem
+						  itemWithBannerImage:[UIImage imageNamed:@"fence-field-iPad"]]];
+	}
+	
 	for (id key in sortedKeys) {
 		NSMutableDictionary* theItem = [_radioModel.radioItems objectForKey:key];
 		
@@ -51,6 +62,8 @@
 		NSString* pubDate = [theItem objectForKey:@"pubDate"];
 		NSString* link = [theItem objectForKey:@"guid"];
 		NSString* episode_duration = [theItem objectForKey:@"itunes:duration"];
+		NSString* title_label = [theItem objectForKey:@"itunes:subtitle"];
+		NSString* subtitle_label = [theItem objectForKey:@"title"];
 		
 		if( !TTIsSetWithItems(title) ) {
 			[items addObject:[RadioTableItem
@@ -61,7 +74,9 @@
 							  summary: summary
 							  pubDate: pubDate
 							  link: link
-							  episode_duration: episode_duration]];
+							  episode_duration: episode_duration
+							  title_label: title_label
+							  subtitle_label: subtitle_label]];
 		}
 	} 
 	
@@ -76,6 +91,9 @@
 	if ([object isKindOfClass:[RadioTableItem class]]) { 
 		return [RadioTableItemCell class]; 
 	} 
+	else if ([object isKindOfClass:[BannerImageTableItem class]]) { 
+		return [BannerImageTableCell class]; 
+	}
 	else { 
 		return [super tableView:tableView cellClassForObject:object]; 
 	}

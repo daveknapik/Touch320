@@ -10,6 +10,9 @@
 #import <Three20/Three20+Additions.h>
 
 @interface RadioTableItemCell : TTTableSubtitleItemCell {
+	UILabel *_titleLabel;
+	UILabel *_subtitleLabel;
+	UIImageView *_totem;
 }
 
 @end

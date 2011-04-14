@@ -16,6 +16,8 @@
 	NSString* _pubDate;
 	NSString* _link;
 	NSString* _episode_duration;
+	NSString* _title_label;
+	NSString* _subtitle_label;
 }
 
 @property (nonatomic, copy) NSString* title;
@@ -24,6 +26,8 @@
 @property (nonatomic, copy) NSString* pubDate;
 @property (nonatomic, copy) NSString* link;
 @property (nonatomic, copy) NSString* episode_duration;
+@property (nonatomic, copy) NSString* title_label;
+@property (nonatomic, copy) NSString* subtitle_label;
 
 + (id)itemWithText:(NSString*)text 
 			 title:(NSString*)title 
@@ -32,6 +36,8 @@
 		   summary:(NSString*)summary
 		   pubDate:(NSString*)pubDate
 			  link:(NSString*)link
-  episode_duration:(NSString*)episode_duration;
+  episode_duration:(NSString*)episode_duration
+	   title_label:(NSString*)title_label
+	subtitle_label:(NSString*)subtitle_label;
 
 @end

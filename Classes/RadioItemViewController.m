@@ -17,6 +17,8 @@
 			pubDate = _pubDate,
 			link = _link,
 			episode_duration = _episode_duration,
+			title_label = _title_label,
+			subtitle_label = _subtitle_label,
 			radioItemView = _radioItemView,
 			titleLabel = _titleLabel,
 			authorLabel = _authorLabel,
@@ -52,6 +54,8 @@
 		self.pubDate = [query objectForKey:@"pubDate"];
 		self.link = [query objectForKey:@"link"];
 		self.episode_duration = [query objectForKey:@"episode_duration"];
+		self.title_label = [query objectForKey:@"title_label"];
+		self.subtitle_label = [query objectForKey:@"subtitle_label"];
 		
 		Touch320AppDelegate *appDelegate;
 		appDelegate = (Touch320AppDelegate*)[UIApplication sharedApplication].delegate;
@@ -113,7 +117,7 @@
 	
 	//subtitle value
 	UILabel *subtitleValue = [[UILabel alloc] initWithFrame:CGRectMake(5, 0, appDelegate.deviceWidth - 20, 20)];
-	subtitleValue.text = self.subtitle;
+	subtitleValue.text = self.title_label;
 	subtitleValue.textAlignment = UITextAlignmentLeft;
 	subtitleValue.textColor = [UIColor blackColor];
 	subtitleValue.font = [UIFont fontWithName:@"Helvetica-Bold" size:12];
@@ -123,14 +127,14 @@
 	subtitleValue.numberOfLines = 0;
 	
 	subtitleValue.frame = [self resizeLabelFrame:subtitleValue
-										 forText:self.subtitle];
+										 forText:self.title_label];
 	
 	[self.view addSubview:subtitleValue];
 	[subtitleValue release];
 	
 	//title value
 	UILabel *titleValue = [[UILabel alloc] initWithFrame:CGRectMake(5, subtitleValue.frame.size.height + 5, appDelegate.deviceWidth - 20, 40)];
-	titleValue.text = self.navigationItem.title;
+	titleValue.text = @"";
 	titleValue.textAlignment = UITextAlignmentLeft;
 	titleValue.textColor = [UIColor blackColor];
 	titleValue.font = [UIFont fontWithName:@"Helvetica" size:12];
@@ -139,7 +143,7 @@
 	titleValue.numberOfLines = 0;
 	
 	titleValue.frame = [self resizeLabelFrame:titleValue 
-									  forText:self.navigationItem.title];
+									  forText:@""];
 	
 	[self.view addSubview:titleValue];
 	[titleValue release];
@@ -229,6 +233,8 @@
 	self.pubDate = nil;
 	self.link = nil;
 	self.episode_duration = nil;
+	self.title_label = nil;
+	self.subtitle_label = nil;
 	
 	self.radioItemView = nil;
 	
@@ -261,6 +267,8 @@
 	TT_RELEASE_SAFELY(_pubDate);
 	TT_RELEASE_SAFELY(_link);
 	TT_RELEASE_SAFELY(_episode_duration);
+	TT_RELEASE_SAFELY(_title_label);
+	TT_RELEASE_SAFELY(_subtitle_label);
 	
 	TT_RELEASE_SAFELY(_radioItemView);
 	
