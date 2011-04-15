@@ -9,6 +9,8 @@
 #import "CatalogSamplerDataSource.h"
 #import "CatalogSamplerTableItem.h"
 #import "CatalogSamplerTableItemCell.h"
+#import "BannerImageTableCell.h"
+#import "BannerImageTableItem.h"
 
 @implementation CatalogSamplerDataSource
 
@@ -41,6 +43,14 @@
 	
 	NSArray *sortedKeys = [keys sortedArrayUsingSelector:@selector(compare:)];
 	
+	if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
+		[items addObject:[BannerImageTableItem
+						  itemWithBannerImage:[UIImage imageNamed:@"catalogue-banner"]]];
+	}
+	else {
+		[items addObject:[BannerImageTableItem
+						  itemWithBannerImage:[UIImage imageNamed:@"catalogue-banner-iPad"]]];
+	}
 	
 	for (id key in sortedKeys) {
 		NSMutableDictionary* theItem = [_catalogSamplerModel.catalogItems objectForKey:key];
@@ -90,6 +100,9 @@
 		if ([object isKindOfClass:[CatalogSamplerTableItem class]]) { 
 			return [CatalogSamplerTableItemCell class]; 
 		} 
+		else if ([object isKindOfClass:[BannerImageTableItem class]]) { 
+			return [BannerImageTableCell class]; 
+		}
 		else { 
 			return [super tableView:tableView cellClassForObject:object]; 
 		}

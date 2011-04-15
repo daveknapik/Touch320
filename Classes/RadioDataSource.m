@@ -45,11 +45,11 @@
 	
 	if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
 		[items addObject:[BannerImageTableItem
-						  itemWithBannerImage:[UIImage imageNamed:@"fence-field"]]];
+						  itemWithBannerImage:[UIImage imageNamed:@"radio-banner"]]];
 	}
 	else {
 		[items addObject:[BannerImageTableItem
-						  itemWithBannerImage:[UIImage imageNamed:@"fence-field-iPad"]]];
+						  itemWithBannerImage:[UIImage imageNamed:@"radio-banner-iPad"]]];
 	}
 	
 	for (id key in sortedKeys) {
