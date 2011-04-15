@@ -20,7 +20,9 @@
 			release_url = _release_url,
 			itunes_url = _itunes_url,
 			release_duration = _release_duration,
-			track_listing = _track_listing;
+			track_listing = _track_listing,
+			title_label = _title_label,
+			subtitle_label = _subtitle_label;
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -36,12 +38,14 @@ release_description:(NSString*)release_description
 		itunes_url:(NSString*)itunes_url 
   release_duration:(NSString*)release_duration
 	 track_listing:(NSString*)track_listing
+	   title_label:(NSString*)title_label
+	subtitle_label:(NSString*)subtitle_label
 {
 	CatalogSamplerTableItem* item = [[[self alloc] init] autorelease]; 
 	
-	item.text = text; 
-	item.title = title; 
-	item.subtitle = subtitle;
+	item.text = @""; 
+	item.title = @""; 
+	item.subtitle = @"";
 	item.artist = artist;
 	item.catalogNumber = catalogNumber;
 	item.release_description = release_description;
@@ -51,6 +55,8 @@ release_description:(NSString*)release_description
 	item.itunes_url = itunes_url;
 	item.release_duration = release_duration;
 	item.track_listing = track_listing;
+	item.title_label = title_label;
+	item.subtitle_label = subtitle_label;
 	
 	return item; 
 } 
@@ -59,6 +65,17 @@ release_description:(NSString*)release_description
 	if (self = [super init]) { 
 		_title = nil; 
 		_subtitle = nil;
+		_artist = nil;
+		_catalogNumber = nil;
+		_release_description = nil;
+		_cover_art_url = nil;
+		_mp3_sample_url = nil;
+		_release_url = nil;
+		_itunes_url = nil;
+		_release_duration = nil;
+		_track_listing = nil;
+		_title_label = nil;
+		_subtitle_label = nil;
 	} 
 	
 	return self;
@@ -76,6 +93,8 @@ release_description:(NSString*)release_description
 	TT_RELEASE_SAFELY(_itunes_url); 
 	TT_RELEASE_SAFELY(_release_duration); 
 	TT_RELEASE_SAFELY(_track_listing); 
+	TT_RELEASE_SAFELY(_title_label);
+	TT_RELEASE_SAFELY(_subtitle_label);
 	
 	[super dealloc];
 }
@@ -93,6 +112,8 @@ release_description:(NSString*)release_description
 		self.itunes_url = [decoder decodeObjectForKey:@"itunes_url"];
 		self.release_duration = [decoder decodeObjectForKey:@"release_duration"];
 		self.track_listing = [decoder decodeObjectForKey:@"track_listing"];
+		self.title_label = [decoder decodeObjectForKey:@"title_label"];
+		self.subtitle_label = [decoder decodeObjectForKey:@"subtitle_label"];
 	} 
 	
 	return self;
@@ -143,6 +164,14 @@ release_description:(NSString*)release_description
 	
 	if (self.track_listing) { 
 		[encoder encodeObject:self.track_listing forKey:@"track_listing"]; 
+	} 
+	
+	if (self.title_label) { 
+		[encoder encodeObject:self.title_label forKey:@"title_label"]; 
+	} 
+	
+	if (self.subtitle_label) { 
+		[encoder encodeObject:self.subtitle_label forKey:@"subtitle_label"]; 
 	} 
 } 
 

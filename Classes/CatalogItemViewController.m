@@ -46,9 +46,9 @@ cover_art = _cover_art;
 		
 		self.statusBarStyle = UIStatusBarStyleBlackOpaque;
 		
-		self.release_title = [query objectForKey:@"title"];
+		self.release_title = [query objectForKey:@"subtitle"];
 		self.artist = [query objectForKey:@"artist"];
-		self.subtitle = [query objectForKey:@"subtitle"];
+		self.subtitle = [query objectForKey:@"title"];
 		self.release_description = [query objectForKey:@"release_description"];
 		self.release_duration = [query objectForKey:@"release_duration"];
 		self.mp3_sample_url = [[query objectForKey:@"mp3_sample_url"] stringByReplacingOccurrencesOfString:@" " withString:@"%20"];

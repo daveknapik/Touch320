@@ -55,6 +55,8 @@
 		NSString* itunes_url = [theItem objectForKey:@"itunes_url"];
 		NSString* release_duration = [theItem objectForKey:@"release_duration"];
 		NSString* track_listing = [theItem objectForKey:@"track_listing"];
+		NSString* title_label = [theItem objectForKey:@"artist"];
+		NSString* subtitle_label = [theItem objectForKey:@"title"];
 		
 		if( !TTIsSetWithItems(title) ) {
 			[items addObject:[CatalogSamplerTableItem
@@ -69,7 +71,9 @@
 							  release_url: release_url
 							  itunes_url: itunes_url
 							  release_duration: release_duration
-							  track_listing: track_listing]];
+							  track_listing: track_listing
+							  title_label: title_label
+							  subtitle_label: subtitle_label]];
 		}
 		
 	} 

@@ -35,6 +35,7 @@
 - (id)init {
 	if (self = [super init]) {
 		self.tableViewStyle = UITableViewStylePlain;
+		self.variableHeightRows = YES;
 	}
 	
 	return self;
@@ -74,8 +75,8 @@
 	
 	NSDictionary *query = [NSDictionary
 						   dictionaryWithObjectsAndKeys:
-						   [object title], @"title",
-						   [object subtitle], @"subtitle",
+						   [object title_label], @"title",
+						   [object subtitle_label], @"subtitle",
 						   [object artist], @"artist",
 						   [object release_description], @"release_description",
 						   [object catalogNumber], @"catalogNumber",

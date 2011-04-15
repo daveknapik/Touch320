@@ -9,46 +9,101 @@
 #import "CatalogSamplerTableItemCell.h"
 #import "CatalogSamplerTableItem.h"
 
-
 @implementation CatalogSamplerTableItemCell
 
-+ (CGFloat)tableView:(UITableView*)tableView rowHeightForItem:(id)item { 
-	return 100;
-} 
++ (CGFloat)tableView:(UITableView*)tableView rowHeightForObject:(id)item {  
+	if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
+		return 87;
+	}
+	else {
+		return 58;
+	}
+}
+
+- (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString*)identifier {
+	
+	if (self = [super initWithStyle:UITableViewCellStyleValue2 reuseIdentifier:identifier]) {
+		_item = nil;
+		
+		_titleLabel = [[UILabel alloc] initWithFrame:CGRectZero];
+		[self.contentView addSubview:_titleLabel];
+		
+		_subtitleLabel = [[UILabel alloc] initWithFrame:CGRectZero];
+		[self.contentView addSubview:_subtitleLabel];
+		
+		_totem = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"go"]];  
+        [self.contentView addSubview:_totem];
+	}
+	
+	return self;
+}
 
 - (void)dealloc { 
+	TT_RELEASE_SAFELY(_titleLabel);
+	TT_RELEASE_SAFELY(_subtitleLabel);
+	TT_RELEASE_SAFELY(_totem);
 	[super dealloc];
 }
 
-// TTTableViewCell 
 
-- (id)object { 
-	return _item;
-} 
+#pragma mark -
+#pragma mark UIView
 
-- (void)setObject:(id)object { 
-	if (_item != object) { 
-		[super setObject:object]; 
+- (void)layoutSubviews {
+	[super layoutSubviews];
+	
+	// Set the size, font, foreground color, background color
+	_titleLabel.textColor = [UIColor blackColor]; 
+	_titleLabel.textAlignment = UITextAlignmentLeft; 
+	_titleLabel.contentMode = UIViewContentModeCenter; 
+	_titleLabel.lineBreakMode = UILineBreakModeTailTruncation; 
+	_titleLabel.numberOfLines = 0; 
+	
+	
+	_subtitleLabel.textColor = [UIColor grayColor]; 
+	_subtitleLabel.textAlignment = UITextAlignmentLeft; 
+	_subtitleLabel.contentMode = UIViewContentModeCenter; 
+	_subtitleLabel.lineBreakMode = UILineBreakModeTailTruncation; 
+	_subtitleLabel.numberOfLines = 0;
+	
+	if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
+		//iPad
+		[_titleLabel setFrame:CGRectMake(50,20,468,25)];
+		[_subtitleLabel setFrame:CGRectMake(50,45,468,22)];
+		[_totem setFrame:CGRectMake(673, 19, 45, 45)];
 		
-		//self.textLabel.text = [[object title] stringByAppendingString:[NSString stringWithFormat:@": %@", [object subtitle]]];
-		self.textLabel.text = [object subtitle];
-		self.textLabel.textColor = [UIColor blackColor]; 
-		self.textLabel.font = [UIFont boldSystemFontOfSize:12]; 
-		self.textLabel.textAlignment = UITextAlignmentLeft; 
-		self.textLabel.contentMode = UIViewContentModeBottom; 
-		self.textLabel.lineBreakMode = UILineBreakModeTailTruncation; 
-		self.textLabel.numberOfLines = 0; 
-		
-		self.detailTextLabel.text = [object title];
-		self.detailTextLabel.textColor = [UIColor grayColor]; 
-		self.detailTextLabel.font = [UIFont boldSystemFontOfSize:12]; 
-		self.detailTextLabel.textAlignment = UITextAlignmentLeft; 
-		self.detailTextLabel.contentMode = UIViewContentModeTop; 
-		self.detailTextLabel.lineBreakMode = UILineBreakModeTailTruncation; 
-		self.detailTextLabel.numberOfLines = 0; 
-		
-		self.accessoryType = UITableViewCellAccessoryNone;
+		_titleLabel.font = [UIFont fontWithName:@"Helvetica" size:21]; 
+		_subtitleLabel.font = [UIFont fontWithName:@"Helvetica-Bold" size:15]; 
 	}
-} 
+	else {
+		//iPhone
+		[_titleLabel setFrame:CGRectMake(17,16,247,15)];
+		[_subtitleLabel setFrame:CGRectMake(17,31,247,15)];
+		[_totem setFrame:CGRectMake(273, 14, 30, 30)];
+		
+		_titleLabel.font = [UIFont fontWithName:@"Helvetica" size:14]; 
+		_subtitleLabel.font = [UIFont fontWithName:@"Helvetica-Bold" size:10]; 
+	}
+	
+}
+
+#pragma mark -
+#pragma mark TTTableViewCell
+
+- (id)object {
+	return _item;  
+}
+
+- (void)setObject:(id)object {
+	if (_item != object) {
+		[super setObject:object];
+		
+		CatalogSamplerTableItem *item = object;
+		
+		// Set the data in various UI elements
+		[_titleLabel setText:item.title_label];
+		[_subtitleLabel setText:item.subtitle_label];
+	}
+}
 
 @end
