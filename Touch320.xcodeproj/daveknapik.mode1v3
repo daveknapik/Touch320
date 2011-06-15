@@ -331,7 +331,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>DEA7919C1299DA11001DEF8E</string>
+										<string>DEDCF68913025DF3000F6B69</string>
 										<key>history</key>
 										<array>
 											<string>DEFEE63810D80B79001213CE</string>
@@ -443,7 +443,7 @@
 											<string>DEA791941299D6F3001DEF8E</string>
 											<string>DEA791951299D6F3001DEF8E</string>
 											<string>DEA791961299D6F3001DEF8E</string>
-											<string>DEA791971299D6F3001DEF8E</string>
+											<string>DEA7919F1299DD1A001DEF8E</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -455,14 +455,14 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 0}, {1123, 389}}</string>
+								<string>{{0, 0}, {1123, 380}}</string>
 								<key>RubberWindowFrame</key>
 								<string>0 146 1440 732 0 0 1440 878 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
 							<key>Proportion</key>
-							<string>389pt</string>
+							<string>380pt</string>
 						</dict>
 						<dict>
 							<key>ContentConfiguration</key>
@@ -475,14 +475,14 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 394}, {1123, 297}}</string>
+								<string>{{0, 385}, {1123, 306}}</string>
 								<key>RubberWindowFrame</key>
 								<string>0 146 1440 732 0 0 1440 878 </string>
 							</dict>
 							<key>Module</key>
 							<string>XCDetailModule</string>
 							<key>Proportion</key>
-							<string>297pt</string>
+							<string>306pt</string>
 						</dict>
 					</array>
 					<key>Proportion</key>
@@ -501,9 +501,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>DEA7916B1299BF91001DEF8E</string>
+				<string>DEDCF67213025C20000F6B69</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>DEA7916C1299BF91001DEF8E</string>
+				<string>DEDCF67313025C20000F6B69</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
 			</array>
@@ -639,11 +639,10 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>1C530D57069F1CE1000CFCEE</string>
-		<string>1C78EAAD065D492600B07095</string>
 		<string>1CD10A99069EF8BA00B06720</string>
 		<string>DEFEE5F710D80AD2001213CE</string>
 		<string>/Users/daveknapik/Documents/iPhoneDevelopment/Touchapp/Touch320/Touch320.xcodeproj</string>
+		<string>1C78EAAD065D492600B07095</string>
 	</array>
 	<key>WindowString</key>
 	<string>0 146 1440 732 0 0 1440 878 </string>
@@ -723,7 +722,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>DEFEE5F710D80AD2001213CE</string>
-				<string>DEA7916D1299BF91001DEF8E</string>
+				<string>DEDCF67413025C20000F6B69</string>
 				<string>1CD0528F0623707200166675</string>
 				<string>XCMainBuildResultsModuleGUID</string>
 			</array>
@@ -843,13 +842,13 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1CD10A99069EF8BA00B06720</string>
-				<string>DEA7916E1299BF91001DEF8E</string>
+				<string>DEDCF68213025DBE000F6B69</string>
 				<string>1C162984064C10D400B95A72</string>
-				<string>DEA7916F1299BF91001DEF8E</string>
-				<string>DEA791701299BF91001DEF8E</string>
-				<string>DEA791711299BF91001DEF8E</string>
-				<string>DEA791721299BF91001DEF8E</string>
-				<string>DEA791731299BF91001DEF8E</string>
+				<string>DEDCF68313025DBE000F6B69</string>
+				<string>DEDCF68413025DBE000F6B69</string>
+				<string>DEDCF68513025DBE000F6B69</string>
+				<string>DEDCF68613025DBE000F6B69</string>
+				<string>DEDCF68713025DBE000F6B69</string>
 			</array>
 			<key>ToolbarConfiguration</key>
 			<string>xcode.toolbar.config.debugV3</string>
@@ -968,6 +967,8 @@
 					<key>Dock</key>
 					<array>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -1003,7 +1004,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1C78EAAD065D492600B07095</string>
-				<string>DEA791741299BF91001DEF8E</string>
+				<string>DEDCF68813025DBE000F6B69</string>
 				<string>1C78EAAC065D492600B07095</string>
 			</array>
 			<key>ToolbarConfiguration</key>
@@ -1013,7 +1014,7 @@
 			<key>WindowToolGUID</key>
 			<string>1C78EAAD065D492600B07095</string>
 			<key>WindowToolIsVisible</key>
-			<false/>
+			<true/>
 		</dict>
 		<dict>
 			<key>FirstTimeWindowDisplayed</key>
