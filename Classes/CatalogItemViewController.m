@@ -56,8 +56,8 @@ cover_art = _cover_art;
 		self.cover_art_url = [[query objectForKey:@"cover_art_url"] stringByReplacingOccurrencesOfString:@" " withString:@"%20"];
 		self.itunes_url = [[query objectForKey:@"itunes_url"] stringByReplacingOccurrencesOfString:@" " withString:@"%20"];
 		
-		NSLog(self.mp3_sample_url);
-		NSLog(self.itunes_url);
+		NSLog(@"%@",self.mp3_sample_url);
+		NSLog(@"%@",self.itunes_url);
 		Touch320AppDelegate *appDelegate;
 		appDelegate = (Touch320AppDelegate*)[UIApplication sharedApplication].delegate;
 		
@@ -275,7 +275,7 @@ cover_art = _cover_art;
 }
 
 - (void)buttonClicked {
-	NSLog(self.itunes_url);
+	NSLog(@"%@",self.itunes_url);
 	
 	[[UIApplication sharedApplication] openURL:[NSURL URLWithString:self.itunes_url]];
 }

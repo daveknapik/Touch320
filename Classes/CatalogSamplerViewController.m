@@ -61,17 +61,17 @@
 
 - (void)didSelectObject:(id)object atIndexPath:(NSIndexPath*)indexPath {
 	NSLog(@"selected catalog item");
-	NSLog([object title]);
-	NSLog([object subtitle]);
-	NSLog([object artist]);
-	NSLog([object release_description]);
-	NSLog([object catalogNumber]);
-	NSLog([object release_url]);
-	NSLog([object mp3_sample_url]);
-	NSLog([object cover_art_url]);
-	NSLog([object itunes_url]);
-	NSLog([object track_listing]);
-	NSLog([object release_duration]);
+	NSLog(@"%@",[object title]);
+	NSLog(@"%@",[object subtitle]);
+	NSLog(@"%@",[object artist]);
+	NSLog(@"%@",[object release_description]);
+	NSLog(@"%@",[object catalogNumber]);
+	NSLog(@"%@",[object release_url]);
+	NSLog(@"%@",[object mp3_sample_url]);
+	NSLog(@"%@",[object cover_art_url]);
+	NSLog(@"%@",[object itunes_url]);
+	NSLog(@"%@",[object track_listing]);
+	NSLog(@"%@",[object release_duration]);
 	
 	NSDictionary *query = [NSDictionary
 						   dictionaryWithObjectsAndKeys:

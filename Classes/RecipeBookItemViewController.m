@@ -171,7 +171,7 @@
 	[descriptionValue release];
 	previousSubviewHeight = descriptionValue.frame.size.height;*/
 	
-	NSLog(self.recipe_description);
+	NSLog(@"%@",self.recipe_description);
 	
     [super viewDidLoad];
 }
