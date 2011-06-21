@@ -108,11 +108,11 @@ cover_art = _cover_art;
 	UIImage* buyButtonGreen = [[UIImage imageNamed:@"buyButtonGreen.png"] stretchableImageWithLeftCapWidth:12.0f topCapHeight:0.0f];
 	
 	//initialize y-axis subview placement variable
-	int yAxisPlacement = 0;
+
 	int previousSubviewHeight = 0;
 	
 	//subtitle value
-	yAxisPlacement = yAxisPlacement + previousSubviewHeight + 5;
+  int yAxisPlacement = 5;
 	
 	UILabel *subtitleValue = [[UILabel alloc] initWithFrame:CGRectMake(5, yAxisPlacement, appDelegate.deviceWidth - 20, 20)];
 	subtitleValue.text = self.subtitle;
