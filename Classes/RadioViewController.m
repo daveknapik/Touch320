@@ -8,6 +8,7 @@
 
 #import "RadioViewController.h"
 #import "RadioDataSource.h"
+#import "RadioTableItem.h"
 
 @implementation RadioViewController
 
@@ -59,7 +60,7 @@
 	NSLog(@"radio model created");
 }
 
-- (void)didSelectObject:(id)object atIndexPath:(NSIndexPath*)indexPath {
+- (void)didSelectObject:(RadioTableItem *)object atIndexPath:(NSIndexPath*)indexPath {
 	NSDictionary *query = [NSDictionary
 						   dictionaryWithObjectsAndKeys:
 						   [object author], @"author",
