@@ -404,8 +404,8 @@ cover_art = _cover_art;
 	
 	NSLog(@"step 1 - active audio player: %@",[appDelegate activeAudioPlayer]);
 	
-	[[appDelegate activeAudioPlayer] cancel];
-	[[appDelegate activeAudioPlayer] release];
+	[appDelegate.activeAudioPlayer cancel];
+	appDelegate.activeAudioPlayer = nil;
 	
 	audioPlayer = [[AudioPlayer alloc] initPlayerWithURL:[NSURL URLWithString:self.mp3_sample_url] delegate:self];
 	
