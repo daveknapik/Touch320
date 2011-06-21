@@ -22,6 +22,9 @@
 #import "Three20/Three20.h"
 #import "ObjectiveResource.h"
 
+#import "CatalogItemViewController.h"
+#import "RadioItemViewController.h"
+
 @implementation Touch320AppDelegate
 
 @synthesize link = _link, numberOfThumbnails = _numberOfThumbnails, imageSize = _imageSize, deviceWidth = _deviceWidth, deviceHeight = _deviceHeight, deviceMultiplier = _deviceMultiplier, activeViewController = _activeViewController, activeAudioPlayer = _activeAudioPlayer;
@@ -137,11 +140,22 @@ void interruptionListener(void *userData, UInt32  interruptionState) {
 	appDelegate = (Touch320AppDelegate*)[UIApplication sharedApplication].delegate;
 	
 	if (interruptionState == kAudioSessionBeginInterruption) {
-		[appDelegate.activeViewController pause];
+    //[appDelegate.activeViewController pause];
+    //we need to pause if we're playing...
+    //only two different viewController's repsond to pause..
+    if ([appDelegate.activeViewController isKindOfClass:[CatalogItemViewController class]])
+      [(CatalogItemViewController *)appDelegate.activeViewController pause];
+    else if ([appDelegate.activeViewController isKindOfClass:[RadioItemViewController class]])
+      [(RadioItemViewController *)appDelegate.activeViewController pause];  
+
 		AudioSessionSetActive(NO);
 	} else if (interruptionState == kAudioSessionEndInterruption) {
 		AudioSessionSetActive(YES);
-		[appDelegate.activeViewController play];
+		//[appDelegate.activeViewController play];
+    if ([appDelegate.activeViewController isKindOfClass:[CatalogItemViewController class]])
+      [(CatalogItemViewController *)appDelegate.activeViewController play];
+    else if ([appDelegate.activeViewController isKindOfClass:[RadioItemViewController class]])
+      [(RadioItemViewController *)appDelegate.activeViewController play];  
 	}
 }
 
