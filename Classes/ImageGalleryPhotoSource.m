@@ -5,6 +5,7 @@
 #import "ImageGalleryPhotoSource.h"
 #import "ImageGalleryPhoto.h"
 #import "Touch320AppDelegate.h"
+#import "GTMNSDictionary+URLArguments.h"
 
 @implementation ImageGalleryPhotoSource
 @synthesize title = _title;
