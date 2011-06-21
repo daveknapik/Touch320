@@ -105,10 +105,7 @@
 	Touch320AppDelegate *appDelegate;
 	appDelegate = (Touch320AppDelegate*)[UIApplication sharedApplication].delegate;
 	
-  //UIScrollView *tmpScrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, appDelegate.deviceWidth, 2300)];
-  //[tmpScrollView setContentSize:CGSizeMake(appDelegate.deviceWidth,2300)];
-	//self.view = tmpScrollView;
-  //[tmpScrollView release]; tmpScrollView = nil;
+
 	
   CGRect adjustedFrame = self.view.frame;
   if (!self.tabBarController.tabBar.hidden) adjustedFrame.size.height -= self.tabBarController.tabBar.frame.size.height;
