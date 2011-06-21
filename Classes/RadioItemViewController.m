@@ -83,7 +83,7 @@
 }
 
 - (id)init {
-	if (self = [super init]) {
+	if ((self = [super init])) {
 	}
 	return self;
 }
@@ -105,15 +105,18 @@
 	Touch320AppDelegate *appDelegate;
 	appDelegate = (Touch320AppDelegate*)[UIApplication sharedApplication].delegate;
 	
-  UIScrollView *tmpScrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, appDelegate.deviceWidth, 2300)];
-  [tmpScrollView setContentSize:CGSizeMake(appDelegate.deviceWidth,2300)];
-	self.view = tmpScrollView;
-  [tmpScrollView release]; tmpScrollView = nil;
+  //UIScrollView *tmpScrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, appDelegate.deviceWidth, 2300)];
+  //[tmpScrollView setContentSize:CGSizeMake(appDelegate.deviceWidth,2300)];
+	//self.view = tmpScrollView;
+  //[tmpScrollView release]; tmpScrollView = nil;
 	
-	self.radioItemView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, appDelegate.deviceWidth, 2300)];
+  CGRect adjustedFrame = self.view.frame;
+  if (!self.tabBarController.tabBar.hidden) adjustedFrame.size.height -= self.tabBarController.tabBar.frame.size.height;
+
+	self.radioItemView = [[UIScrollView alloc] initWithFrame:adjustedFrame];
 	self.radioItemView.backgroundColor = [UIColor whiteColor];
 	
-	[self.radioItemView setContentSize:CGSizeMake(appDelegate.deviceWidth, 2300)];
+	[self.radioItemView setContentSize:CGSizeMake(self.view.frame.size.width, 2300)];
 	
 	[self.view addSubview:self.radioItemView];
 	
@@ -131,7 +134,7 @@
 	subtitleValue.frame = [self resizeLabelFrame:subtitleValue
 										 forText:self.title_label];
 	
-	[self.view addSubview:subtitleValue];
+	[self.radioItemView addSubview:subtitleValue];
 	[subtitleValue release];
 	
 	//title value
@@ -147,7 +150,7 @@
 	titleValue.frame = [self resizeLabelFrame:titleValue 
 									  forText:@""];
 	
-	[self.view addSubview:titleValue];
+	[self.radioItemView addSubview:titleValue];
 	[titleValue release];
 	
 	//summary value
@@ -163,7 +166,7 @@
 	summaryValue.frame = [self resizeLabelFrame:summaryValue 
 										forText:self.summary];
 	
-	[self.view addSubview:summaryValue];
+	[self.radioItemView addSubview:summaryValue];
 	[summaryValue release];
 	
 	//button background images
@@ -179,7 +182,7 @@
 	playButton.backgroundColor = [UIColor clearColor];
 	playButton.alpha = 1;
 	[playButton addTarget:self action:@selector(play) forControlEvents:UIControlEventTouchUpInside];
-	[self.view addSubview:playButton];
+	[self.radioItemView addSubview:playButton];
 	
 	//pause button
 	pauseButton = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -191,16 +194,18 @@
 	pauseButton.backgroundColor = [UIColor clearColor];
 	pauseButton.alpha = 0;
 	[pauseButton addTarget:self action:@selector(pause) forControlEvents:UIControlEventTouchUpInside];
-	[self.view addSubview:pauseButton];
+	[self.radioItemView addSubview:pauseButton];
 	
 	//activityIndicatorView
 	activityIndicatorView = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
 	activityIndicatorView.center = CGPointMake(150, subtitleValue.frame.size.height + titleValue.frame.size.height + summaryValue.frame.size.height + 40);
-	[self.view addSubview:activityIndicatorView];
+	[self.radioItemView addSubview:activityIndicatorView];
+  
+  [self.radioItemView setContentSize:CGSizeMake(self.view.frame.size.width, subtitleValue.frame.size.height + titleValue.frame.size.height + summaryValue.frame.size.height + 15 + 40+20)];
 	
 	[self load];
 	
-    [super viewDidLoad];
+  [super viewDidLoad];
 }
 
 - (CGRect)resizeLabelFrame:(UILabel*)label forText:(NSString*)text {
