@@ -113,7 +113,7 @@ void packetCallback(void *clientData, UInt32 byteCount, UInt32 packetCount, cons
 												 &formatListSize, 
 												 [listData mutableBytes]);
 	
-	NSLog(@"Audio file stream status: %d",status);
+	NSLog(@"Audio file stream status: %ld",status);
 	
 	AudioFormatListItem *formatList = [listData mutableBytes];
 	
