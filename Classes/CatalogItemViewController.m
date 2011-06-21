@@ -88,15 +88,15 @@ cover_art = _cover_art;
 }
 
 - (void)viewDidLoad {
+  [super viewDidLoad];
 	Touch320AppDelegate *appDelegate;
 	appDelegate = (Touch320AppDelegate*)[UIApplication sharedApplication].delegate;
-	
-  UIScrollView *tmpScrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, appDelegate.deviceWidth, 2300)];
-  [tmpScrollView setContentSize:CGSizeMake(appDelegate.deviceWidth,2300)];
-	self.view = tmpScrollView;
-  [tmpScrollView release]; tmpScrollView = nil;
-	
-	self.catalogItemView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, appDelegate.deviceWidth, 2300)];
+  
+  CGRect adjustedFrame = self.view.frame;
+  if (!self.tabBarController.tabBar.hidden) adjustedFrame.size.height -= self.tabBarController.tabBar.frame.size.height;
+  
+	self.catalogItemView = [[UIScrollView alloc] initWithFrame:adjustedFrame];
+
 	self.catalogItemView.backgroundColor = [UIColor whiteColor];
 	
 	[self.catalogItemView setContentSize:CGSizeMake(appDelegate.deviceWidth, 2300)];
@@ -127,7 +127,7 @@ cover_art = _cover_art;
 	subtitleValue.frame = [self resizeLabelFrame:subtitleValue
 										 forText:self.subtitle];
 	
-	[self.view addSubview:subtitleValue];
+	[self.catalogItemView addSubview:subtitleValue];
 	[subtitleValue release];
 	previousSubviewHeight = subtitleValue.frame.size.height;
 	
@@ -146,7 +146,7 @@ cover_art = _cover_art;
 	titleValue.frame = [self resizeLabelFrame:titleValue 
 									  forText:self.release_title];
 	
-	[self.view addSubview:titleValue];
+	[self.catalogItemView addSubview:titleValue];
 	[titleValue release];
 	previousSubviewHeight = titleValue.frame.size.height;
 	
@@ -164,7 +164,7 @@ cover_art = _cover_art;
 	cover_art.hidesCaption = YES;
 		cover_art.urlPath = self.cover_art_url;
 		
-		[self.view addSubview:cover_art];
+		[self.catalogItemView addSubview:cover_art];
 		[cover_art release];
 		previousSubviewHeight = cover_art.frame.size.height;
 	//}
@@ -195,7 +195,7 @@ cover_art = _cover_art;
 		buyButton.titleLabel.font = [UIFont boldSystemFontOfSize:12];
 		buyButton.backgroundColor = [UIColor clearColor];
 		[buyButton addTarget:self action:@selector(buttonClicked) forControlEvents:UIControlEventTouchUpInside];
-		[self.view addSubview:buyButton];
+		[self.catalogItemView addSubview:buyButton];
 	}
 	
 	//release_description value
@@ -213,9 +213,10 @@ cover_art = _cover_art;
 	descriptionValue.frame = [self resizeLabelFrame:descriptionValue 
 										forText:self.release_description];
 	
-	[self.view addSubview:descriptionValue];
+	[self.catalogItemView addSubview:descriptionValue];
+  previousSubviewHeight = descriptionValue.frame.size.height;
 	[descriptionValue release];
-	previousSubviewHeight = descriptionValue.frame.size.height;
+
 	
 	//BUTTONS
 	yAxisPlacement = yAxisPlacement + previousSubviewHeight + 5;
@@ -247,14 +248,16 @@ cover_art = _cover_art;
 	activityIndicatorView.center = CGPointMake(208, 95);
 	
 	//if ([self.mp3_sample_url length] != 0) {
-		[self.view addSubview:playButton];
-		[self.view addSubview:pauseButton];
-		[self.view addSubview:activityIndicatorView];
+		[self.catalogItemView addSubview:playButton];
+		[self.catalogItemView addSubview:pauseButton];
+		[self.catalogItemView addSubview:activityIndicatorView];
+  
+  [self.catalogItemView setContentSize:CGSizeMake(self.view.frame.size.width, yAxisPlacement + 10)];
 		
 		[self load];
 	//}
 	
-    [super viewDidLoad];
+
 }
 
 - (CGRect)resizeLabelFrame:(UILabel*)label forText:(NSString*)text {
