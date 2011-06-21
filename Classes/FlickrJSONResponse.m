@@ -6,6 +6,7 @@
 #import "FlickrJSONResponse.h"
 #import "ImageGalleryPhoto.h"
 #import "Touch320AppDelegate.h"
+#import "NSString+SBJSON+Rails.h"
 
 @implementation FlickrJSONResponse
 @synthesize objects, totalObjectsAvailableOnServer;
