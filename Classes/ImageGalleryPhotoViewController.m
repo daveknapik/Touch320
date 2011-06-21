@@ -9,6 +9,9 @@
 #import "ImageGalleryPhotoViewController.h"
 #define degreesToRadian(x) (M_PI * (x) / 180.0)
 
+@interface TTPhotoViewController (privateMethods)
+- (void)updateChrome;
+@end
 
 @implementation ImageGalleryPhotoViewController
 
@@ -18,12 +21,13 @@
 
 - (void)viewWillAppear:(BOOL)animated {
 	[super viewWillAppear:NO];
-    [[UIDevice currentDevice] setOrientation:UIInterfaceOrientationLandscapeRight];
+  [[UIDevice currentDevice] setOrientation:UIInterfaceOrientationLandscapeRight];
+
 }
 
-- (void)updateChrome { 
+- (void)updateChrome {
 	[super updateChrome];
-	self.navigationItem.rightBarButtonItem = [[[UIBarButtonItem alloc] initWithTitle:@"Save" style:UIBarButtonItemStylePlain target:self action:@selector(savePhoto)] autorelease]; 
+  self.navigationItem.rightBarButtonItem = [[[UIBarButtonItem alloc] initWithTitle:@"Save" style:UIBarButtonItemStylePlain target:self action:@selector(savePhoto)] autorelease]; 
 }
 
 - (void)savePhoto {
