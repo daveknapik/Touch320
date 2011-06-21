@@ -12,7 +12,7 @@
 @implementation CatalogSamplerViewController
 
 -(id) initWithTabBar:(NSString *)placeholder {
-	if (self = [self init]) {
+	if ((self = [self init])) {
 		//this is the label on the tab button itself
 		self.title = @"Catalogue";
 		
@@ -33,7 +33,7 @@
 }
 
 - (id)init {
-	if (self = [super init]) {
+	if ((self = [super init])) {
 		self.tableViewStyle = UITableViewStylePlain;
 		self.variableHeightRows = YES;
 	}
