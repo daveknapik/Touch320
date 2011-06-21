@@ -50,11 +50,18 @@ void packetCallback(void *clientData, UInt32 byteCount, UInt32 packetCount, cons
 	
 	// Our property and packet callbacks will
 	// be called as a result of parsing bytes here.
-	OSStatus status = AudioFileStreamParseBytes(streamID, 
-												data.length, 
-												data.bytes, 
-												0);
-
+  
+  //TJM Change - if we're not passing status on, there's no need to store it.
+  //However - is this code right? Should we be returning it???
+  //	OSStatus status = AudioFileStreamParseBytes(streamID, 
+  //												data.length, 
+  //												data.bytes, 
+  //												0);
+  AudioFileStreamParseBytes(streamID, 
+                            data.length, 
+                            data.bytes, 
+                            0);
+  
 	/*if (!VERIFY_STATUS(status)) {
 		return status;
 	}*/
