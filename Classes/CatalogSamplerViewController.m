@@ -8,6 +8,7 @@
 
 #import "CatalogSamplerViewController.h"
 #import "CatalogSamplerDataSource.h"
+#import "CatalogSamplerTableItem.h"
 
 @implementation CatalogSamplerViewController
 
@@ -59,7 +60,7 @@
 	NSLog(@"createModel invoked in CatalogSamplerViewController");
 }
 
-- (void)didSelectObject:(id)object atIndexPath:(NSIndexPath*)indexPath {
+- (void)didSelectObject:(CatalogSamplerTableItem *)object atIndexPath:(NSIndexPath*)indexPath {
 	NSLog(@"selected catalog item");
 	NSLog(@"%@",[object title]);
 	NSLog(@"%@",[object subtitle]);
