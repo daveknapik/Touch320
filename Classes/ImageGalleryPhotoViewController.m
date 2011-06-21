@@ -42,7 +42,7 @@
 - (void)actionSheet:(UIActionSheet *)actionSheet didDismissWithButtonIndex:(NSInteger)buttonIndex {
 	if (buttonIndex != [actionSheet cancelButtonIndex]) { 
 		TTURLRequest *request = [TTURLRequest request];
-		request.URL = [self.centerPhoto URLForVersion:TTPhotoVersionLarge];
+		request.urlPath = [self.centerPhoto URLForVersion:TTPhotoVersionLarge];
 		TTURLImageResponse *response = [[[TTURLImageResponse alloc] init] autorelease];
 		request.response = response;
 		if ([request send]) {
