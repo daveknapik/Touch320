@@ -105,8 +105,10 @@
 	Touch320AppDelegate *appDelegate;
 	appDelegate = (Touch320AppDelegate*)[UIApplication sharedApplication].delegate;
 	
-	self.view = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, appDelegate.deviceWidth, 2300)];
-	[self.view setContentSize:CGSizeMake(appDelegate.deviceWidth,2300)];
+  UIScrollView *tmpScrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, appDelegate.deviceWidth, 2300)];
+  [tmpScrollView setContentSize:CGSizeMake(appDelegate.deviceWidth,2300)];
+	self.view = tmpScrollView;
+  [tmpScrollView release]; tmpScrollView = nil;
 	
 	self.radioItemView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, appDelegate.deviceWidth, 2300)];
 	self.radioItemView.backgroundColor = [UIColor whiteColor];
