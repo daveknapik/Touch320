@@ -91,7 +91,7 @@
 		NSNumber* key = [NSNumber numberWithInt:outerCounter];
 		
 		// Add the blogItem to the global blogEntries Array so that the view can access it.
-		[_catalogItems setObject:[blogItem copy] forKey:key];
+		[_catalogItems setObject:blogItem forKey:key];
 		
 		outerCounter++;
 		[blogItem release];
