@@ -16,8 +16,7 @@
 - (id)initWithCategory:(NSString *)category {
 	page = 1;
 	
-    NSDictionary *dictionary = [[NSDictionary alloc] 
-                                initWithContentsOfFile:[[NSBundle mainBundle] pathForResource: @"RecipeCategories" ofType:@"plist"]]; 
+  NSDictionary *dictionary = [[NSDictionary alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource: @"RecipeCategories" ofType:@"plist"]]; 
 	
 	if ([dictionary objectForKey:category]){
 		self.feedURL = [@"http://www.touchmusic.org.uk/recipebook/" stringByAppendingString:[dictionary objectForKey:category]];
@@ -25,6 +24,8 @@
 	else {
 		self.feedURL = [[@"http://www.touchmusic.org.uk/recipebook/" stringByAppendingString:[category lowercaseString]] stringByAppendingString:@".xml"];
 	}
+  
+  [dictionary release]; dictionary = nil;
 	
 	[super init];
 	return self;
