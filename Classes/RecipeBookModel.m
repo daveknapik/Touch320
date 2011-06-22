@@ -102,7 +102,7 @@
 		if (!([[blogItem objectForKey:@"title"] isEqualToString:@"left"]) && !([[blogItem objectForKey:@"title"] isEqualToString:@"right"])) {
 			// Add the blogItem to the global blogEntries Array so that the view can access it.
 			NSNumber* key = [NSNumber numberWithInt:outerCounter];
-			[_recipes setObject:[blogItem copy] forKey:key];
+			[_recipes setObject:blogItem forKey:key];
 			outerCounter++;
 		}
 		
