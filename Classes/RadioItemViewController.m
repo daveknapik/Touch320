@@ -343,8 +343,8 @@
 	
 	NSLog(@"active audio player: %@",[appDelegate activeAudioPlayer]);
 	
-	[[appDelegate activeAudioPlayer] cancel];
-	[[appDelegate activeAudioPlayer] release];
+	[appDelegate.activeAudioPlayer cancel];
+	appDelegate. activeAudioPlayer = nil;
 	
 	audioPlayer = [[AudioPlayer alloc] initPlayerWithURL:[NSURL URLWithString:self.link] delegate:self];
 	
