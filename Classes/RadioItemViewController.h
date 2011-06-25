@@ -10,32 +10,9 @@
 #import <Three20/Three20+Additions.h>
 #import <QuartzCore/QuartzCore.h>
 #import "AudioPlayer.h"
+#import "AVFoundation/AVFoundation.h"
 
 @interface RadioItemViewController : TTViewController <AudioPlayerDelegate> {
-	NSString* _author;
-	NSString* _subtitle;
-	NSString* _summary;
-	NSString* _pubDate;
-	NSString* _link;
-	NSString* _episode_duration;
-	NSString* _title_label;
-	NSString* _subtitle_label;
-	
-	UIScrollView* _radioItemView;
-	
-	UILabel* _titleLabel;
-	UILabel* _authorLabel;
-	UILabel* _summaryLabel;
-	UILabel* _subtitleLabel;
-	UILabel* _pubDateLabel;
-	UILabel* _episode_durationLabel;
-	
-	UILabel* _titleValue;
-	UILabel* _authorValue;
-	UILabel* _summaryValue;
-	UILabel* _subtitleValue;
-	UILabel* _pubDateValue;
-	UILabel* _episode_durationValue;
 	
 	UIActivityIndicatorView* activityIndicatorView;
 	UIButton* pauseButton;
@@ -68,6 +45,8 @@
 @property (nonatomic, retain) UILabel* subtitleValue;
 @property (nonatomic, retain) UILabel* pubDateValue;
 @property (nonatomic, retain) UILabel* episode_durationValue;
+
+@property (nonatomic, retain) AVPlayer *avPlayer;
 
 - (id)initWithRadioItem:(NSString *)placeholder query:(NSDictionary*)query;
 - (CGRect)resizeLabelFrame:(UILabel*)label forText:(NSString*)text;

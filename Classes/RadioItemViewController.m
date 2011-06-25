@@ -9,6 +9,7 @@
 #import "RadioItemViewController.h"
 #import "Touch320AppDelegate.h"
 
+
 @implementation RadioItemViewController
 
 @synthesize author = _author,
@@ -32,6 +33,8 @@
 			subtitleValue = _subtitleValue,
 			pubDateValue = _pubDateValue,
 			episode_durationValue = _episode_durationValue;
+
+@synthesize avPlayer = avPlayer;
 
 - (id)initWithRadioItem:(NSString *)placeholder query:(NSDictionary*)query
 {
@@ -336,21 +339,24 @@
 }
 
 - (void)load {
-	Touch320AppDelegate *appDelegate;
-	appDelegate = (Touch320AppDelegate*)[UIApplication sharedApplication].delegate;
-	
-	AudioSessionSetActive(YES);
-	
-	NSLog(@"active audio player: %@",[appDelegate activeAudioPlayer]);
-	
-	[appDelegate.activeAudioPlayer cancel];
-	appDelegate. activeAudioPlayer = nil;
-	
-	audioPlayer = [[AudioPlayer alloc] initPlayerWithURL:[NSURL URLWithString:self.link] delegate:self];
-	
-	appDelegate.activeAudioPlayer = audioPlayer;
-	
-	NSLog(@"active audio player: %@",[appDelegate activeAudioPlayer]);
+//	Touch320AppDelegate *appDelegate;
+//	appDelegate = (Touch320AppDelegate*)[UIApplication sharedApplication].delegate;
+//	
+//	AudioSessionSetActive(YES);
+//	
+//	NSLog(@"active audio player: %@",[appDelegate activeAudioPlayer]);
+//	
+//	[appDelegate.activeAudioPlayer cancel];
+//	appDelegate. activeAudioPlayer = nil;
+//	
+//	audioPlayer = [[AudioPlayer alloc] initPlayerWithURL:[NSURL URLWithString:self.link] delegate:self];
+//	
+//	appDelegate.activeAudioPlayer = audioPlayer;
+//	
+//	NSLog(@"active audio player: %@",[appDelegate activeAudioPlayer]);
+  
+  self.avPlayer = [AVPlayer playerWithURL:[NSURL URLWithString:self.link]];
+  //[player addObserver:self forKeyPath:@"status" options:0 context:&PlayerStatusContext];
 	
 	[self showLoading];
 }
@@ -361,7 +367,8 @@
 }
 
 - (void)play {
-	audioPlayer.paused = NO;
+	//audioPlayer.paused = NO;
+  [self.avPlayer play];
 	[self showPlaying];
 }
 
