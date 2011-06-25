@@ -13,6 +13,7 @@
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		227F2CD013B5367600DBE05E /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 227F2CCF13B5367600DBE05E /* AVFoundation.framework */; };
 		227F2DF613B5929C00DBE05E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 227F2DF513B5929C00DBE05E /* QuartzCore.framework */; };
+		227F2DFB13B595D100DBE05E /* TJMAudioCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 227F2DFA13B595D100DBE05E /* TJMAudioCenter.m */; };
 		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
 		3201088596B4756681693705 /* libThree20UICommon.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3201088596B4756681693704 /* libThree20UICommon.a */; };
 		320A2827FEC940B25BC42C65 /* libThree20Core.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 320A2827FEC940B25BC42C64 /* libThree20Core.a */; };
@@ -317,6 +318,9 @@
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		227F2CCF13B5367600DBE05E /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		227F2DF513B5929C00DBE05E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		227F2DF913B595D100DBE05E /* TJMAudioCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJMAudioCenter.h; sourceTree = "<group>"; };
+		227F2DFA13B595D100DBE05E /* TJMAudioCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJMAudioCenter.m; sourceTree = "<group>"; };
+		227F2DFC13B5960900DBE05E /* SynthesizeSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SynthesizeSingleton.h; sourceTree = "<group>"; };
 		288765FC0DF74451002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3201088596B4756681693700 /* Three20UICommon.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Three20UICommon.xcodeproj; path = ../three20/src/Three20UICommon/Three20UICommon.xcodeproj; sourceTree = SOURCE_ROOT; };
@@ -592,6 +596,7 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				227F2DF813B5958F00DBE05E /* TJMAudioStuff */,
 				DED30B1713A8582500D8B475 /* TouchXML */,
 				DEDEC57410FF8AB100D9EA32 /* objective_resource */,
 				DEF0C34F10F66DD000E74685 /* AudioUtil */,
@@ -623,16 +628,32 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+		227F2DF713B5938B00DBE05E /* Default and Icons */ = {
 			isa = PBXGroup;
 			children = (
-				227F2DF513B5929C00DBE05E /* QuartzCore.framework */,
 				73F3C7311322AEA60036B7DE /* Default-Portrait.png */,
 				73F3C7321322AEA60036B7DE /* Default.png */,
 				73F3C7331322AEA60036B7DE /* Default@2x.png */,
 				73F3C72B1322AE4E0036B7DE /* Icon-72.png */,
 				73F3C72C1322AE4E0036B7DE /* Icon.png */,
 				73F3C72D1322AE4E0036B7DE /* Icon@2x.png */,
+			);
+			name = "Default and Icons";
+			sourceTree = "<group>";
+		};
+		227F2DF813B5958F00DBE05E /* TJMAudioStuff */ = {
+			isa = PBXGroup;
+			children = (
+				227F2DFC13B5960900DBE05E /* SynthesizeSingleton.h */,
+				227F2DF913B595D100DBE05E /* TJMAudioCenter.h */,
+				227F2DFA13B595D100DBE05E /* TJMAudioCenter.m */,
+			);
+			name = TJMAudioStuff;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
@@ -656,6 +677,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				227F2DF713B5938B00DBE05E /* Default and Icons */,
 				735D2864135350AC006240B4 /* banners */,
 				DE4C5E1313A71EC500DD8CEC /* go.png */,
 				732DE1421325464100A23DF5 /* nav-bar-images */,
@@ -674,6 +696,7 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				227F2DF513B5929C00DBE05E /* QuartzCore.framework */,
 				227F2CCF13B5367600DBE05E /* AVFoundation.framework */,
 				3201088596B4756681693700 /* Three20UICommon.xcodeproj */,
 				320D7DCCE32703ACAB9A45E0 /* Three20.xcodeproj */,
@@ -1462,6 +1485,7 @@
 				DED30B3913A8584C00D8B475 /* CXMLNode_XPathExtensions.m in Sources */,
 				DED30B3A13A8584C00D8B475 /* CXMLNode.m in Sources */,
 				DED30B3B13A8584C00D8B475 /* CTidy.m in Sources */,
+				227F2DFB13B595D100DBE05E /* TJMAudioCenter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -17,8 +17,6 @@
 	UIActivityIndicatorView* activityIndicatorView;
 	UIButton* pauseButton;
 	UIButton* playButton;
-	
-	AudioPlayer *audioPlayer;
 }
 
 @property (nonatomic, copy) NSString* author;
@@ -46,7 +44,6 @@
 @property (nonatomic, retain) UILabel* pubDateValue;
 @property (nonatomic, retain) UILabel* episode_durationValue;
 
-@property (nonatomic, retain) AVPlayer *avPlayer;
 
 - (id)initWithRadioItem:(NSString *)placeholder query:(NSDictionary*)query;
 - (CGRect)resizeLabelFrame:(UILabel*)label forText:(NSString*)text;

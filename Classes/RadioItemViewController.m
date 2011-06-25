@@ -8,6 +8,7 @@
 
 #import "RadioItemViewController.h"
 #import "Touch320AppDelegate.h"
+#import "TJMAudioCenter.h"
 
 
 @implementation RadioItemViewController
@@ -34,7 +35,7 @@
 			pubDateValue = _pubDateValue,
 			episode_durationValue = _episode_durationValue;
 
-@synthesize avPlayer = avPlayer;
+//@synthesize avPlayer = avPlayer;
 
 - (id)initWithRadioItem:(NSString *)placeholder query:(NSDictionary*)query
 {
@@ -203,7 +204,7 @@
   
   [self.radioItemView setContentSize:CGSizeMake(self.view.frame.size.width, subtitleValue.frame.size.height + titleValue.frame.size.height + summaryValue.frame.size.height + 15 + 40+20)];
 	
-	[self load];
+  [[TJMAudioCenter instance]queueURL:[NSURL URLWithString:self.link]];
 	
   [super viewDidLoad];
 }
@@ -355,21 +356,19 @@
 //	
 //	NSLog(@"active audio player: %@",[appDelegate activeAudioPlayer]);
   
-  self.avPlayer = [AVPlayer playerWithURL:[NSURL URLWithString:self.link]];
+  
   //[player addObserver:self forKeyPath:@"status" options:0 context:&PlayerStatusContext];
 	
-	[self showLoading];
+	//[self showLoading];
 }
 
 - (void)pause {
-	audioPlayer.paused = YES;
+	//audioPlayer.paused = YES;
 	[self showPaused];
 }
 
 - (void)play {
-	//audioPlayer.paused = NO;
-  [self.avPlayer play];
-	[self showPlaying];
+  [[TJMAudioCenter instance] playURL:[NSURL URLWithString:self.link]];
 }
 
 - (void)audioPlayerDownloadFailed:(AudioPlayer *)audioPlayer {
