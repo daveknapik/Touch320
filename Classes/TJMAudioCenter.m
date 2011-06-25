@@ -8,6 +8,9 @@
 
 #import "TJMAudioCenter.h"
 
+NSString *const CurrentPlayerObserver = @"CurrentPlayerObserver";
+NSString *const QueuedPlayerObserver = @"QueuedPlayerObserver";
+
 @interface TJMAudioCenter ()
 @property (nonatomic, retain) AVPlayer *playingPlayer;
 @property (nonatomic, retain) AVPlayer *queuedPlayer;
@@ -24,6 +27,8 @@
 @synthesize queuedPlayer = _queuedPlayer;
 @synthesize playingURL = _playingURL;
 @synthesize queuedURL = _queuedURL;
+@synthesize queueStatus = _queueStatus;
+@synthesize currentStatus = _currentStatus;
 
 
 SINGLETON_IMPLEMENTATION_FOR(TJMAudioCenter)
@@ -36,55 +41,58 @@ SINGLETON_IMPLEMENTATION_FOR(TJMAudioCenter)
   {
     if (self.queuedPlayer.currentItem.playbackBufferFull) NSLog(@"Playback buffer full");
     if (self.queuedPlayer.currentItem.playbackLikelyToKeepUp) NSLog(@"Playback likely to keep up");
-    NSLog(@"Status %d",self.queuedPlayer.status);
-    //if (self.queuedItem.status == AVPlayerItemStatusReadyToPlay)
+    //NSLog(@"Status %d",self.queuedPlayer.status);
+    if (self.queuedPlayer.status == AVPlayerItemStatusReadyToPlay)
     {
-//      if (!self.playingPlayer)
       {
+        [self.playingPlayer removeObserver:self forKeyPath:@"status"];
         [self.playingPlayer pause];
         self.playingPlayer = nil;
+        [self.queuedPlayer removeObserver:self forKeyPath:@"status"];
         self.playingPlayer = self.queuedPlayer;
+        [self.playingPlayer addObserver:self forKeyPath:@"status" options:0 context:CurrentPlayerObserver];
         [self.playingPlayer play];
         self.queuedPlayer = nil;
       }
-//      else
- //       [self.player replaceCurrentItemWithPlayerItem:self.queuedItem];
-
-
       self.playingURL = self.queuedURL;
       self.queuedURL = nil;
     }
-
   }
-  
-//  if (self.player)
-//    self.player = [AVPlayer playerWithURL:url];
-//  else
-//    [self.player replaceCurrentItemWithPlayerItem:[AVPlayerItem playerItemWithURL:url]];
-//[self.player addObserver:self forKeyPath:@"status" options:0 context:&PlayerStatusContext];
 }
 
 - (void)queueURL:(NSURL *)url
 {
   if ([url isEqual:self.queuedURL]) return;
   self.queuedURL = url;
+  [self.queuedPlayer removeObserver:self forKeyPath:@"status"];
   self.queuedPlayer = [AVPlayer playerWithURL:url];
-  //[self.queuedItem addObserver:self forKeyPath:@"status" options:0 context:nil];
+  [self.queuedPlayer addObserver:self forKeyPath:@"status" options:0 context:QueuedPlayerObserver];
 }
 
-//- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object
-//                        change:(NSDictionary *)change context:(void *)context
-//{ 
-//  if ([keyPath isEqualToString:@"status"]) {
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object
+                        change:(NSDictionary *)change context:(void *)context
+{ 
+  if ([keyPath isEqualToString:@"status"]) 
+  {
+    if (context == QueuedPlayerObserver)
+    {
+      NSLog(@"Queue status : %i", self.queuedPlayer.status);
+    }
+    else
+    {
+      NSLog(@"Current status : %i", self.queuedPlayer.status);
+    }
+      
 //    AVPlayerItem *item = (AVPlayerItem *)object;
 //    if (item.status == AVPlayerItemStatusReadyToPlay) {
 //      NSLog(@"Ready!!!!");
 //    }
-//  }   
-//}
+  }
+}
 
 -(void) dealloc
 {
+  [self.queuedPlayer removeObserver:self forKeyPath:@"status"];
   [_queuedPlayer release];
   [_playingPlayer release];
   [super dealloc];

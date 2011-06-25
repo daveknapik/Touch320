@@ -8,9 +8,23 @@
 
 #import <Foundation/Foundation.h>
 
+typedef enum
+{
+  TJMAudioStatusUnknown,
+  TJMAudioStatusCurrentPlaying,
+  TJMAudioStatusCurrentPaused,
+  TJMAudioStatusCurrentFailed,
+  TJMAudioStatusQueuedQueing,
+  TJMAudioStatusQueuedReady,
+  TJMTJMAudioStatusQueuedFailed
+} TJMAudioStatus;
+
 @interface TJMAudioCenter : NSObject
 
 SINGLETON_INTERFACE_FOR(TJMAudioCenter)
+
+@property (nonatomic, assign) TJMAudioStatus queueStatus;
+@property (nonatomic, assign) TJMAudioStatus currentStatus;
 
 - (void)playURL:(NSURL *)url;
 - (void)queueURL:(NSURL *)url;
