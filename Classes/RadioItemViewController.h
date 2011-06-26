@@ -11,8 +11,9 @@
 #import <QuartzCore/QuartzCore.h>
 #import "AudioPlayer.h"
 #import "AVFoundation/AVFoundation.h"
+#import "TJMAudioCenter.h"
 
-@interface RadioItemViewController : TTViewController <AudioPlayerDelegate> {
+@interface RadioItemViewController : TTViewController <AudioPlayerDelegate, TJMAudioCenterDelegate> {
 	
 	UIActivityIndicatorView* activityIndicatorView;
 	UIButton* pauseButton;

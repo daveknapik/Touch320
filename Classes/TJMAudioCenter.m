@@ -29,6 +29,7 @@ NSString *const QueuedPlayerObserver = @"QueuedPlayerObserver";
 @synthesize queuedURL = _queuedURL;
 @synthesize queueStatus = _queueStatus;
 @synthesize currentStatus = _currentStatus;
+@synthesize delegate = _delegate;
 
 
 SINGLETON_IMPLEMENTATION_FOR(TJMAudioCenter)
@@ -36,7 +37,7 @@ SINGLETON_IMPLEMENTATION_FOR(TJMAudioCenter)
 - (void)playURL:(NSURL*) url
 {
   
-  if ([self.playingURL isEqual:url]) return;
+  if ([self.playingURL isEqual:url]) self.playingPlayer.rate = 1;
   if ([self.queuedURL isEqual:url])
   {
     if (self.queuedPlayer.currentItem.playbackBufferFull) NSLog(@"Playback buffer full");
@@ -45,18 +46,31 @@ SINGLETON_IMPLEMENTATION_FOR(TJMAudioCenter)
     if (self.queuedPlayer.status == AVPlayerItemStatusReadyToPlay)
     {
       {
+        //kill any existing playback stuff
+        [self.playingPlayer removeObserver:self forKeyPath:@"rate"];
         [self.playingPlayer removeObserver:self forKeyPath:@"status"];
         [self.playingPlayer pause];
         self.playingPlayer = nil;
+        //swap the queuedPlayer into the playing one.
         [self.queuedPlayer removeObserver:self forKeyPath:@"status"];
         self.playingPlayer = self.queuedPlayer;
         [self.playingPlayer addObserver:self forKeyPath:@"status" options:0 context:CurrentPlayerObserver];
+        [self.playingPlayer addObserver:self forKeyPath:@"rate" options:0 context:CurrentPlayerObserver];
+        self.playingURL = self.queuedURL;
+        self.queuedURL = nil;
         [self.playingPlayer play];
         self.queuedPlayer = nil;
       }
-      self.playingURL = self.queuedURL;
-      self.queuedURL = nil;
+
     }
+  }
+}
+
+- (void)pauseURL:(NSURL *)url
+{
+  if ([self.playingURL isEqual:url])
+  {
+    self.playingPlayer.rate = 0;
   }
 }
 
@@ -72,27 +86,46 @@ SINGLETON_IMPLEMENTATION_FOR(TJMAudioCenter)
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object
                         change:(NSDictionary *)change context:(void *)context
 { 
-  if ([keyPath isEqualToString:@"status"]) 
+  if ([keyPath isEqualToString:@"status"])
   {
-    if (context == QueuedPlayerObserver)
+    //NSLog(@"%@",(NSString*)context);
+    if ([(NSString*)context isEqual: QueuedPlayerObserver])
     {
-      NSLog(@"Queue status : %i", self.queuedPlayer.status);
+      if ((self.queuedPlayer.status == AVPlayerStatusReadyToPlay) && (self.delegate))
+      {
+        [self.delegate URLReadyToPlay:self.queuedURL];
+      }
+      else
+      {
+        if (self.delegate) [self.delegate URLNotReadyToPlay:self.queuedURL];
+      }
     }
     else
     {
-      NSLog(@"Current status : %i", self.queuedPlayer.status);
+      NSLog(@"Current status : %i", self.playingPlayer.status);
     }
-      
-//    AVPlayerItem *item = (AVPlayerItem *)object;
-//    if (item.status == AVPlayerItemStatusReadyToPlay) {
-//      NSLog(@"Ready!!!!");
-//    }
+  }
+  else if ([keyPath isEqualToString:@"rate"])
+  {
+    if ([(NSString*)context isEqual: CurrentPlayerObserver])
+    {
+      if (self.playingPlayer.rate == 0)
+      {
+        if (self.delegate) [self.delegate URLIsPaused:self.playingURL];
+      }
+      else
+      {
+        if (self.delegate) [self.delegate URLIsPlaying:self.playingURL];
+      }
+    }
   }
 }
 
 -(void) dealloc
 {
   [self.queuedPlayer removeObserver:self forKeyPath:@"status"];
+  [self.playingPlayer removeObserver:self forKeyPath:@"rate"];
+  [self.playingPlayer removeObserver:self forKeyPath:@"status"];
   [_queuedPlayer release];
   [_playingPlayer release];
   [super dealloc];

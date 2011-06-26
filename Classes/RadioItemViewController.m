@@ -204,6 +204,8 @@
   
   [self.radioItemView setContentSize:CGSizeMake(self.view.frame.size.width, subtitleValue.frame.size.height + titleValue.frame.size.height + summaryValue.frame.size.height + 15 + 40+20)];
 	
+  [self showLoading];
+  [TJMAudioCenter instance].delegate = self;
   [[TJMAudioCenter instance]queueURL:[NSURL URLWithString:self.link]];
 	
   [super viewDidLoad];
@@ -363,8 +365,7 @@
 }
 
 - (void)pause {
-	//audioPlayer.paused = YES;
-	[self showPaused];
+  [[TJMAudioCenter instance] pauseURL:[NSURL URLWithString:self.link]];
 }
 
 - (void)play {
@@ -388,6 +389,33 @@
 	AudioSessionSetActive(NO);
 	[self showStopped];
 }
+
+#pragma mark TJM AudioCenterDelegate 
+-(void)URLReadyToPlay:(NSURL *)url
+{
+  if ([[NSURL URLWithString:self.link] isEqual:url]) [self showPaused];
+}
+
+-(void)URLNotReadyToPlay:(NSURL *)url
+{
+
+}
+
+-(void)URLIsPlaying:(NSURL *)url
+{
+  if ([[NSURL URLWithString:self.link] isEqual:url]) [self showPlaying];
+
+}
+-(void)URLIsPaused:(NSURL *)url
+{
+  if ([[NSURL URLWithString:self.link] isEqual:url]) [self showPaused];  
+}
+
+-(void)URLFailed:(NSURL *)url
+{
+  
+}
+
 
 
 @end
