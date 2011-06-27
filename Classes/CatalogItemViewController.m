@@ -254,10 +254,10 @@ cover_art = _cover_art;
   
   [self.catalogItemView setContentSize:CGSizeMake(self.view.frame.size.width, yAxisPlacement + 10)];
 		
-		[self load];
-	//}
+  [self showLoading];
+  [TJMAudioCenter instance].delegate = self;  
+  [[TJMAudioCenter instance]queueURL:[NSURL URLWithString:self.mp3_sample_url]];
 	
-
 }
 
 - (CGRect)resizeLabelFrame:(UILabel*)label forText:(NSString*)text {
@@ -326,6 +326,11 @@ cover_art = _cover_art;
 
 
 - (void)dealloc {
+  
+  //remove self from the beign the audio delegate - if its us
+  if ([TJMAudioCenter instance].delegate == self) 
+    [TJMAudioCenter instance].delegate = nil;
+  
 	TT_RELEASE_SAFELY(_artist);
 	TT_RELEASE_SAFELY(_release_title);
 	TT_RELEASE_SAFELY(_subtitle);
@@ -359,7 +364,6 @@ cover_art = _cover_art;
 }
 
 - (void)showStopped {
-	NSLog(@"showing stopped");
 	[UIView beginAnimations:nil context:nil];
 	[activityIndicatorView stopAnimating];
 	pauseButton.alpha = 0;
@@ -376,16 +380,11 @@ cover_art = _cover_art;
 }
 
 - (void)showPlaying {
-	if ([activityIndicatorView isAnimating]) {
-		[self pause];
-	}
-	else {
-		[UIView beginAnimations:nil context:nil];
-		[activityIndicatorView stopAnimating];
-		pauseButton.alpha = 1;
-		playButton.alpha = 0;
-		[UIView commitAnimations];
-	}
+  [UIView beginAnimations:nil context:nil];
+  [activityIndicatorView stopAnimating];
+  pauseButton.alpha = 1;
+  playButton.alpha = 0;
+  [UIView commitAnimations];
 }
 
 - (void)showPaused {
@@ -396,50 +395,15 @@ cover_art = _cover_art;
 	[UIView commitAnimations];
 }
 
-- (void)load {
-	Touch320AppDelegate *appDelegate;
-	appDelegate = (Touch320AppDelegate*)[UIApplication sharedApplication].delegate;
-	
-	AudioSessionSetActive(YES);
-	
-	NSLog(@"step 1 - active audio player: %@",[appDelegate activeAudioPlayer]);
-	
-	[appDelegate.activeAudioPlayer cancel];
-	appDelegate.activeAudioPlayer = nil;
-	
-	audioPlayer = [[AudioPlayer alloc] initPlayerWithURL:[NSURL URLWithString:self.mp3_sample_url] delegate:self];
-	
-	appDelegate.activeAudioPlayer = audioPlayer;
-	
-	NSLog(@"step 2 - active audio player: %@",[appDelegate activeAudioPlayer]);
-	
-	[self showLoading];
-}
 
 - (void)pause {
-	audioPlayer.paused = YES;
-	[self showPaused];
+  [[TJMAudioCenter instance] pauseURL:[NSURL URLWithString:self.mp3_sample_url]];
 }
 
 - (void)play {
-	audioPlayer.paused = NO;
-	[self showPlaying];
-}
+  [[TJMAudioCenter instance] playURL:[NSURL URLWithString:self.mp3_sample_url]];}
 
-- (void)audioPlayerDownloadFailed:(AudioPlayer *)audioPlayer {
-	[self showStopped];
-}
 
-- (void)audioPlayerPlaybackStarted:(AudioPlayer *)audioPlayer {
-	NSLog(@"CatalogItemViewController thinks playback has started");
-	[self showPlaying];
-}
-
-- (void)audioPlayerPlaybackFinished:(AudioPlayer *)audioPlayer {
-	NSLog(@"CatalogItemViewController thinks playback has completed");
-	AudioSessionSetActive(NO);
-	[self showStopped];
-}
 
 #pragma mark TTImageViewDelegate methods
 
@@ -461,7 +425,42 @@ cover_art = _cover_art;
 										  otherButtonTitles:nil];
 	[alert show];
 	[alert release];
-}  	 
+}
+
+#pragma mark TJM AudioCenterDelegate 
+-(void)URLReadyToPlay:(NSURL *)url
+{
+  if ([[NSURL URLWithString:self.mp3_sample_url] isEqual:url]) [self showPaused];
+}
+
+-(void)URLIsPlaying:(NSURL *)url
+{
+  if ([[NSURL URLWithString:self.mp3_sample_url] isEqual:url]) [self showPlaying];
+  
+}
+-(void)URLIsPaused:(NSURL *)url
+{
+  if ([[NSURL URLWithString:self.mp3_sample_url] isEqual:url]) [self showPaused];  
+}
+
+-(void)URLQueueFailed:(NSURL *)url
+{
+  [self showStopped];
+  
+  //Do we really need to tell the user that the thing we tried to do in the background actually failed?
+  //would be better if we came up with a different method that wasn't so intrusive.
+  //UIAlertView *alert = [[UIAlertView alloc] initWithTitle:nil message:@"Audio stream failed" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+	//[alert show];
+	//[alert autorelease];
+}
+
+-(void)URLPlayFailed:(NSURL *)url
+{
+  UIAlertView *alert = [[UIAlertView alloc] initWithTitle:nil message:@"Audio stream failed." delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+	[alert show];
+	[alert autorelease];
+}
+
 
 @end
 

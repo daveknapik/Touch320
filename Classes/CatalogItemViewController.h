@@ -8,10 +8,9 @@
 
 #import <Foundation/Foundation.h>
 #import <Three20/Three20+Additions.h>
-#import <QuartzCore/QuartzCore.h>
-#import "AudioPlayer.h"
+#import "TJMAudioCenter.h"
 
-@interface CatalogItemViewController : TTViewController <AudioPlayerDelegate, TTImageViewDelegate, UIAlertViewDelegate> {
+@interface CatalogItemViewController : TTViewController <TJMAudioCenterDelegate, TTImageViewDelegate, UIAlertViewDelegate> {
 	NSString* _release_title;
 	NSString* _artist;
 	NSString* _subtitle;
@@ -41,8 +40,6 @@
 	UIButton* pauseButton;
 	UIButton* playButton;
 	UIButton* buyButton;
-	
-	AudioPlayer *audioPlayer;
 }
 
 @property (nonatomic, copy) NSString* release_title;
@@ -73,7 +70,6 @@
 - (id)initWithCatalogItem:(NSString *)placeholder query:(NSDictionary*)query;
 - (CGRect)resizeLabelFrame:(UILabel*)label forText:(NSString*)text;
 
-- (void)load;
 - (void)pause;
 - (void)play;
 - (void)buttonClicked;
