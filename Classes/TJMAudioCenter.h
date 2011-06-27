@@ -25,7 +25,7 @@ typedef enum
 -(void)URLDidFinish:(NSURL *) url;
 @end
 
-@interface TJMAudioCenter : NSObject
+@interface TJMAudioCenter : NSObject <AVAudioSessionDelegate>
 
 SINGLETON_INTERFACE_FOR(TJMAudioCenter)
 

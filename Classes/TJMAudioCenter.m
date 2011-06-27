@@ -11,17 +11,29 @@
 NSString *const CurrentPlayerObserver = @"CurrentPlayerObserver";
 
 @interface TJMAudioCenter ()
-@property (nonatomic, retain) AVPlayer *playingPlayer;
-@property (nonatomic, retain) NSURL *playingURL;
+@property (nonatomic, retain) AVPlayer *player;
+@property (nonatomic, retain) NSURL *URL;
 @property (nonatomic, assign) BOOL playWhenLoaded;
+@property (nonatomic, assign) BOOL interruptedDuringPlayback;
+- (void) setupAudioSession;
 @end
 
 @implementation TJMAudioCenter
 
-@synthesize playingPlayer = _playingPlayer;
-@synthesize playingURL = _playingURL;
+@synthesize player = _player;
+@synthesize URL = _URL;
 @synthesize delegate = _delegate;
 @synthesize playWhenLoaded = _playWhenLoaded;
+@synthesize interruptedDuringPlayback = _interruptedDuringPlayback;
+
+-(id) init
+{
+  if ((self = [super init]))
+  {
+    [self setupAudioSession];
+  }
+  return self;
+}
 
 
 SINGLETON_IMPLEMENTATION_FOR(TJMAudioCenter)
@@ -29,11 +41,13 @@ SINGLETON_IMPLEMENTATION_FOR(TJMAudioCenter)
 #pragma mark lifecycle  
 -(void) dealloc
 {
-  [self.playingPlayer removeObserver:self forKeyPath:@"rate"];
-  [self.playingPlayer.currentItem removeObserver:self forKeyPath:@"status"];
-  [[NSNotificationCenter defaultCenter] removeObserver:self name:AVPlayerItemDidPlayToEndTimeNotification object:self.playingPlayer.currentItem];
+  [self.player removeObserver:self forKeyPath:@"rate"];
+  [self.player.currentItem removeObserver:self forKeyPath:@"status"];
+  [[NSNotificationCenter defaultCenter] removeObserver:self name:AVPlayerItemDidPlayToEndTimeNotification object:self.player.currentItem];
   
-  [_playingPlayer release];
+  [_player release];
+  [_URL release];
+  
   [super dealloc];
 }
 
@@ -41,33 +55,33 @@ SINGLETON_IMPLEMENTATION_FOR(TJMAudioCenter)
 - (void)playURL:(NSURL*) url
 {
   //if url matches existing playing item, just makes sure it's playing
-  if ([self.playingURL isEqual:url]) 
-    self.playingPlayer.rate = 1;
+  if ([self.URL isEqual:url]) 
+    self.player.rate = 1;
   else
   {
     //remove notifications
-    [[NSNotificationCenter defaultCenter] removeObserver:self name:AVPlayerItemDidPlayToEndTimeNotification object:self.playingPlayer.currentItem];
-    [self.playingPlayer removeObserver:self forKeyPath:@"rate"];
-    [self.playingPlayer.currentItem removeObserver:self forKeyPath:@"status"];
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:AVPlayerItemDidPlayToEndTimeNotification object:self.player.currentItem];
+    [self.player removeObserver:self forKeyPath:@"rate"];
+    [self.player.currentItem removeObserver:self forKeyPath:@"status"];
     //create a new AVPlayer
     self.playWhenLoaded = YES;
-    self.playingPlayer = [AVPlayer playerWithURL:url];
-    self.playingURL = url;
+    self.player = [AVPlayer playerWithURL:url];
+    self.URL = url;
     //reinstate notifications
-    [self.playingPlayer.currentItem addObserver:self forKeyPath:@"status" options:0 context:CurrentPlayerObserver];
-    [self.playingPlayer addObserver:self forKeyPath:@"rate" options:0 context:CurrentPlayerObserver];
+    [self.player.currentItem addObserver:self forKeyPath:@"status" options:0 context:CurrentPlayerObserver];
+    [self.player addObserver:self forKeyPath:@"rate" options:0 context:CurrentPlayerObserver];
     [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(playerItemDidReachEnd:)
                                                  name:AVPlayerItemDidPlayToEndTimeNotification
-                                               object:self.playingPlayer.currentItem];
+                                               object:self.player.currentItem];
   }
 }
 
 - (void)pauseURL:(NSURL *)url
 {
-  if ([self.playingURL isEqual:url])
+  if ([self.URL isEqual:url])
   {
-    self.playingPlayer.rate = 0;
+    self.player.rate = 0;
   }
 }
 
@@ -81,11 +95,11 @@ SINGLETON_IMPLEMENTATION_FOR(TJMAudioCenter)
   {
     if ([(NSString*)context isEqual: CurrentPlayerObserver])
     {
-      if (self.playingPlayer.currentItem.status == AVPlayerStatusFailed)
-        [self.delegate URLDidFail:self.playingURL];
-      else if (self.playWhenLoaded && (self.playingPlayer.currentItem.status == AVPlayerStatusReadyToPlay))
+      if (self.player.currentItem.status == AVPlayerStatusFailed)
+        [self.delegate URLDidFail:self.URL];
+      else if (self.playWhenLoaded && (self.player.currentItem.status == AVPlayerStatusReadyToPlay))
       {
-        self.playingPlayer.rate = 1;
+        self.player.rate = 1;
         self.playWhenLoaded = NO;
       }
     }
@@ -95,23 +109,23 @@ SINGLETON_IMPLEMENTATION_FOR(TJMAudioCenter)
   {
     if ([(NSString*)context isEqual: CurrentPlayerObserver])
     {
-      if (self.playingPlayer.rate == 0)
-        [self.delegate URLIsPaused:self.playingURL];      
+      if (self.player.rate == 0)
+        [self.delegate URLIsPaused:self.URL];      
       else
-        [self.delegate URLIsPlaying:self.playingURL];
+        [self.delegate URLIsPlaying:self.URL];
     }
   }
 }
 
 -(TJMAudioStatus)statusCheckForURL:(NSURL*)url;
 {
-  if ([self.playingURL isEqual:url])
+  if ([self.URL isEqual:url])
   {
-    if (self.playingPlayer.currentItem.status == AVPlayerStatusReadyToPlay) 
+    if (self.player.currentItem.status == AVPlayerStatusReadyToPlay) 
     {
-      return (self.playingPlayer.rate == 1) ? TJMAudioStatusCurrentPlaying : TJMAudioStatusCurrentPaused;
+      return (self.player.rate == 1) ? TJMAudioStatusCurrentPlaying : TJMAudioStatusCurrentPaused;
     }
-    if (self.playingPlayer.currentItem.status == AVPlayerStatusFailed) return TJMAudioStatusCurrentFailed;
+    if (self.player.currentItem.status == AVPlayerStatusFailed) return TJMAudioStatusCurrentFailed;
     //otherwise
     NSLog(@"Error - playingPlayer.currentItem status unknown - this shouldn't happen");
   }
@@ -123,13 +137,78 @@ SINGLETON_IMPLEMENTATION_FOR(TJMAudioCenter)
 //reset the stream to the start and pause it when it reaches the end, ready to play again.
 - (void)playerItemDidReachEnd:(NSNotification *)notification {
   NSLog(@"Reached end of stream...");
-  if (self.playingPlayer)
+  if (self.player)
   {
-    [self.playingPlayer seekToTime:kCMTimeZero];
-    self.playingPlayer.rate = 0;
+    [self.player seekToTime:kCMTimeZero];
+    self.player.rate = 0;
   }
 }
 
+- (void) setupAudioSession {
+  AVAudioSession *mySession = [AVAudioSession sharedInstance];
+  
+  // Specify that this object is the delegate of the audio session, so that
+  //    this object's endInterruption method will be invoked when needed.
+  [mySession setDelegate: self];
+  
+  // Assign the Playback category to the audio session.
+  NSError *audioSessionError = nil;
+  [mySession setCategory: AVAudioSessionCategoryPlayback
+                   error: &audioSessionError];
+  
+  if (audioSessionError != nil) {
+    
+    NSLog (@"Error setting audio session category.");
+    return;
+  }
+  
+  
+  // Activate the audio session
+  [mySession setActive: YES
+                 error: &audioSessionError];
+  
+  if (audioSessionError != nil) {
+    
+    NSLog (@"Error activating audio session during initial setup.");
+    return;
+  }
+  
+}
+
+#pragma mark audiosession delegate
+- (void)beginInterruption
+{
+  self.interruptedDuringPlayback = (self.player.rate == 1);
+}
+
+- (void)endInterruptionWithFlags:(NSUInteger)flags
+{
+  // Test if the interruption that has just ended was one from which this app 
+  //    should resume playback.
+  if (flags & AVAudioSessionInterruptionFlags_ShouldResume) {
+    
+    NSError *endInterruptionError = nil;
+    [[AVAudioSession sharedInstance] setActive: YES
+                                         error: &endInterruptionError];
+    if (endInterruptionError != nil) {
+      
+      //NSLog (@"Unable to reactivate the audio session after the interruption ended.");
+      return;
+      
+    } else {
+      
+      //NSLog (@"Audio session reactivated after interruption.");
+      
+      if (self.interruptedDuringPlayback) {
+        
+        self.interruptedDuringPlayback = NO;
+        
+        self.player.rate = 1.0;
+        
+      }
+    }
+  }
+}
 
 
 @end
