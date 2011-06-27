@@ -13,7 +13,7 @@
 #import "AVFoundation/AVFoundation.h"
 #import "TJMAudioCenter.h"
 
-@interface RadioItemViewController : TTViewController <AudioPlayerDelegate, TJMAudioCenterDelegate> {
+@interface RadioItemViewController : TTViewController <TJMAudioCenterDelegate> {
 	
 	UIActivityIndicatorView* activityIndicatorView;
 	UIButton* pauseButton;
@@ -49,7 +49,6 @@
 - (id)initWithRadioItem:(NSString *)placeholder query:(NSDictionary*)query;
 - (CGRect)resizeLabelFrame:(UILabel*)label forText:(NSString*)text;
 
-- (void)load;
 - (void)pause;
 - (void)play;
 - (void)showPlaying;

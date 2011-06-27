@@ -205,7 +205,7 @@
   [self.radioItemView setContentSize:CGSizeMake(self.view.frame.size.width, subtitleValue.frame.size.height + titleValue.frame.size.height + summaryValue.frame.size.height + 15 + 40+20)];
 	
   [self showLoading];
-  [TJMAudioCenter instance].delegate = self;
+  [TJMAudioCenter instance].delegate = self;  
   [[TJMAudioCenter instance]queueURL:[NSURL URLWithString:self.link]];
 	
   [super viewDidLoad];
@@ -304,7 +304,6 @@
 }
 
 - (void)showStopped {
-	NSLog(@"showing stopped");
 	[UIView beginAnimations:nil context:nil];
 	[activityIndicatorView stopAnimating];
 	pauseButton.alpha = 0;
@@ -321,16 +320,11 @@
 }
 
 - (void)showPlaying {
-	if ([activityIndicatorView isAnimating]) {
-		[self pause];
-	}
-	else {
-		[UIView beginAnimations:nil context:nil];
-		[activityIndicatorView stopAnimating];
-		pauseButton.alpha = 1;
-		playButton.alpha = 0;
-		[UIView commitAnimations];
-	}
+  [UIView beginAnimations:nil context:nil];
+  [activityIndicatorView stopAnimating];
+  pauseButton.alpha = 1;
+  playButton.alpha = 0;
+  [UIView commitAnimations];
 }
 
 - (void)showPaused {
@@ -341,29 +335,6 @@
 	[UIView commitAnimations];
 }
 
-- (void)load {
-//	Touch320AppDelegate *appDelegate;
-//	appDelegate = (Touch320AppDelegate*)[UIApplication sharedApplication].delegate;
-//	
-//	AudioSessionSetActive(YES);
-//	
-//	NSLog(@"active audio player: %@",[appDelegate activeAudioPlayer]);
-//	
-//	[appDelegate.activeAudioPlayer cancel];
-//	appDelegate. activeAudioPlayer = nil;
-//	
-//	audioPlayer = [[AudioPlayer alloc] initPlayerWithURL:[NSURL URLWithString:self.link] delegate:self];
-//	
-//	appDelegate.activeAudioPlayer = audioPlayer;
-//	
-//	NSLog(@"active audio player: %@",[appDelegate activeAudioPlayer]);
-  
-  
-  //[player addObserver:self forKeyPath:@"status" options:0 context:&PlayerStatusContext];
-	
-	//[self showLoading];
-}
-
 - (void)pause {
   [[TJMAudioCenter instance] pauseURL:[NSURL URLWithString:self.link]];
 }
@@ -372,33 +343,11 @@
   [[TJMAudioCenter instance] playURL:[NSURL URLWithString:self.link]];
 }
 
-- (void)audioPlayerDownloadFailed:(AudioPlayer *)audioPlayer {
-	UIAlertView *alert = [[UIAlertView alloc] initWithTitle:nil message:@"Audio download failed" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
-	[alert show];
-	[alert autorelease];
-	[self showStopped];
-}
-
-- (void)audioPlayerPlaybackStarted:(AudioPlayer *)audioPlayer {
-	NSLog(@"RadioItemViewController thinks playback has started");
-	[self showPlaying];
-}
-
-- (void)audioPlayerPlaybackFinished:(AudioPlayer *)audioPlayer {
-	NSLog(@"RadioItemViewController thinks playback has completed");
-	AudioSessionSetActive(NO);
-	[self showStopped];
-}
 
 #pragma mark TJM AudioCenterDelegate 
 -(void)URLReadyToPlay:(NSURL *)url
 {
   if ([[NSURL URLWithString:self.link] isEqual:url]) [self showPaused];
-}
-
--(void)URLNotReadyToPlay:(NSURL *)url
-{
-
 }
 
 -(void)URLIsPlaying:(NSURL *)url
@@ -411,10 +360,24 @@
   if ([[NSURL URLWithString:self.link] isEqual:url]) [self showPaused];  
 }
 
--(void)URLFailed:(NSURL *)url
+-(void)URLQueueFailed:(NSURL *)url
 {
-  
+  [self showStopped];
+  UIAlertView *alert = [[UIAlertView alloc] initWithTitle:nil message:@"Audio stream failed" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+	[alert show];
+	[alert autorelease];
+
 }
+
+-(void)URLPlayFailed:(NSURL *)url
+{
+  UIAlertView *alert = [[UIAlertView alloc] initWithTitle:nil message:@"Audio stream failed" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+	[alert show];
+	[alert autorelease];
+}
+
+
+
 
 
 

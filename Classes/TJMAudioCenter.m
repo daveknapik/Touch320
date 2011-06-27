@@ -34,34 +34,42 @@ NSString *const QueuedPlayerObserver = @"QueuedPlayerObserver";
 
 SINGLETON_IMPLEMENTATION_FOR(TJMAudioCenter)
 
+#pragma mark lifecycle
+-(void) dealloc
+{
+  [self.queuedPlayer removeObserver:self forKeyPath:@"status"];
+  [self.playingPlayer removeObserver:self forKeyPath:@"rate"];
+  [self.playingPlayer removeObserver:self forKeyPath:@"status"];
+  [_queuedPlayer release];
+  [_playingPlayer release];
+  [super dealloc];
+}
+
+
 - (void)playURL:(NSURL*) url
 {
-  
+  //if url matches existing playing item, just makes sure it's playing
   if ([self.playingURL isEqual:url]) self.playingPlayer.rate = 1;
+  //if we're queued & ready, start the playback
   if ([self.queuedURL isEqual:url])
   {
-    if (self.queuedPlayer.currentItem.playbackBufferFull) NSLog(@"Playback buffer full");
-    if (self.queuedPlayer.currentItem.playbackLikelyToKeepUp) NSLog(@"Playback likely to keep up");
-    //NSLog(@"Status %d",self.queuedPlayer.status);
     if (self.queuedPlayer.status == AVPlayerItemStatusReadyToPlay)
     {
-      {
-        //kill any existing playback stuff
-        [self.playingPlayer removeObserver:self forKeyPath:@"rate"];
-        [self.playingPlayer removeObserver:self forKeyPath:@"status"];
-        [self.playingPlayer pause];
-        self.playingPlayer = nil;
-        //swap the queuedPlayer into the playing one.
-        [self.queuedPlayer removeObserver:self forKeyPath:@"status"];
-        self.playingPlayer = self.queuedPlayer;
-        [self.playingPlayer addObserver:self forKeyPath:@"status" options:0 context:CurrentPlayerObserver];
-        [self.playingPlayer addObserver:self forKeyPath:@"rate" options:0 context:CurrentPlayerObserver];
-        self.playingURL = self.queuedURL;
-        self.queuedURL = nil;
-        [self.playingPlayer play];
-        self.queuedPlayer = nil;
-      }
-
+      //kill any existing playback stuff
+      [self.playingPlayer removeObserver:self forKeyPath:@"rate"];
+      [self.playingPlayer removeObserver:self forKeyPath:@"status"];
+      [self.playingPlayer pause];
+      self.playingPlayer = nil;
+      //swap the queuedPlayer into the playing one.
+      [self.queuedPlayer removeObserver:self forKeyPath:@"status"];
+      self.playingPlayer = self.queuedPlayer;
+      [self.playingPlayer addObserver:self forKeyPath:@"status" options:0 context:CurrentPlayerObserver];
+      [self.playingPlayer addObserver:self forKeyPath:@"rate" options:0 context:CurrentPlayerObserver];
+      self.playingURL = self.queuedURL;
+      self.queuedURL = nil;
+      self.queuedPlayer = nil;
+      //start playback;
+      [self.playingPlayer play];
     }
   }
 }
@@ -76,7 +84,31 @@ SINGLETON_IMPLEMENTATION_FOR(TJMAudioCenter)
 
 - (void)queueURL:(NSURL *)url
 {
-  if ([url isEqual:self.queuedURL]) return;
+  //if the url we've been asked to queue is already playing, inform the delegate and return
+  if (([url isEqual:self.playingURL]) && (self.playingPlayer.status != AVPlayerStatusFailed))
+  {
+    if (self.playingPlayer.rate == 0)
+    {
+      if (self.delegate) [self.delegate URLIsPaused:self.playingURL];
+    }
+    else
+    {
+      if (self.delegate) [self.delegate URLIsPlaying:self.playingURL];
+    }
+    return;
+  }
+  
+  //if the url we've been asked to queue is already in the queue inform the delegate and return
+  if (([url isEqual:self.queuedURL]) && (self.queuedPlayer.status != AVPlayerStatusFailed)) 
+  {
+    if (self.queuedPlayer.status == AVPlayerStatusReadyToPlay)
+    {
+      if (self.delegate) [self.delegate URLReadyToPlay:self.queuedURL];
+    }
+    return; 
+  }
+  
+  //otherwise set up the url in the queued player object
   self.queuedURL = url;
   [self.queuedPlayer removeObserver:self forKeyPath:@"status"];
   self.queuedPlayer = [AVPlayer playerWithURL:url];
@@ -88,21 +120,28 @@ SINGLETON_IMPLEMENTATION_FOR(TJMAudioCenter)
 { 
   if ([keyPath isEqualToString:@"status"])
   {
-    //NSLog(@"%@",(NSString*)context);
+    //if we aint got a delegate just return - we've got no-one to inform!
+    if (!self.delegate) return;
+      
     if ([(NSString*)context isEqual: QueuedPlayerObserver])
     {
-      if ((self.queuedPlayer.status == AVPlayerStatusReadyToPlay) && (self.delegate))
+      switch (self.queuedPlayer.status)
       {
-        [self.delegate URLReadyToPlay:self.queuedURL];
-      }
-      else
-      {
-        if (self.delegate) [self.delegate URLNotReadyToPlay:self.queuedURL];
+        case AVPlayerStatusUnknown:
+          [self.delegate URLNotReadyToPlay:self.queuedURL];
+          break;
+        case AVPlayerStatusReadyToPlay:
+          [self.delegate URLReadyToPlay:self.queuedURL];
+          break;
+        case AVPlayerStatusFailed:
+        default:
+          [self.delegate URLQueueFailed:self.queuedURL];
       }
     }
     else
     {
-      NSLog(@"Current status : %i", self.playingPlayer.status);
+      if (([(NSString*)context isEqual: CurrentPlayerObserver]) && (self.playingPlayer.status == AVPlayerStatusFailed))
+        [self.delegate URLPlayFailed:self.queuedURL];  
     }
   }
   else if ([keyPath isEqualToString:@"rate"])
@@ -121,14 +160,30 @@ SINGLETON_IMPLEMENTATION_FOR(TJMAudioCenter)
   }
 }
 
--(void) dealloc
+-(TJMAudioStatus)statusCheckForURL:(NSURL*) url
 {
-  [self.queuedPlayer removeObserver:self forKeyPath:@"status"];
-  [self.playingPlayer removeObserver:self forKeyPath:@"rate"];
-  [self.playingPlayer removeObserver:self forKeyPath:@"status"];
-  [_queuedPlayer release];
-  [_playingPlayer release];
-  [super dealloc];
+  if ([self.playingURL isEqual:url])
+  {
+    if (self.playingPlayer.status == AVPlayerStatusReadyToPlay) 
+    {
+      return (self.playingPlayer.rate == 1) ? TJMAudioStatusCurrentPlaying : TJMAudioStatusCurrentPaused;
+    }
+    if (self.playingPlayer.status == AVPlayerStatusFailed) return TJMAudioStatusCurrentFailed;
+    //otherwise
+    NSLog(@"Error - playingPlayer status unknown - this shouldn't happen");
+    return TJMAudioStatusUnknown;
+  }
+  
+  if ([self.queuedURL isEqual:url])
+  {
+    if (self.queuedPlayer.status == AVPlayerStatusUnknown) return TJMAudioStatusQueuedQueing;
+    if (self.queuedPlayer.status == AVPlayerStatusReadyToPlay) return TJMAudioStatusQueuedReady;
+    if (self.queuedPlayer.status == AVPlayerStatusFailed) return TJMAudioStatusQueuedFailed;
+  }
+    
+  return TJMAudioStatusUnknown;
 }
+
+
 
 @end

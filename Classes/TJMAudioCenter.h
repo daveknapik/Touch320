@@ -23,9 +23,11 @@ typedef enum
 @optional
 -(void)URLReadyToPlay:(NSURL *)url;
 -(void)URLNotReadyToPlay:(NSURL *)url;
+-(void)URLQueueFailed:(NSURL *)url;
 -(void)URLIsPlaying:(NSURL *)url;
 -(void)URLIsPaused:(NSURL *)url;
--(void)URLFailed:(NSURL *)url;
+-(void)URLPlayFailed:(NSURL *)url;
+
 @end
 
 @interface TJMAudioCenter : NSObject
@@ -39,5 +41,7 @@ SINGLETON_INTERFACE_FOR(TJMAudioCenter)
 - (void)playURL:(NSURL *)url;
 - (void)pauseURL:(NSURL *)url;
 - (void)queueURL:(NSURL *)url;
+
+-(TJMAudioStatus)statusCheckForURL:(NSURL*) url;
 
 @end
