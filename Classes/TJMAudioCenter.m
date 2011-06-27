@@ -45,9 +45,7 @@ SINGLETON_IMPLEMENTATION_FOR(TJMAudioCenter)
   
   [_queuedPlayer release];
   [_playingPlayer release];
-  //remove self from the beign the audio delegate - if its us
-  if ([TJMAudioCenter instance].delegate == (id<TJMAudioCenterDelegate>)self) 
-    [TJMAudioCenter instance].delegate = nil;
+
   [super dealloc];
 }
 

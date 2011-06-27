@@ -67,12 +67,6 @@
 	return self;
 }
 
-- (id)init {
-	if ((self = [super init])) {
-	}
-	return self;
-}
-
 -(void)viewWillAppear:(BOOL)animated {
 	[super viewWillAppear:YES];
 	UINavigationBar *nb = self.navigationController.navigationBar;
@@ -252,6 +246,11 @@
 
 
 - (void)dealloc {
+
+  //remove self from the beign the audio delegate - if its us
+  if ([TJMAudioCenter instance].delegate == self) 
+    [TJMAudioCenter instance].delegate = nil;
+  
 	TT_RELEASE_SAFELY(_author);
 	TT_RELEASE_SAFELY(_subtitle);
 	TT_RELEASE_SAFELY(_summary);
