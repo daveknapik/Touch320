@@ -179,10 +179,12 @@
   
   [self.radioItemView setContentSize:CGSizeMake(self.view.frame.size.width, subtitleValue.frame.size.height + titleValue.frame.size.height + summaryValue.frame.size.height + 15 + 40+20)];
 	
-  [self showLoading];
-  [TJMAudioCenter instance].delegate = self;  
-  [[TJMAudioCenter instance]queueURL:[NSURL URLWithString:self.link]];
-	
+  [TJMAudioCenter instance].delegate = self;
+  //check we're not already playing
+  if ([[TJMAudioCenter instance] statusCheckForURL:[NSURL URLWithString:self.link]] == TJMAudioStatusCurrentPlaying)
+    [self showPlaying];
+  
+  
   [super viewDidLoad];
 }
 
@@ -320,12 +322,13 @@
 }
 
 - (void)play {
+  [self showLoading];
   [[TJMAudioCenter instance] playURL:[NSURL URLWithString:self.link]];
 }
 
 
 #pragma mark TJM AudioCenterDelegate 
--(void)URLReadyToPlay:(NSURL *)url
+-(void)URLDidFinish:(NSURL *)url;
 {
   if ([[NSURL URLWithString:self.link] isEqual:url]) [self showPaused];
 }
@@ -340,27 +343,12 @@
   if ([[NSURL URLWithString:self.link] isEqual:url]) [self showPaused];  
 }
 
--(void)URLQueueFailed:(NSURL *)url
-{
-  [self showStopped];
-  
-  //Do we really need to tell the user that the thing we tried to do in the background actually failed?
-  //would be better if we came up with a different method that wasn't so intrusive.
-  //UIAlertView *alert = [[UIAlertView alloc] initWithTitle:nil message:@"Audio stream failed" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
-	//[alert show];
-	//[alert autorelease];
-}
-
--(void)URLPlayFailed:(NSURL *)url
+-(void)URLDidFail:(NSURL *)url
 {
   UIAlertView *alert = [[UIAlertView alloc] initWithTitle:nil message:@"Audio stream failed." delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
 	[alert show];
 	[alert autorelease];
 }
-
-
-
-
 
 
 @end

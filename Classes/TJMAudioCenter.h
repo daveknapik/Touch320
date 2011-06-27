@@ -14,33 +14,25 @@ typedef enum
   TJMAudioStatusCurrentPlaying,
   TJMAudioStatusCurrentPaused,
   TJMAudioStatusCurrentFailed,
-  TJMAudioStatusQueuedQueing,
-  TJMAudioStatusQueuedReady,
-  TJMAudioStatusQueuedFailed
 } TJMAudioStatus;
 
 @protocol TJMAudioCenterDelegate <NSObject>
 @optional
--(void)URLReadyToPlay:(NSURL *)url;
--(void)URLNotReadyToPlay:(NSURL *)url;
--(void)URLQueueFailed:(NSURL *)url;
+//-(void)URLReadyToPlay:(NSURL *)url;
 -(void)URLIsPlaying:(NSURL *)url;
 -(void)URLIsPaused:(NSURL *)url;
--(void)URLPlayFailed:(NSURL *)url;
-
+-(void)URLDidFail:(NSURL *)url;
+-(void)URLDidFinish:(NSURL *) url;
 @end
 
 @interface TJMAudioCenter : NSObject
 
 SINGLETON_INTERFACE_FOR(TJMAudioCenter)
 
-@property (nonatomic, assign) TJMAudioStatus queueStatus;
-@property (nonatomic, assign) TJMAudioStatus currentStatus;
 @property (nonatomic, retain) id<TJMAudioCenterDelegate> delegate;
 
 - (void)playURL:(NSURL *)url;
 - (void)pauseURL:(NSURL *)url;
-- (void)queueURL:(NSURL *)url;
 
 -(TJMAudioStatus)statusCheckForURL:(NSURL*) url;
 
