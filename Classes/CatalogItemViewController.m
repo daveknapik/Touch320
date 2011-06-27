@@ -248,9 +248,9 @@ cover_art = _cover_art;
 	activityIndicatorView.center = CGPointMake(208, 95);
 	
 	//if ([self.mp3_sample_url length] != 0) {
-		[self.catalogItemView addSubview:playButton];
-		[self.catalogItemView addSubview:pauseButton];
-		[self.catalogItemView addSubview:activityIndicatorView];
+  [self.catalogItemView addSubview:playButton];
+  [self.catalogItemView addSubview:pauseButton];
+  [self.catalogItemView addSubview:activityIndicatorView];
   
   [self.catalogItemView setContentSize:CGSizeMake(self.view.frame.size.width, yAxisPlacement + 10)];
 		
@@ -401,6 +401,7 @@ cover_art = _cover_art;
 }
 
 - (void)play {
+  [self showLoading];
   [[TJMAudioCenter instance] playURL:[NSURL URLWithString:self.mp3_sample_url]];}
 
 

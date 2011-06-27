@@ -13,6 +13,7 @@ NSString *const CurrentPlayerObserver = @"CurrentPlayerObserver";
 @interface TJMAudioCenter ()
 @property (nonatomic, retain) AVPlayer *playingPlayer;
 @property (nonatomic, retain) NSURL *playingURL;
+@property (nonatomic, assign) BOOL playWhenLoaded;
 @end
 
 @implementation TJMAudioCenter
@@ -20,6 +21,7 @@ NSString *const CurrentPlayerObserver = @"CurrentPlayerObserver";
 @synthesize playingPlayer = _playingPlayer;
 @synthesize playingURL = _playingURL;
 @synthesize delegate = _delegate;
+@synthesize playWhenLoaded = _playWhenLoaded;
 
 
 SINGLETON_IMPLEMENTATION_FOR(TJMAudioCenter)
@@ -48,6 +50,7 @@ SINGLETON_IMPLEMENTATION_FOR(TJMAudioCenter)
     [self.playingPlayer removeObserver:self forKeyPath:@"rate"];
     [self.playingPlayer.currentItem removeObserver:self forKeyPath:@"status"];
     //create a new AVPlayer
+    self.playWhenLoaded = YES;
     self.playingPlayer = [AVPlayer playerWithURL:url];
     self.playingURL = url;
     //reinstate notifications
@@ -58,8 +61,6 @@ SINGLETON_IMPLEMENTATION_FOR(TJMAudioCenter)
                                                  name:AVPlayerItemDidPlayToEndTimeNotification
                                                object:self.playingPlayer.currentItem];
   }
-  //start playback;
-  [self.playingPlayer play];
 }
 
 - (void)pauseURL:(NSURL *)url
@@ -78,8 +79,17 @@ SINGLETON_IMPLEMENTATION_FOR(TJMAudioCenter)
   
   if ([keyPath isEqualToString:@"status"])
   {
-    if (([(NSString*)context isEqual: CurrentPlayerObserver]) && (self.playingPlayer.currentItem.status == AVPlayerStatusFailed))
-      [self.delegate URLDidFail:self.playingURL];
+    if ([(NSString*)context isEqual: CurrentPlayerObserver])
+    {
+      if (self.playingPlayer.currentItem.status == AVPlayerStatusFailed)
+        [self.delegate URLDidFail:self.playingURL];
+      else if (self.playWhenLoaded && (self.playingPlayer.currentItem.status == AVPlayerStatusReadyToPlay))
+      {
+        self.playingPlayer.rate = 1;
+        self.playWhenLoaded = NO;
+      }
+    }
+      
   }
   else if ([keyPath isEqualToString:@"rate"])
   {
@@ -93,7 +103,7 @@ SINGLETON_IMPLEMENTATION_FOR(TJMAudioCenter)
   }
 }
 
--(TJMAudioStatus)statusCheckForURL:(NSURL*) url
+-(TJMAudioStatus)statusCheckForURL:(NSURL*)url;
 {
   if ([self.playingURL isEqual:url])
   {
@@ -104,7 +114,6 @@ SINGLETON_IMPLEMENTATION_FOR(TJMAudioCenter)
     if (self.playingPlayer.currentItem.status == AVPlayerStatusFailed) return TJMAudioStatusCurrentFailed;
     //otherwise
     NSLog(@"Error - playingPlayer.currentItem status unknown - this shouldn't happen");
-    return TJMAudioStatusUnknown;
   }
   
   return TJMAudioStatusUnknown;
