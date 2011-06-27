@@ -18,7 +18,6 @@ NSString *const QueuedPlayerObserver = @"QueuedPlayerObserver";
 @property (nonatomic, retain) NSURL *queuedURL;
 
 
-//-(void) initPlayer;
 @end
 
 @implementation TJMAudioCenter
@@ -34,18 +33,16 @@ NSString *const QueuedPlayerObserver = @"QueuedPlayerObserver";
 
 SINGLETON_IMPLEMENTATION_FOR(TJMAudioCenter)
 
-#pragma mark lifecycle
+#pragma mark lifecycle  
 -(void) dealloc
 {
   [self.queuedPlayer.currentItem removeObserver:self forKeyPath:@"status"];
   [self.playingPlayer removeObserver:self forKeyPath:@"rate"];
   [self.playingPlayer.currentItem removeObserver:self forKeyPath:@"status"];
-  
-  [[NSNotificationCenter defaultCenter] removeObserver:self name:AVPlayerItemDidPlayToEndTimeNotification object:self.playingPlayer];
+  [[NSNotificationCenter defaultCenter] removeObserver:self name:AVPlayerItemDidPlayToEndTimeNotification object:self.playingPlayer.currentItem];
   
   [_queuedPlayer release];
   [_playingPlayer release];
-
   [super dealloc];
 }
 
@@ -60,7 +57,7 @@ SINGLETON_IMPLEMENTATION_FOR(TJMAudioCenter)
     if (self.queuedPlayer.currentItem.status == AVPlayerItemStatusReadyToPlay)
     {
       //kill any existing playback stuff
-      [[NSNotificationCenter defaultCenter] removeObserver:self name:AVPlayerItemDidPlayToEndTimeNotification object:self.playingPlayer];
+      [[NSNotificationCenter defaultCenter] removeObserver:self name:AVPlayerItemDidPlayToEndTimeNotification object:self.playingPlayer.currentItem];
       [self.playingPlayer removeObserver:self forKeyPath:@"rate"];
       [self.playingPlayer.currentItem removeObserver:self forKeyPath:@"status"];
       [self.playingPlayer pause];
@@ -74,11 +71,10 @@ SINGLETON_IMPLEMENTATION_FOR(TJMAudioCenter)
       self.queuedURL = nil;
       self.queuedPlayer = nil;
       //register to be notified when the playback reaches the end of the stream
-       [[NSNotificationCenter defaultCenter]
-        addObserver:self
-        selector:@selector(playerItemDidReachEnd:)
-        name:AVPlayerItemDidPlayToEndTimeNotification
-        object:self.playingPlayer];
+      [[NSNotificationCenter defaultCenter] addObserver:self
+                                               selector:@selector(playerItemDidReachEnd:)
+                                                   name:AVPlayerItemDidPlayToEndTimeNotification
+                                                 object:self.playingPlayer.currentItem];
       //start playback;
       [self.playingPlayer play];
     }
@@ -199,9 +195,9 @@ SINGLETON_IMPLEMENTATION_FOR(TJMAudioCenter)
 #pragma mark notifications
 //reset the stream to the start and pause it when it reaches the end, ready to play again.
 - (void)playerItemDidReachEnd:(NSNotification *)notification {
+  NSLog(@"Reached end of stream...");
   if (self.playingPlayer)
   {
-    NSLog(@"Reached end of stream...");
     [self.playingPlayer seekToTime:kCMTimeZero];
     self.playingPlayer.rate = 0;
   }
