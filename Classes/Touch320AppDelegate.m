@@ -27,7 +27,13 @@
 
 @implementation Touch320AppDelegate
 
-@synthesize link = _link, numberOfThumbnails = _numberOfThumbnails, imageSize = _imageSize, deviceWidth = _deviceWidth, deviceHeight = _deviceHeight, deviceMultiplier = _deviceMultiplier, activeViewController = _activeViewController, activeAudioPlayer = _activeAudioPlayer;
+@synthesize link = _link;
+@synthesize numberOfThumbnails = _numberOfThumbnails;
+@synthesize imageSize = _imageSize;
+@synthesize deviceWidth = _deviceWidth;
+@synthesize deviceHeight = _deviceHeight;
+@synthesize deviceMultiplier = _deviceMultiplier;
+@synthesize activeViewController = _activeViewController;
 
 void interruptionListener (void *inClientData, UInt32 inInterruptionState);
 
@@ -72,16 +78,6 @@ void interruptionListener (void *inClientData, UInt32 inInterruptionState);
 		//[navigator openURL:@"tt://tabBar" animated:NO];
 		[navigator openURLAction:[[TTURLAction actionWithURLPath:@"tt://tabBar"] applyAnimated:NO]];
 	}	
-	
-	AudioSessionInitialize (
-							NULL,                  // use the default (main) run loop
-							NULL,                  // use the default run loop mode
-							interruptionListener,  // a reference to your interruption callback
-							self                   // userData
-							);
-	
-	UInt32 sessionCategory = kAudioSessionCategory_MediaPlayback;
-	AudioSessionSetProperty (kAudioSessionProperty_AudioCategory, sizeof (sessionCategory), &sessionCategory);
 
 	if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
 	{
@@ -135,28 +131,5 @@ void interruptionListener (void *inClientData, UInt32 inInterruptionState);
 	NSLog(@"I am the AppDelegate and I think the Active View Controller is: %@ %@", self.activeViewController,self.link);
 }
 
-void interruptionListener(void *userData, UInt32  interruptionState) {
-	Touch320AppDelegate *appDelegate;
-	appDelegate = (Touch320AppDelegate*)[UIApplication sharedApplication].delegate;
-	
-	if (interruptionState == kAudioSessionBeginInterruption) {
-    //[appDelegate.activeViewController pause];
-    //we need to pause if we're playing...
-    //only two different viewController's repsond to pause..
-    if ([appDelegate.activeViewController isKindOfClass:[CatalogItemViewController class]])
-      [(CatalogItemViewController *)appDelegate.activeViewController pause];
-    else if ([appDelegate.activeViewController isKindOfClass:[RadioItemViewController class]])
-      [(RadioItemViewController *)appDelegate.activeViewController pause];  
-
-		AudioSessionSetActive(NO);
-	} else if (interruptionState == kAudioSessionEndInterruption) {
-		AudioSessionSetActive(YES);
-		//[appDelegate.activeViewController play];
-    if ([appDelegate.activeViewController isKindOfClass:[CatalogItemViewController class]])
-      [(CatalogItemViewController *)appDelegate.activeViewController play];
-    else if ([appDelegate.activeViewController isKindOfClass:[RadioItemViewController class]])
-      [(RadioItemViewController *)appDelegate.activeViewController play];  
-	}
-}
 
 @end

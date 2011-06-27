@@ -8,7 +8,6 @@
 
 #import <UIKit/UIKit.h>
 #import <Three20/Three20+Additions.h>
-#import "AudioPlayer.h"
 
 @interface Touch320AppDelegate : NSObject <UIApplicationDelegate> {
 	NSString* _link;
@@ -18,7 +17,6 @@
 	CGFloat _deviceHeight;
 	CGFloat _deviceMultiplier;
 	UIViewController* _activeViewController;
-	AudioPlayer* _activeAudioPlayer;
 }
 
 @property (nonatomic, retain) NSString* link;
@@ -28,7 +26,6 @@
 @property CGFloat deviceHeight;
 @property CGFloat deviceMultiplier;
 @property (nonatomic, retain) UIViewController* activeViewController;
-@property (nonatomic, retain) AudioPlayer* activeAudioPlayer;
 
 - (void)bollocks;
 

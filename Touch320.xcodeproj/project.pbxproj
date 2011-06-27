@@ -148,11 +148,6 @@
 		DEEDD7EE110069F40034B464 /* CatalogSamplerTableItem.m in Sources */ = {isa = PBXBuildFile; fileRef = DEEDD7ED110069F40034B464 /* CatalogSamplerTableItem.m */; };
 		DEEDD7F111006A030034B464 /* CatalogSamplerTableItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DEEDD7F011006A030034B464 /* CatalogSamplerTableItemCell.m */; };
 		DEF0C33A10F6394300E74685 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEF0C33910F6394300E74685 /* AudioToolbox.framework */; };
-		DEF0C35A10F66DF900E74685 /* AudioPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = DEF0C35110F66DF900E74685 /* AudioPlayer.m */; };
-		DEF0C35B10F66DF900E74685 /* AudioRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = DEF0C35310F66DF900E74685 /* AudioRequest.m */; };
-		DEF0C35C10F66DF900E74685 /* AudioFileStream.m in Sources */ = {isa = PBXBuildFile; fileRef = DEF0C35510F66DF900E74685 /* AudioFileStream.m */; };
-		DEF0C35D10F66DF900E74685 /* AudioQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = DEF0C35710F66DF900E74685 /* AudioQueue.m */; };
-		DEF0C35E10F66DF900E74685 /* AudioPlayerUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = DEF0C35910F66DF900E74685 /* AudioPlayerUtil.m */; };
 		DEFEE66F10D80BC4001213CE /* NewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DEFEE66310D80BC3001213CE /* NewsViewController.m */; };
 		DEFEE67010D80BC4001213CE /* ImageGalleryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DEFEE66510D80BC3001213CE /* ImageGalleryViewController.m */; };
 		DEFEE67110D80BC4001213CE /* CatalogSamplerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DEFEE66710D80BC3001213CE /* CatalogSamplerViewController.m */; };
@@ -546,16 +541,6 @@
 		DEEDD7EF11006A030034B464 /* CatalogSamplerTableItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CatalogSamplerTableItemCell.h; sourceTree = "<group>"; };
 		DEEDD7F011006A030034B464 /* CatalogSamplerTableItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CatalogSamplerTableItemCell.m; sourceTree = "<group>"; };
 		DEF0C33910F6394300E74685 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
-		DEF0C35010F66DF900E74685 /* AudioPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioPlayer.h; sourceTree = "<group>"; };
-		DEF0C35110F66DF900E74685 /* AudioPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioPlayer.m; sourceTree = "<group>"; };
-		DEF0C35210F66DF900E74685 /* AudioRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioRequest.h; sourceTree = "<group>"; };
-		DEF0C35310F66DF900E74685 /* AudioRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioRequest.m; sourceTree = "<group>"; };
-		DEF0C35410F66DF900E74685 /* AudioFileStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioFileStream.h; sourceTree = "<group>"; };
-		DEF0C35510F66DF900E74685 /* AudioFileStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioFileStream.m; sourceTree = "<group>"; };
-		DEF0C35610F66DF900E74685 /* AudioQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioQueue.h; sourceTree = "<group>"; };
-		DEF0C35710F66DF900E74685 /* AudioQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioQueue.m; sourceTree = "<group>"; };
-		DEF0C35810F66DF900E74685 /* AudioPlayerUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioPlayerUtil.h; sourceTree = "<group>"; };
-		DEF0C35910F66DF900E74685 /* AudioPlayerUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioPlayerUtil.m; sourceTree = "<group>"; };
 		DEFEE66210D80BC3001213CE /* NewsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsViewController.h; sourceTree = "<group>"; };
 		DEFEE66310D80BC3001213CE /* NewsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsViewController.m; sourceTree = "<group>"; };
 		DEFEE66410D80BC3001213CE /* ImageGalleryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageGalleryViewController.h; sourceTree = "<group>"; };
@@ -602,7 +587,6 @@
 				227F2DF813B5958F00DBE05E /* TJMAudioStuff */,
 				DED30B1713A8582500D8B475 /* TouchXML */,
 				DEDEC57410FF8AB100D9EA32 /* objective_resource */,
-				DEF0C34F10F66DD000E74685 /* AudioUtil */,
 				DE10402310F3F01D0058DDB8 /* News */,
 				DE10402410F3F0240058DDB8 /* Images */,
 				DE10402710F3F0360058DDB8 /* CatalogSampler */,
@@ -657,7 +641,6 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
-				2242091F13B878360054A1A1 /* CoreMedia.framework */,
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
@@ -700,6 +683,7 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2242091F13B878360054A1A1 /* CoreMedia.framework */,
 				227F2DF513B5929C00DBE05E /* QuartzCore.framework */,
 				227F2CCF13B5367600DBE05E /* AVFoundation.framework */,
 				3201088596B4756681693700 /* Three20UICommon.xcodeproj */,
@@ -1139,23 +1123,6 @@
 			path = XML;
 			sourceTree = "<group>";
 		};
-		DEF0C34F10F66DD000E74685 /* AudioUtil */ = {
-			isa = PBXGroup;
-			children = (
-				DEF0C35010F66DF900E74685 /* AudioPlayer.h */,
-				DEF0C35110F66DF900E74685 /* AudioPlayer.m */,
-				DEF0C35210F66DF900E74685 /* AudioRequest.h */,
-				DEF0C35310F66DF900E74685 /* AudioRequest.m */,
-				DEF0C35410F66DF900E74685 /* AudioFileStream.h */,
-				DEF0C35510F66DF900E74685 /* AudioFileStream.m */,
-				DEF0C35610F66DF900E74685 /* AudioQueue.h */,
-				DEF0C35710F66DF900E74685 /* AudioQueue.m */,
-				DEF0C35810F66DF900E74685 /* AudioPlayerUtil.h */,
-				DEF0C35910F66DF900E74685 /* AudioPlayerUtil.m */,
-			);
-			name = AudioUtil;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1431,11 +1398,6 @@
 				DE10401F10F3EFFF0058DDB8 /* RadioDataSource.m in Sources */,
 				DE10402210F3F0050058DDB8 /* RadioModel.m in Sources */,
 				DE1041E810F4C8780058DDB8 /* RadioItemViewController.m in Sources */,
-				DEF0C35A10F66DF900E74685 /* AudioPlayer.m in Sources */,
-				DEF0C35B10F66DF900E74685 /* AudioRequest.m in Sources */,
-				DEF0C35C10F66DF900E74685 /* AudioFileStream.m in Sources */,
-				DEF0C35D10F66DF900E74685 /* AudioQueue.m in Sources */,
-				DEF0C35E10F66DF900E74685 /* AudioPlayerUtil.m in Sources */,
 				DEDEC5C110FF8AB100D9EA32 /* Connection.m in Sources */,
 				DEDEC5C210FF8AB100D9EA32 /* ConnectionDelegate.m in Sources */,
 				DEDEC5C310FF8AB100D9EA32 /* NSHTTPURLResponse+Error.m in Sources */,
