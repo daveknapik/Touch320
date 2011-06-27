@@ -8,9 +8,6 @@
 
 #import <Foundation/Foundation.h>
 #import <Three20/Three20+Additions.h>
-#import <QuartzCore/QuartzCore.h>
-#import "AudioPlayer.h"
-#import "AVFoundation/AVFoundation.h"
 #import "TJMAudioCenter.h"
 
 @interface RadioItemViewController : TTViewController <TJMAudioCenterDelegate> {

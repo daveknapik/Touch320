@@ -11,6 +11,7 @@
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		2242092013B878370054A1A1 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2242091F13B878360054A1A1 /* CoreMedia.framework */; };
 		227F2CD013B5367600DBE05E /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 227F2CCF13B5367600DBE05E /* AVFoundation.framework */; };
 		227F2DF613B5929C00DBE05E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 227F2DF513B5929C00DBE05E /* QuartzCore.framework */; };
 		227F2DFB13B595D100DBE05E /* TJMAudioCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 227F2DFA13B595D100DBE05E /* TJMAudioCenter.m */; };
@@ -316,6 +317,7 @@
 		1D3623250D0F684500981E51 /* Touch320AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Touch320AppDelegate.m; sourceTree = "<group>"; };
 		1D6058910D05DD3D006BFB54 /* Touch320.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Touch320.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		2242091F13B878360054A1A1 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		227F2CCF13B5367600DBE05E /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		227F2DF513B5929C00DBE05E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		227F2DF913B595D100DBE05E /* TJMAudioCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJMAudioCenter.h; sourceTree = "<group>"; };
@@ -573,6 +575,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2242092013B878370054A1A1 /* CoreMedia.framework in Frameworks */,
 				227F2DF613B5929C00DBE05E /* QuartzCore.framework in Frameworks */,
 				227F2CD013B5367600DBE05E /* AVFoundation.framework in Frameworks */,
 				3201088596B4756681693705 /* libThree20UICommon.a in Frameworks */,
@@ -654,6 +657,7 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				2242091F13B878360054A1A1 /* CoreMedia.framework */,
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,

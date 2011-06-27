@@ -35,13 +35,9 @@
 			pubDateValue = _pubDateValue,
 			episode_durationValue = _episode_durationValue;
 
-//@synthesize avPlayer = avPlayer;
-
 - (id)initWithRadioItem:(NSString *)placeholder query:(NSDictionary*)query
 {
 	if ((self = [self init])) {		
-		// set the long name shown in the navigation bar at the top
-		//self.navigationItem.title = [query objectForKey:@"title"];
 		
 		self.navigationItem.title=@"";
 		
@@ -66,21 +62,6 @@
 		
 		appDelegate.link = self.link;
 		appDelegate.activeViewController = self;
-		
-		NSLog(@"subtitle: %@",self.subtitle);
-		NSLog(@"link: %@",self.link);
-		
-		/*
-		[appDelegate bollocks]; 
-		 
-		NSLog(@"radio item title: %@",self.navigationItem.title);
-		NSLog(@"radio item subtitle: %@",self.subtitle);
-		NSLog(@"radio item author: %@",self.author);
-		NSLog(@"radio item summary: %@",self.summary);
-		NSLog(@"radio item episode_duration: %@",self.episode_duration);
-		NSLog(@"radio item link: %@",self.link);
-		NSLog(@"radio item pubDate: %@",self.pubDate);
-		*/
 	}
 	
 	return self;
@@ -363,15 +344,17 @@
 -(void)URLQueueFailed:(NSURL *)url
 {
   [self showStopped];
-  UIAlertView *alert = [[UIAlertView alloc] initWithTitle:nil message:@"Audio stream failed" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
-	[alert show];
-	[alert autorelease];
-
+  
+  //Do we really need to tell the user that the thing we tried to do in the background actually failed?
+  //would be better if we came up with a different method that wasn't so intrusive.
+  //UIAlertView *alert = [[UIAlertView alloc] initWithTitle:nil message:@"Audio stream failed" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+	//[alert show];
+	//[alert autorelease];
 }
 
 -(void)URLPlayFailed:(NSURL *)url
 {
-  UIAlertView *alert = [[UIAlertView alloc] initWithTitle:nil message:@"Audio stream failed" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+  UIAlertView *alert = [[UIAlertView alloc] initWithTitle:nil message:@"Audio stream failed." delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
 	[alert show];
 	[alert autorelease];
 }

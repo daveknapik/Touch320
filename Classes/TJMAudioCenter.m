@@ -37,11 +37,17 @@ SINGLETON_IMPLEMENTATION_FOR(TJMAudioCenter)
 #pragma mark lifecycle
 -(void) dealloc
 {
-  [self.queuedPlayer removeObserver:self forKeyPath:@"status"];
+  [self.queuedPlayer.currentItem removeObserver:self forKeyPath:@"status"];
   [self.playingPlayer removeObserver:self forKeyPath:@"rate"];
-  [self.playingPlayer removeObserver:self forKeyPath:@"status"];
+  [self.playingPlayer.currentItem removeObserver:self forKeyPath:@"status"];
+  
+  [[NSNotificationCenter defaultCenter] removeObserver:self name:AVPlayerItemDidPlayToEndTimeNotification object:self.playingPlayer];
+  
   [_queuedPlayer release];
   [_playingPlayer release];
+  //remove self from the beign the audio delegate - if its us
+  if ([TJMAudioCenter instance].delegate == (id<TJMAudioCenterDelegate>)self) 
+    [TJMAudioCenter instance].delegate = nil;
   [super dealloc];
 }
 
@@ -53,21 +59,28 @@ SINGLETON_IMPLEMENTATION_FOR(TJMAudioCenter)
   //if we're queued & ready, start the playback
   if ([self.queuedURL isEqual:url])
   {
-    if (self.queuedPlayer.status == AVPlayerItemStatusReadyToPlay)
+    if (self.queuedPlayer.currentItem.status == AVPlayerItemStatusReadyToPlay)
     {
       //kill any existing playback stuff
+      [[NSNotificationCenter defaultCenter] removeObserver:self name:AVPlayerItemDidPlayToEndTimeNotification object:self.playingPlayer];
       [self.playingPlayer removeObserver:self forKeyPath:@"rate"];
-      [self.playingPlayer removeObserver:self forKeyPath:@"status"];
+      [self.playingPlayer.currentItem removeObserver:self forKeyPath:@"status"];
       [self.playingPlayer pause];
       self.playingPlayer = nil;
       //swap the queuedPlayer into the playing one.
-      [self.queuedPlayer removeObserver:self forKeyPath:@"status"];
+      [self.queuedPlayer.currentItem removeObserver:self forKeyPath:@"status"];
       self.playingPlayer = self.queuedPlayer;
-      [self.playingPlayer addObserver:self forKeyPath:@"status" options:0 context:CurrentPlayerObserver];
+      [self.playingPlayer.currentItem addObserver:self forKeyPath:@"status" options:0 context:CurrentPlayerObserver];
       [self.playingPlayer addObserver:self forKeyPath:@"rate" options:0 context:CurrentPlayerObserver];
       self.playingURL = self.queuedURL;
       self.queuedURL = nil;
       self.queuedPlayer = nil;
+      //register to be notified when the playback reaches the end of the stream
+       [[NSNotificationCenter defaultCenter]
+        addObserver:self
+        selector:@selector(playerItemDidReachEnd:)
+        name:AVPlayerItemDidPlayToEndTimeNotification
+        object:self.playingPlayer];
       //start playback;
       [self.playingPlayer play];
     }
@@ -85,7 +98,7 @@ SINGLETON_IMPLEMENTATION_FOR(TJMAudioCenter)
 - (void)queueURL:(NSURL *)url
 {
   //if the url we've been asked to queue is already playing, inform the delegate and return
-  if (([url isEqual:self.playingURL]) && (self.playingPlayer.status != AVPlayerStatusFailed))
+  if (([url isEqual:self.playingURL]) && (self.playingPlayer.currentItem.status != AVPlayerStatusFailed))
   {
     if (self.playingPlayer.rate == 0)
     {
@@ -99,9 +112,9 @@ SINGLETON_IMPLEMENTATION_FOR(TJMAudioCenter)
   }
   
   //if the url we've been asked to queue is already in the queue inform the delegate and return
-  if (([url isEqual:self.queuedURL]) && (self.queuedPlayer.status != AVPlayerStatusFailed)) 
+  if (([url isEqual:self.queuedURL]) && (self.queuedPlayer.currentItem.status != AVPlayerStatusFailed)) 
   {
-    if (self.queuedPlayer.status == AVPlayerStatusReadyToPlay)
+    if (self.queuedPlayer.currentItem.status == AVPlayerStatusReadyToPlay)
     {
       if (self.delegate) [self.delegate URLReadyToPlay:self.queuedURL];
     }
@@ -110,9 +123,9 @@ SINGLETON_IMPLEMENTATION_FOR(TJMAudioCenter)
   
   //otherwise set up the url in the queued player object
   self.queuedURL = url;
-  [self.queuedPlayer removeObserver:self forKeyPath:@"status"];
+  [self.queuedPlayer.currentItem removeObserver:self forKeyPath:@"status"];
   self.queuedPlayer = [AVPlayer playerWithURL:url];
-  [self.queuedPlayer addObserver:self forKeyPath:@"status" options:0 context:QueuedPlayerObserver];
+  [self.queuedPlayer.currentItem addObserver:self forKeyPath:@"status" options:0 context:QueuedPlayerObserver];
 }
 
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object
@@ -125,12 +138,13 @@ SINGLETON_IMPLEMENTATION_FOR(TJMAudioCenter)
       
     if ([(NSString*)context isEqual: QueuedPlayerObserver])
     {
-      switch (self.queuedPlayer.status)
+      switch (self.queuedPlayer.currentItem.status)
       {
         case AVPlayerStatusUnknown:
           [self.delegate URLNotReadyToPlay:self.queuedURL];
           break;
         case AVPlayerStatusReadyToPlay:
+          NSLog(@"RTP %i",self.queuedPlayer.currentItem.status);
           [self.delegate URLReadyToPlay:self.queuedURL];
           break;
         case AVPlayerStatusFailed:
@@ -140,7 +154,7 @@ SINGLETON_IMPLEMENTATION_FOR(TJMAudioCenter)
     }
     else
     {
-      if (([(NSString*)context isEqual: CurrentPlayerObserver]) && (self.playingPlayer.status == AVPlayerStatusFailed))
+      if (([(NSString*)context isEqual: CurrentPlayerObserver]) && (self.playingPlayer.currentItem.status == AVPlayerStatusFailed))
         [self.delegate URLPlayFailed:self.queuedURL];  
     }
   }
@@ -164,24 +178,35 @@ SINGLETON_IMPLEMENTATION_FOR(TJMAudioCenter)
 {
   if ([self.playingURL isEqual:url])
   {
-    if (self.playingPlayer.status == AVPlayerStatusReadyToPlay) 
+    if (self.playingPlayer.currentItem.status == AVPlayerStatusReadyToPlay) 
     {
       return (self.playingPlayer.rate == 1) ? TJMAudioStatusCurrentPlaying : TJMAudioStatusCurrentPaused;
     }
-    if (self.playingPlayer.status == AVPlayerStatusFailed) return TJMAudioStatusCurrentFailed;
+    if (self.playingPlayer.currentItem.status == AVPlayerStatusFailed) return TJMAudioStatusCurrentFailed;
     //otherwise
-    NSLog(@"Error - playingPlayer status unknown - this shouldn't happen");
+    NSLog(@"Error - playingPlayer.currentItem status unknown - this shouldn't happen");
     return TJMAudioStatusUnknown;
   }
   
   if ([self.queuedURL isEqual:url])
   {
-    if (self.queuedPlayer.status == AVPlayerStatusUnknown) return TJMAudioStatusQueuedQueing;
-    if (self.queuedPlayer.status == AVPlayerStatusReadyToPlay) return TJMAudioStatusQueuedReady;
-    if (self.queuedPlayer.status == AVPlayerStatusFailed) return TJMAudioStatusQueuedFailed;
+    if (self.queuedPlayer.currentItem.status == AVPlayerStatusUnknown) return TJMAudioStatusQueuedQueing;
+    if (self.queuedPlayer.currentItem.status == AVPlayerStatusReadyToPlay) return TJMAudioStatusQueuedReady;
+    if (self.queuedPlayer.currentItem.status == AVPlayerStatusFailed) return TJMAudioStatusQueuedFailed;
   }
     
   return TJMAudioStatusUnknown;
+}
+
+#pragma mark notifications
+//reset the stream to the start and pause it when it reaches the end, ready to play again.
+- (void)playerItemDidReachEnd:(NSNotification *)notification {
+  if (self.playingPlayer)
+  {
+    NSLog(@"Reached end of stream...");
+    [self.playingPlayer seekToTime:kCMTimeZero];
+    self.playingPlayer.rate = 0;
+  }
 }
 
 
