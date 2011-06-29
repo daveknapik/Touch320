@@ -35,8 +35,7 @@
 
 - (void)updateTableLayout {
 	self.tableView.contentInset = UIEdgeInsetsZero;
-	self.tableView.scrollIndicatorInsets = UIEdgeInsetsZero;
-	
+	self.tableView.scrollIndicatorInsets = UIEdgeInsetsZero;	
 }
 
 - (TTPhotoViewController *)createPhotoViewController

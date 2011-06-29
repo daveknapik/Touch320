@@ -102,9 +102,13 @@ SINGLETON_IMPLEMENTATION_FOR(TJMAudioCenter)
     if ([(NSString*)context isEqual: CurrentPlayerObserver])
     {
       if (self.player.currentItem.status == AVPlayerStatusFailed)
+      {
         [self.delegate URLDidFail:self.URL];
+        NSLog(@"Audio Failed");
+      }
       else if (self.playWhenLoaded && (self.player.currentItem.status == AVPlayerStatusReadyToPlay))
       {
+        NSLog(@"Audio Ready To PLay");
         self.player.rate = 1;
         self.playWhenLoaded = NO;
       }
@@ -116,9 +120,15 @@ SINGLETON_IMPLEMENTATION_FOR(TJMAudioCenter)
     if ([(NSString*)context isEqual: CurrentPlayerObserver])
     {
       if (self.player.rate == 0)
-        [self.delegate URLIsPaused:self.URL];      
+      {
+        NSLog(@"Audio Paused");
+        [self.delegate URLIsPaused:self.URL];
+      }
       else
+      {
+        NSLog(@"Audio Playing");
         [self.delegate URLIsPlaying:self.URL];
+      }
     }
   }
 }
