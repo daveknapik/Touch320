@@ -34,7 +34,7 @@
 }
 
 - (void)updateTableLayout {
-	self.tableView.contentInset = UIEdgeInsetsMake(4, 0, 0, 0);
+	self.tableView.contentInset = UIEdgeInsetsZero;
 	self.tableView.scrollIndicatorInsets = UIEdgeInsetsZero;
 	
 }
