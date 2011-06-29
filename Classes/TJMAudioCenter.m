@@ -113,7 +113,6 @@ SINGLETON_IMPLEMENTATION_FOR(TJMAudioCenter)
         self.playWhenLoaded = NO;
       }
     }
-      
   }
   else if ([keyPath isEqualToString:@"rate"])
   {
@@ -195,7 +194,7 @@ SINGLETON_IMPLEMENTATION_FOR(TJMAudioCenter)
 #pragma mark audiosession delegate
 - (void)beginInterruption
 {
-    NSLog(@"[%@ %@]", [self class], NSStringFromSelector(_cmd));
+  NSLog(@"[%@ %@]", [self class], NSStringFromSelector(_cmd));
   self.interruptedDuringPlayback = (self.player.rate == 1);
 }
 
@@ -207,24 +206,21 @@ SINGLETON_IMPLEMENTATION_FOR(TJMAudioCenter)
   if (flags & AVAudioSessionInterruptionFlags_ShouldResume) {
     
     NSError *endInterruptionError = nil;
-    [[AVAudioSession sharedInstance] setActive: YES
-                                         error: &endInterruptionError];
-    if (endInterruptionError != nil) {
-      
-      //NSLog (@"Unable to reactivate the audio session after the interruption ended.");
-      return;
-      
-    } else {
-      
-      //NSLog (@"Audio session reactivated after interruption.");
-      
+    if ([[AVAudioSession sharedInstance] setActive: YES
+                                         error: &endInterruptionError])
+    {
+      NSLog (@"Audio session reactivated after interruption.");
+    
       if (self.interruptedDuringPlayback) {
-        
+        NSLog (@"Restarting playback.");
         self.interruptedDuringPlayback = NO;
-        
         self.player.rate = 1.0;
-        
       }
+    }
+    else
+    {
+      NSLog (@"Unable to reactivate the audio session after the interruption ended - %@",endInterruptionError);
+      return;
     }
   }
 }
