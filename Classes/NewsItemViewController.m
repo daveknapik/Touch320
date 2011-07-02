@@ -24,7 +24,7 @@
 
 - (id)initWithNavigatorURL:(NSString *)placeholder query:(NSDictionary*)query
 {
-	if (self = [self init]) {		
+	if ((self = [self init])) {		
 		// set the long name shown in the navigation bar at the top
 		self.navigationItem.title=@"";
 		

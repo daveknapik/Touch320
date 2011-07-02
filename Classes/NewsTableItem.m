@@ -35,7 +35,7 @@
 } 
 
 - (id)init { 
-	if (self = [super init]) { 
+	if ((self = [super init])) { 
 		_title = nil; 
 		_link = nil;
 		_description = nil;
