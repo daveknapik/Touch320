@@ -39,7 +39,7 @@
 		request.response = response;
 		TT_RELEASE_SAFELY(response);
 		
-		[request send]; 
+		[request send];
 		
 		
 		NSLog(@"recipe book request sent");

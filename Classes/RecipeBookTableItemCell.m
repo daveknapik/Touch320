@@ -22,7 +22,7 @@
 
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString*)identifier {
 	
-	if (self = [super initWithStyle:UITableViewCellStyleValue2 reuseIdentifier:identifier]) {
+	if ((self = [super initWithStyle:UITableViewCellStyleValue2 reuseIdentifier:identifier])) {
 		_item = nil;
 		
 		_titleLabel = [[UILabel alloc] initWithFrame:CGRectZero];
