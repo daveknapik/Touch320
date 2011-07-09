@@ -81,8 +81,7 @@
 							 forKey:[[resultElement childAtIndex:counter] name]];
 			}
 		}
-		
-		
+				
 		//NSString* key = [NSString stringWithFormat:@"%d",outerCounter];
 		NSNumber* key = [NSNumber numberWithInt:outerCounter];
 		
