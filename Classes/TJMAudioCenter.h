@@ -29,7 +29,7 @@ typedef enum
 
 SINGLETON_INTERFACE_FOR(TJMAudioCenter)
 
-@property (nonatomic, retain) id<TJMAudioCenterDelegate> delegate;
+@property (nonatomic, assign) id<TJMAudioCenterDelegate> delegate;
 
 - (void)playURL:(NSURL *)url;
 - (void)pauseURL:(NSURL *)url;
