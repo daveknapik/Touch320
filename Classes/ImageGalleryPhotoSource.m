@@ -70,7 +70,7 @@
 	
 	NSDictionary *parameters = [NSDictionary dictionaryWithObjectsAndKeys:
                                 @"flickr.photosets.getPhotos", @"method",
-                                @"72157627186163266", @"photoset_id",
+                                @"72157627193886606", @"photoset_id",
                                 @"url_l,url_z,url_m,url_t", @"extras",
                                 @"dcb74491ec5cbe64deb98b18df1125a9", @"api_key",
                                 @"json", @"format",
